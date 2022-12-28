@@ -1,0 +1,12 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Главная";
+
+block content
+	include ../components/Header/index.pug
+	h1 Главная
+	include ../components/Footer/index.pug
+
+block scripts
+	script(src="js/main.js")

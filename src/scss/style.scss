@@ -1,0 +1,111 @@
+@import 'fonts';
+
+//! --------------------------------------------------------------------
+//! Переменные ---------------------------------------------------------
+//! --------------------------------------------------------------------
+
+$color-white: #ffffff;
+$color-black: #141413;
+$color-yellow: #f2ce14;
+$color-gray-black: #262626;
+$color-blue: #201547;
+$color-blue-black: #140848;
+
+//! --------------------------------------------------------------------
+//! Стили --------------------------------------------------------------
+//! --------------------------------------------------------------------
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	overflow-wrap: break-word;
+	user-select: text;
+}
+
+body {
+	position: relative;
+	background-color: gray;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: normal;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	height: 100vh;
+}
+
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+input {
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+}
+button {
+	padding: 0;
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+ol,
+ul {
+	padding-left: 0;
+}
+dl,
+ol,
+ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.containers {
+	max-width: 1440px;
+	padding: 0 90px;
+	margin: 0 auto;
+	width: 100%;
+}
+.display-n {
+	display: none !important;
+}
+opacity-h {
+	opacity: 0 !important;
+}
+
+//! --------------------------------------------------------------------
+//! Подключение файлов -------------------------------------------------
+//! --------------------------------------------------------------------
+
+@import '../components/styles';
+
+//! --------------------------------------------------------------------
+//! --------------------------------------------------------------------
+//! --------------------------------------------------------------------
