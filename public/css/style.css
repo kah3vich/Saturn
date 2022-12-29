@@ -570,7 +570,10 @@ opacity-h {
 .footer {
 	background-color : #201547;
 	width : 100%;
-	min-height : 630px;
+	max-height : 630px;
+	height : -webkit-max-content;
+	height :    -moz-max-content;
+	height :         max-content;
 	padding : 55px 0 65px 0;
 	color : #ffffff;
 }

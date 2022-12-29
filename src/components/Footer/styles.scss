@@ -1,7 +1,8 @@
 .footer {
 	background-color: $color-blue;
 	width: 100%;
-	min-height: 630px;
+	max-height: 630px;
+	height: max-content;
 	padding: 55px 0 65px 0;
 	color: $color-white;
 	&__container {
