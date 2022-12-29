@@ -2,7 +2,7 @@ import fileInclude from "gulp-file-include";
 import flatten from "gulp-flatten";
 import pug from "gulp-pug";
 import versionNumber from "gulp-version-number";
-import webpHtmlNosvg from "gulp-webp-html-nosvg";
+// import webpHtmlNosvg from "gulp-webp-html-nosvg";
 
 export const html = () => {
 	return app.gulp
@@ -21,8 +21,8 @@ export const html = () => {
 				pretty: true,
 			})
 		)
-		.pipe(app.plugins.replace(/@img\//g, "./img/"))
-		.pipe(app.plugins.if(app.isBuild, webpHtmlNosvg()))
+		// .pipe(app.plugins.replace(/@img\//g, "./img/"))
+		// .pipe(app.plugins.if(app.isBuild, webpHtmlNosvg()))
 		.pipe(
 			app.plugins.if(
 				app.isBuild,
