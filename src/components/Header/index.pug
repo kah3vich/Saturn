@@ -2,18 +2,19 @@ header.header
     .containers
         .header__container
             .header__block
-                .header__l 
+                a(href="/").header__logo 
                     img(src="./svg/logo.svg" alt="")
-                p.header__s Завод по производству 
+                p.header__subtitle Завод по производству 
                     br 
                     | металлических стеллажей 
             .header__block
-                .header__c Moscow
-                a(href="mailto:stel@saturngk.ru").header__e 
+                .header__city
+                    +headerCity
+                a(href="mailto:stel@saturngk.ru").header__email 
                     img(src="./svg/header/email.svg" alt="")
                     p stel@saturngk.ru
-                a(href="tel:8 800-350-46-77").header__p
+                a(href="tel:8 800-350-46-77").header__phone
                     img(src="./svg/header/phone.svg" alt="")
                     p 8 800-350-46-77
-                button.header__b 
+                button.header__button 
                     p заказать звонок

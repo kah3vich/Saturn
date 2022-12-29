@@ -2,6 +2,20 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/components/Footer/script.js":
+/*!*****************************************!*\
+  !*** ./src/components/Footer/script.js ***!
+  \*****************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Footer": function() { return /* binding */ Footer; }
+/* harmony export */ });
+var Footer = function Footer() {};
+
+/***/ }),
+
 /***/ "./src/components/Header/script.js":
 /*!*****************************************!*\
   !*** ./src/components/Header/script.js ***!
@@ -12,7 +26,46 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Header": function() { return /* binding */ Header; }
 /* harmony export */ });
-var Header = function Header() {};
+var Header = function Header() {
+  $(function () {
+    $('select.c_select').each(function () {
+      var $this = $(this);
+      var html = '<div class="c_select"><div class="c_select-placeholder">';
+      html += $this.find('option:eq(0)').text();
+      html += '</div><div class="c_select-block display-n"><div class="c_select-wrapper">';
+      $this.find('option:eq(0)').css('display', 'none');
+      $this.find('option').each(function () {
+        html += '<button class="c_select-element" data-val="' + $(this).attr('value') + '" type="button">' + $(this).text() + '</button>';
+      });
+      html += '</div></div></div></div>';
+      $(html).insertAfter($this.hide());
+      $('.c_select-element:eq(0)').addClass('c_select-element-active');
+      var $next = $this.next();
+      $next.find('.c_select-placeholder').on('click', function (e) {
+        e.preventDefault();
+        $next.find('.c_select-block').toggleClass('display-n'), $next.toggleClass('c_select-item-active');
+      }).end().find('.c_select-element').on('click', function (e) {
+        e.preventDefault();
+        $('.c_select-element').removeClass('c_select-element-active');
+        $(this).addClass('c_select-element-active');
+        $next.find('.c_select-placeholder').text($(this).text());
+        $this.val($(this).data('val')).trigger('change');
+        $next.find('.c_select-placeholder').trigger('click');
+      });
+    });
+  });
+};
+
+/***/ }),
+
+/***/ "./src/components/PickUp/script.js":
+/*!*****************************************!*\
+  !*** ./src/components/PickUp/script.js ***!
+  \*****************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+
 
 /***/ }),
 
@@ -24,9 +77,14 @@ var Header = function Header() {};
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Header": function() { return /* reexport safe */ _Header_script_js__WEBPACK_IMPORTED_MODULE_0__.Header; }
+/* harmony export */   "Footer": function() { return /* reexport safe */ _Footer_script_js__WEBPACK_IMPORTED_MODULE_0__.Footer; },
+/* harmony export */   "Header": function() { return /* reexport safe */ _Header_script_js__WEBPACK_IMPORTED_MODULE_1__.Header; }
 /* harmony export */ });
-/* harmony import */ var _Header_script_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Header/script.js */ "./src/components/Header/script.js");
+/* harmony import */ var _Footer_script_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Footer/script.js */ "./src/components/Footer/script.js");
+/* harmony import */ var _Header_script_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header/script.js */ "./src/components/Header/script.js");
+/* harmony import */ var _PickUp_script_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PickUp/script.js */ "./src/components/PickUp/script.js");
+
+
 
 
 /***/ })
@@ -95,19 +153,6 @@ var __webpack_exports__ = {};
   \***********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_script_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/script.js */ "./src/components/script.js");
-// import { changeText, titles } from './import/components.js'
-
-// // $(() => {
-// let rotateDeg = 360
-// $('#active').on('click', () => {
-// 	$('#gulp').css('transform', `translate(-50%, -50%) rotate(${rotateDeg}deg)`)
-// 	rotateDeg += 360
-// })
-// console.log(titles)
-// console.log('changeText    ', changeText('man i help you'))
-
-// // })
-
 
 (0,_components_script_js__WEBPACK_IMPORTED_MODULE_0__.Header)();
 }();
