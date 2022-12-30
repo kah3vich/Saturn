@@ -1,15 +1,16 @@
 export const Header = () => {
 	$(() => {
-		$('select.c_select').each(function () {
+		$('select.headerCitySelect').each(function () {
 			let $this = $(this)
 
-			let html = '<div class="c_select"><div class="c_select-placeholder">'
+			let html = '<div class="headerCitySelect"><div class="headerCitySelect-placeholder">'
 			html += $this.find('option:eq(0)').text()
-			html += '</div><div class="c_select-block display-n"><div class="c_select-wrapper">'
+			html +=
+				'</div><div class="headerCitySelect-block display-n"><div class="headerCitySelect-wrapper">'
 			$this.find('option:eq(0)').css('display', 'none')
 			$this.find('option').each(function () {
 				html +=
-					'<button class="c_select-element" data-val="' +
+					'<button class="headerCitySelect-element" data-val="' +
 					$(this).attr('value') +
 					'" type="button">' +
 					$(this).text() +
@@ -18,25 +19,25 @@ export const Header = () => {
 			html += '</div></div></div></div>'
 			$(html).insertAfter($this.hide())
 
-			$('.c_select-element:eq(0)').addClass('c_select-element-active')
+			$('.headerCitySelect-element:eq(0)').addClass('headerCitySelect-element-active')
 
 			let $next = $this.next()
 			$next
-				.find('.c_select-placeholder')
+				.find('.headerCitySelect-placeholder')
 				.on('click', function (e) {
 					e.preventDefault()
-					$next.find('.c_select-block').toggleClass('display-n'),
-						$next.toggleClass('c_select-item-active')
+					$next.find('.headerCitySelect-block').toggleClass('display-n'),
+						$next.toggleClass('headerCitySelect-item-active')
 				})
 				.end()
-				.find('.c_select-element')
+				.find('.headerCitySelect-element')
 				.on('click', function (e) {
 					e.preventDefault()
-					$('.c_select-element').removeClass('c_select-element-active')
-					$(this).addClass('c_select-element-active')
-					$next.find('.c_select-placeholder').text($(this).text())
+					$('.headerCitySelect-element').removeClass('headerCitySelect-element-active')
+					$(this).addClass('headerCitySelect-element-active')
+					$next.find('.headerCitySelect-placeholder').text($(this).text())
 					$this.val($(this).data('val')).trigger('change')
-					$next.find('.c_select-placeholder').trigger('click')
+					$next.find('.headerCitySelect-placeholder').trigger('click')
 				})
 		})
 	})
