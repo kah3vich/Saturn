@@ -69,9 +69,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "IndexMain": function() { return /* binding */ IndexMain; }
 /* harmony export */ });
 var IndexMain = function IndexMain() {
-  var swiper = new Swiper('.indexMainSwiper', {
+  var addedZeroTextPaginationFraction = function addedZeroTextPaginationFraction(className) {
+    var current = $("".concat(className, " .swiper-pagination-current"));
+    var total = $("".concat(className, " .swiper-pagination-total"));
+    current.text(current.text() < 9 ? "0".concat(current.text()) : current.text());
+    total.text(total.text() < 9 ? "0".concat(total.text()) : total.text());
+  };
+  var indexMainSwiper = new Swiper('.indexMainSwiper', {
+    effect: 'fade',
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-counter',
       type: 'fraction'
     },
     navigation: {
@@ -80,12 +87,19 @@ var IndexMain = function IndexMain() {
     },
     on: {
       slideChange: function slideChange() {
-        var index_currentSlide = swiper.realIndex;
-        var currentSlide = index_currentSlide % 3 === 0 ? swiper.slides[index_currentSlide] : swiper.slides[0];
-        currentSlide.style.background = 'red';
+        addedZeroTextPaginationFraction('.indexMain');
+        var index_currentSlide = indexMainSwiper.realIndex;
+        $('.indexMainSwiper .swiper-pagination-item').removeClass('swiper-pagination-item-active');
+        $(".indexMainSwiper .swiper-pagination-item:eq(".concat(index_currentSlide, ")")).addClass('swiper-pagination-item-active');
       }
     }
   });
+  addedZeroTextPaginationFraction('.indexMainSwiper');
+  var indexMainSwiperLengthSlide = $('.swiper-wrapper .swiper-slide').length;
+  for (var i = 1; i <= indexMainSwiperLengthSlide; i++) {
+    $('.indexMainSwiper .swiper-pagination').append('<div class="swiper-pagination-item"></div>');
+  }
+  $(".indexMainSwiper .swiper-pagination-item:eq(".concat(0, ")")).addClass('swiper-pagination-item-active');
 };
 
 /***/ }),

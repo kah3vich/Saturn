@@ -1,25 +1,60 @@
-.indexMain(style="width: 100%")
-    .swiper.indexMainSwiper
-        .swiper-wrapper
-            .swiper-slide 
-                .indexMain__left 1
-                .indexMain__right 2
-            .swiper-slide 
-                .indexMain__left 1
-                .indexMain__right 2
-            .swiper-slide 
-                .indexMain__left 1
-                .indexMain__right 2
-            .swiper-slide 
-                .indexMain__left 1
-                .indexMain__right 2
-            .swiper-slide 
-                .indexMain__left 1
-                .indexMain__right 2
-            .swiper-slide 
-                .indexMain__left 1
-                .indexMain__right 2
-            
-        .swiper-button-next
-        .swiper-button-prev
-        .swiper-pagination
+.indexMain
+    .indexMain__slider
+        .swiper.indexMainSwiper
+            .swiper-wrapper
+                each _ in Array(5)
+                    .swiper-slide 
+                        .indexMain__containers
+                            .indexMain__containers-left 
+                            .indexMain__containers-right 
+                                img(src="./img/index/indexMain/bg.png" alt="")
+                        .containers 
+                            .indexMain__left 
+                                .indexMain__left-container
+                                    .indexMain__left-block
+                                        p.indexMain__left-title Увеличьте 
+                                            span в 2 раза 
+                                                br 
+                                                | вместимость
+                                                br  
+                                                | архива/склада 
+                                            br
+                                            | на той же площади
+                                        p.indexMain__left-subtitle Рассчитаем проект расстановки стеллажей 
+                                            br 
+                                            | для вашего помещения всего за 
+                                            span 24 часа.
+                                        button.indexMain__left-button 
+                                            p Оставить заявку
+                                            img(src="./svg/index/indexMain/arrow-link-black.svg")
+                                        
+                                    .indexMain__left-status 
+                                        +statusType('Основан в', '1 990', 'году')
+                                        +statusType('Оборудовано', '3 500', 'обьектов разной сложности')
+                                        +statusTypeDouble('География поставок', '100', '5', 'городов', 'стран')
+                            .indexMain__right 
+                                .indexMain__right-container
+                                    .indexMain__right-video 
+                                        img(src="./img/index/indexMain/video.png" alt="")
+                                        .indexMain__right-player
+                                            p Воспроизвести 
+                                                br 
+                                                | видео
+                                            img(src="./svg/index/indexMain/play.svg" alt="")
+                                    .indexMain__right-text
+                                        | видео о нашей компании
+            .swiper-root
+                .swiper-controller
+                    .swiper-button-next
+                        svg(width="55" height="24" viewBox="0 0 55 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(d="M38.9583 12H6.87498" stroke="#F2CD00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                            path(d="M49.6509 11.7613L35.4131 7.32355C34.898 7.16302 34.375 7.54785 34.375 8.08731V15.9127C34.375 16.4522 34.898 16.837 35.4131 16.6765L49.6509 12.2387C49.8851 12.1657 49.8851 11.8343 49.6509 11.7613Z" fill="#F2CD00")
+
+                    .swiper-button-prev
+                        svg(width="55" height="24" viewBox="0 0 55 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(d="M16.0417 12H48.125" stroke="#F2CD00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                            path(d="M5.34909 11.7613L19.5869 7.32355C20.102 7.16302 20.625 7.54785 20.625 8.08731V15.9127C20.625 16.4522 20.102 16.837 19.5869 16.6765L5.34909 12.2387C5.11494 12.1657 5.11494 11.8343 5.34909 11.7613Z" fill="#F2CD00")
+
+                    .swiper-pagination
+
+                .swiper-counter

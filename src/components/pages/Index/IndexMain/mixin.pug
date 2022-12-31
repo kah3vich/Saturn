@@ -1,0 +1,17 @@
+mixin statusType(title, number, subtitle)
+    .statusType
+        .statusType-title= title 
+        .statusType-number= number 
+        .statusType-subtitle= subtitle 
+
+mixin statusTypeDouble(title, numberOne, numberTwo, subtitleOne, subtitleTwo)
+    .statusTypeDouble
+        .statusTypeDouble-title= title 
+        .statusTypeDouble-container
+            .statusTypeDouble-block
+                .statusTypeDouble-number= numberOne 
+                .statusTypeDouble-subtitle= subtitleOne 
+            .statusTypeDouble-block
+                .statusTypeDouble-number= numberTwo 
+                .statusTypeDouble-subtitle= subtitleTwo 
+            
