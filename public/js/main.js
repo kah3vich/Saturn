@@ -58,6 +58,20 @@ var Header = function Header() {
 
 /***/ }),
 
+/***/ "./src/components/pages/Index/IndexCatalogLink/script.js":
+/*!***************************************************************!*\
+  !*** ./src/components/pages/Index/IndexCatalogLink/script.js ***!
+  \***************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "indexCatalogLink": function() { return /* binding */ indexCatalogLink; }
+/* harmony export */ });
+var indexCatalogLink = function indexCatalogLink() {};
+
+/***/ }),
+
 /***/ "./src/components/pages/Index/IndexMain/script.js":
 /*!********************************************************!*\
   !*** ./src/components/pages/Index/IndexMain/script.js ***!
@@ -72,8 +86,13 @@ var IndexMain = function IndexMain() {
   var addedZeroTextPaginationFraction = function addedZeroTextPaginationFraction(className) {
     var current = $("".concat(className, " .swiper-pagination-current"));
     var total = $("".concat(className, " .swiper-pagination-total"));
-    current.text(current.text() < 9 ? "0".concat(current.text()) : current.text());
-    total.text(total.text() < 9 ? "0".concat(total.text()) : total.text());
+    current.text(current.text() < 10 ? "0".concat(current.text()) : current.text());
+    total.text(total.text() < 10 ? "0".concat(total.text()) : total.text());
+  };
+  var handlerPaginationChange = function handlerPaginationChange(id) {
+    $('.indexMainSwiper .swiper-slide .swiper-pagination-item').removeClass('swiper-pagination-item-active');
+    $(".indexMainSwiper .swiper-slide #swiperPagin_".concat(id)).addClass('swiper-pagination-item-active');
+    indexMainSwiper.slideTo(id);
   };
   var indexMainSwiper = new Swiper('.indexMainSwiper', {
     effect: 'fade',
@@ -88,19 +107,34 @@ var IndexMain = function IndexMain() {
     on: {
       slideChange: function slideChange() {
         addedZeroTextPaginationFraction('.indexMain');
-        var index_currentSlide = indexMainSwiper.realIndex;
-        $('.indexMainSwiper .swiper-pagination-item').removeClass('swiper-pagination-item-active');
-        $(".indexMainSwiper .swiper-pagination-item:eq(".concat(index_currentSlide, ")")).addClass('swiper-pagination-item-active');
+        handlerPaginationChange(indexMainSwiper.realIndex);
       }
     }
   });
   addedZeroTextPaginationFraction('.indexMainSwiper');
   var indexMainSwiperLengthSlide = $('.swiper-wrapper .swiper-slide').length;
-  for (var i = 1; i <= indexMainSwiperLengthSlide; i++) {
-    $('.indexMainSwiper .swiper-pagination').append('<div class="swiper-pagination-item"></div>');
+  for (var i = 0; i < indexMainSwiperLengthSlide; i++) {
+    $('.indexMainSwiper .swiper-pagination').append("<div class=\"swiper-pagination-item\" id=\"swiperPagin_".concat(i, "\"></div>"));
   }
-  $(".indexMainSwiper .swiper-pagination-item:eq(".concat(0, ")")).addClass('swiper-pagination-item-active');
+  $('.indexMainSwiper .swiper-pagination-item').on('click', function (e) {
+    handlerPaginationChange(+e.target.id.replace('swiperPagin_', ''));
+  });
+  handlerPaginationChange(0);
 };
+
+/***/ }),
+
+/***/ "./src/components/pages/Index/IndexSteps/script.js":
+/*!*********************************************************!*\
+  !*** ./src/components/pages/Index/IndexSteps/script.js ***!
+  \*********************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "indexSteps": function() { return /* binding */ indexSteps; }
+/* harmony export */ });
+var indexSteps = function indexSteps() {};
 
 /***/ }),
 
@@ -125,12 +159,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Footer": function() { return /* reexport safe */ _Footer_script_js__WEBPACK_IMPORTED_MODULE_0__.Footer; },
 /* harmony export */   "Header": function() { return /* reexport safe */ _Header_script_js__WEBPACK_IMPORTED_MODULE_1__.Header; },
-/* harmony export */   "IndexMain": function() { return /* reexport safe */ _pages_Index_IndexMain_script_js__WEBPACK_IMPORTED_MODULE_2__.IndexMain; }
+/* harmony export */   "IndexMain": function() { return /* reexport safe */ _pages_Index_IndexMain_script_js__WEBPACK_IMPORTED_MODULE_3__.IndexMain; },
+/* harmony export */   "indexCatalogLink": function() { return /* reexport safe */ _pages_Index_IndexCatalogLink_script_js__WEBPACK_IMPORTED_MODULE_2__.indexCatalogLink; },
+/* harmony export */   "indexSteps": function() { return /* reexport safe */ _pages_Index_IndexSteps_script_js__WEBPACK_IMPORTED_MODULE_4__.indexSteps; }
 /* harmony export */ });
 /* harmony import */ var _Footer_script_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Footer/script.js */ "./src/components/Footer/script.js");
 /* harmony import */ var _Header_script_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header/script.js */ "./src/components/Header/script.js");
-/* harmony import */ var _pages_Index_IndexMain_script_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/Index/IndexMain/script.js */ "./src/components/pages/Index/IndexMain/script.js");
-/* harmony import */ var _pages_PickUp_script_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/PickUp/script.js */ "./src/components/pages/PickUp/script.js");
+/* harmony import */ var _pages_Index_IndexCatalogLink_script_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/Index/IndexCatalogLink/script.js */ "./src/components/pages/Index/IndexCatalogLink/script.js");
+/* harmony import */ var _pages_Index_IndexMain_script_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/Index/IndexMain/script.js */ "./src/components/pages/Index/IndexMain/script.js");
+/* harmony import */ var _pages_Index_IndexSteps_script_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/Index/IndexSteps/script.js */ "./src/components/pages/Index/IndexSteps/script.js");
+/* harmony import */ var _pages_PickUp_script_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/PickUp/script.js */ "./src/components/pages/PickUp/script.js");
+
+
 
 
 

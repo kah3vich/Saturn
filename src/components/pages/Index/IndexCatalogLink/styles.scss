@@ -1,0 +1,135 @@
+.indexCatalogLink {
+	width: 100%;
+	padding: 150px 0 110px 0;
+	background-color: $color-white;
+	& .containers {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: 30px;
+	}
+	&__banner {
+		width: 571px;
+		height: 663px;
+		overflow: hidden;
+		position: relative;
+		border-radius: 20px;
+		&-container {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			& img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		&-text {
+			width: 100%;
+			height: max-content;
+			background: #201547;
+			padding: 32px;
+			box-sizing: border-box;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 2;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			& p {
+				font-weight: 700;
+				font-size: 18px;
+				line-height: 21px;
+				text-transform: uppercase;
+				color: #fff2f2;
+			}
+		}
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 50px;
+		&-title {
+			font-weight: 700;
+			font-size: 40px;
+			line-height: 58px;
+			color: #201547;
+		}
+		&-list {
+			width: 578px;
+			display: flex;
+			align-items: flex-start;
+			justify-content: flex-start;
+			flex-direction: column;
+		}
+		&-item {
+			width: 100%;
+			border-bottom: 1px solid #b9b9b9;
+			transition: all 0.5s ease;
+			&:first-child {
+				border-top: 1px solid #b9b9b9;
+			}
+			&:hover {
+				& .indexCatalogLink__content-number {
+					font-weight: 400;
+					font-size: 18px;
+					line-height: 27px;
+					text-transform: uppercase;
+					color: #050505;
+					transition: all 0.5s ease;
+				}
+				& .indexCatalogLink__content-subtitle {
+					font-weight: 700;
+					font-size: 18px;
+					line-height: 21px;
+					text-transform: uppercase;
+					color: #050505;
+					transition: all 0.5s ease;
+				}
+			}
+		}
+		&-block {
+			display: grid;
+			grid-template-columns: 0.5fr 8fr 1fr;
+			gap: 15px;
+			align-items: center;
+			padding: 19px 0 25px 0;
+		}
+		&-number {
+			font-weight: 350;
+			font-size: 12px;
+			line-height: 27px;
+			text-transform: uppercase;
+			color: #050505;
+			transition: all 0.5s ease;
+		}
+		&-subtitle {
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 21px;
+			text-transform: uppercase;
+			color: #050505;
+			transition: all 0.5s ease;
+		}
+		&-button {
+			background: #f2cd00;
+			border-radius: 10px;
+			margin: 0 0 0 auto;
+			padding: 20px 24px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 20px;
+			& p {
+				font-weight: 700;
+				font-size: 18px;
+				line-height: 21px;
+				text-transform: uppercase;
+				color: #141413;
+			}
+		}
+	}
+}

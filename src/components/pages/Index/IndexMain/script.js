@@ -3,8 +3,17 @@ export const IndexMain = () => {
 		const current = $(`${className} .swiper-pagination-current`)
 		const total = $(`${className} .swiper-pagination-total`)
 
-		current.text(current.text() < 9 ? `0${current.text()}` : current.text())
-		total.text(total.text() < 9 ? `0${total.text()}` : total.text())
+		current.text(current.text() < 10 ? `0${current.text()}` : current.text())
+		total.text(total.text() < 10 ? `0${total.text()}` : total.text())
+	}
+
+	const handlerPaginationChange = id => {
+		$('.indexMainSwiper .swiper-slide .swiper-pagination-item').removeClass(
+			'swiper-pagination-item-active'
+		)
+		$(`.indexMainSwiper .swiper-slide #swiperPagin_${id}`).addClass('swiper-pagination-item-active')
+
+		indexMainSwiper.slideTo(id)
 	}
 
 	const indexMainSwiper = new Swiper('.indexMainSwiper', {
@@ -20,11 +29,7 @@ export const IndexMain = () => {
 		on: {
 			slideChange: function () {
 				addedZeroTextPaginationFraction('.indexMain')
-				const index_currentSlide = indexMainSwiper.realIndex
-				$('.indexMainSwiper .swiper-pagination-item').removeClass('swiper-pagination-item-active')
-				$(`.indexMainSwiper .swiper-pagination-item:eq(${index_currentSlide})`).addClass(
-					'swiper-pagination-item-active'
-				)
+				handlerPaginationChange(indexMainSwiper.realIndex)
 			}
 		}
 	})
@@ -33,9 +38,15 @@ export const IndexMain = () => {
 
 	const indexMainSwiperLengthSlide = $('.swiper-wrapper .swiper-slide').length
 
-	for (let i = 1; i <= indexMainSwiperLengthSlide; i++) {
-		$('.indexMainSwiper .swiper-pagination').append('<div class="swiper-pagination-item"></div>')
+	for (let i = 0; i < indexMainSwiperLengthSlide; i++) {
+		$('.indexMainSwiper .swiper-pagination').append(
+			`<div class="swiper-pagination-item" id="swiperPagin_${i}"></div>`
+		)
 	}
 
-	$(`.indexMainSwiper .swiper-pagination-item:eq(${0})`).addClass('swiper-pagination-item-active')
+	$('.indexMainSwiper .swiper-pagination-item').on('click', function (e) {
+		handlerPaginationChange(+e.target.id.replace('swiperPagin_', ''))
+	})
+
+	handlerPaginationChange(0)
 }
