@@ -27,7 +27,7 @@
 		&-text {
 			width: 100%;
 			height: max-content;
-			background: #201547;
+			background: $color-blue;
 			padding: 32px;
 			box-sizing: border-box;
 			position: absolute;
@@ -42,7 +42,7 @@
 				font-size: 18px;
 				line-height: 21px;
 				text-transform: uppercase;
-				color: #fff2f2;
+				color: $color-white;
 			}
 		}
 	}
@@ -56,7 +56,7 @@
 			font-weight: 700;
 			font-size: 40px;
 			line-height: 58px;
-			color: #201547;
+			color: $color-blue;
 		}
 		&-list {
 			width: 578px;
@@ -67,10 +67,10 @@
 		}
 		&-item {
 			width: 100%;
-			border-bottom: 1px solid #b9b9b9;
+			border-bottom: 1px solid $color-gray-light;
 			transition: all 0.5s ease;
 			&:first-child {
-				border-top: 1px solid #b9b9b9;
+				border-top: 1px solid $color-gray-light;
 			}
 			&:hover {
 				& .indexCatalogLink__content-number {
@@ -78,7 +78,7 @@
 					font-size: 18px;
 					line-height: 27px;
 					text-transform: uppercase;
-					color: #050505;
+					color: $color-black;
 					transition: all 0.5s ease;
 				}
 				& .indexCatalogLink__content-subtitle {
@@ -86,7 +86,7 @@
 					font-size: 18px;
 					line-height: 21px;
 					text-transform: uppercase;
-					color: #050505;
+					color: $color-black;
 					transition: all 0.5s ease;
 				}
 			}
@@ -103,7 +103,7 @@
 			font-size: 12px;
 			line-height: 27px;
 			text-transform: uppercase;
-			color: #050505;
+			color: $color-black;
 			transition: all 0.5s ease;
 		}
 		&-subtitle {
@@ -111,11 +111,11 @@
 			font-size: 18px;
 			line-height: 21px;
 			text-transform: uppercase;
-			color: #050505;
+			color: $color-black;
 			transition: all 0.5s ease;
 		}
 		&-button {
-			background: #f2cd00;
+			background: $color-yellow;
 			border-radius: 10px;
 			margin: 0 0 0 auto;
 			padding: 20px 24px;
@@ -128,7 +128,7 @@
 				font-size: 18px;
 				line-height: 21px;
 				text-transform: uppercase;
-				color: #141413;
+				color: $color-black;
 			}
 		}
 	}

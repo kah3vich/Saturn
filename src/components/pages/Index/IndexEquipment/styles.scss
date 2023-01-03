@@ -1,0 +1,72 @@
+.indexEquipment {
+	width: 100%;
+	padding: 160px 0 130px 0;
+	background-color: $color-light-yellow-green;
+	& .containers {
+		width: 100%;
+		@include flexStyle(flex-start, flex-start, column, 27px);
+	}
+	&__subtitle {
+		@include fontStyle(14px, 400, 16px, $color-gray-light);
+	}
+	&__title {
+		@include fontStyle(40px, 700, 58px, $color-blue-black);
+	}
+	&__list {
+		margin-top: 43px;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+		gap: 0 74px;
+		width: 100%;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 1px;
+			height: 100%;
+			background-color: $color-gray-light;
+		}
+		& li {
+			&:nth-child(even) {
+				padding-top: 75px;
+			}
+		}
+	}
+}
+
+// Mixin
+
+.cardEquipment {
+	width: 100%;
+	background: $color-white;
+	border-radius: 20px;
+	overflow: hidden;
+	transition: all 0.5s ease;
+	@include flexStyle(flex-start, flex-start, column);
+	&:hover {
+		& {
+			box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+			transition: all 0.5s ease;
+		}
+		& .cardEquipment__content-title {
+			text-decoration-line: underline;
+			transition: all 0.5s ease;
+		}
+	}
+	&__content {
+		background-color: $color-white;
+		padding: 30px 44px;
+		@include flexStyle(flex-start, flex-start, column, 36px);
+		&-title {
+			@include fontStyle(22px, 700, 25px, $color-blue);
+			transition: all 0.5s ease;
+			text-transform: uppercase;
+		}
+		&-text {
+			@include fontStyle(20px, 400, 31px, $color-black);
+		}
+	}
+}

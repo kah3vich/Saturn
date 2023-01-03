@@ -72,6 +72,20 @@ var indexCatalogLink = function indexCatalogLink() {};
 
 /***/ }),
 
+/***/ "./src/components/pages/Index/IndexEquipment/script.js":
+/*!*************************************************************!*\
+  !*** ./src/components/pages/Index/IndexEquipment/script.js ***!
+  \*************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "IndexEquipment": function() { return /* binding */ IndexEquipment; }
+/* harmony export */ });
+var IndexEquipment = function IndexEquipment() {};
+
+/***/ }),
+
 /***/ "./src/components/pages/Index/IndexMain/script.js":
 /*!********************************************************!*\
   !*** ./src/components/pages/Index/IndexMain/script.js ***!
@@ -159,16 +173,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Footer": function() { return /* reexport safe */ _Footer_script_js__WEBPACK_IMPORTED_MODULE_0__.Footer; },
 /* harmony export */   "Header": function() { return /* reexport safe */ _Header_script_js__WEBPACK_IMPORTED_MODULE_1__.Header; },
-/* harmony export */   "IndexMain": function() { return /* reexport safe */ _pages_Index_IndexMain_script_js__WEBPACK_IMPORTED_MODULE_3__.IndexMain; },
+/* harmony export */   "IndexEquipment": function() { return /* reexport safe */ _pages_Index_IndexEquipment_script_js__WEBPACK_IMPORTED_MODULE_3__.IndexEquipment; },
+/* harmony export */   "IndexMain": function() { return /* reexport safe */ _pages_Index_IndexMain_script_js__WEBPACK_IMPORTED_MODULE_4__.IndexMain; },
 /* harmony export */   "indexCatalogLink": function() { return /* reexport safe */ _pages_Index_IndexCatalogLink_script_js__WEBPACK_IMPORTED_MODULE_2__.indexCatalogLink; },
-/* harmony export */   "indexSteps": function() { return /* reexport safe */ _pages_Index_IndexSteps_script_js__WEBPACK_IMPORTED_MODULE_4__.indexSteps; }
+/* harmony export */   "indexSteps": function() { return /* reexport safe */ _pages_Index_IndexSteps_script_js__WEBPACK_IMPORTED_MODULE_5__.indexSteps; }
 /* harmony export */ });
 /* harmony import */ var _Footer_script_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Footer/script.js */ "./src/components/Footer/script.js");
 /* harmony import */ var _Header_script_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header/script.js */ "./src/components/Header/script.js");
 /* harmony import */ var _pages_Index_IndexCatalogLink_script_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/Index/IndexCatalogLink/script.js */ "./src/components/pages/Index/IndexCatalogLink/script.js");
-/* harmony import */ var _pages_Index_IndexMain_script_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/Index/IndexMain/script.js */ "./src/components/pages/Index/IndexMain/script.js");
-/* harmony import */ var _pages_Index_IndexSteps_script_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/Index/IndexSteps/script.js */ "./src/components/pages/Index/IndexSteps/script.js");
-/* harmony import */ var _pages_PickUp_script_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/PickUp/script.js */ "./src/components/pages/PickUp/script.js");
+/* harmony import */ var _pages_Index_IndexEquipment_script_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/Index/IndexEquipment/script.js */ "./src/components/pages/Index/IndexEquipment/script.js");
+/* harmony import */ var _pages_Index_IndexMain_script_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/Index/IndexMain/script.js */ "./src/components/pages/Index/IndexMain/script.js");
+/* harmony import */ var _pages_Index_IndexSteps_script_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/Index/IndexSteps/script.js */ "./src/components/pages/Index/IndexSteps/script.js");
+/* harmony import */ var _pages_PickUp_script_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/PickUp/script.js */ "./src/components/pages/PickUp/script.js");
+
 
 
 

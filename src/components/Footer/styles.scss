@@ -32,14 +32,16 @@
 		}
 	}
 	&__subtitle {
-		font-weight: 400;
+		/* font-weight: 400;
 		font-size: 14px;
-		line-height: 22px;
+		line-height: 22px; */
+		@include fontStyle(14px, 400, 22px, $color-white);
 	}
 	&__text {
-		font-weight: 400;
+		@include fontStyle(16px, 400, 24px, $color-white);
+		/* font-weight: 400;
 		font-size: 16px;
-		line-height: 24px;
+		line-height: 24px; */
 	}
 	&__logo {
 		cursor: pointer;
@@ -50,15 +52,17 @@
 		justify-content: center;
 		gap: 22px;
 		& a {
-			font-weight: 700;
+			/* font-weight: 700;
 			font-size: 26px;
 			line-height: 21px;
-			color: $color-white;
+			color: $color-white; */
+			@include fontStyle(26px, 700, 21px, $color-white);
 		}
 		& p {
-			font-weight: 400;
+			/* font-weight: 400;
 			font-size: 16px;
-			line-height: 21px;
+			line-height: 21px; */
+			@include fontStyle(16px, 400, 21px, $color-white);
 		}
 	}
 	&__social {
@@ -68,9 +72,10 @@
 		justify-content: flex-start;
 		gap: 20px;
 		&-title {
-			font-weight: 700;
+			/* font-weight: 700;
 			font-size: 16px;
-			line-height: 24px;
+			line-height: 24px; */
+			@include fontStyle(16px, 700, 24px, $color-white);
 			text-transform: uppercase;
 		}
 		&-list {
@@ -101,10 +106,11 @@
 		gap: 20px;
 		&-item {
 			& a {
-				color: $color-white;
+				/* color: $color-white;
 				font-weight: 400;
 				font-size: 16px;
-				line-height: 21px;
+				line-height: 21px; */
+				@include fontStyle(16px, 400, 21px, $color-white);
 			}
 		}
 	}
@@ -115,7 +121,7 @@
 		justify-content: flex-start;
 		gap: 40px;
 		&-button {
-			background: #f2cd00;
+			background: $color-yellow;
 			border-radius: 10px;
 			padding: 23px 38px;
 			display: flex;
@@ -124,10 +130,11 @@
 			gap: 35px;
 			cursor: pointer;
 			& p {
-				font-weight: 700;
+				/* font-weight: 700;
 				font-size: 18px;
 				line-height: 21px;
-				color: $color-black;
+				color: $color-black; */
+				@include fontStyle(18px, 700, 21px, $color-black);
 			}
 		}
 		&-list {
@@ -143,10 +150,11 @@
 			justify-content: flex-start;
 			gap: 20px;
 			& p {
-				font-weight: 400;
+				/* font-weight: 400;
 				font-size: 16px;
 				line-height: 24px;
-				color: $color-white;
+				color: $color-white; */
+				@include fontStyle(16px, 400, 24px, $color-white);
 			}
 		}
 	}

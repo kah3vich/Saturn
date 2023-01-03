@@ -1,0 +1,8 @@
+.indexEquipment
+    .containers 
+        .indexEquipment__subtitle Выбор помещения
+        .indexEquipment__title Что будем оборудовать ?
+        ul.indexEquipment__list 
+            each _, i in Array(4)
+                li.indexEquipment__item
+                    +cardEquipment('АРХИВ', 'Комплексное оснащение архивной отрасли. Архив конструкторской документации, регистратуры, поликлиники')

@@ -1,0 +1,30 @@
+@mixin fontStyle(
+	$fontSize: 16px,
+	$fontWeight: 400,
+	$lineHeight: 20px,
+	$color: $color-black,
+	$fontStyle: normal,
+	$letterSpacing: normal
+) {
+	font-weight: $fontWeight;
+	font-size: $fontSize;
+	line-height: $lineHeight;
+	color: $color;
+	font-style: $fontStyle;
+	letter-spacing: $letterSpacing;
+}
+
+@mixin flexStyle(
+	$alignItems: flex-start,
+	$justifyContent: flex-start,
+	$flexDirection: row,
+	$gap: 0px,
+	$flexWrap: nowrap
+) {
+	display: flex;
+	align-items: $alignItems;
+	justify-content: $justifyContent;
+	flex-direction: $flexDirection;
+	gap: $gap;
+	flex-wrap: $flexWrap;
+}

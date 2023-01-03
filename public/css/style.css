@@ -1,187 +1,13 @@
 @font-face {
-	font-family : Inter;
+	font-family : Arial;
 	font-display : swap;
-	src : url("../fonts/Inter-Black.woff") format("woff"), url("../fonts/Inter-Black.woff2") format("woff2");
-	font-weight : 900;
-	font-style : normal;
-}
-
-@font-face {
-	font-family : Inter;
-	font-display : swap;
-	src : url("../fonts/Inter-Bold.woff") format("woff"), url("../fonts/Inter-Bold.woff2") format("woff2");
-	font-weight : 700;
-	font-style : normal;
-}
-
-@font-face {
-	font-family : Inter;
-	font-display : swap;
-	src : url("../fonts/Inter-ExtraLight.woff") format("woff"), url("../fonts/Inter-ExtraLight.woff2") format("woff2");
-	font-weight : 200;
-	font-style : normal;
-}
-
-@font-face {
-	font-family : Inter;
-	font-display : swap;
-	src : url("../fonts/Inter-Light.woff") format("woff"), url("../fonts/Inter-Light.woff2") format("woff2");
-	font-weight : 300;
-	font-style : normal;
-}
-
-@font-face {
-	font-family : Inter;
-	font-display : swap;
-	src : url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.woff2") format("woff2");
-	font-weight : 500;
-	font-style : normal;
-}
-
-@font-face {
-	font-family : Inter;
-	font-display : swap;
-	src : url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
+	src : url("../fonts/Arial-Regular.woff") format("woff"), url("../fonts/Arial-Regular.woff2") format("woff2");
 	font-weight : 400;
 	font-style : normal;
 }
 
-@font-face {
-	font-family : Inter;
-	font-display : swap;
-	src : url("../fonts/Inter-ExtraBold.woff") format("woff"), url("../fonts/Inter-ExtraBold.woff2") format("woff2");
-	font-weight : 800;
-	font-style : normal;
-}
-
-@font-face {
-	font-family : NunitoSans;
-	font-display : swap;
-	src : url("../fonts/NunitoSans-Black.woff") format("woff"), url("../fonts/NunitoSans-Black.woff2") format("woff2");
-	font-weight : 900;
-	font-style : normal;
-}
-
-@font-face {
-	font-family : NunitoSans;
-	font-display : swap;
-	src : url("../fonts/NunitoSans-BlackItalic.woff") format("woff"), url("../fonts/NunitoSans-BlackItalic.woff2") format("woff2");
-	font-weight : 900;
-	font-style : italic;
-}
-
-@font-face {
-	font-family : Inter;
-	font-display : swap;
-	src : url("../fonts/Inter-SemiBold.woff") format("woff"), url("../fonts/Inter-SemiBold.woff2") format("woff2");
-	font-weight : 600;
-	font-style : normal;
-}
-
-@font-face {
-	font-family : Inter;
-	font-display : swap;
-	src : url("../fonts/Inter-Thin.woff") format("woff"), url("../fonts/Inter-Thin.woff2") format("woff2");
-	font-weight : 100;
-	font-style : normal;
-}
-
-@font-face {
-	font-family : NunitoSans;
-	font-display : swap;
-	src : url("../fonts/NunitoSans-Bold.woff") format("woff"), url("../fonts/NunitoSans-Bold.woff2") format("woff2");
-	font-weight : 700;
-	font-style : normal;
-}
-
-@font-face {
-	font-family : NunitoSans;
-	font-display : swap;
-	src : url("../fonts/NunitoSans-BoldItalic.woff") format("woff"), url("../fonts/NunitoSans-BoldItalic.woff2") format("woff2");
-	font-weight : 700;
-	font-style : italic;
-}
-
-@font-face {
-	font-family : NunitoSans;
-	font-display : swap;
-	src : url("../fonts/NunitoSans-ExtraBoldItalic.woff") format("woff"), url("../fonts/NunitoSans-ExtraBoldItalic.woff2") format("woff2");
-	font-weight : 800;
-	font-style : italic;
-}
-
-@font-face {
-	font-family : NunitoSans;
-	font-display : swap;
-	src : url("../fonts/NunitoSans-ExtraBold.woff") format("woff"), url("../fonts/NunitoSans-ExtraBold.woff2") format("woff2");
-	font-weight : 800;
-	font-style : normal;
-}
-
-@font-face {
-	font-family : NunitoSans;
-	font-display : swap;
-	src : url("../fonts/NunitoSans-ExtraLight.woff") format("woff"), url("../fonts/NunitoSans-ExtraLight.woff2") format("woff2");
-	font-weight : 200;
-	font-style : normal;
-}
-
-@font-face {
-	font-family : NunitoSans;
-	font-display : swap;
-	src : url("../fonts/NunitoSans-Italic.woff") format("woff"), url("../fonts/NunitoSans-Italic.woff2") format("woff2");
-	font-weight : 400;
-	font-style : italic;
-}
-
-@font-face {
-	font-family : NunitoSans;
-	font-display : swap;
-	src : url("../fonts/NunitoSans-Light.woff") format("woff"), url("../fonts/NunitoSans-Light.woff2") format("woff2");
-	font-weight : 300;
-	font-style : normal;
-}
-
-@font-face {
-	font-family : NunitoSans;
-	font-display : swap;
-	src : url("../fonts/NunitoSans-LightItalic.woff") format("woff"), url("../fonts/NunitoSans-LightItalic.woff2") format("woff2");
-	font-weight : 300;
-	font-style : italic;
-}
-
-@font-face {
-	font-family : NunitoSans;
-	font-display : swap;
-	src : url("../fonts/NunitoSans-ExtraLightItalic.woff") format("woff"), url("../fonts/NunitoSans-ExtraLightItalic.woff2") format("woff2");
-	font-weight : 200;
-	font-style : italic;
-}
-
-@font-face {
-	font-family : NunitoSans;
-	font-display : swap;
-	src : url("../fonts/NunitoSans-SemiBoldItalic.woff") format("woff"), url("../fonts/NunitoSans-SemiBoldItalic.woff2") format("woff2");
-	font-weight : 600;
-	font-style : italic;
-}
-
-@font-face {
-	font-family : NunitoSans;
-	font-display : swap;
-	src : url("../fonts/NunitoSans-Regular.woff") format("woff"), url("../fonts/NunitoSans-Regular.woff2") format("woff2");
-	font-weight : 400;
-	font-style : normal;
-}
-
-@font-face {
-	font-family : NunitoSans;
-	font-display : swap;
-	src : url("../fonts/NunitoSans-SemiBold.woff") format("woff"), url("../fonts/NunitoSans-SemiBold.woff2") format("woff2");
-	font-weight : 600;
-	font-style : normal;
-}
-
+*
+,
 *::before
 ,
 *::after {
@@ -199,26 +25,9 @@
 }
 
 body {
-	-webkit-box-sizing : border-box;
-	        box-sizing : border-box;
 	margin : 0;
-	background-color : gray;
-	font-family : Arial, Helvetica, sans-serif;
+	font-family : Arial, sans-serif;
 	font-style : normal;
-	display : -webkit-box;
-	display : -ms-flexbox;
-	display : flex;
-	-webkit-box-orient : vertical;
-	-webkit-box-direction : normal;
-	-ms-flex-direction : column;
-	    flex-direction : column;
-	-webkit-box-align : center;
-	-ms-flex-align : center;
-	align-items : center;
-	-webkit-box-pack : justify;
-	-ms-flex-pack : justify;
-	justify-content : space-between;
-	height : 100vh;
 }
 
 a {
@@ -374,6 +183,8 @@ opacity-h {
 	font-size : 10px;
 	line-height : 13px;
 	color : #262626;
+	font-style : normal;
+	letter-spacing : normal;
 }
 
 .header__email {
@@ -439,6 +250,8 @@ opacity-h {
 	background-color : #ffffff;
 	width : 75px;
 	position : relative;
+	-webkit-box-sizing : content-box;
+	        box-sizing : content-box;
 }
 
 .headerCitySelect::after {
@@ -487,6 +300,8 @@ opacity-h {
 	-webkit-line-clamp : 1;
 	-webkit-box-orient : vertical;
 	white-space : nowrap;
+	-webkit-box-sizing : content-box;
+	        box-sizing : content-box;
 }
 
 .headerCitySelect-block {
@@ -628,15 +443,27 @@ opacity-h {
 }
 
 .footer__subtitle {
+	/* font-weight: 400;
+  font-size: 14px;
+  line-height: 22px; */
 	font-weight : 400;
 	font-size : 14px;
 	line-height : 22px;
+	color : #ffffff;
+	font-style : normal;
+	letter-spacing : normal;
 }
 
 .footer__text {
 	font-weight : 400;
 	font-size : 16px;
 	line-height : 24px;
+	color : #ffffff;
+	font-style : normal;
+	letter-spacing : normal;
+	/* font-weight: 400;
+  font-size: 16px;
+  line-height: 24px; */
 }
 
 .footer__logo {
@@ -657,16 +484,28 @@ opacity-h {
 }
 
 .footer__phone a {
+	/* font-weight: 700;
+  font-size: 26px;
+  line-height: 21px;
+  color: $color-white; */
 	font-weight : 700;
 	font-size : 26px;
 	line-height : 21px;
 	color : #ffffff;
+	font-style : normal;
+	letter-spacing : normal;
 }
 
 .footer__phone p {
+	/* font-weight: 400;
+  font-size: 16px;
+  line-height: 21px; */
 	font-weight : 400;
 	font-size : 16px;
 	line-height : 21px;
+	color : #ffffff;
+	font-style : normal;
+	letter-spacing : normal;
 }
 
 .footer__social {
@@ -687,9 +526,15 @@ opacity-h {
 }
 
 .footer__social-title {
+	/* font-weight: 700;
+  font-size: 16px;
+  line-height: 24px; */
 	font-weight : 700;
 	font-size : 16px;
 	line-height : 24px;
+	color : #ffffff;
+	font-style : normal;
+	letter-spacing : normal;
 	text-transform : uppercase;
 }
 
@@ -745,10 +590,16 @@ opacity-h {
 }
 
 .footer__list-item a {
-	color : #ffffff;
+	/* color: $color-white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px; */
 	font-weight : 400;
 	font-size : 16px;
 	line-height : 21px;
+	color : #ffffff;
+	font-style : normal;
+	letter-spacing : normal;
 }
 
 .footer__contact {
@@ -769,7 +620,7 @@ opacity-h {
 }
 
 .footer__contact-button {
-	background : #f2cd00;
+	background : #f2ce14;
 	border-radius : 10px;
 	padding : 23px 38px;
 	display : -webkit-box;
@@ -786,10 +637,16 @@ opacity-h {
 }
 
 .footer__contact-button p {
+	/* font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: $color-black; */
 	font-weight : 700;
 	font-size : 18px;
 	line-height : 21px;
 	color : #141413;
+	font-style : normal;
+	letter-spacing : normal;
 }
 
 .footer__contact-list {
@@ -823,10 +680,16 @@ opacity-h {
 }
 
 .footer__contact-item p {
+	/* font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-white; */
 	font-weight : 400;
 	font-size : 16px;
 	line-height : 24px;
 	color : #ffffff;
+	font-style : normal;
+	letter-spacing : normal;
 }
 
 .indexMain {
@@ -1249,7 +1112,7 @@ opacity-h {
 }
 
 .indexMain .swiper-button-disabled svg path {
-	fill : #7e7e7e;
+	fill : #505050;
 }
 
 .indexMain .swiper-pagination {
@@ -1324,7 +1187,6 @@ opacity-h {
 .indexMain .swiper-pagination-total {
 	-ms-grid-row : 5;
 	-ms-grid-column : 3;
-	font-style : normal;
 	font-weight : 400;
 	font-size : 20px;
 	line-height : 24px;
@@ -1350,7 +1212,6 @@ opacity-h {
 }
 
 .indexMain .swiper-counter {
-	font-style : normal;
 	font-weight : 400;
 	font-size : 20px;
 	line-height : 24px;
@@ -1553,7 +1414,7 @@ opacity-h {
 	font-size : 18px;
 	line-height : 21px;
 	text-transform : uppercase;
-	color : #fff2f2;
+	color : #ffffff;
 }
 
 .indexCatalogLink__content {
@@ -1599,14 +1460,14 @@ opacity-h {
 
 .indexCatalogLink__content-item {
 	width : 100%;
-	border-bottom : 1px solid #b9b9b9;
+	border-bottom : 1px solid #a5a5a5;
 	-webkit-transition : all 0.5s ease;
 	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 }
 
 .indexCatalogLink__content-item:first-child {
-	border-top : 1px solid #b9b9b9;
+	border-top : 1px solid #a5a5a5;
 }
 
 .indexCatalogLink__content-item:hover .indexCatalogLink__content-number {
@@ -1614,7 +1475,7 @@ opacity-h {
 	font-size : 18px;
 	line-height : 27px;
 	text-transform : uppercase;
-	color : #050505;
+	color : #141413;
 	-webkit-transition : all 0.5s ease;
 	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
@@ -1625,7 +1486,7 @@ opacity-h {
 	font-size : 18px;
 	line-height : 21px;
 	text-transform : uppercase;
-	color : #050505;
+	color : #141413;
 	-webkit-transition : all 0.5s ease;
 	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
@@ -1648,7 +1509,7 @@ opacity-h {
 	font-size : 12px;
 	line-height : 27px;
 	text-transform : uppercase;
-	color : #050505;
+	color : #141413;
 	-webkit-transition : all 0.5s ease;
 	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
@@ -1659,14 +1520,14 @@ opacity-h {
 	font-size : 18px;
 	line-height : 21px;
 	text-transform : uppercase;
-	color : #050505;
+	color : #141413;
 	-webkit-transition : all 0.5s ease;
 	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 }
 
 .indexCatalogLink__content-button {
-	background : #f2cd00;
+	background : #f2ce14;
 	border-radius : 10px;
 	margin : 0 0 0 auto;
 	padding : 20px 24px;
@@ -1777,7 +1638,7 @@ opacity-h {
 	width : 210px;
 	height : 210px;
 	border-radius : 50%;
-	border : 2px solid #f2cd00;
+	border : 2px solid #f2ce14;
 	z-index : 1;
 }
 
@@ -1788,7 +1649,7 @@ opacity-h {
 	-webkit-transform : translate(0, -50%);
 	    -ms-transform : translate(0, -50%);
 	        transform : translate(0, -50%);
-	-webkit-text-stroke : 2px #f2cd00;
+	-webkit-text-stroke : 2px #f2ce14;
 	color : #201547;
 	font-size : 260px;
 	font-weight : 400;
@@ -1811,4 +1672,159 @@ opacity-h {
 	background : #ffffff;
 	position : relative;
 	z-index : 5;
+}
+
+.indexEquipment {
+	width : 100%;
+	padding : 160px 0 130px 0;
+	background-color : #f1f2ed;
+}
+
+.indexEquipment .containers {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	gap : 27px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.indexEquipment__subtitle {
+	font-weight : 400;
+	font-size : 14px;
+	line-height : 16px;
+	color : #a5a5a5;
+	font-style : normal;
+	letter-spacing : normal;
+}
+
+.indexEquipment__title {
+	font-weight : 700;
+	font-size : 40px;
+	line-height : 58px;
+	color : #140848;
+	font-style : normal;
+	letter-spacing : normal;
+}
+
+.indexEquipment__list {
+	margin-top : 43px;
+	display : -ms-grid;
+	display :     grid;
+	grid-template-columns : repeat(auto-fill, minmax(550px, 1fr));
+	gap : 0 74px;
+	width : 100%;
+	position : relative;
+}
+
+.indexEquipment__list::after {
+	content : "";
+	position : absolute;
+	top : 50%;
+	left : 50%;
+	-webkit-transform : translate(-50%, -50%);
+	    -ms-transform : translate(-50%, -50%);
+	        transform : translate(-50%, -50%);
+	width : 1px;
+	height : 100%;
+	background-color : #a5a5a5;
+}
+
+.indexEquipment__list li:nth-child(even) {
+	padding-top : 75px;
+}
+
+.cardEquipment {
+	width : 100%;
+	background : #ffffff;
+	border-radius : 20px;
+	overflow : hidden;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	gap : 0px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.cardEquipment:hover {
+	-webkit-box-shadow : 0px 4px 14px rgba(0, 0, 0, 0.25);
+	        box-shadow : 0px 4px 14px rgba(0, 0, 0, 0.25);
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+}
+
+.cardEquipment:hover .cardEquipment__content-title {
+	text-decoration-line : underline;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+}
+
+.cardEquipment__content {
+	background-color : #ffffff;
+	padding : 30px 44px;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	gap : 36px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.cardEquipment__content-title {
+	font-weight : 700;
+	font-size : 22px;
+	line-height : 25px;
+	color : #201547;
+	font-style : normal;
+	letter-spacing : normal;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+	text-transform : uppercase;
+}
+
+.cardEquipment__content-text {
+	font-weight : 400;
+	font-size : 20px;
+	line-height : 31px;
+	color : #141413;
+	font-style : normal;
+	letter-spacing : normal;
 }
