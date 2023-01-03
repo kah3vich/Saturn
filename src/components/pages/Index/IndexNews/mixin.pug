@@ -1,0 +1,8 @@
+mixin cardNews(date, title, link)
+    .cardNews 
+        p.cardNews__date= date 
+        p.cardNews__title= title
+        a(href=link).cardNews__link
+            svg(xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none")
+                path(d="M2 12L12 2" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round")
+                path(d="M2 2H12V12" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round")

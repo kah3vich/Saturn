@@ -3,41 +3,23 @@
 	padding: 80px 0 90px 0;
 	width: 100%;
 	& .containers {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: flex-start;
-		gap: 70px;
+		@include flexStyle(flex-start, flex-start, column, 70px);
 	}
 	&__title {
-		font-weight: 700;
-		font-size: 40px;
-		line-height: 58px;
-		color: $color-white;
+		@include fontStyle(40px, 700, 58px, $color-white);
 	}
 	&__list {
 		width: 100%;
-		display: flex;
-		align-items: flex-end;
-		justify-content: center;
-		gap: 80px;
-		flex-wrap: wrap;
+		@include flexStyle(flex-start, center, row, 80px, wrap);
 	}
 	&__item {
 		max-width: 250px;
 		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: flex-start;
-		gap: 50px;
+		@include flexStyle(center, flex-start, column, 50px);
 	}
 	&__text {
-		font-weight: 400;
-		font-size: 24px;
-		line-height: 34px;
 		text-align: center;
-		color: $color-white;
+		@include fontStyle(24px, 400, 34px, $color-white);
 	}
 	&__icon {
 		position: relative;
@@ -58,18 +40,14 @@
 			left: -95px;
 			transform: translate(0, -50%);
 			-webkit-text-stroke: 2px $color-yellow;
-			color: $color-blue;
-			font-size: 260px;
-			font-weight: 400;
+			@include fontStyle(260px, 400, 260px, $color-blue);
 			z-index: 1;
 		}
 		&-block {
 			width: 176px;
 			height: 176px;
 			border-radius: 50%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
+			@include flexStyle(center, center);
 			background: $color-white;
 			position: relative;
 			z-index: 5;

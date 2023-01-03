@@ -3,10 +3,7 @@
 	padding: 150px 0 110px 0;
 	background-color: $color-white;
 	& .containers {
-		display: flex;
-		align-items: flex-start;
-		justify-content: space-between;
-		gap: 30px;
+		@include flexStyle(flex-start, space-between, row, 30px);
 	}
 	&__banner {
 		width: 571px;
@@ -34,36 +31,22 @@
 			bottom: 0;
 			left: 0;
 			z-index: 2;
-			display: flex;
-			align-items: center;
-			justify-content: center;
+			@include flexStyle(center, center);
 			& p {
-				font-weight: 700;
-				font-size: 18px;
-				line-height: 21px;
 				text-transform: uppercase;
-				color: $color-white;
+				@include fontStyle(18px, 700, 21px, $color-white);
 			}
 		}
 	}
 	&__content {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: flex-start;
+		@include flexStyle(flex-start, flex-start, column);
 		gap: 50px;
 		&-title {
-			font-weight: 700;
-			font-size: 40px;
-			line-height: 58px;
-			color: $color-blue;
+			@include fontStyle(40px, 700, 58px, $color-blue);
 		}
 		&-list {
 			width: 578px;
-			display: flex;
-			align-items: flex-start;
-			justify-content: flex-start;
-			flex-direction: column;
+			@include flexStyle(flex-start, flex-start, column);
 		}
 		&-item {
 			width: 100%;
@@ -74,19 +57,13 @@
 			}
 			&:hover {
 				& .indexCatalogLink__content-number {
-					font-weight: 400;
-					font-size: 18px;
-					line-height: 27px;
 					text-transform: uppercase;
-					color: $color-black;
+					@include fontStyle(18px, 400, 27px, $color-black);
 					transition: all 0.5s ease;
 				}
 				& .indexCatalogLink__content-subtitle {
-					font-weight: 700;
-					font-size: 18px;
-					line-height: 21px;
 					text-transform: uppercase;
-					color: $color-black;
+					@include fontStyle(18px, 700, 21px, $color-black);
 					transition: all 0.5s ease;
 				}
 			}
@@ -99,37 +76,17 @@
 			padding: 19px 0 25px 0;
 		}
 		&-number {
-			font-weight: 350;
-			font-size: 12px;
-			line-height: 27px;
 			text-transform: uppercase;
-			color: $color-black;
+			@include fontStyle(12px, 350, 27px, $color-black);
 			transition: all 0.5s ease;
 		}
 		&-subtitle {
-			font-weight: 400;
-			font-size: 18px;
-			line-height: 21px;
 			text-transform: uppercase;
-			color: $color-black;
+			@include fontStyle(18px, 400, 21px, $color-black);
 			transition: all 0.5s ease;
 		}
 		&-button {
-			background: $color-yellow;
-			border-radius: 10px;
 			margin: 0 0 0 auto;
-			padding: 20px 24px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			gap: 20px;
-			& p {
-				font-weight: 700;
-				font-size: 18px;
-				line-height: 21px;
-				text-transform: uppercase;
-				color: $color-black;
-			}
 		}
 	}
 }

@@ -5,3 +5,17 @@
 @import './pages/Index/IndexCatalogLink/styles';
 @import './pages/Index/IndexSteps/styles';
 @import './pages/Index/IndexEquipment/styles';
+@import './pages/Index/IndexNews/styles';
+
+// Mixin
+
+.buttonYellow {
+	padding: 23px 30px;
+	@include flexStyle(center, center, row, 25px);
+	cursor: pointer;
+	background-color: $color-yellow;
+	border-radius: 10px;
+	&__text {
+		@include fontStyle(18px, 700, 18px, $color-black);
+	}
+}

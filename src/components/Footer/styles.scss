@@ -6,19 +6,12 @@
 	padding: 55px 0 65px 0;
 	color: $color-white;
 	&__container {
-		display: flex;
-		align-items: flex-start;
-		justify-content: flex-start;
-		flex-direction: column;
-		gap: 40px;
+		@include flexStyle(flex-start, flex-start, column, 40px);
 		width: 100%;
 	}
 	&__block {
 		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		gap: 78px;
+		@include flexStyle(center, space-between, row, 78px);
 		box-sizing: border-box;
 		&:nth-child(1) {
 			padding-right: 80px;
@@ -32,57 +25,31 @@
 		}
 	}
 	&__subtitle {
-		/* font-weight: 400;
-		font-size: 14px;
-		line-height: 22px; */
 		@include fontStyle(14px, 400, 22px, $color-white);
 	}
 	&__text {
 		@include fontStyle(16px, 400, 24px, $color-white);
-		/* font-weight: 400;
-		font-size: 16px;
-		line-height: 24px; */
 	}
 	&__logo {
 		cursor: pointer;
 	}
 	&__phone {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 22px;
+		@include flexStyle(center, space-between, row, 22px);
 		& a {
-			/* font-weight: 700;
-			font-size: 26px;
-			line-height: 21px;
-			color: $color-white; */
 			@include fontStyle(26px, 700, 21px, $color-white);
 		}
 		& p {
-			/* font-weight: 400;
-			font-size: 16px;
-			line-height: 21px; */
 			@include fontStyle(16px, 400, 21px, $color-white);
 		}
 	}
 	&__social {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: flex-start;
-		gap: 20px;
+		@include flexStyle(flex-start, flex-start, column, 20px);
 		&-title {
-			/* font-weight: 700;
-			font-size: 16px;
-			line-height: 24px; */
 			@include fontStyle(16px, 700, 24px, $color-white);
 			text-transform: uppercase;
 		}
 		&-list {
-			display: flex;
-			align-items: center;
-			justify-content: flex-start;
-			gap: 10px;
+			@include flexStyle(center, flex-start, row, 10px);
 		}
 		&-item {
 			width: 47px;
@@ -92,68 +59,36 @@
 			& a {
 				width: 47px;
 				height: 47px;
-				display: flex;
-				align-items: center;
-				justify-content: center;
+				@include flexStyle(center, center);
 			}
 		}
 	}
 	&__list {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: flex-start;
-		gap: 20px;
+		@include flexStyle(flex-start, flex-start, column, 20px);
 		&-item {
 			& a {
-				/* color: $color-white;
-				font-weight: 400;
-				font-size: 16px;
-				line-height: 21px; */
 				@include fontStyle(16px, 400, 21px, $color-white);
 			}
 		}
 	}
 	&__contact {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: flex-start;
-		gap: 40px;
+		@include flexStyle(flex-start, flex-start, column, 40px);
 		&-button {
 			background: $color-yellow;
 			border-radius: 10px;
 			padding: 23px 38px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			gap: 35px;
+			@include flexStyle(center, center, row, 35px);
 			cursor: pointer;
 			& p {
-				/* font-weight: 700;
-				font-size: 18px;
-				line-height: 21px;
-				color: $color-black; */
 				@include fontStyle(18px, 700, 21px, $color-black);
 			}
 		}
 		&-list {
-			display: flex;
-			align-items: flex-start;
-			justify-content: flex-start;
-			flex-direction: column;
-			gap: 20px;
+			@include flexStyle(flex-start, flex-start, column, 20px);
 		}
 		&-item {
-			display: flex;
-			align-items: center;
-			justify-content: flex-start;
-			gap: 20px;
+			@include flexStyle(center, flex-start, row, 20px);
 			& p {
-				/* font-weight: 400;
-				font-size: 16px;
-				line-height: 24px;
-				color: $color-white; */
 				@include fontStyle(16px, 400, 24px, $color-white);
 			}
 		}

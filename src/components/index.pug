@@ -4,4 +4,13 @@ include pages/PickUp/mixin.pug
 include pages/Index/IndexMain/mixin.pug
 include pages/Index/IndexEquipment/mixin.pug
 include pages/Index/indexCatalogLink/mixin.pug
+include pages/Index/indexNews/mixin.pug
 include pages/Index/indexSteps/mixin.pug
+
+//- Mixin
+
+mixin buttonYellow(text, link)
+    a(href=link)
+        button.buttonYellow
+            p.buttonYellow__text= text
+            img(src="./svg/mixin/arrow-link.svg" alt="").buttonYellow__img

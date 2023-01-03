@@ -2,23 +2,17 @@
 	width: 100%;
 	min-height: 70px;
 	background: $color-white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@include flexStyle(center, center);
 	& .containers {
 		width: 100%;
 	}
 	&__container {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		gap: 30px;
+		@include flexStyle(center, space-between, row, 30px);
 		width: 100%;
 	}
 	&__block {
 		width: max-content;
-		display: flex;
-		align-items: center;
+		@include flexStyle(center);
 		&:first-child {
 			justify-content: flex-start;
 			gap: 32px;
@@ -35,29 +29,16 @@
 		@include fontStyle(10px, 400, 13px, $color-gray-black);
 	}
 	&__email {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 11px;
+		@include flexStyle(center, center, row, 11px);
 		& p {
-			font-weight: 400;
-			font-size: 15px;
-			line-height: 19px;
+			@include fontStyle(15px, 400, 19px, $color-blue-black);
 			letter-spacing: -0.5px;
-			color: $color-blue-black;
 		}
 	}
 	&__phone {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 11px;
+		@include flexStyle(center, center, row, 11px);
 		& p {
-			font-weight: 400;
-			font-size: 15px;
-			line-height: 19px;
-			letter-spacing: -0.5px;
-			color: $color-blue-black;
+			@include fontStyle(15px, 400, 19px, $color-blue-black);
 		}
 	}
 	&__button {
@@ -66,10 +47,7 @@
 		padding: 10px 17px;
 		cursor: pointer;
 		& p {
-			font-weight: 700;
-			font-size: 14px;
-			line-height: 16px;
-			color: $color-black;
+			@include fontStyle(14px, 700, 16px, $color-black);
 			text-transform: uppercase;
 		}
 	}
@@ -112,10 +90,7 @@
 		height: 100%;
 		position: relative;
 		cursor: pointer;
-		color: $color-blue-black;
-		font-weight: 500;
-		font-size: 15px;
-		line-height: 19px;
+		@include fontStyle(15px, 500, 19px, $color-blue-black);
 		overflow: hidden;
 		text-overflow: ellipsis;
 		-webkit-line-clamp: 1;
@@ -125,16 +100,14 @@
 	}
 	&-block {
 		bottom: auto;
-		top: calc(100% + 3px);
+		top: 100%;
 		position: absolute;
-		left: -10px;
+		left: 0;
 		z-index: 5;
+		box-sizing: content-box;
 	}
 	&-wrapper {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: flex-start;
+		@include flexStyle(flex-start, flex-start, column);
 		height: max-content;
 		max-height: 120px;
 		overflow-y: auto;
@@ -144,12 +117,12 @@
 		&::-webkit-scrollbar-track {
 			-webkit-box-shadow: inset 0 0 10px 10px $color-gray;
 			box-shadow: inset 0 0 10px 10px $color-gray;
-			border: solid 12px transparent;
+			border: solid 12px $transparent;
 		}
 		&::-webkit-scrollbar-thumb {
 			-webkit-box-shadow: inset 0 0 10px 10px $color-black;
 			box-shadow: inset 0 0 10px 10px $color-black;
-			border: solid 10px transparent;
+			border: solid 10px $transparent;
 		}
 	}
 	&-element {
@@ -171,10 +144,10 @@
 			transform: translate(0, -50%) rotate(180deg);
 		}
 		& .headerCitySelect-block {
-			padding: 20px;
+			padding: 15px 0 15px 15px;
 			width: 100px;
 			height: auto;
-			border-radius: 30px;
+			border-radius: 15px;
 			background-color: $color-white;
 			border: 1px solid $color-black;
 		}

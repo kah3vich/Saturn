@@ -16,7 +16,7 @@
 		margin-top: 43px;
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
-		gap: 0 74px;
+		gap: 75px;
 		width: 100%;
 		position: relative;
 		&::after {
@@ -31,7 +31,7 @@
 		}
 		& li {
 			&:nth-child(even) {
-				padding-top: 75px;
+				margin-top: 75px;
 			}
 		}
 	}
@@ -41,6 +41,7 @@
 
 .cardEquipment {
 	width: 100%;
+	cursor: pointer;
 	background: $color-white;
 	border-radius: 20px;
 	overflow: hidden;
