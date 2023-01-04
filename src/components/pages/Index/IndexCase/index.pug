@@ -13,6 +13,16 @@
                     +indexCaseSelect
                 .indexCase__controls-button 
                     +buttonYellow('СМОТРЕТЬ ВСЕ ПРОЕКТЫ', '/')
+        .indexCase__slider
+            .swiper.indexCaseSlider
+                .swiper-wrapper
+                    each _, i in Array(7)
+                        .swiper-slide 
+                            +indexCaseCard('./img/index/indexCase/photo.png', 'БИБЛИОТЕКА', 'Установка стационарных стеллажей.', '/')
+            .swiper-controls
+                .swiper-button-next
+                    img(src="./svg/index/indexCase/arrow-next.svg" alt="")
+                .swiper-button-prev
+                    img(src="./svg/index/indexCase/arrow-prev.svg" alt="")
 
 
-//- each _, i in Array(7)

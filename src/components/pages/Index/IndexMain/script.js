@@ -36,7 +36,7 @@ export const IndexMain = () => {
 
 	addedZeroTextPaginationFraction('.indexMainSwiper')
 
-	const indexMainSwiperLengthSlide = $('.swiper-wrapper .swiper-slide').length
+	const indexMainSwiperLengthSlide = $('.indexMainSwiper .swiper-wrapper .swiper-slide').length
 
 	for (let i = 0; i < indexMainSwiperLengthSlide; i++) {
 		$('.indexMainSwiper .swiper-pagination').append(

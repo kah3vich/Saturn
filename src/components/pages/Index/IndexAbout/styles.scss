@@ -1,0 +1,45 @@
+.indexAbout {
+	width: 100%;
+	padding: 110px 0 70px 0;
+	background-color: $color-white;
+	& .containers {
+		@include flexStyle(flex-start, flex-start, column, 70px);
+	}
+	&__text {
+		@include flexStyle(flex-start, flex-start, column, 35px);
+		width: 100%;
+		&-subtitle {
+			letter-spacing: -0.318182px;
+			@include fontStyle(14px, 400, 16px, $color-gray-light);
+		}
+		&-title {
+			@include fontStyle(40px, 700, 58px, $color-blue);
+		}
+		&-description {
+			@include fontStyle(28px, 400, 50px, $color-black);
+		}
+	}
+	&__content {
+		width: 100%;
+		@include flexStyle(flex-start, space-between, row, 30px);
+		&-banner {
+			@include flexStyle(center, flex-start, column, 33px);
+		}
+		&-subtitle {
+			letter-spacing: -0.318182px;
+			text-transform: uppercase;
+			@include fontStyle(17px, 700, 29px, $color-blue);
+		}
+		&-text {
+			margin-top: 15px;
+			@include flexStyle(flex-start, flex-start, column, 31px);
+		}
+		&-description {
+			letter-spacing: -0.5px;
+			@include fontStyle(20px, 400, 33px, $color-black);
+			& span {
+				font-weight: 700;
+			}
+		}
+	}
+}

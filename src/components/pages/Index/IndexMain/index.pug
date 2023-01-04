@@ -37,13 +37,7 @@
                                 
                             .indexMain__right 
                                 .indexMain__right-container
-                                    .indexMain__right-video 
-                                        img(src="./img/index/indexMain/video.png" alt="")
-                                        .indexMain__right-player
-                                            p Воспроизвести 
-                                                br 
-                                                | видео
-                                            img(src="./svg/index/indexMain/play.svg" alt="")
+                                    +videoPlaceholder("./img/index/indexMain/video.png")
                                     .indexMain__right-text
                                         | видео о нашей компании
                                     .swiper-controller

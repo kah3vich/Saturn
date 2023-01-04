@@ -6,6 +6,7 @@ include pages/Index/IndexEquipment/mixin.pug
 include pages/Index/indexCatalogLink/mixin.pug
 include pages/Index/indexNews/mixin.pug
 include pages/Index/indexSteps/mixin.pug
+include pages/Index/indexAbout/mixin.pug
 include pages/Index/indexCase/mixin.pug
 include pages/Index/indexLink/mixin.pug
 
@@ -16,3 +17,12 @@ mixin buttonYellow(text, link)
         button.buttonYellow
             p.buttonYellow__text= text
             img(src="./svg/mixin/arrow-link.svg" alt="").buttonYellow__img
+
+mixin videoPlaceholder(src)
+    .videoPlaceholder__video 
+            img(src=src alt="")
+            .videoPlaceholder__player
+                p Воспроизвести 
+                    br 
+                    | видео
+                img(src="./svg/index/indexMain/play.svg" alt="")

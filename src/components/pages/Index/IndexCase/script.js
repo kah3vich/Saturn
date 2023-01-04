@@ -41,4 +41,13 @@ export const IndexCase = () => {
 				})
 		})
 	})
+
+	const indexCaseSlider = new Swiper('.indexCaseSlider', {
+		navigation: {
+			nextEl: '.indexCase__slider .swiper-controls .swiper-button-next',
+			prevEl: '.indexCase__slider .swiper-controls .swiper-button-prev'
+		},
+		slidesPerView: 3,
+		spaceBetween: 35
+	})
 }

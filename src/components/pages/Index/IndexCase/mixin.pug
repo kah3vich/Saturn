@@ -8,9 +8,11 @@ mixin indexCaseSelect
         option(value="element_5") Архив 5 
         option(value="element_6") Архив 6 
 
-mixin indexCaseCard(src, title, text)
+mixin indexCaseCard(src, title, text, href)
     .indexCaseCard 
         .indexCaseCard__img 
             img(src=src alt="")
         .indexCaseCard__title= title
         .indexCaseCard__text= text
+        a(href=href).indexCaseCard__link
+            p Подробнее
