@@ -1,0 +1,41 @@
+.indexLink {
+	width: 100%;
+	height: 100%;
+	background-color: $color-blue;
+	& .containers {
+		@include flexStyle(flex-start, center, row, 14px);
+		height: 100%;
+		overflow: hidden;
+	}
+	&__content {
+		width: 50%;
+		padding: 70px 0 90px 0;
+		@include flexStyle(flex-start, flex-start, column, 30px);
+		&-title {
+			text-transform: uppercase;
+			@include fontStyle(32px, 700, 58px, $color-white);
+			& span {
+				color: $color-yellow;
+			}
+		}
+		&-subtitle {
+			letter-spacing: -0.5px;
+			@include fontStyle(20px, 400, 32px, $color-white);
+			& span {
+				font-weight: 700;
+			}
+		}
+		&-button {
+			margin-top: 30px;
+		}
+	}
+	&__banner {
+		width: 50%;
+		height: 100%;
+		& img {
+			height: 100%;
+			object-fit: cover;
+			display: block;
+		}
+	}
+}
