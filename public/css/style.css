@@ -6,6 +6,14 @@
 	font-style : normal;
 }
 
+@font-face {
+	font-family : BebasNeue;
+	font-display : swap;
+	src : url("../fonts/BebasNeue-Regular.woff") format("woff"), url("../fonts/BebasNeue-Regular.woff2") format("woff2");
+	font-weight : 400;
+	font-style : normal;
+}
+
 *
 ,
 *::before
@@ -745,6 +753,253 @@ opacity-h {
 	font-style : normal;
 }
 
+.formBase {
+	background-color : #ffffff;
+	padding : 100px 0 140px 0;
+	width : 100%;
+}
+
+.formBase .containers {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	gap : 70px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+	width : 100%;
+}
+
+.formBase__title {
+	font-weight : 700;
+	font-size : 40px;
+	line-height : 58px;
+	color : #201547;
+	font-style : normal;
+}
+
+.formBase__container {
+	display : -ms-grid;
+	display :     grid;
+	-ms-grid-columns : 1fr 2fr;
+	grid-template-columns : 1fr 2fr;
+	gap : 50px;
+	width : 100%;
+}
+
+.formBase__banner {
+	width : 396px;
+	height : 500px;
+	border-radius : 20px;
+	overflow : hidden;
+}
+
+.formBase__banner img {
+	width : 100%;
+	height : 100%;
+	-o-object-fit : cover;
+	   object-fit : cover;
+	display : block;
+}
+
+.formBase__form {
+	position : relative;
+}
+
+.formBase__form-banner {
+	position : absolute;
+	z-index : 1;
+	left : 0;
+	bottom : 0;
+	width : 432px;
+	height : 67px;
+	border : 2px solid #f2ce14;
+	border-radius : 10px;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	gap : 2px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.formBase__form-banner span {
+	font-weight : 700;
+	font-size : 17px;
+	line-height : 21px;
+	color : #262626;
+	font-style : normal;
+}
+
+.formBase__form-banner p {
+	font-weight : 400;
+	font-size : 17px;
+	line-height : 21px;
+	color : #262626;
+	font-style : normal;
+}
+
+.formBase__form .b24-form-header {
+	padding : 0;
+	border-bottom : none;
+}
+
+.formBase__form .b24-form-header .b24-form-header-description {
+	text-align : left;
+	font-weight : 700;
+	font-size : 18px;
+	line-height : 25px;
+	color : #505050;
+	font-style : normal;
+}
+
+.formBase__form .b24-form {
+	margin-top : 35px;
+}
+
+.formBase__form .b24-form-field-agreement {
+	margin-top : 44px;
+}
+
+.formBase__form .b24-form-wrapper {
+	max-width : 100%;
+	width : 100%;
+	max-height : 100%;
+	min-height : 100%;
+	height : 100%;
+}
+
+.formBase__form .b24-form-content {
+	padding : 0;
+	margin-top : 36px;
+}
+
+.formBase__form .b24-form-content form > div:first-child {
+	width : 100%;
+	display : -ms-grid;
+	display :     grid;
+	-ms-grid-columns : (1fr)[2];
+	grid-template-columns : repeat(2, 1fr);
+	-ms-grid-rows : (1fr)[2];
+	grid-template-rows : repeat(2, 1fr);
+	gap : 36px 19px;
+}
+
+.formBase__form .b24-form-content form > div:first-child div {
+	width : 100%;
+	margin : 0;
+	margin-bottom : 0 !important;
+}
+
+.formBase__form .b24-form-content form > div:first-child div:nth-child(1) {
+	-ms-grid-row : 1;
+	-ms-grid-row-span : 1;
+	-ms-grid-column : 1;
+	-ms-grid-column-span : 1;
+	grid-area : 1/1/2/2;
+}
+
+.formBase__form .b24-form-content form > div:first-child div:nth-child(2) {
+	-ms-grid-row : 2;
+	-ms-grid-row-span : 1;
+	-ms-grid-column : 1;
+	-ms-grid-column-span : 1;
+	grid-area : 2/1/3/2;
+}
+
+.formBase__form .b24-form-content form > div:first-child div:nth-child(3) {
+	-ms-grid-row : 1;
+	-ms-grid-row-span : 2;
+	-ms-grid-column : 2;
+	-ms-grid-column-span : 1;
+	grid-area : 1/2/3/3;
+}
+
+.formBase__form .b24-form-content form > div:first-child .b24-form-field > div {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : reverse;
+	-ms-flex-direction : column-reverse;
+	    flex-direction : column-reverse;
+	gap : 10px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+	width : 100%;
+}
+
+.formBase__form .b24-form-content form > div:first-child .b24-form-control-text textarea {
+	resize : none;
+	height : 185px;
+}
+
+.formBase__form .b24-form-content form > div:first-child .b24-form-control-comment {
+	font-weight : 400;
+	font-size : 18px;
+	line-height : 25px;
+	color : #141413;
+	font-style : normal;
+}
+
+.formBase__form .b24-form-content form > div:first-child .b24-form-control-container input
+,
+.formBase__form .b24-form-content form > div:first-child .b24-form-control-container textarea {
+	border : 1px solid #a5a5a5;
+	border-radius : 10px;
+	background-color : #ffffff;
+}
+
+.formBase__form .b24-form-content form > div:first-child .b24-form-control-container .b24-form-control-label {
+	font-weight : 400;
+	font-size : 14px;
+	line-height : 18px;
+	color : #808080;
+	font-style : normal;
+}
+
+.formBase__form .b24-form-content form > div:nth-child(2) {
+	width : 100%;
+}
+
+.formBase__form .b24-form-content form > div:nth-child(2) div {
+	width : 100%;
+	margin-top : 44px;
+	margin-bottom : 0 !important;
+}
+
+.formBase__form .b24-form-content .b24-form-btn-container {
+	width : -webkit-max-content;
+	width :    -moz-max-content;
+	width :         max-content;
+	margin : 35px 0 0 auto;
+}
+
 .indexMain {
 	width : 100%;
 	height : calc(100vh - 70px);
@@ -796,6 +1051,7 @@ opacity-h {
 	height : 100%;
 	-o-object-fit : cover;
 	   object-fit : cover;
+	display : block;
 }
 
 .indexMain__containers-right::after {
@@ -1420,8 +1676,6 @@ opacity-h {
 .indexCatalogLink__banner-container {
 	width : 100%;
 	height : 100%;
-	-o-object-fit : cover;
-	   object-fit : cover;
 }
 
 .indexCatalogLink__banner-container img {
@@ -1429,6 +1683,7 @@ opacity-h {
 	height : 100%;
 	-o-object-fit : cover;
 	   object-fit : cover;
+	display : block;
 }
 
 .indexCatalogLink__banner-text {
@@ -2251,6 +2506,7 @@ opacity-h {
 }
 
 .indexLink__banner img {
+	width : 100%;
 	height : 100%;
 	-o-object-fit : cover;
 	   object-fit : cover;
@@ -2724,6 +2980,7 @@ opacity-h {
 	height : 100%;
 	-o-object-fit : cover;
 	   object-fit : cover;
+	display : block;
 }
 
 .videoPlaceholder__player {

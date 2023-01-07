@@ -1,5 +1,6 @@
 @import './Header/styles';
 @import './Footer/styles';
+@import './FormBase/styles';
 @import './pages/PickUp/styles';
 @import './pages/Index/IndexMain/styles';
 @import './pages/Index/IndexCatalogLink/styles';
@@ -31,9 +32,7 @@
 		border-radius: 20px;
 		position: relative;
 		& img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
+			@include imgFullSize();
 		}
 	}
 	&__player {
