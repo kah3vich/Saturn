@@ -88,7 +88,10 @@
 		}
 		&-item {
 			@include flexStyle(center, flex-start, row, 20px);
-			& p {
+		}
+		&-links {
+			@include flexStyle(center, flex-start, row, 4px);
+			& a {
 				@include fontStyle(16px, 400, 24px, $color-white);
 			}
 		}

@@ -56,6 +56,20 @@
 			text-decoration-line: underline;
 			transition: all 0.5s ease;
 		}
+		& .cardEquipment__img {
+			& img {
+				transform: scale(1.2);
+			}
+		}
+	}
+	&__img {
+		width: 100%;
+		overflow: hidden;
+		height: 325px;
+		& img {
+			@include imgFullSize();
+			@include transitionStyle();
+		}
 	}
 	&__content {
 		background-color: $color-white;

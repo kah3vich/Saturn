@@ -51,8 +51,32 @@
 				@include fontStyle(18px, 700, 25px, $color-gray-white);
 			}
 		}
+		& .b24-form-btn-block {
+			padding: 0;
+			position: relative;
+			&::after {
+				content: '';
+				width: 12px;
+				height: 12px;
+				position: absolute;
+				top: 48%;
+				right: 25px;
+				transform: translate(0, -50%);
+				background-image: url('./../svg/formBase/arrow-link.svg');
+			}
+			& button {
+				padding: 23px 52px 23px 30px;
+				@include flexStyle(center, center, column, 42px);
+				@include fontStyle(18px, 700, 21px, $color-black);
+				text-transform: uppercase;
+				border: none;
+				outline: none;
+				box-shadow: none;
+				background-color: $color-yellow;
+			}
+		}
 		& .b24-form {
-			margin-top: 35px;
+			margin-top: 41px;
 		}
 		& .b24-form-field-agreement {
 			margin-top: 44px;
@@ -82,12 +106,53 @@
 				}
 				& div:nth-child(1) {
 					grid-area: 1 / 1 / 2 / 2;
+					& .b24-form-control-container {
+						position: relative;
+						&::before {
+							content: '';
+							position: absolute;
+							top: 50%;
+							transform: translate(0, -50%);
+							right: 11px;
+							width: 24px;
+							z-index: 1;
+							height: 24px;
+							background-image: url('./../svg/formBase/user.svg');
+						}
+					}
 				}
 				& div:nth-child(2) {
 					grid-area: 2 / 1 / 3 / 2;
+					& .b24-form-control-container {
+						position: relative;
+						&::before {
+							content: '';
+							position: absolute;
+							top: 50%;
+							transform: translate(0, -50%);
+							right: 11px;
+							width: 24px;
+							z-index: 1;
+							height: 24px;
+							background-image: url('./../svg/formBase/phone.svg');
+						}
+					}
 				}
 				& div:nth-child(3) {
 					grid-area: 1 / 2 / 3 / 3;
+					& .b24-form-control-container {
+						position: relative;
+						&::before {
+							content: '';
+							position: absolute;
+							top: 25px;
+							right: 20px;
+							width: 24px;
+							z-index: 1;
+							height: 24px;
+							background-image: url('./../svg/formBase/message.svg');
+						}
+					}
 				}
 
 				& .b24-form-field > div {
@@ -112,9 +177,10 @@
 						border: 1px solid $color-gray-light;
 						border-radius: 10px;
 						background-color: $color-white;
+						position: relative;
 					}
 					& .b24-form-control-label {
-						@include fontStyle(14px, 400, 18px, $color-gray);
+						@include fontStyle(14px, 400, 16px, $color-gray);
 					}
 				}
 			}
@@ -130,6 +196,47 @@
 				width: max-content;
 				margin: 35px 0 0 auto;
 			}
+		}
+		& .b24-form-control-container > input[type='checkbox'] {
+			width: 0;
+			height: 0;
+			margin-left: 10px;
+			position: relative;
+			&:checked {
+				&::after {
+					opacity: 1;
+				}
+			}
+			&::after {
+				content: '';
+				position: absolute;
+				top: calc(50% - 5px);
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 8px;
+				height: 8px;
+				background: $color-yellow;
+				border-radius: 50%;
+				@include transitionStyle();
+				opacity: 0;
+			}
+			&::before {
+				content: '';
+				position: absolute;
+				top: calc(50% - 5px);
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 16px;
+				height: 16px;
+				border: 1px solid $color-black;
+				border-radius: 50%;
+			}
+		}
+		& .b24-form-control-container .b24-form-field-agreement-link {
+			letter-spacing: -0.5px;
+			@include fontStyle(15px, 400, 20px, $color-gray-black);
+			opacity: 1;
+			margin: 0 0 0 10px;
 		}
 	}
 }

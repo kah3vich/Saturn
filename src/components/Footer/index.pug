@@ -52,26 +52,38 @@ footer.footer
                     li.footer__list-item 
                         a(href="/") Примеры работ
                 .footer__contact
-                    +buttonYellow('ЗАКАЗАТЬ РАСЧЕТ', '/')
+                    +buttonYellow('ЗАКАЗАТЬ РАСЧЕТ')
                     ul.footer__contact-list
                         li.footer__contact-item
                             img(src="./svg/footer/phone.svg" alt="")
-                            p Пермь: +7 (342) 233-15-45 (многоканальный)
+                            .footer__contact-links
+                                a(href="/") Пермь:
+                                a(href="/") +7 (342) 233-15-45 (многоканальный)
                         li.footer__contact-item
                             img(src="./svg/footer/phone.svg" alt="")
-                            p Москва: +7 (499) 681-01-57
+                            .footer__contact-links
+                                a(href="/") Москва:
+                                a(href="tel:+74996810157") +7 (499) 681-01-57
                         li.footer__contact-item
                             img(src="./svg/footer/phone.svg" alt="")
-                            p Екатеринбург: +7 (343) 227-15-45
+                            .footer__contact-links
+                                a(href="/") Екатеринбург:
+                                a(href="tel:+73432271545") +7 (343) 227-15-45
                         li.footer__contact-item
                             img(src="./svg/footer/phone.svg" alt="")
-                            p Тюмень: +7 (345) 255-58-89
+                            .footer__contact-links
+                                a(href="/") Тюмень:
+                                a(href="tel:+73422331545") +7 (342) 233-15-45
                         li.footer__contact-item
                             img(src="./svg/footer/phone.svg" alt="")
-                            p Нижний Новгород: 8 800 350-46-77
+                            .footer__contact-links
+                                a(href="/") Нижний Новгород:
+                                a(href="tel:88003504677") 8 800 350-46-77
                         li.footer__contact-item
                             img(src="./svg/footer/phone.svg" alt="")
-                            p Санкт-Петербург: 8 800 350-46-77
+                            .footer__contact-links
+                                a(href="/") Санкт-Петербург:
+                                a(href="tel:88003504677") 8 800 350-46-77
             .footer__block
                 p.footer__subtitle © ООО «Фирма «Сатурн» — все права защищены, 2022
-                p.footer__text Политика обработки персональных данных
+                a(href="/").footer__text Политика обработки персональных данных

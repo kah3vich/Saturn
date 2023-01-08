@@ -13,11 +13,10 @@ include pages/Index/indexLink/mixin.pug
 
 //- Mixin
 
-mixin buttonYellow(text, link)
-    a(href=link)
-        button.buttonYellow
-            p.buttonYellow__text= text
-            img(src="./svg/mixin/arrow-link.svg" alt="").buttonYellow__img
+mixin buttonYellow(text)
+    button.buttonYellow
+        p.buttonYellow__text= text
+        img(src="./svg/mixin/arrow-link.svg" alt="").buttonYellow__img
 
 mixin videoPlaceholder(src)
     .videoPlaceholder__video 
