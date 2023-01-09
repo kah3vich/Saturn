@@ -1,9 +1,11 @@
 mixin headerCitySelect
-    select(class="headerCitySelect" name="headerCitySelect" style="display: none")
-        option(value="default" selected="") Moscow
-        option(value="element_1") Moscow 1 
-        option(value="element_2") Moscow 2
-        option(value="element_3") Moscow 3 
-        option(value="element_4") Moscow 4 
-        option(value="element_5") Moscow 5 
-        option(value="element_6") Moscow 6 
+    .headerCitySelect
+        .headerCitySelect-placeholder Moscow
+        .headerCitySelect-block(style="display: none") 
+            .headerCitySelect-wrapper 
+                a(href="https://google.com" class="headerCitySelect-element headerCitySelect-element-active") Moscow
+                a(href="https://google.com" class="headerCitySelect-element") Moscow 1 
+                a(href="https://google.com" class="headerCitySelect-element") Moscow 2 
+                a(href="https://google.com" class="headerCitySelect-element") Moscow 3 
+                a(href="https://google.com" class="headerCitySelect-element") Moscow 4 
+                a(href="https://google.com" class="headerCitySelect-element") Moscow 5 

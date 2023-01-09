@@ -24,10 +24,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="img/favicon/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicon/apple-touch-icon-1024x1024.png">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230109212922">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20230109212922" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230109212922">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230109212922"></script>
+    <link rel="stylesheet" href="css/style.min.css?_v=20230110005912">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20230110005912" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230110005912">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230110005912"></script>
   </head>
   <body>
     <header class="header"> 
@@ -38,15 +38,12 @@
           </div>
           <div class="header__block">
             <div class="header__city">
-              <select class="headerCitySelect" name="headerCitySelect" style="display: none">
-                <option value="default" selected="">Moscow</option>
-                <option value="element_1">Moscow 1 </option>
-                <option value="element_2">Moscow 2</option>
-                <option value="element_3">Moscow 3 </option>
-                <option value="element_4">Moscow 4 </option>
-                <option value="element_5">Moscow 5 </option>
-                <option value="element_6">Moscow 6 </option>
-              </select>
+              <div class="headerCitySelect">
+                <div class="headerCitySelect-placeholder">Moscow</div>
+                <div class="headerCitySelect-block" style="display: none"> 
+                  <div class="headerCitySelect-wrapper"> <a class="headerCitySelect-element headerCitySelect-element-active" href="https://google.com">Moscow</a><a class="headerCitySelect-element" href="https://google.com">Moscow 1 </a><a class="headerCitySelect-element" href="https://google.com">Moscow 2 </a><a class="headerCitySelect-element" href="https://google.com">Moscow 3 </a><a class="headerCitySelect-element" href="https://google.com">Moscow 4 </a><a class="headerCitySelect-element" href="https://google.com">Moscow 5 </a></div>
+                </div>
+              </div>
             </div><a class="header__email" href="mailto:stel@saturngk.ru"> <img src="./svg/header/email.svg" alt="">
               <p>stel@saturngk.ru</p></a><a class="header__phone" href="tel:8 800-350-46-77"><img src="./svg/header/phone.svg" alt="">
               <p>8 800-350-46-77</p></a>
@@ -548,15 +545,12 @@
           </div>
           <div class="indexCase__controls">
             <div class="indexCase__controls-select"> 
-              <select class="indexCaseSelect" name="indexCaseSelect" style="display: none">
-                <option value="default" selected="">Архив</option>
-                <option value="element_1">Архив 1 </option>
-                <option value="element_2">Архив 2</option>
-                <option value="element_3">Архив 3 </option>
-                <option value="element_4">Архив 4 </option>
-                <option value="element_5">Архив 5 </option>
-                <option value="element_6">Архив 6 </option>
-              </select>
+              <div class="indexCaseSelect">
+                <div class="indexCaseSelect-placeholder">Архив</div>
+                <div class="indexCaseSelect-block" style="display: none"> 
+                  <div class="indexCaseSelect-wrapper"> <a class="indexCaseSelect-element indexCaseSelect-element-active" href="https://google.com">Архив</a><a class="indexCaseSelect-element" href="https://google.com">Архив 1 </a><a class="indexCaseSelect-element" href="https://google.com">Архив 2 </a><a class="indexCaseSelect-element" href="https://google.com">Архив 3 </a><a class="indexCaseSelect-element" href="https://google.com">Архив 4 </a><a class="indexCaseSelect-element" href="https://google.com">Архив 5 </a></div>
+                </div>
+              </div>
             </div>
             <div class="indexCase__controls-button"> 
               <button class="buttonYellow">
@@ -850,8 +844,17 @@
                         var h = d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
                     })
                     (window, document, 'https://cdn-ru.bitrix24.ru/b19623448/crm/form/loader_36.js');
+              (window, document, 'https://cdn-ru.bitrix24.ru/b19623448/crm/form/loader_36.js');
             </script>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="formFile">
+      <div class="containers"> 
+        <p class="formFile__title">Оставить заявку</p>
+        <div class="formFile__form"> 
+          <script data-b24-form="inline/38/sixu71" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://cdn-ru.bitrix24.ru/b19623448/crm/form/loader_38.js');</script>
         </div>
       </div>
     </div>
@@ -923,6 +926,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/main.js?_v=20230109212922"></script>
+    <script src="js/main.js?_v=20230110005912"></script>
   </body>
 </html>

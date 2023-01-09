@@ -1,12 +1,14 @@
 mixin indexCaseSelect
-    select(class="indexCaseSelect" name="indexCaseSelect" style="display: none")
-        option(value="default" selected="") Архив
-        option(value="element_1") Архив 1 
-        option(value="element_2") Архив 2
-        option(value="element_3") Архив 3 
-        option(value="element_4") Архив 4 
-        option(value="element_5") Архив 5 
-        option(value="element_6") Архив 6 
+    .indexCaseSelect
+        .indexCaseSelect-placeholder Архив
+        .indexCaseSelect-block(style="display: none") 
+            .indexCaseSelect-wrapper 
+                a(href="https://google.com" class="indexCaseSelect-element indexCaseSelect-element-active") Архив
+                a(href="https://google.com" class="indexCaseSelect-element") Архив 1 
+                a(href="https://google.com" class="indexCaseSelect-element") Архив 2 
+                a(href="https://google.com" class="indexCaseSelect-element") Архив 3 
+                a(href="https://google.com" class="indexCaseSelect-element") Архив 4 
+                a(href="https://google.com" class="indexCaseSelect-element") Архив 5 
 
 mixin indexCaseCard(src, title, text, href)
     .indexCaseCard 

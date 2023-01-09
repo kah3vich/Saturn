@@ -1,5 +1,6 @@
 export * from './Footer/script.js'
 export * from './FormBase/script.js'
+export * from './FormFile/script.js'
 export * from './Header/script.js'
 export * from './pages/Index/IndexAbout/script.js'
 export * from './pages/Index/IndexCase/script.js'
