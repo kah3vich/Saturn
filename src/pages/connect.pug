@@ -1,0 +1,26 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Главная";
+
+block content
+	include ../components/Header/index.pug
+
+	+mainBanner('Оказываем помощь в составлении и проверке технических заданий.', '', 'ЗАКАЗАТЬ У ПРОИЗВОДИТЕЛЯ', './img/connect/banner.png')
+
+	include ../components/pages/Connect/ConnectContent/index.pug
+
+	include ../components/FormFile/index.pug
+
+	include ../components/Space/index.pug
+
+	br
+	br
+	br
+	br
+	br
+
+	include ../components/Footer/index.pug
+
+block scripts
+	script(src="js/main.js")

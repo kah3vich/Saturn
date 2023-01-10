@@ -1,0 +1,65 @@
+.mainBanner {
+	width: 100%;
+	background-color: gray;
+	height: 100vh;
+	position: relative;
+	&__background {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, 0);
+		width: 100%;
+		@include flexStyle(flex-start, center, row, 0px);
+		margin: 0 auto;
+		&-content {
+			background-color: $color-blue;
+			width: 50%;
+			height: 100vh;
+		}
+		&-banner {
+			width: 50%;
+			height: 100vh;
+			& img {
+				@include imgFullSize();
+			}
+		}
+	}
+	&__container {
+		position: relative;
+		z-index: 1;
+		max-width: 1440px;
+		padding: 0 90px;
+		margin: 0 auto;
+		width: 100%;
+		@include flexStyle(flex-start, flex-start, row, 0px);
+	}
+	&__content {
+		width: 50%;
+		height: 100vh;
+		padding: 43px 0 20px 0;
+		position: relative;
+		@include flexStyle(flex-start, center, column, 12vh);
+		&-title {
+			letter-spacing: -0.5px;
+			@include fontStyle(42px, 700, 54px, $color-white);
+		}
+		&-link {
+			position: absolute;
+			top: 43px;
+			left: 0;
+			width: max-content;
+			@include flexStyle(center, center, row, 2px);
+			@include fontStyle(14px, 300, 19px, $color-white);
+			& a:nth-child(1) {
+				@include fontStyle(14px, 300, 19px, $color-white);
+			}
+			& a:nth-child(2) {
+				@include fontStyle(14px, 300, 19px, $color-gray);
+			}
+		}
+	}
+	&__banner {
+		width: 50%;
+		height: 100vh;
+	}
+}

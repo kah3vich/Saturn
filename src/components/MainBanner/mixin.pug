@@ -1,0 +1,18 @@
+mixin mainBanner(title, subtitle, button, src)
+    .mainBanner
+        .mainBanner__background
+            .mainBanner__background-content
+            .mainBanner__background-banner 
+                img(src=src alt="")
+        .mainBanner__container
+            .mainBanner__content 
+                .mainBanner__content-link 
+                    a(href="/") Главная
+                    | /
+                    a(href="/") Кейсы
+                .mainBanner__content-title= title
+                if (subtitle != '')
+                    .mainBanner__content-subtitle= subtitle
+                .mainBanner__content-button 
+                    +buttonYellow(button)
+            .mainBanner__banner 

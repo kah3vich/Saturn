@@ -1,0 +1,124 @@
+.space {
+	width: 100%;
+	height: 860px;
+	position: relative;
+	background-color: $color-blue-black;
+	&__plane {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: max-content;
+		height: max-content;
+		z-index: 2;
+	}
+	&__background {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		& img {
+			@include imgFullSize();
+		}
+	}
+	&__list {
+		max-width: 1440px;
+		max-height: 860px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		height: 100%;
+		z-index: 3;
+	}
+	&__item {
+		position: absolute;
+		width: 290px;
+		&:nth-child(1) {
+			top: 223px;
+			left: 190px;
+			& .spaceItem {
+				&__img {
+					position: absolute;
+					left: 45%;
+					top: 80%;
+					transform: translate(-50%, -50%);
+				}
+			}
+		}
+		&:nth-child(2) {
+			top: 570px;
+			right: 133px;
+			& .spaceItem {
+				&__img {
+					position: absolute;
+					left: 35%;
+					top: 35%;
+					transform: translate(-50%, -50%);
+				}
+			}
+		}
+		&:nth-child(3) {
+			top: 660px;
+			left: 184px;
+			& .spaceItem {
+				&__img {
+					position: absolute;
+					left: 35%;
+					top: 35%;
+					transform: translate(-50%, -50%);
+				}
+			}
+		}
+		&:nth-child(4) {
+			top: 80px;
+			right: 173px;
+			& .spaceItem {
+				&__img {
+					position: absolute;
+					left: 25%;
+					top: 90%;
+					transform: translate(-50%, -50%);
+				}
+			}
+		}
+		&:nth-child(5) {
+			top: 410px;
+			left: 75px;
+			& .spaceItem {
+				width: 230px;
+				&__img {
+					position: absolute;
+					left: 58%;
+					top: 65%;
+					transform: translate(-50%, -50%);
+				}
+			}
+		}
+	}
+}
+
+// Mixin
+
+.spaceItem {
+	@include flexStyle(flex-start, flex-start, column, 46px);
+	position: absolute;
+	width: 290px;
+	&__content {
+		@include fontStyle(70px, 700, 58px, $color-yellow);
+	}
+	&__img {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+	&__text {
+		letter-spacing: -0.5px;
+		@include fontStyle(20px, 400, 31px, $color-white);
+	}
+}

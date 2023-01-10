@@ -33,7 +33,7 @@
 		width: 50%;
 		height: 100%;
 		& img {
-			@include imgFullSize();
+			@include imgFullSize(auto);
 		}
 	}
 }

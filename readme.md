@@ -1,7 +1,5 @@
 <div align="center">
-  <a href="https://raw.githubusercontent.com/kah3vich/Saturn/main/src/img/favicon/favicon.png">
-    <img width="200" height="200" src="https://raw.githubusercontent.com/kah3vich/Saturn/main/src/img/favicon/favicon.png">
-  </a>
+  <img width="200" height="200" src="https://raw.githubusercontent.com/kah3vich/Saturn/main/src/img/favicon/favicon.png">
   <br/>
   <h1>Saturn</h1>
   <p>
@@ -14,7 +12,9 @@
 
 <div align="center">
     <br/>
-    <h2>🌏 Table of Contents 🌏</h2>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/tableOfContents.svg" alt="" width="100%" height="29px">
+    <br/>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
     <br/>
 </div>
 
@@ -32,9 +32,11 @@
 
 <!-- ||| -->
 
-<div id="install" align="center">
+<div align="center">
     <br/>
-    <h2>🤔 Install 🤔</h2>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/install.svg" alt="" width="100%" height="29px">
+    <br/>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
     <br/>
 </div>
 
@@ -66,21 +68,25 @@ yarn gulp
 
 <!-- ||| -->
 
-<div id="description" align="center">
+<div align="center">
     <br/>
-    <h2>🌟 Description 🌟</h2>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/description.svg" alt="" width="100%" height="29px">
+    <br/>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
     <br/>
 </div>
 
 <div align="center">
-    <p>Plant for the production of metal racks "Metalroof". The company "Saturn" is a manufacturer of metal racks, which are widely used in various fields. It can be warehouse, retail, office space, garages, utility rooms, various warehouses, industrial premises, and so on. The metal racks offered by our company are distinguished by high strength and wear resistance. They can be used both in small rooms and in objects with a large area.</p>
+  <p>Plant for the production of metal racks "Metalroof". The company "Saturn" is a manufacturer of metal racks, which are widely used in various fields. It can be warehouse, retail, office space, garages, utility rooms, various warehouses, industrial premises, and so on. The metal racks offered by our company are distinguished by high strength and wear resistance. They can be used both in small rooms and in objects with a large area.</p>
 </div>
 
 <!-- ||| -->
 
-<div id="link" align="center">
+<div align="center">
     <br/>
-    <h2>🔒 Link 🔒</h2>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/link.svg" alt="" width="100%" height="29px">
+    <br/>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
     <br/>
 </div>
 
@@ -88,11 +94,15 @@ yarn gulp
 
 ### 2. <a href="https://kah3vich.github.io/Saturn/public/catalog.html">Catalog</a>
 
+### 17. <a href="https://kah3vich.github.io/Saturn/public/connect.html">Connect</a>
+
 <!-- ||| -->
 
-<div id="stack" align="center">
+<div align="center">
     <br/>
-    <h2>🔥 Languages & Frameworks & Tools & Abilities 🔥</h2>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/stack.svg" alt="" width="100%" height="29px">
+    <br/>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
     <br/>
 </div>
 
@@ -159,9 +169,11 @@ yarn gulp
 
 <!-- ||| -->
 
-<div id="team" align="center">
+<div align="center">
     <br/>
-    <h2>🧠 Core Team 🧠</h2>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/team.svg" alt="" width="100%" height="29px">
+    <br/>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
     <br/>
 </div>
 
@@ -178,12 +190,18 @@ yarn gulp
 
 <!-- ||| -->
 
-<div id="license" align="center">
+<div align="center">
     <br/>
-    <h2>✅ License ✅</h2>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/license.svg" alt="" width="100%" height="29px">
+    <br/>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
     <br/>
 </div>
 
-## [GNU - free software license.](LICENSE)
+<a href="https://github.com/kah3vich/Saturn/blob/main/LICENSE">
+  <br/>
+  <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/licenseContent.svg" alt="" width="100%" height="29px">
+  <br/>
+</a>
 
-<!-- ! by kah3vich -->
+<!--| 🔥 by kah3vich 🔥 -->

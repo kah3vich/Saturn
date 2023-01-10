@@ -1,0 +1,27 @@
+.connectContent {
+	width: 100%;
+	background-color: $color-white;
+	padding: 93px 0 60px 0;
+	& .containers {
+		width: 100%;
+		@include flexStyle(flex-start, space-between, row, 30px);
+	}
+	&__content {
+		width: 50%;
+		margin-top: 20px;
+		@include flexStyle(flex-start, flex-start, column, 34px);
+		&-title {
+			@include fontStyle(40px, 700, 54px, $color-blue-black);
+		}
+		&-text {
+			@include fontStyle(20px, 400, 31px, $color-black);
+		}
+	}
+	&__banner {
+		width: 584px;
+		height: 423px;
+		& img {
+			@include imgFullSize();
+		}
+	}
+}
