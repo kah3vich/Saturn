@@ -65,7 +65,7 @@
 	&::after {
 		content: '';
 		background: url('./../svg/header/arrow-down-blue-dark.svg') no-repeat;
-		transition: all 0.5s ease;
+		@include transitionStyle();
 		position: absolute;
 		top: 50%;
 		right: -8px;
@@ -140,7 +140,7 @@
 	}
 	&-item-active {
 		&::after {
-			transition: all 0.5s ease;
+			@include transitionStyle();
 			transform: translate(0, -50%) rotate(180deg);
 		}
 		& .headerCitySelect-block {

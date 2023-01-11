@@ -1,0 +1,17 @@
+mixin teamCard(avatarSrc, name, job)
+    .teamCard
+        .teamCard__content
+            .teamCard__content-img 
+                img(src=avatarSrc alt="")
+            p.teamCard__content-name= name 
+            p.teamCard__content-job= job 
+        .teamCard__hover 
+            .teamCard__hover-img 
+                img(src=avatarSrc alt="")
+            p.teamCard__hover-name= name 
+            p.teamCard__hover-job= job 
+            ul.teamCard__hover-list
+                li.teamCard__hover-item 15 лет в компании
+                li.teamCard__hover-item 15 лет в компании
+                li.teamCard__hover-item 15 лет в компании
+                li.teamCard__hover-item 15 лет в компании

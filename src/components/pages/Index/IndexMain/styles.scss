@@ -162,12 +162,12 @@
 					width: 53px;
 					height: 53px;
 					transform: translate(0, -50%);
-					transition: all 0.5s ease;
+					@include transitionStyle();
 					opacity: 1;
 				}
 				& svg {
 					& path {
-						transition: all 0.5s ease;
+						@include transitionStyle();
 					}
 				}
 			}
@@ -193,12 +193,12 @@
 					width: 53px;
 					height: 53px;
 					transform: translate(0, -50%);
-					transition: all 0.5s ease;
+					@include transitionStyle();
 					opacity: 1;
 				}
 				& svg {
 					& path {
-						transition: all 0.5s ease;
+						@include transitionStyle();
 					}
 				}
 			}
@@ -239,7 +239,7 @@
 				height: 13px;
 				border: 1px solid $color-yellow;
 				background-color: $transparent;
-				transition: all 0.5s ease;
+				@include transitionStyle();
 				border-radius: 50%;
 				cursor: pointer;
 				&-active {

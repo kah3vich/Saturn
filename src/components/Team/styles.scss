@@ -1,0 +1,165 @@
+.team {
+	background-color: $color-blue-black;
+	width: 100%;
+	padding: 110px 0 60px 0;
+	& .containers {
+		width: 100%;
+		@include flexStyle(flex-start, flex-start, column, 73px);
+	}
+	&__navbar {
+		width: 100%;
+		@include flexStyle(center, space-between, row, 30px);
+		position: relative;
+	}
+	&__subtitle {
+		@include fontStyle(14px, 16px, 58px, $color-gray);
+		letter-spacing: -0.318182px;
+		position: absolute;
+		left: 0;
+		top: -50px;
+	}
+	&__title {
+		@include fontStyle(40px, 700, 58px, $color-white);
+	}
+	&__controls {
+		position: relative;
+		@include flexStyle(center, center, row-reverse, 66px);
+		& .swiper-button-next {
+			width: 250px;
+			height: 20px;
+			position: static;
+			&::after {
+				content: none;
+			}
+		}
+		& .swiper-button-prev {
+			width: 250px;
+			height: 20px;
+			position: static;
+			&::after {
+				content: none;
+			}
+		}
+	}
+	&__slider {
+		width: 100%;
+		& .swiper-slide {
+			&:nth-child(even) {
+				margin-top: 45px;
+			}
+		}
+	}
+}
+
+// Mixin
+
+.teamCard {
+	width: 315px;
+	position: relative;
+	cursor: pointer;
+	&:hover {
+		& .teamCard__hover {
+			opacity: 1;
+		}
+		& .teamCard__content {
+			opacity: 0;
+		}
+	}
+	&__content {
+		opacity: 1;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, 0);
+		width: 100%;
+		@include transitionStyle();
+		@include flexStyle(center, flex-start, column, 12px);
+		&-img {
+			width: 221px;
+			height: 221px;
+			overflow: hidden;
+			border-radius: 50%;
+			& img {
+				@include imgFullSize();
+			}
+		}
+		&-name {
+			width: 100%;
+			margin-top: 14px;
+			text-align: center;
+			text-transform: uppercase;
+			@include fontStyle(15px, 700, 21px, $color-white);
+		}
+		&-job {
+			width: 100%;
+			text-align: center;
+			letter-spacing: -0.5px;
+			@include fontStyle(18px, 400, 25px, $color-gray);
+		}
+	}
+	&__hover {
+		opacity: 0;
+		width: 100%;
+		background: $color-white;
+		border-radius: 20px;
+		padding: 22px 22px 30px 22px;
+		@include transitionStyle();
+		@include flexStyle(center, flex-start, column, 16px);
+		&-img {
+			margin-top: 14px;
+			position: relative;
+			width: 127px;
+			height: 127px;
+			border-radius: 50%;
+			& img {
+				@include imgFullSize();
+			}
+			&::after {
+				content: '';
+				position: absolute;
+				top: -14px;
+				left: 50%;
+				transform: translate(-50%, 0);
+				width: 155px;
+				height: 155px;
+				border: 1px solid $color-yellow;
+				border-radius: 50%;
+			}
+		}
+		&-name {
+			width: 100%;
+			margin-top: 20px;
+			text-align: center;
+			text-transform: uppercase;
+			@include fontStyle(15px, 700, 17px, $color-blue-black);
+		}
+		&-job {
+			width: 100%;
+			@include fontStyle(16px, 400, 25px, $color-black);
+			text-align: center;
+			letter-spacing: -0.5px;
+		}
+		&-list {
+			@include flexStyle(flex-start, flex-start, column, 18px);
+			width: max-content;
+			margin: 0 auto 0 0;
+		}
+		&-item {
+			padding-left: 31px;
+			position: relative;
+			letter-spacing: -0.5px;
+			@include fontStyle(16px, 400, 18px, $color-black);
+			&::after {
+				content: '';
+				top: 50%;
+				left: 0;
+				position: absolute;
+				transform: translate(0, -50%);
+				width: 18px;
+				height: 18px;
+				background: $color-yellow;
+				border-radius: 50%;
+			}
+		}
+	}
+}

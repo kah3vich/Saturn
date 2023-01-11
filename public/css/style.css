@@ -1844,6 +1844,503 @@ opacity-h {
 	margin : 0 0 0 10px;
 }
 
+.feedback {
+	background-color : #f1f2ed;
+	width : 100%;
+	padding : 135px 0 90px 0;
+}
+
+.feedback .containers {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	gap : 73px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.feedback__navbar {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : justify;
+	-ms-flex-pack : justify;
+	justify-content : space-between;
+	-webkit-box-orient : horizontal;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : row;
+	    flex-direction : row;
+	gap : 30px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.feedback__title {
+	font-weight : 700;
+	font-size : 40px;
+	line-height : 58px;
+	color : #140848;
+	font-style : normal;
+}
+
+.feedback__controls {
+	position : relative;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	-webkit-box-orient : horizontal;
+	-webkit-box-direction : reverse;
+	-ms-flex-direction : row-reverse;
+	    flex-direction : row-reverse;
+	gap : 66px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.feedback__controls .swiper-button-next {
+	width : 250px;
+	height : 20px;
+	position : static;
+}
+
+.feedback__controls .swiper-button-next::after {
+	content : none;
+}
+
+.feedback__controls .swiper-button-prev {
+	width : 250px;
+	height : 20px;
+	position : static;
+}
+
+.feedback__controls .swiper-button-prev::after {
+	content : none;
+}
+
+.feedback__slider {
+	width : 100%;
+}
+
+.feedback__button {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : end;
+	-ms-flex-pack : end;
+	justify-content : flex-end;
+	-webkit-box-orient : horizontal;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : row;
+	    flex-direction : row;
+	gap : 0px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.feedbackCard {
+	cursor : pointer;
+	width : 222px;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	gap : 31px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.feedbackCard__logo {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	-webkit-box-orient : horizontal;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : row;
+	    flex-direction : row;
+	gap : 0px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.feedbackCard__doc {
+	width : 100%;
+	height : 322px;
+}
+
+.feedbackCard__doc img {
+	width : 100%;
+	height : 100%;
+	-o-object-fit : cover;
+	   object-fit : cover;
+	display : block;
+}
+
+.team {
+	background-color : #140848;
+	width : 100%;
+	padding : 110px 0 60px 0;
+}
+
+.team .containers {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	gap : 73px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.team__navbar {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : justify;
+	-ms-flex-pack : justify;
+	justify-content : space-between;
+	-webkit-box-orient : horizontal;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : row;
+	    flex-direction : row;
+	gap : 30px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+	position : relative;
+}
+
+.team__subtitle {
+	font-weight : 16px;
+	font-size : 14px;
+	line-height : 58px;
+	color : #808080;
+	font-style : normal;
+	letter-spacing : -0.318182px;
+	position : absolute;
+	left : 0;
+	top : -50px;
+}
+
+.team__title {
+	font-weight : 700;
+	font-size : 40px;
+	line-height : 58px;
+	color : #ffffff;
+	font-style : normal;
+}
+
+.team__controls {
+	position : relative;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	-webkit-box-orient : horizontal;
+	-webkit-box-direction : reverse;
+	-ms-flex-direction : row-reverse;
+	    flex-direction : row-reverse;
+	gap : 66px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.team__controls .swiper-button-next {
+	width : 250px;
+	height : 20px;
+	position : static;
+}
+
+.team__controls .swiper-button-next::after {
+	content : none;
+}
+
+.team__controls .swiper-button-prev {
+	width : 250px;
+	height : 20px;
+	position : static;
+}
+
+.team__controls .swiper-button-prev::after {
+	content : none;
+}
+
+.team__slider {
+	width : 100%;
+}
+
+.team__slider .swiper-slide:nth-child(even) {
+	margin-top : 45px;
+}
+
+.teamCard {
+	width : 315px;
+	position : relative;
+	cursor : pointer;
+}
+
+.teamCard:hover .teamCard__hover {
+	opacity : 1;
+}
+
+.teamCard:hover .teamCard__content {
+	opacity : 0;
+}
+
+.teamCard__content {
+	opacity : 1;
+	position : absolute;
+	top : 0;
+	left : 50%;
+	-webkit-transform : translate(-50%, 0);
+	    -ms-transform : translate(-50%, 0);
+	        transform : translate(-50%, 0);
+	width : 100%;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	gap : 12px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.teamCard__content-img {
+	width : 221px;
+	height : 221px;
+	overflow : hidden;
+	border-radius : 50%;
+}
+
+.teamCard__content-img img {
+	width : 100%;
+	height : 100%;
+	-o-object-fit : cover;
+	   object-fit : cover;
+	display : block;
+}
+
+.teamCard__content-name {
+	width : 100%;
+	margin-top : 14px;
+	text-align : center;
+	text-transform : uppercase;
+	font-weight : 700;
+	font-size : 15px;
+	line-height : 21px;
+	color : #ffffff;
+	font-style : normal;
+}
+
+.teamCard__content-job {
+	width : 100%;
+	text-align : center;
+	letter-spacing : -0.5px;
+	font-weight : 400;
+	font-size : 18px;
+	line-height : 25px;
+	color : #808080;
+	font-style : normal;
+}
+
+.teamCard__hover {
+	opacity : 0;
+	width : 100%;
+	background : #ffffff;
+	border-radius : 20px;
+	padding : 22px 22px 30px 22px;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	gap : 16px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.teamCard__hover-img {
+	margin-top : 14px;
+	position : relative;
+	width : 127px;
+	height : 127px;
+	border-radius : 50%;
+}
+
+.teamCard__hover-img img {
+	width : 100%;
+	height : 100%;
+	-o-object-fit : cover;
+	   object-fit : cover;
+	display : block;
+}
+
+.teamCard__hover-img::after {
+	content : "";
+	position : absolute;
+	top : -14px;
+	left : 50%;
+	-webkit-transform : translate(-50%, 0);
+	    -ms-transform : translate(-50%, 0);
+	        transform : translate(-50%, 0);
+	width : 155px;
+	height : 155px;
+	border : 1px solid #f2ce14;
+	border-radius : 50%;
+}
+
+.teamCard__hover-name {
+	width : 100%;
+	margin-top : 20px;
+	text-align : center;
+	text-transform : uppercase;
+	font-weight : 700;
+	font-size : 15px;
+	line-height : 17px;
+	color : #140848;
+	font-style : normal;
+}
+
+.teamCard__hover-job {
+	width : 100%;
+	font-weight : 400;
+	font-size : 16px;
+	line-height : 25px;
+	color : #141413;
+	font-style : normal;
+	text-align : center;
+	letter-spacing : -0.5px;
+}
+
+.teamCard__hover-list {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	gap : 18px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+	width : -webkit-max-content;
+	width :    -moz-max-content;
+	width :         max-content;
+	margin : 0 auto 0 0;
+}
+
+.teamCard__hover-item {
+	padding-left : 31px;
+	position : relative;
+	letter-spacing : -0.5px;
+	font-weight : 400;
+	font-size : 16px;
+	line-height : 18px;
+	color : #141413;
+	font-style : normal;
+}
+
+.teamCard__hover-item::after {
+	content : "";
+	top : 50%;
+	left : 0;
+	position : absolute;
+	-webkit-transform : translate(0, -50%);
+	    -ms-transform : translate(0, -50%);
+	        transform : translate(0, -50%);
+	width : 18px;
+	height : 18px;
+	background : #f2ce14;
+	border-radius : 50%;
+}
+
 .mainBanner {
 	width : 100%;
 	background-color : gray;

@@ -48,7 +48,7 @@
 		&-item {
 			width: 100%;
 			border-bottom: 1px solid $color-gray-light;
-			transition: all 0.5s ease;
+			@include transitionStyle();
 			&:first-child {
 				border-top: 1px solid $color-gray-light;
 			}
@@ -56,12 +56,12 @@
 				& .indexCatalogLink__content-number {
 					text-transform: uppercase;
 					@include fontStyle(18px, 400, 27px, $color-black);
-					transition: all 0.5s ease;
+					@include transitionStyle();
 				}
 				& .indexCatalogLink__content-subtitle {
 					text-transform: uppercase;
 					@include fontStyle(18px, 700, 21px, $color-black);
-					transition: all 0.5s ease;
+					@include transitionStyle();
 				}
 			}
 		}
@@ -75,12 +75,12 @@
 		&-number {
 			text-transform: uppercase;
 			@include fontStyle(12px, 350, 27px, $color-black);
-			transition: all 0.5s ease;
+			@include transitionStyle();
 		}
 		&-subtitle {
 			text-transform: uppercase;
 			@include fontStyle(18px, 400, 21px, $color-black);
-			transition: all 0.5s ease;
+			@include transitionStyle();
 		}
 		&-button {
 			margin: 0 0 0 auto;
