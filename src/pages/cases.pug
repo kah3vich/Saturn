@@ -1,0 +1,20 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Кейсы";
+
+block content
+	include ../components/Header/index.pug
+
+	include ../components/pages/Cases/CasesBase/index.pug
+
+	include ../components/pages/Cases/CasesDescription/index.pug
+
+	include ../components/pages/Index/IndexLink/index.pug
+
+	include ../components/FormBase/index.pug
+
+	include ../components/Footer/index.pug
+
+block scripts
+	script(src="js/main.js")

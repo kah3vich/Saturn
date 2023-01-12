@@ -1,0 +1,20 @@
+.casesBase
+    .containers 
+        p.casesBase__subtitle
+            a(href="/") Главная
+            |/
+            a(href="/") Кейсы
+        h1.casesBase__title Кейсы
+        .casesBase__content 
+            ul.casesBase__links
+                li.casesBase__link.casesBase__link-active
+                    a(href="/") 
+                        p Банки
+                each _, i in Array(10)
+                    li.casesBase__link
+                        a(href="/") 
+                            p Банки
+            ul.casesBase__list  
+                each _, i in Array(21)
+                    li.casesBase__item 
+                        +casesBaseCard('./img/pages/cases/casesBase/card.png', 'Оборудование 3 этажного архива', 'Смотреть проект')

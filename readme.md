@@ -94,6 +94,8 @@ yarn gulp
 
 ### 2. <a href="https://kah3vich.github.io/Saturn/public/catalog.html">Catalog</a>
 
+### 2. <a href="https://kah3vich.github.io/Saturn/public/cases.html">Cases</a>
+
 ### 17. <a href="https://kah3vich.github.io/Saturn/public/connect.html">Connect</a>
 
 <!-- ||| -->

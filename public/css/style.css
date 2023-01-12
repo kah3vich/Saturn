@@ -4537,6 +4537,307 @@ opacity-h {
 	margin : 0 0 0 auto;
 }
 
+.casesBase {
+	width : 100%;
+	background-color : #ffffff;
+	padding : 45px 0;
+}
+
+.casesBase .containers {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	gap : 30px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.casesBase__subtitle {
+	font-weight : 300;
+	font-size : 14px;
+	line-height : 130%;
+	color : #141413;
+	font-style : normal;
+}
+
+.casesBase__subtitle a:nth-child(1) {
+	font-weight : 300;
+	font-size : 14px;
+	line-height : 130%;
+	color : #141413;
+	font-style : normal;
+}
+
+.casesBase__subtitle a:nth-child(2) {
+	font-weight : 300;
+	font-size : 14px;
+	line-height : 130%;
+	color : #808080;
+	font-style : normal;
+}
+
+.casesBase__title {
+	font-weight : 700;
+	font-size : 40px;
+	line-height : 58px;
+	color : #140848;
+	font-style : normal;
+}
+
+.casesBase__content {
+	width : 100%;
+	display : -ms-grid;
+	display :     grid;
+	-ms-grid-columns : 1fr 3fr;
+	grid-template-columns : 1fr 3fr;
+	gap : 26px;
+}
+
+.casesBase__links {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	gap : 9px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.casesBase__link {
+	width : 100%;
+	cursor : pointer;
+}
+
+.casesBase__link a {
+	background : #f1f2ed;
+	border-radius : 5px;
+	padding : 20px 15px;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	-webkit-box-orient : horizontal;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : row;
+	    flex-direction : row;
+	gap : 0px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+	width : 100%;
+}
+
+.casesBase__link p {
+	font-weight : 700;
+	font-size : 16px;
+	line-height : 130%;
+	color : #140848;
+	font-style : normal;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+}
+
+.casesBase__link-active a {
+	background-color : #140848;
+}
+
+.casesBase__link-active p {
+	color : #ffffff;
+}
+
+.casesBase__list {
+	width : 100%;
+	display : -ms-grid;
+	display :     grid;
+	grid-template-columns : repeat(auto-fill, minmax(255px, 1fr));
+	gap : 23px 30px;
+}
+
+.casesBaseCard {
+	background : #f1f2ed;
+	border-radius : 5px;
+	overflow : hidden;
+	width : 100%;
+	cursor : pointer;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	gap : 0px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+}
+
+.casesBaseCard:hover {
+	background : #140848;
+}
+
+.casesBaseCard:hover .casesBaseCard__title {
+	color : #ffffff;
+}
+
+.casesBaseCard__img {
+	width : 100%;
+	height : 221px;
+}
+
+.casesBaseCard__img img {
+	width : 100%;
+	height : 100%;
+	-o-object-fit : cover;
+	   object-fit : cover;
+	display : block;
+}
+
+.casesBaseCard__content {
+	width : 100%;
+	padding : 25px 25px 20px 25px;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	gap : 24px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.casesBaseCard__title {
+	width : 90%;
+	text-align : center;
+	font-weight : 700;
+	font-size : 19px;
+	line-height : 130%;
+	color : #141413;
+	font-style : normal;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+}
+
+.casesBaseCard__button {
+	background : #f2ce14;
+	border-radius : 5px;
+	padding : 6px 20px;
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	-webkit-box-orient : horizontal;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : row;
+	    flex-direction : row;
+	gap : 0px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.casesBaseCard__button p {
+	font-weight : 700;
+	font-size : 13px;
+	line-height : 19px;
+	color : #141413;
+	font-style : normal;
+	text-align : center;
+}
+
+.casesDescription {
+	width : 100%;
+	padding : 45px 0 100px 0;
+	background-color : #ffffff;
+}
+
+.casesDescription .containers {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	gap : 35px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.casesDescription__title {
+	font-weight : 700;
+	font-size : 40px;
+	line-height : 58px;
+	color : #140848;
+	font-style : normal;
+}
+
+.casesDescription__text {
+	font-weight : 400;
+	font-size : 28px;
+	line-height : 49px;
+	color : #141413;
+	font-style : normal;
+}
+
 .buttonYellow {
 	padding : 23px 30px;
 	display : -webkit-box;
