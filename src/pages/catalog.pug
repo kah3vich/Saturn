@@ -5,7 +5,18 @@ block variables
 
 block content
 	include ../components/Header/index.pug
-	h1 Каталог
+
+	include ../components/pages/Catalog/CatalogMain/index.pug
+
+	include ../components/pages/Catalog/CatalogBanner/index.pug
+
+	include ../components/pages/Catalog/CatalogTable/index.pug
+
+	include ../components/pages/Catalog/CatalogCase/index.pug
+
+	include ../components/Helper/index.pug
+
+	include ../components/Footer/index.pug
 
 block scripts
 	script(src="js/main.js")

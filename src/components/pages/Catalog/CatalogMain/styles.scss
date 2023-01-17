@@ -1,0 +1,123 @@
+.catalog-main {
+	width: 100%;
+	position: relative;
+	height: calc(100vh - 70px);
+	&::after {
+		content: '';
+		width: 100%;
+		height: calc(100vh - 70px);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		background-color: $color-blue-black;
+		opacity: 0.9;
+	}
+	&__background {
+		width: 100%;
+		height: calc(100vh - 70px);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 1;
+		& img {
+			@include imgFullSize();
+		}
+	}
+	& .containers {
+		position: relative;
+		z-index: 3;
+		width: 100%;
+		@include flexStyle(center, center);
+	}
+	&__content {
+		position: relative;
+		height: calc(100vh - 70px);
+		width: 50%;
+		@include flexStyle(center, flex-start);
+		&-add {
+			position: absolute;
+			top: 43px;
+			left: 0;
+			@include fontStyle(14px, 300, 130%, $color-white);
+			& span {
+				color: $color-gray;
+			}
+		}
+		&-title {
+			letter-spacing: -0.5px;
+			@include fontStyle(42px, 700, 54px, $color-white);
+		}
+		&-subtitle {
+			letter-spacing: -0.5px;
+			@include fontStyle(22px, 400, 36px, $color-white);
+			& span {
+				font-weight: 600;
+			}
+		}
+	}
+	&__block {
+		@include flexStyle(flex-start, center, column, 26px);
+	}
+	&__slider {
+		width: 50%;
+		position: relative;
+		&-item {
+			width: 630px;
+			height: 300px;
+			border-radius: 20px;
+			& img {
+				@include imgFullSize();
+			}
+		}
+		& .swiper {
+			overflow: hidden;
+			border-radius: 20px;
+		}
+		& .swiper-pagination {
+			position: absolute;
+			bottom: -140px !important;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 24px;
+			& .swiper-pagination-bullet {
+				width: 121px;
+				height: 110px;
+				opacity: 1 !important;
+				border-radius: 20px;
+				overflow: hidden;
+				& img {
+					@include imgFullSize();
+				}
+			}
+		}
+		& .swiper-button-prev {
+			&::after {
+				content: none;
+			}
+			width: 43px;
+			height: 301px;
+			background: $color-yellow;
+			border-radius: 20px 0px 0px 20px;
+			@include flexStyle(center, center);
+			left: 0px;
+			top: 22px;
+			right: auto;
+		}
+		& .swiper-button-next {
+			&::after {
+				content: none;
+			}
+			width: 43px;
+			height: 301px;
+			background: $color-yellow;
+			border-radius: 0px 20px 20px 0px;
+			@include flexStyle(center, center);
+			right: 0px;
+			top: 22px;
+			left: auto;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+section.catalog-main 
+    .catalog-main__background 
+        img(src="./img/pages/catalog/catalogMain/bg.png" alt="")
+    .containers
+        .catalog-main__content
+            p.catalog-main__content-add Главная / 
+                span Кейсы
+            .catalog-main__block 
+                h5.catalog-main__content-title Мобильные стеллажи
+                p.catalog-main__content-subtitle Рассчитаем проект расстоновки стеллажей 
+                    br
+                    | для вашего помещения всего за 
+                    span 24 часа.
+                .catalog-main__content-button
+                    +buttonYellow('ПОЛУЧИТЬ КП')
+        .catalog-main__slider 
+            .swiper.catalogMainSlider
+                .swiper-wrapper
+                    each _, i in Array(4)
+                        .swiper-slide 
+                            .catalog-main__slider-item 
+                                img(src="./img/pages/catalog/catalogMain/card-4.png" alt="")
+            .swiper-controls
+                .swiper-button-next
+                    img(src="./svg/pages/catalog/catalogMain/arrow-next.svg" alt="alt")
+                .swiper-button-prev
+                    img(src="./svg/pages/catalog/catalogMain/arrow-prev.svg" alt="alt")
+                .swiper-pagination

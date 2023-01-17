@@ -48,5 +48,5 @@ export const IndexMain = () => {
 		handlerPaginationChange(+e.target.id.replace('swiperPagin_', ''))
 	})
 
-	handlerPaginationChange(0)
+	$(`.indexMainSwiper .swiper-slide #swiperPagin_0`).addClass('swiper-pagination-item-active')
 }

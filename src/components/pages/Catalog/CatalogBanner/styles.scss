@@ -1,0 +1,34 @@
+.catalog-banner {
+	width: 100%;
+	height: 383px;
+	position: relative;
+	overflow: hidden;
+	&__block {
+		width: 100%;
+		@include flexStyle(center, center);
+	}
+	&__background {
+		width: 50%;
+		height: 383px;
+		background-color: $color-blue-black;
+	}
+	&__photo {
+		width: 50%;
+		height: 383px;
+		& img {
+			@include imgFullSize();
+		}
+	}
+	& .containers {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		@include flexStyle(flex-start, center, column, 40px);
+	}
+	&__title {
+		@include fontStyle(32px, 700, 58px, $color-white);
+		text-transform: uppercase;
+	}
+}

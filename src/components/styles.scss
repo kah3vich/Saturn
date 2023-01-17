@@ -5,8 +5,8 @@
 @import './FormFile/styles';
 @import './Feedback/styles';
 @import './Team/styles';
+@import './Helper/styles';
 @import './MainBanner/styles';
-@import './pages/PickUp/styles';
 @import './pages/Connect/ConnectContent/styles';
 @import './pages/Index/IndexMain/styles';
 @import './pages/Index/IndexCatalogLink/styles';
@@ -18,6 +18,10 @@
 @import './pages/Index/IndexNews/styles';
 @import './pages/Cases/CasesBase/styles';
 @import './pages/Cases/CasesDescription/styles';
+@import './pages/Catalog/CatalogBanner/styles';
+@import './pages/Catalog/CatalogCase/styles';
+@import './pages/Catalog/CatalogTable/styles';
+@import './pages/Catalog/CatalogMain/styles';
 
 // Mixin
 

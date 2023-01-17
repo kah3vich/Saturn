@@ -1,0 +1,18 @@
+section.catalog-case
+    .containers
+        .catalog-case__containers
+            .catalog-case__content 
+                .catalog-case__content-title Реализованные проекты
+        .catalog-case__slider
+            .swiper.catalogCaseSlider
+                .swiper-wrapper
+                    each _, i in Array(7)
+                        .swiper-slide 
+                            +catalogCaseCard('./img/index/indexCase/photo.png', 'Проектный институт', '/')
+            .swiper-controls
+                .swiper-button-next
+                    img(src="./svg/index/indexCase/arrow-next.svg" alt="")
+                .swiper-button-prev
+                    img(src="./svg/index/indexCase/arrow-prev.svg" alt="")
+
+

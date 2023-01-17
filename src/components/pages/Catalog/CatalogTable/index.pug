@@ -1,0 +1,19 @@
+section.catalog-table 
+    .containers 
+        h5.catalog-table__title Применение
+        .catalog-table__blocks
+            .catalog-table__block
+                .catalog-table__header
+                    p Что храним:
+                ul.catalog-table__list
+                    each _, i in Array(8)
+                        li.catalog-table__item 
+                            +catalogTableElement('Рабочую документацию')
+            .catalog-table__block
+                .catalog-table__header
+                    p Что храним:
+                ul.catalog-table__list
+                    each _, i in Array(8)
+                        li.catalog-table__item 
+                            +catalogTableElement('Рабочую документацию')
+            
