@@ -18,7 +18,7 @@
     <br/>
 </div>
 
-### 1. <a href="#install">Install</a>
+### 1. <a href="#script">Script</a>
 
 ### 2. <a href="#description">Description</a>
 
@@ -32,9 +32,9 @@
 
 <!-- ||| -->
 
-<div align="center">
+<div align="center" id="script">
     <br/>
-    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/install.svg" alt="" width="100%" height="29px">
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/script.svg" alt="" width="100%" height="29px">
     <br/>
     <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
     <br/>
@@ -68,7 +68,7 @@ yarn gulp
 
 <!-- ||| -->
 
-<div align="center">
+<div align="center" id="description">
     <br/>
     <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/description.svg" alt="" width="100%" height="29px">
     <br/>
@@ -82,7 +82,7 @@ yarn gulp
 
 <!-- ||| -->
 
-<div align="center">
+<div align="center" id="link">
     <br/>
     <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/link.svg" alt="" width="100%" height="29px">
     <br/>
@@ -100,7 +100,7 @@ yarn gulp
 
 <!-- ||| -->
 
-<div align="center">
+<div align="center" id="stack">
     <br/>
     <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/stack.svg" alt="" width="100%" height="29px">
     <br/>
@@ -171,7 +171,7 @@ yarn gulp
 
 <!-- ||| -->
 
-<div align="center">
+<div align="center" id="team">
     <br/>
     <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/team.svg" alt="" width="100%" height="29px">
     <br/>
@@ -192,7 +192,7 @@ yarn gulp
 
 <!-- ||| -->
 
-<div align="center">
+<div align="center" id="license">
     <br/>
     <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/license.svg" alt="" width="100%" height="29px">
     <br/>
