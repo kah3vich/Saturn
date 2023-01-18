@@ -52,20 +52,6 @@ npm install
 npm run gulp
 ```
 
-<br />
-
-### Install with yarn:
-
-```bash
-yarn
-```
-
-### Start dev mode:
-
-```bash
-yarn gulp
-```
-
 <!-- ||| -->
 
 <div align="center" id="description">
