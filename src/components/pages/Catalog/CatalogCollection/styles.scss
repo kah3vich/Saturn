@@ -1,0 +1,78 @@
+.catalog-collection {
+	padding: 85px 0;
+	width: 100%;
+	background-color: $color-light-yellow-green;
+	& .containers {
+		@include flexStyle(flex-start, flex-start, column, 35px);
+	}
+	&__title {
+		@include fontStyle(40px, 700, 58px, $color-blue-black);
+	}
+	&__text {
+		@include fontStyle(28px, 400, 49px, $color-black);
+	}
+	&__list {
+		margin-top: 65px;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+// Mixin
+
+.catalogCollectionCard {
+	cursor: pointer;
+	width: 235px;
+	@include flexStyle(center, flex-start, column);
+	&__icon {
+		position: relative;
+		width: 235px;
+		height: 200px;
+		background: #ffffff;
+		border-radius: 10px 10px 0px 0px;
+		@include flexStyle(center, center);
+		& img {
+			position: relative;
+			z-index: 5;
+		}
+		&::after {
+			content: '';
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 126px;
+			height: 126px;
+			border-radius: 50%;
+			position: absolute;
+			z-index: 1;
+			background: #201547;
+		}
+		&::before {
+			content: '';
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 154px;
+			height: 154px;
+			position: absolute;
+			border-radius: 50%;
+			border: 1px solid $color-yellow;
+		}
+	}
+	&__text {
+		width: 235px;
+		height: 75px;
+		@include flexStyle(center, center);
+		background: #f2cd00;
+		border-radius: 0px 0px 10px 10px;
+		padding: 27px;
+		& p {
+			@include fontStyle(18px, 700, 21px, $color-black);
+			text-align: center;
+		}
+	}
+}

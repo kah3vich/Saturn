@@ -1,0 +1,18 @@
+section.catalog-description
+    .containers 
+        h1.catalog-description__title Передвижные  стеллажи
+        p.catalog-description__subtitle Компания «Сатурн» занимается производством и реализацией металлических стеллажей и оборудования для архива, офиса, библиотеки, музея, склада.
+        .catalog-description__block 
+            .catalog-description__block-video 
+                +videoPlaceholder('./img/pages/catalog/catalogDescription/banner.png')
+                p.catalog-description__block-add  Познакомьтесь за 2 минуту с нашим предприятием онлайн 
+            .catalog-description__block-content
+                p.catalog-description__block-text 
+                    span С 1990 
+                    | года мы специализируемся на реализации комплексных решений, связанных с хранением. В первую очередь – на использовании передвижных стеллажей с механическим и электрическим приводом. 
+                ul.catalog-description__block-list
+                    each _, i in Array(4)
+                        li.catalog-description__block-item 
+                            +catalogDescriptionCard('Сплошные стойки и полки образуют замкнутые ячейки хранения')
+                .catalog-description__block-button
+                    +buttonYellow('СКАЧАТЬ ПРЕЗЕНТАЦИЮ')
