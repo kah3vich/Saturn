@@ -1,0 +1,9 @@
+section.news-list 
+    .containers 
+        p.news-list__subtitle Главная / 
+            span Кейсы
+        h1.news-list__title Новости
+        ul.news-list__list 
+            each _, i in Array(8)   
+                li.news-list__item 
+                    +newsCard('./img/pages/news/card.png', 'Передвижные стеллажи для архива и офиса, для музея и библиотеки - самостоятельный выбор', '22.07.08')

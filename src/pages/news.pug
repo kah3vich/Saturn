@@ -1,0 +1,14 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Новости";
+
+block content
+	include ../components/Header/index.pug
+
+	include ../components/pages/News/NewsList/index.pug
+
+	include ../components/Footer/index.pug
+
+block scripts
+	script(src="js/main.js")
