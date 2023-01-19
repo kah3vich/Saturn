@@ -473,6 +473,20 @@ var indexSteps = function indexSteps() {};
 
 /***/ }),
 
+/***/ "./src/components/pages/NewsDetail/script.js":
+/*!***************************************************!*\
+  !*** ./src/components/pages/NewsDetail/script.js ***!
+  \***************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "NewsDetail": function() { return /* binding */ NewsDetail; }
+/* harmony export */ });
+var NewsDetail = function NewsDetail() {};
+
+/***/ }),
+
 /***/ "./src/components/pages/News/NewsList/script.js":
 /*!******************************************************!*\
   !*** ./src/components/pages/News/NewsList/script.js ***!
@@ -515,9 +529,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "IndexMain": function() { return /* reexport safe */ _pages_Index_IndexMain_script_js__WEBPACK_IMPORTED_MODULE_21__.IndexMain; },
 /* harmony export */   "IndexNews": function() { return /* reexport safe */ _pages_Index_IndexNews_script_js__WEBPACK_IMPORTED_MODULE_22__.IndexNews; },
 /* harmony export */   "MainBanner": function() { return /* reexport safe */ _MainBanner_script_js__WEBPACK_IMPORTED_MODULE_6__.MainBanner; },
+/* harmony export */   "NewsDetail": function() { return /* reexport safe */ _pages_NewsDetail_script_js__WEBPACK_IMPORTED_MODULE_25__.NewsDetail; },
 /* harmony export */   "NewsList": function() { return /* reexport safe */ _pages_News_NewsList_script_js__WEBPACK_IMPORTED_MODULE_24__.NewsList; },
-/* harmony export */   "Space": function() { return /* reexport safe */ _Space_script_js__WEBPACK_IMPORTED_MODULE_25__.Space; },
-/* harmony export */   "Team": function() { return /* reexport safe */ _Team_script_js__WEBPACK_IMPORTED_MODULE_26__.Team; },
+/* harmony export */   "Space": function() { return /* reexport safe */ _Space_script_js__WEBPACK_IMPORTED_MODULE_26__.Space; },
+/* harmony export */   "Team": function() { return /* reexport safe */ _Team_script_js__WEBPACK_IMPORTED_MODULE_27__.Team; },
 /* harmony export */   "indexAbout": function() { return /* reexport safe */ _pages_Index_IndexAbout_script_js__WEBPACK_IMPORTED_MODULE_16__.indexAbout; },
 /* harmony export */   "indexCatalogLink": function() { return /* reexport safe */ _pages_Index_IndexCatalogLink_script_js__WEBPACK_IMPORTED_MODULE_18__.indexCatalogLink; },
 /* harmony export */   "indexLink": function() { return /* reexport safe */ _pages_Index_IndexLink_script_js__WEBPACK_IMPORTED_MODULE_20__.indexLink; },
@@ -548,8 +563,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_Index_IndexNews_script_js__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./pages/Index/IndexNews/script.js */ "./src/components/pages/Index/IndexNews/script.js");
 /* harmony import */ var _pages_Index_IndexSteps_script_js__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./pages/Index/IndexSteps/script.js */ "./src/components/pages/Index/IndexSteps/script.js");
 /* harmony import */ var _pages_News_NewsList_script_js__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./pages/News/NewsList/script.js */ "./src/components/pages/News/NewsList/script.js");
-/* harmony import */ var _Space_script_js__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./Space/script.js */ "./src/components/Space/script.js");
-/* harmony import */ var _Team_script_js__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./Team/script.js */ "./src/components/Team/script.js");
+/* harmony import */ var _pages_NewsDetail_script_js__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./pages/NewsDetail/script.js */ "./src/components/pages/NewsDetail/script.js");
+/* harmony import */ var _Space_script_js__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./Space/script.js */ "./src/components/Space/script.js");
+/* harmony import */ var _Team_script_js__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./Team/script.js */ "./src/components/Team/script.js");
+
 
 
 
