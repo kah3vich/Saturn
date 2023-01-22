@@ -13,6 +13,7 @@ mixin mainBanner(title, subtitle, button, src)
                 .mainBanner__content-title= title
                 if (subtitle != '')
                     .mainBanner__content-subtitle= subtitle
-                .mainBanner__content-button 
-                    +buttonYellow(button)
+                if (button != '')
+                    .mainBanner__content-button 
+                        +buttonYellow(button)
             .mainBanner__banner 

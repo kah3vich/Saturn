@@ -8,6 +8,9 @@
 	}
 	&__subtitle {
 		@include fontStyle(14px, 300, 130%, $color-black);
+		& span {
+			color: $color-gray;
+		}
 	}
 	&__title {
 		@include fontStyle(40px, 700, 58px, $color-blue-black);

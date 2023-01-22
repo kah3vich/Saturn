@@ -5,7 +5,8 @@ mixin newsCard(src, text, date)
         .newsCard__content 
             p.newsCard__content-text= text
             .newsCard__content-block 
-                p.newsCard__content-date= date
+                if (date !== '')
+                    p.newsCard__content-date= date
                 a(href="/").newsCard__content-link Подробнее
 
         

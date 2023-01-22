@@ -4,3 +4,26 @@ mixin feedbackCard(logoSrc, docSrc)
             img(src=logoSrc alt="")
         .feedbackCard__doc 
             img(src=docSrc alt="")
+
+mixin feedbackSection(title)
+    section.feedback
+        .containers
+            .feedback__navbar
+                .feedback__title= title
+                .feedback__controls
+                    .swiper-button-next
+                        svg(width="250" height="16" viewBox="0 0 250 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(d="M249.707 8.70711C250.098 8.31658 250.098 7.68342 249.707 7.29289L243.343 0.928932C242.953 0.538408 242.319 0.538408 241.929 0.928932C241.538 1.31946 241.538 1.95262 241.929 2.34315L247.586 8L241.929 13.6569C241.538 14.0474 241.538 14.6805 241.929 15.0711C242.319 15.4616 242.953 15.4616 243.343 15.0711L249.707 8.70711ZM0 9H249V7H0V9Z" fill="black")
+                    .swiper-button-prev
+                        svg(width="250" height="16" viewBox="0 0 250 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(d="M0.292892 8.70711C-0.0976257 8.31658 -0.0976257 7.68342 0.292892 7.29289L6.65686 0.928932C7.04738 0.538408 7.68054 0.538408 8.07108 0.928932C8.46159 1.31946 8.46159 1.95262 8.07108 2.34315L2.41422 8L8.07108 13.6569C8.46159 14.0474 8.46159 14.6805 8.07108 15.0711C7.68054 15.4616 7.04738 15.4616 6.65686 15.0711L0.292892 8.70711ZM250 9H1V7H250V9Z" fill="black")
+
+            .feedback__slider 
+                .swiper.feedbackSwiper
+                    .swiper-wrapper
+                        each _, i in Array(12)
+                            .swiper-slide 
+                                +feedbackCard('./img/components/feedback/logo.png', './img/components/feedback/doc.png')
+                
+            .feedback__button 
+                +buttonYellow('ПРИМЕРЫ РАБОТ')

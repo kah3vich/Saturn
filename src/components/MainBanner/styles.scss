@@ -39,15 +39,22 @@
 		padding: 43px 0 20px 0;
 		position: relative;
 		@include flexStyle(flex-start, center, column, 12vh);
+		& div {
+			width: 90%;
+		}
 		&-title {
 			letter-spacing: -0.5px;
 			@include fontStyle(42px, 700, 54px, $color-white);
+		}
+		&-subtitle {
+			letter-spacing: -0.5px;
+			@include fontStyle(28px, 400, 42px, $color-white);
 		}
 		&-link {
 			position: absolute;
 			top: 43px;
 			left: 0;
-			width: max-content;
+			width: max-content !important;
 			@include flexStyle(center, center, row, 2px);
 			@include fontStyle(14px, 300, 19px, $color-white);
 			& a:nth-child(1) {

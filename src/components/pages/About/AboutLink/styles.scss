@@ -1,0 +1,37 @@
+.aboutLink {
+	width: 100%;
+	position: relative;
+	background-color: $color-blue-black;
+	overflow: hidden;
+	& .containers {
+		@include flexStyle(flex-start, center, column, 43px);
+		position: relative;
+		z-index: 2;
+		padding: 92px 90px;
+	}
+	&__title {
+		text-transform: uppercase;
+		@include fontStyle(32px, 700, 58px, $color-white);
+	}
+	&__background {
+		position: absolute;
+		z-index: 1;
+		top: 50%;
+		left: 50%;
+		height: 100%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		@include flexStyle(center, center);
+	}
+	&__left {
+		width: 50%;
+		height: 100%;
+	}
+	&__banner {
+		width: 50%;
+		height: 100%;
+		& img {
+			@include imgFullSize();
+		}
+	}
+}

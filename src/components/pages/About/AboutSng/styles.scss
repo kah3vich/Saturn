@@ -1,0 +1,47 @@
+.aboutSng {
+	width: 100%;
+	background-color: $color-white;
+	padding: 140px 0 60px 0;
+	& .containers {
+		@include flexStyle(flex-start, flex-start, column, 20px);
+	}
+	&__title {
+		@include fontStyle(40px, 700, 58px, $color-blue-black);
+	}
+	&__text {
+		@include fontStyle(28px, 400, 50px, $color-black);
+	}
+	&__list {
+		@include flexStyle(flex-start, flex-start, column, 20px);
+		margin-top: 18px;
+	}
+	&__item {
+		width: max-content;
+	}
+	&__banner {
+		width: 100%;
+		max-width: 1440px;
+		margin: -230px auto 0 auto;
+		& img {
+			width: 100%;
+		}
+	}
+}
+
+// Mixin
+
+.aboutSngCard {
+	@include flexStyle(flex-start, flex-start, column, 27px);
+	&__decor {
+		width: 22px;
+		height: 22px;
+		border-radius: 50%;
+		background: $color-yellow;
+		border: 1px solid $color-yellow;
+		box-shadow: 0px 0px 14px $color-yellow;
+	}
+	&__text {
+		letter-spacing: -0.5px;
+		@include fontStyle(20px, 400, 31px, $color-black);
+	}
+}

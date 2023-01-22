@@ -1,0 +1,30 @@
+extends ../layouts/default
+
+block variables
+	- const title = "О компании";
+
+block content
+	include ../components/Header/index.pug
+
+	+mainBanner('ГК САТУРН СЕГОДНЯ', 'Российская компания по продаже производству металлических стеллажей', '', './img/pages/about/banner.png')
+
+	include ../components/pages/About/AboutMission/index.pug
+
+	include ../components/Space/index.pug
+
+	include ../components/pages/About/AboutСharact/index.pug
+
+	include ../components/pages/About/AboutLink/index.pug
+
+	include ../components/pages/About/AboutSng/index.pug
+
+	+feedbackSection('Клиенты')
+
+	include ../components/pages/Index/indexNews/index.pug
+
+	include ../components/FormBase/index.pug
+
+	include ../components/Footer/index.pug
+
+block scripts
+	script(src="js/main.js")

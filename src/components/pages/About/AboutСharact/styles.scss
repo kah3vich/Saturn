@@ -1,0 +1,100 @@
+.aboutCharact {
+	width: 100%;
+	padding: 160px 0 120px 0;
+	background-color: $color-white;
+	& .containers {
+		width: 100%;
+		@include flexStyle(flex-start, flex-start, column, 45px);
+	}
+	&__title {
+		@include fontStyle(40px, 700, 58px, $color-blue-black);
+	}
+	&__text {
+		@include fontStyle(28px, 700, 50px, $color-black);
+	}
+	&__list {
+		width: 100%;
+		margin-top: 20px;
+		@include flexStyle(flex-start, flex-start, rpw, 19px);
+	}
+	&__item {
+		width: auto;
+	}
+}
+
+// Mixin
+
+.aboutCharactCard {
+	max-width: 272px;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 20px;
+	cursor: pointer;
+	@include flexStyle(center, center, column);
+	@include transitionStyle();
+	&:hover {
+		max-width: 28%;
+		& .aboutCharactCard__banner {
+			&::after {
+				opacity: 0.9;
+			}
+			& p {
+				opacity: 1;
+			}
+		}
+		& .aboutCharactCard__title {
+			background: $color-yellow;
+		}
+	}
+	&__banner {
+		height: 500px;
+		width: 100%;
+		position: relative;
+		& img {
+			@include imgFullSize();
+		}
+		& p {
+			position: absolute;
+			z-index: 2;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 300px;
+			@include fontStyle(23px, 700, 31px, $color-white);
+			text-align: center;
+			letter-spacing: -0.5px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 9;
+			-webkit-box-orient: vertical;
+			opacity: 0;
+			@include transitionStyle();
+		}
+		&::after {
+			@include transitionStyle();
+			position: absolute;
+			width: 100%;
+			content: '';
+			top: 0;
+			left: 0;
+			height: 100%;
+			background-color: $color-blue-black;
+			opacity: 0;
+			z-index: 1;
+		}
+	}
+	&__title {
+		width: 100%;
+		height: max-content;
+		background: $color-light-yellow-green;
+		@include transitionStyle();
+		padding: 42px 20px;
+		@include flexStyle(center, center);
+		& p {
+			@include fontStyle(22px, 800, 32px, $color-blue-black);
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+}
