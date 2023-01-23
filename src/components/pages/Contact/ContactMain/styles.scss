@@ -1,0 +1,75 @@
+.contact-main {
+	padding: 70px 0;
+	width: 100%;
+	background-color: $color-white;
+	& .containers {
+		width: 100%;
+		@include flexStyle(flex-start, flex-start, column, 35px);
+	}
+	&__title {
+		@include fontStyle(40px, 700, 58px, $color-blue-black);
+	}
+	&__text {
+		@include fontStyle(28px, 400, 50px, $color-black);
+	}
+	&__wrapper {
+		margin-top: 35px;
+		width: 100%;
+		@include flexStyle(flex-start, space-between, row, 30px);
+	}
+	&__banner {
+		width: 552px;
+		height: 518px;
+		background-color: $color-white;
+		box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.25);
+		border-radius: 20px;
+		overflow: hidden;
+		position: relative;
+		& img {
+			width: 548px;
+			height: 458px;
+		}
+	}
+	&__button {
+		width: 51px;
+		height: 51px;
+		background: #18064b;
+		border-radius: 10px;
+		cursor: pointer;
+		position: absolute;
+		bottom: 13px;
+		right: 16px;
+		& img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 2;
+			width: 32px;
+			height: 32px;
+		}
+	}
+	&__content {
+		width: 50%;
+		@include flexStyle(flex-start, flex-start, column, 30px);
+		&-icon {
+			width: 56px;
+			height: 56px;
+		}
+		&-title {
+			margin-top: 20px;
+			text-transform: uppercase;
+			@include fontStyle(22px, 800, 32px, $color-blue-black);
+		}
+		&-text {
+			letter-spacing: -0.5px;
+			@include fontStyle(20px, 400, 31px, $color-black);
+			& span {
+				font-weight: 700;
+			}
+			& a {
+				@include fontStyle(20px, 400, 31px, $color-black);
+			}
+		}
+	}
+}

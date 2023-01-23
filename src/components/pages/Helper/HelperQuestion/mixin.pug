@@ -1,0 +1,7 @@
+mixin helperAccordion(title, text)
+    .helperAccordion 
+        .helperAccordion__header
+            .helperAccordion__title= title
+            button.helperAccordion__close
+                img(src="./svg/pages/helper/plus.svg" alt="")
+        .helperAccordion__content= text

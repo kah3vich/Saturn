@@ -84,6 +84,8 @@ npm run gulp
 
 ### 4. <a href="https://kah3vich.github.io/Saturn/public/about.html">About</a>
 
+### 5. <a href="https://kah3vich.github.io/Saturn/public/contact.html">Contact</a>
+
 ### 7. <a href="https://kah3vich.github.io/Saturn/public/articles.html">Articles</a>
 
 ### 9. <a href="https://kah3vich.github.io/Saturn/public/news.html">News</a>

@@ -1,0 +1,59 @@
+.contact-geo {
+	width: 100%;
+	background-color: $color-light-yellow-green;
+	padding: 80px;
+	& .containers {
+		width: 100%;
+		position: relative;
+		@include flexStyle(flex-start, space-between, row, 65px);
+	}
+	&__block {
+		width: 530px;
+		@include flexStyle(flex-start, flex-start, column, 50px);
+	}
+	&__other {
+		@include fontStyle(20px, 400, 31px, $color-black);
+		letter-spacing: -0.5px;
+		& span {
+			font-weight: 700;
+		}
+		& a {
+			@include fontStyle(20px, 400, 31px, $color-black);
+		}
+	}
+	&__banner {
+		margin-top: -65px;
+		margin-left: -190px;
+	}
+	&__list {
+		display: grid;
+		@include flexStyle(flex-start, flex-start, column, 75px);
+		gap: 65px;
+		width: 660px;
+	}
+	&__item,
+	&__other {
+		width: 100%;
+		@include flexStyle(flex-start, flex-start, column, 32px);
+		&-icon {
+			width: 56px;
+			height: 56px;
+		}
+		&-title {
+			margin-top: 15px;
+			text-transform: uppercase;
+			@include fontStyle(22px, 800, 32px, $color-blue-black);
+		}
+		&-text {
+			width: 100%;
+			@include fontStyle(20px, 400, 31px, $color-black);
+			letter-spacing: -0.5px;
+			& span {
+				font-weight: 700;
+			}
+			& a {
+				@include fontStyle(20px, 400, 31px, $color-black);
+			}
+		}
+	}
+}
