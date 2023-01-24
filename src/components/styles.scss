@@ -21,6 +21,8 @@
 @import './pages/Catalog/CatalogBanner/styles';
 @import './pages/Catalog/CatalogCase/styles';
 @import './pages/Catalog/CatalogTable/styles';
+@import './pages/Catalog/CatalogList/styles';
+@import './pages/Catalog/CatalogAddition/styles';
 @import './pages/Catalog/CatalogMain/styles';
 @import './pages/Catalog/CatalogDescription/styles';
 @import './pages/Catalog/CatalogCollection/styles';
@@ -46,6 +48,15 @@
 	border-radius: 10px;
 	&__text {
 		@include fontStyle(18px, 700, 18px, $color-black);
+	}
+}
+
+.buttonGray {
+	background: $color-light-yellow-green;
+	padding: 18px 28px;
+	border-radius: 10px;
+	&__text {
+		@include fontStyle(18px, 700, 27px, $color-black);
 	}
 }
 
@@ -79,6 +90,55 @@
 		& img {
 			width: 40px;
 			height: 40px;
+		}
+	}
+}
+
+.additionCard {
+	width: 282px;
+	background: $color-light-yellow-green;
+	border-radius: 10px;
+	overflow: hidden;
+	@include transitionStyle();
+	cursor: pointer;
+	&:hover {
+		background: $color-blue-black;
+		& .additionCard__content-title {
+			color: $color-white;
+		}
+		& .additionCard__content-subtitle {
+			color: $color-white;
+		}
+	}
+	&__banner {
+		width: 100%;
+		height: 190px;
+		& img {
+			@include imgFullSize();
+		}
+	}
+	&__content {
+		width: 100%;
+		padding: 22px 22px 16px 22px;
+		@include flexStyle(center, flex-start, column, 22px);
+		&-title {
+			text-align: center;
+			@include fontStyle(18px, 700, 23px, $color-black);
+		}
+		&-subtitle {
+			@include fontStyle(15px, 500, 25px, $color-black);
+			text-align: center;
+			letter-spacing: -0.5px;
+		}
+		&-button {
+			background: $color-yellow;
+			border-radius: 5px;
+			width: 100%;
+			padding: 6px 20px;
+			@include flexStyle(center, center);
+			& p {
+				@include fontStyle(13px, 700, 19px, $color-black);
+			}
 		}
 	}
 }

@@ -1,0 +1,9 @@
+section.catalog-list
+    .containers
+        h3.catalog-list__title Каталог
+        ul.catalog-list__list
+            each _, i in Array(8)
+                li.catalog-list__item
+                    +catalogCard()
+        .catalog-list__button 
+            +buttonGray('Скачать каталог')

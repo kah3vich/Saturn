@@ -1,0 +1,71 @@
+.catalog-addition {
+	padding: 60px 0 110px 0;
+	width: 100%;
+	background-color: $color-white;
+	& .containers {
+		width: 100%;
+		@include flexStyle(flex-start, flex-start, column, 35px);
+	}
+	&__title {
+		@include fontStyle(40px, 700, 58px, $color-blue-black);
+	}
+	&__text {
+		@include fontStyle(28px, 400, 49px, $color-black);
+	}
+	&__slider {
+		margin-top: 30px;
+		width: 100%;
+		& .swiper-controls {
+			width: 100%;
+			position: relative;
+			& .swiper-pagination {
+				bottom: -80px !important;
+				z-index: 1;
+			}
+			& .swiper-pagination-bullet {
+				width: 22px;
+				height: 22px;
+				background: $color-gray-light;
+				border-radius: 50%;
+				@include transitionStyle();
+			}
+			& .swiper-pagination-bullet-active {
+				width: 22px;
+				height: 22px;
+				background: $color-yellow;
+				border-radius: 50%;
+			}
+			& .swiper-button-next {
+				right: 30%;
+				top: 50px;
+				left: auto;
+				z-index: 3;
+				width: 64px;
+				height: 64px;
+				background: $color-yellow;
+				cursor: pointer;
+				border-radius: 50%;
+				&::after {
+					content: none;
+				}
+			}
+			& .swiper-button-prev {
+				left: 30%;
+				top: 50px;
+				z-index: 3;
+				right: auto;
+				width: 64px;
+				height: 64px;
+				background: $color-yellow;
+				cursor: pointer;
+				border-radius: 50%;
+				&::after {
+					content: none;
+				}
+			}
+		}
+	}
+	&__button {
+		margin: 0 0 0 auto;
+	}
+}

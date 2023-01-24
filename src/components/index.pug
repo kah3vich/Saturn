@@ -23,6 +23,8 @@ include pages/Catalog/CatalogTable/mixin.pug
 include pages/Catalog/CatalogCase/mixin.pug
 include pages/Catalog/CatalogCase/mixin.pug
 include pages/Catalog/CatalogMain/mixin.pug
+include pages/Catalog/CatalogAddition/mixin.pug
+include pages/Catalog/CatalogList/mixin.pug
 include pages/Catalog/CatalogDescription/mixin.pug
 include pages/Catalog/CatalogCollection/mixin.pug
 include pages/News/NewsList/mixin.pug
@@ -44,6 +46,10 @@ mixin buttonYellow(text)
         p.buttonYellow__text= text
         img(src="./svg/mixin/arrow-link.svg" alt="").buttonYellow__img
 
+mixin buttonGray(text)
+    button.buttonGray
+        p.buttonGray__text= text
+
 mixin videoPlaceholder(src)
     .videoPlaceholder__video 
             img(src=src alt="")
@@ -52,3 +58,13 @@ mixin videoPlaceholder(src)
                     br 
                     | видео
                 img(src="./svg/index/indexMain/play.svg" alt="")
+
+mixin additionCard(src, title, subtitle)
+    .additionCard
+        .additionCard__banner 
+            img(src=src alt="")
+        .additionCard__content
+            h5.additionCard__content-title= title
+            p.additionCard__content-subtitle= subtitle 
+            a(href="").additionCard__content-button 
+                p Подробнее

@@ -1,0 +1,19 @@
+section.catalog-addition
+    .containers
+        h5.catalog-addition__title Дополнительное оборудование
+        p.catalog-addition__text Производим разделители полок и папок. Выдвижные полки и ящики. Двери распашные и жалюзи (ролеты). Штанги для плечиков, задние стенки, замки, идентификационные таблички на боковые панели, соединители рядов.
+        .catalog-addition__slider 
+            .swiper.catalogAdditionSlider
+                .swiper-wrapper
+                    each _, i in Array(8)
+                        .swiper-slide  
+                            +additionCard('./img/pages/catalog/catalogAddition/card.png', 'Дополнительное оборудование', 'Идеальный вариант для помещения с ровными полами')
+            .swiper-controls
+                .swiper-button-next
+                    img(src="./svg/pages/catalog/catalogAddition/arrow-next.svg" alt="")
+                .swiper-button-prev
+                    img(src="./svg/pages/catalog/catalogAddition/arrow-prev.svg" alt="")
+                .swiper-pagination
+            
+        .catalog-addition__button 
+            +buttonGray('Смотреть все')

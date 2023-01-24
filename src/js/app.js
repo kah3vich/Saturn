@@ -1,6 +1,7 @@
 import { IndexCase } from '../components/pages/Index/IndexCase/script.js'
 import { IndexMain } from '../components/pages/Index/IndexMain/script.js'
 import {
+	CatalogAddition,
 	CatalogCase,
 	CatalogMain,
 	Feedback,
@@ -17,3 +18,4 @@ Team()
 IndexMain()
 CatalogMain()
 HelperQuestion()
+CatalogAddition()
