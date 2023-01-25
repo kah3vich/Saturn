@@ -1,0 +1,30 @@
+.catalog-text {
+	width: 100%;
+	padding: 90px 0;
+	background-color: $color-white;
+	& .containers {
+		width: 100%;
+		@include flexStyle(flex-start, flex-start, column, 35px);
+	}
+	&__title {
+		@include fontStyle(40px, 700, 58px, $color-blue-black);
+	}
+	&__description {
+		width: 75%;
+		@include fontStyle(28px, 400, 50px, $color-black);
+	}
+	&__banners {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+		gap: 25px;
+		margin-top: 30px;
+	}
+	&__banner {
+		border-radius: 20px;
+		overflow: hidden;
+		& img {
+			@include imgFullSize();
+		}
+	}
+}
