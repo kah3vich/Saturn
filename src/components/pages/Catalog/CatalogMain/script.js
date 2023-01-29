@@ -1,5 +1,5 @@
 export const CatalogMain = () => {
-	var catalogMainSlider = new Swiper('.catalogMainSlider', {
+	const catalogMainSlider = new Swiper('.catalogMainSlider', {
 		pagination: {
 			el: '.catalog-main__slider  .swiper-pagination',
 			clickable: true,

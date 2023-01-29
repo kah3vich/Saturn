@@ -8621,13 +8621,12 @@ opacity-h {
 	justify-content : center;
 	padding : 50px 0;
 	position : relative;
-	background : #ffffff;
 }
 
 .modalCollection__close {
-	width : 66px;
-	height : 66px;
-	background : #f2ce14;
+	width : 45px;
+	height : 45px;
+	background : #ffffff;
 	border-radius : 50%;
 	cursor : pointer;
 	display : -webkit-box;
@@ -8647,14 +8646,18 @@ opacity-h {
 	-ms-flex-wrap : nowrap;
 	    flex-wrap : nowrap;
 	position : absolute;
-	top : 45px;
-	right : 45px;
+	top : 35px;
+	right : 35px;
 	z-index : 5;
 }
 
+.modalCollection__item {
+	background-color : #ffffff;
+}
+
 .modalCollection__wrapper {
-	width : 520px;
-	background : transparent;
+	width : 1260px;
+	background : #ffffff;
 	display : -webkit-box;
 	display : -ms-flexbox;
 	display : flex;
@@ -8677,12 +8680,12 @@ opacity-h {
 }
 
 .modalCollection__wrapper .swiper-controls .swiper-button-next {
-	width : 126px;
-	height : 126px;
-	background : #f2ce14;
-	border-radius : 50%;
+	width : 60px;
+	height : 10px;
 	cursor : pointer;
-	right : -35% !important;
+	top : 64px !important;
+	right : 55px !important;
+	left : auto !important;
 	display : -webkit-box;
 	display : -ms-flexbox;
 	display : flex;
@@ -8702,16 +8705,27 @@ opacity-h {
 }
 
 .modalCollection__wrapper .swiper-controls .swiper-button-next::after {
-	content : none;
+	content : "След. проект";
+	font-weight : 400;
+	font-size : 14px;
+	line-height : 58px;
+	color : #141413;
+	font-style : normal;
+	position : absolute;
+	width : -webkit-max-content;
+	width :    -moz-max-content;
+	width :         max-content;
+	top : 0px;
+	left : -13px;
 }
 
 .modalCollection__wrapper .swiper-controls .swiper-button-prev {
-	width : 126px;
-	height : 126px;
-	background : #f2ce14;
-	border-radius : 50%;
+	width : 60px;
+	height : 10px;
 	cursor : pointer;
-	left : -35% !important;
+	top : 64px !important;
+	left : 55px !important;
+	right : auto !important;
 	display : -webkit-box;
 	display : -ms-flexbox;
 	display : flex;
@@ -8731,7 +8745,236 @@ opacity-h {
 }
 
 .modalCollection__wrapper .swiper-controls .swiper-button-prev::after {
+	content : "Пред. проект";
+	font-weight : 400;
+	font-size : 14px;
+	line-height : 58px;
+	color : #141413;
+	font-style : normal;
+	position : absolute;
+	width : -webkit-max-content;
+	width :    -moz-max-content;
+	width :         max-content;
+	top : 0px;
+	right : -13px;
+}
+
+.modalCollectionSlide {
+	width : 100%;
+	background-color : #ffffff;
+	padding : 45px 60px;
+}
+
+.modalCollectionSlide__title {
+	font-weight : 700;
+	font-size : 35px;
+	line-height : 58px;
+	color : #140848;
+	font-style : normal;
+	width : 75%;
+	margin : 0 auto;
+	text-align : center;
+}
+
+.modalCollectionSlide__block {
+	margin-top : 50px;
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	-webkit-box-orient : horizontal;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : row;
+	    flex-direction : row;
+	gap : 75px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.modalCollectionSlide__content {
+	width : 45%;
+}
+
+.modalCollectionSlide__list {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	gap : 11px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.modalCollectionSlide__item {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	-webkit-box-orient : horizontal;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : row;
+	    flex-direction : row;
+	gap : 4px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.modalCollectionSlide__item span {
+	font-weight : 700;
+	font-size : 19px;
+	line-height : 58px;
+	color : #141413;
+	font-style : normal;
+}
+
+.modalCollectionSlide__item p {
+	font-weight : 400;
+	font-size : 19px;
+	line-height : 58px;
+	color : #141413;
+	font-style : normal;
+}
+
+.modalCollectionSlide__button {
+	margin-top : 40px;
+}
+
+.modalCollectionSlide__tags {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	gap : 24px;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	-ms-flex-wrap : wrap;
+	    flex-wrap : wrap;
+	margin-top : 60px;
+}
+
+.modalCollectionSlide__tag {
+	font-weight : 400;
+	font-size : 20px;
+	line-height : 58px;
+	color : #808080;
+	font-style : normal;
+}
+
+.modalCollectionSlide__slider {
+	width : 536px;
+	height : 402px;
+	border-radius : 20px;
+	position : relative;
+}
+
+.modalCollectionSlide__slider .swiper-slide {
+	width : 100%;
+	height : 402px;
+}
+
+.modalCollectionSlide__slider .swiper-control .swiper-button-next {
+	position : absolute;
+	top : -1px;
+	bottom : auto;
+	right : -1px;
+	margin : 0;
+	width : 43px;
+	height : 404px;
+	background : #f2ce14;
+	border-radius : 0 20px 20px 0;
+	overflow : hidden;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	-webkit-box-orient : horizontal;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : row;
+	    flex-direction : row;
+	gap : 0px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.modalCollectionSlide__slider .swiper-control .swiper-button-next::after {
 	content : none;
+}
+
+.modalCollectionSlide__slider .swiper-control .swiper-button-prev {
+	position : absolute;
+	top : -1px;
+	bottom : auto;
+	left : -1px;
+	margin : 0;
+	width : 43px;
+	height : 404px;
+	background : #f2ce14;
+	border-radius : 20px 0 0 20px;
+	overflow : hidden;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	-webkit-box-orient : horizontal;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : row;
+	    flex-direction : row;
+	gap : 0px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.modalCollectionSlide__slider .swiper-control .swiper-button-prev::after {
+	content : none;
+}
+
+.modalCollectionSlide__slider-item {
+	width : 100%;
+	height : 100%;
+	border-radius : 20px;
+	overflow : hidden;
+}
+
+.modalCollectionSlide__slider-item img {
+	width : 100%;
+	height : 100%;
+	-o-object-fit : cover;
+	   object-fit : cover;
+	display : block;
 }
 
 .buttonYellow {

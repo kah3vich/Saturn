@@ -5,10 +5,10 @@ section.modalCollection.display-n
         .modalCollection__wrapper 
             .swiper.modalCollectionSlider
                 .swiper-wrapper
-                    each _, i in Array(12)
+                    each _, i in Array(19)
                         .swiper-slide 
-                            .modalCollection__item 123
-
+                            .modalCollection__item 
+                                +modalCollectionSlide('Оборудование 3 этажного архива'+i)
             .swiper-controls
                 .swiper-button-next
                     img(src="./svg/modals/modalCollection/arrow-next.svg")
