@@ -1,0 +1,9 @@
+section.catalog-stages 
+    .catalog-stages__background 
+        img(src="./img/pages/catalog/catalogStages/banner.png" alt="")
+    .containers
+        h5.catalog-stages__title Этапы работ
+        ul.catalog-stages__list 
+            each _, i in Array(4)
+                li.catalog-stages__item 
+                    +catalogStagesCard('ПРОИЗВОДСТВО', 'Разработка индивидуального проекта технического оснащения архивного помещения современным стеллажным оборудованием.')

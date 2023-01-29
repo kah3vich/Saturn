@@ -22,6 +22,7 @@ include pages/Catalog/CatalogBanner/mixin.pug
 include pages/Catalog/CatalogTable/mixin.pug
 include pages/Catalog/CatalogCase/mixin.pug
 include pages/Catalog/CatalogCase/mixin.pug
+include pages/Catalog/CatalogStages/mixin.pug
 include pages/Catalog/CatalogMain/mixin.pug
 include pages/Catalog/CatalogRequest/mixin.pug
 include pages/Catalog/CatalogText/mixin.pug
@@ -40,17 +41,17 @@ include pages/Contact/ContactMain/mixin.pug
 include pages/Contact/ContactGeo/mixin.pug
 include pages/Helper/HelperQuestion/mixin.pug
 include pages/Helper/HelperArticles/mixin.pug
+include modals/ModalFeedback/mixin.pug
+include modals/ModalCollection/mixin.pug
 
 //- Mixin
 
 mixin buttonYellow(text)
-    button.buttonYellow
-        p.buttonYellow__text= text
+    button.buttonYellow= text
         img(src="./svg/mixin/arrow-link.svg" alt="").buttonYellow__img
 
 mixin buttonGray(text)
-    button.buttonGray
-        p.buttonGray__text= text
+    button.buttonGray= text
 
 mixin videoPlaceholder(src)
     .videoPlaceholder__video 

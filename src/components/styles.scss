@@ -23,6 +23,7 @@
 @import './pages/Catalog/CatalogTable/styles';
 @import './pages/Catalog/CatalogList/styles';
 @import './pages/Catalog/CatalogAddition/styles';
+@import './pages/Catalog/CatalogStages/styles';
 @import './pages/Catalog/CatalogRequest/styles';
 @import './pages/Catalog/CatalogText/styles';
 @import './pages/Catalog/CatalogMain/styles';
@@ -39,6 +40,8 @@
 @import './pages/Contact/ContactGeo/styles';
 @import './pages/Helper/HelperArticles/styles';
 @import './pages/Helper/HelperQuestion/styles';
+@import './modals/ModalFeedback/styles';
+@import './modals/ModalCollection/styles';
 
 // Mixin
 
@@ -48,18 +51,14 @@
 	cursor: pointer;
 	background-color: $color-yellow;
 	border-radius: 10px;
-	&__text {
-		@include fontStyle(18px, 700, 18px, $color-black);
-	}
+	@include fontStyle(18px, 700, 18px, $color-black);
 }
 
 .buttonGray {
 	background: $color-light-yellow-green;
 	padding: 18px 28px;
 	border-radius: 10px;
-	&__text {
-		@include fontStyle(18px, 700, 27px, $color-black);
-	}
+	@include fontStyle(18px, 700, 27px, $color-black);
 }
 
 .videoPlaceholder {

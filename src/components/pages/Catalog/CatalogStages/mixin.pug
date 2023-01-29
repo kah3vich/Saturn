@@ -1,0 +1,12 @@
+mixin catalogStagesCard(title, text)
+    .catalogStagesCard
+        .catalogStagesCard__base 
+            .catalogStagesCard__base-icon 
+                img(src="./svg/pages/catalog/catalogStages/icon.svg" alt="")
+            h5.catalogStagesCard__base-title= title 
+        .catalogStagesCard__hover 
+            h5.catalogStagesCard__hover-title= title 
+            p.catalogStagesCard__hover-text= text
+            a(href="/").catalogStagesCard__hover-link 
+                p Подробнее
+                img(src="./svg/pages/catalog/catalogStages/arrow.svg" alt="")

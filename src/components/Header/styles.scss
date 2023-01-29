@@ -46,10 +46,8 @@
 		border-radius: 10px;
 		padding: 10px 17px;
 		cursor: pointer;
-		& p {
-			@include fontStyle(14px, 700, 16px, $color-black);
-			text-transform: uppercase;
-		}
+		@include fontStyle(14px, 700, 16px, $color-black);
+		text-transform: uppercase;
 	}
 }
 

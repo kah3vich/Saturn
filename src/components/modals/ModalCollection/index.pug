@@ -1,0 +1,16 @@
+section.modalCollection.display-n
+    .modalCollection__background 
+        .modalCollection__close
+            img(src="./svg/modals/modalCollection/close.svg")
+        .modalCollection__wrapper 
+            .swiper.modalCollectionSlider
+                .swiper-wrapper
+                    each _, i in Array(12)
+                        .swiper-slide 
+                            .modalCollection__item 123
+
+            .swiper-controls
+                .swiper-button-next
+                    img(src="./svg/modals/modalCollection/arrow-next.svg")
+                .swiper-button-prev
+                    img(src="./svg/modals/modalCollection/arrow-prev.svg")

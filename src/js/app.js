@@ -7,6 +7,8 @@ import {
 	Feedback,
 	Header,
 	HelperQuestion,
+	ModalCollection,
+	ModalFeedback,
 	Team
 } from '../components/script.js'
 
@@ -19,3 +21,5 @@ IndexMain()
 CatalogMain()
 HelperQuestion()
 CatalogAddition()
+ModalFeedback()
+ModalCollection()

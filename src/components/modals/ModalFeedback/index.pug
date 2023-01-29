@@ -1,0 +1,16 @@
+section.modalFeedback.display-n
+    .modalFeedback__background 
+        .modalFeedback__close
+            img(src="./svg/modals/modalFeedback/close.svg")
+        .modalFeedback__wrapper 
+            .swiper.modalFeedbackSlider
+                .swiper-wrapper
+                    each _, i in Array(12)
+                        .swiper-slide 
+                            .modalFeedback__item 
+                                img(src="./img/components/feedback/doc.png" alt="")
+            .swiper-controls
+                .swiper-button-next
+                    img(src="./svg/modals/modalFeedback/arrow-next.svg")
+                .swiper-button-prev
+                    img(src="./svg/modals/modalFeedback/arrow-prev.svg")

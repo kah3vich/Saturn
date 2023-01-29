@@ -1,0 +1,74 @@
+.modalFeedback {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(21, 21, 21, 0.8);
+	overflow-x: hidden;
+	overflow-y: auto;
+	outline: 0;
+	z-index: 100;
+	align-items: center;
+	justify-content: center;
+	&__background {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 50px 0;
+		position: relative;
+	}
+	&__close {
+		width: 66px;
+		height: 66px;
+		background: $color-yellow;
+		border-radius: 50%;
+		cursor: pointer;
+		@include flexStyle(center, center);
+		position: absolute;
+		top: 45px;
+		right: 45px;
+		z-index: 5;
+	}
+
+	&__wrapper {
+		width: 520px;
+		background: transparent;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		position: relative;
+		justify-content: flex-start;
+		margin: auto;
+		& .swiper {
+			width: 100%;
+		}
+		& .swiper-controls {
+			& .swiper-button-next {
+				width: 126px;
+				height: 126px;
+				background: $color-yellow;
+				border-radius: 50%;
+				cursor: pointer;
+				right: -35% !important;
+				@include flexStyle(center, center);
+				&::after {
+					content: none;
+				}
+			}
+			& .swiper-button-prev {
+				width: 126px;
+				height: 126px;
+				background: $color-yellow;
+				border-radius: 50%;
+				cursor: pointer;
+				left: -35% !important;
+				@include flexStyle(center, center);
+				&::after {
+					content: none;
+				}
+			}
+		}
+	}
+}
