@@ -1,0 +1,20 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Производство";
+
+block content
+	include ../components/Header/index.pug
+
+	+mainBanner('Текст о странице производство', '', 'ЗАКАЗАТЬ У ПРОИЗВОДИТЕЛЯ', './img/pages/production/banner.png')
+
+	include ../components/pages/Production/ProductionDescription/index.pug
+
+	include ../components/pages/Production/ProductionStages/index.pug
+
+	include ../components/pages/Production/ProductionText/index.pug
+
+	include ../components/Footer/index.pug
+
+block scripts
+	script(src="js/main.js")

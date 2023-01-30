@@ -1,0 +1,50 @@
+.production-stages {
+	width: 100%;
+	padding: 78px 0;
+	background-color: $color-light-yellow-green;
+	& .containers {
+		width: 100%;
+		@include flexStyle(flex-start, flex-start, column, 65px);
+	}
+	&__title {
+		@include fontStyle(40px, 700, 54px, $color-blue-black);
+	}
+	&__list {
+		width: 100%;
+		@include flexStyle(flex-start, flex-start, column, 70px);
+	}
+	&__item {
+		&:nth-child(odd) {
+			& .productionStages {
+				flex-direction: row-reverse;
+			}
+		}
+	}
+}
+
+// Mixin
+
+.productionStages {
+	width: 100%;
+	@include flexStyle(center, space-between, row, 60px);
+	&__banner {
+		width: 45%;
+		height: 100%;
+		overflow: hidden;
+		border-radius: 20px;
+		& img {
+			@include imgFullSize();
+		}
+	}
+	&__content {
+		width: 55%;
+		@include flexStyle(flex-start, flex-start, column, 25px);
+		&-title {
+			@include fontStyle(22px, 800, 32px, $color-blue-black);
+		}
+		&-text {
+			letter-spacing: -0.5px;
+			@include fontStyle(20px, 400, 31px, $color-black);
+		}
+	}
+}

@@ -1,0 +1,99 @@
+.production-description {
+	width: 100%;
+	background-color: $color-white;
+	padding: 110px 0 130px 0;
+	& .containers {
+		width: 100%;
+		@include flexStyle(flex-start, flex-start, column, 55px);
+	}
+	&__title {
+		@include fontStyle(40px, 700, 58px, $color-blue-black);
+	}
+	&__block {
+		width: 100%;
+		@include flexStyle(flex-start, space-between, row, 80px);
+	}
+	&__list {
+		width: 40%;
+		@include flexStyle(flex-start, flex-start, column, 35px);
+	}
+	&__item {
+		width: 100px;
+		height: 100px;
+		position: relative;
+		@include flexStyle(center, center);
+		&::after {
+			content: '';
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 50%;
+			background: $color-yellow;
+			z-index: 2;
+		}
+		& img {
+			position: relative;
+			z-index: 5;
+		}
+		& p {
+			position: absolute;
+			top: 50%;
+			right: -280%;
+			width: 260px;
+			transform: translate(0, -50%);
+			@include fontStyle(28px, 700, 33px, $color-black);
+		}
+		&-add {
+			position: absolute;
+			z-index: 1;
+			left: 3px;
+			top: 30%;
+			& img:nth-child(2) {
+				position: absolute;
+				top: 43%;
+				left: 50%;
+				transform: translate(-50%, 0);
+			}
+		}
+	}
+	&__content {
+		width: 60%;
+		@include flexStyle(flex-start, flex-start, column, 33px);
+	}
+	&__banner {
+		width: 100%;
+		height: 540px;
+	}
+	&__add {
+		letter-spacing: -0.5px;
+		@include fontStyle(20px, 700, 31px, $color-blue);
+	}
+	&__sections {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+		gap: 30px;
+	}
+	&__section {
+		width: 220px;
+		letter-spacing: -0.5px;
+		position: relative;
+		& p {
+			width: 100%;
+			@include fontStyle(18px, 400, 31px, $color-black);
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			left: -23px;
+			top: 10px;
+			border-radius: 50%;
+			background-color: $color-yellow;
+			width: 14px;
+			height: 14px;
+		}
+	}
+}

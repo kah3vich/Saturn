@@ -1,0 +1,16 @@
+.production-text {
+	width: 100%;
+	padding: 130px 0;
+	background-color: $color-white;
+	.containers {
+		width: 100%;
+		@include flexStyle(flex-start, flex-start, column, 28px);
+	}
+	&__title {
+		@include fontStyle(40px, 700, 54px, $color-blue-black);
+	}
+	&__text {
+		letter-spacing: -0.5px;
+		@include fontStyle(20px, 400, 31px, $color-black);
+	}
+}

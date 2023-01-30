@@ -269,7 +269,7 @@
 			}
 		}
 		&-counter {
-			height: max-content;
+			height: 200px;
 			letter-spacing: -0.5px;
 			text-transform: capitalize;
 			@include fontStyle(20px, 400, 24px, $transparent);
