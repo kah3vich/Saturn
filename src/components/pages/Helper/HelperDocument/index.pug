@@ -1,0 +1,10 @@
+section.helper-document
+    .containers
+        .helper-document__header
+            h3.helper-document__title Документы
+            .helper-document__filter
+                +indexCaseSelect()
+        ul.helper-document__list
+            each _, i in Array(4)
+                li.helper-document__item
+                    +helperDocumentCard('Раздвижные стеллажи – повышаем вместимость склада 3123 sdf asdf asdf asdf asdf asdf asdf asdfasdfas dfasdf asd fsadf sdf as', './svg/pages/helper/doc.svg')

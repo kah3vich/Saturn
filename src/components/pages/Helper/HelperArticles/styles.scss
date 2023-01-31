@@ -27,3 +27,43 @@
 		}
 	}
 }
+
+// Mixin
+
+.helperArticleCard {
+	width: max-content;
+	@include flexStyle(center, flex-start, row);
+	border-radius: 20px;
+	overflow: hidden;
+	cursor: pointer;
+	height: 174px;
+	background-color: $color-white;
+	&__photo {
+		width: 174px;
+		height: 174px;
+		border-radius: 20px;
+		overflow: hidden;
+		& img {
+			@include imgFullSize();
+		}
+	}
+	&__content {
+		width: 440px;
+		padding: 36px 36px 16px 36px;
+		@include flexStyle(flex-start, space-between, column, 30px);
+		height: 100%;
+		&-text {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 3;
+			-webkit-box-orient: vertical;
+			@include fontStyle(18px, 400, 21px, $color-black);
+		}
+		&-link {
+			margin: 0 0 0 auto;
+			text-decoration-line: underline;
+			@include fontStyle(17px, 700, 25px, $color-gray-black);
+		}
+	}
+}

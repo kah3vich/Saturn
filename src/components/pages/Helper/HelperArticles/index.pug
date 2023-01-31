@@ -2,5 +2,8 @@ section.helper-articles
     .containers
         h3.helper-articles__title Статьи
         ul.helper-articles__list
+            each _, i in Array(4)
+                li.helper-articles__item
+                    +helperArticleCard('Раздвижные стеллажи – повышаем вместимость склада 3123 sdf asdf asdf asdf asdf asdf asdf asdfasdfas dfasdf asd fsadf sdf as', './img/pages/helper/articles.png')
         a(href="").helper-articles__button
             p Смотреть все

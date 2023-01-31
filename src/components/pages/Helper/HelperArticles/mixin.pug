@@ -1,0 +1,7 @@
+mixin helperArticleCard(text, src)
+    .helperArticleCard
+        .helperArticleCard__photo 
+            img(src=src alt="")
+        .helperArticleCard__content
+            p.helperArticleCard__content-text= text
+            a(href="/").helperArticleCard__content-link Подробнее

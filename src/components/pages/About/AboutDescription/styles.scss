@@ -1,0 +1,109 @@
+.about-description {
+	width: 100%;
+	padding: 85px 0;
+	background-color: $color-light-yellow-green;
+	& .containers {
+		width: 100%;
+		@include flexStyle(flex-start, flex-start, column, 35px);
+	}
+	&__title {
+		@include fontStyle(40px, 700, 58px, $color-blue-black);
+	}
+	&__add {
+		width: 75%;
+		@include fontStyle(28px, 400, 50px, $color-black);
+	}
+	&__subtitle {
+		@include fontStyle(22px, 800, 32px $color-blue-black);
+	}
+	&__text {
+		width: 100%;
+		letter-spacing: -0.5px;
+		@include fontStyle(20px, 400, 31px, $color-black);
+		& span {
+			font-weight: 600;
+		}
+	}
+	&__content {
+		@include flexStyle(flex-start, flex-start, column, 30px);
+		width: calc(50% - 40px);
+	}
+	&__block {
+		width: 100%;
+		@include flexStyle(flex-start, space-between, row, 80px);
+	}
+	&__video {
+		width: calc(50% - 40px);
+		& .videoPlaceholder__video {
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: $color-black;
+				opacity: 0.8;
+				z-index: 1;
+			}
+		}
+		& .videoPlaceholder__player {
+			z-index: 2;
+		}
+	}
+	&__slider {
+		width: calc(50% - 40px);
+		position: relative;
+		&-item {
+			border-radius: 20px;
+			overflow: hidden;
+			height: 335px;
+			width: 100%;
+			& img {
+				@include imgFullSize();
+			}
+		}
+		& .swiper-button-next {
+			top: 189px;
+			right: -1px;
+			bottom: auto;
+			transform: translate(0, -50%);
+			background: $color-yellow;
+			width: 43px;
+			height: 337px;
+			border-radius: 0 20px 20px 0;
+			&::after {
+				content: none;
+			}
+		}
+		& .swiper-button-prev {
+			top: 189px;
+			left: -1px;
+			bottom: auto;
+			transform: translate(0, -50%);
+			background: $color-yellow;
+			width: 43px;
+			height: 337px;
+			border-radius: 20px 0 0 20px;
+			&::after {
+				content: none;
+			}
+		}
+		& .swiper-pagination {
+			bottom: -30px !important;
+			@include flexStyle(center, center, row, 4px);
+			& .swiper-pagination-bullet {
+				width: 12px;
+				height: 12px;
+				border-radius: 50%;
+				background: $color-gray-light;
+			}
+			& .swiper-pagination-bullet-active {
+				width: 16px;
+				height: 16px;
+				border-radius: 50%;
+				background: $color-blue;
+			}
+		}
+	}
+}
