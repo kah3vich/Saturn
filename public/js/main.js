@@ -317,6 +317,20 @@ var AboutCharact = function AboutCharact() {};
 
 /***/ }),
 
+/***/ "./src/components/pages/ArticleDetail/script.js":
+/*!******************************************************!*\
+  !*** ./src/components/pages/ArticleDetail/script.js ***!
+  \******************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ArticleDetail": function() { return /* binding */ ArticleDetail; }
+/* harmony export */ });
+var ArticleDetail = function ArticleDetail() {};
+
+/***/ }),
+
 /***/ "./src/components/pages/Articles/ArticlesMain/script.js":
 /*!**************************************************************!*\
   !*** ./src/components/pages/Articles/ArticlesMain/script.js ***!
@@ -328,6 +342,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ArticlesMain": function() { return /* binding */ ArticlesMain; }
 /* harmony export */ });
 var ArticlesMain = function ArticlesMain() {};
+
+/***/ }),
+
+/***/ "./src/components/pages/CaseDetail/CaseDetailDescription/script.js":
+/*!*************************************************************************!*\
+  !*** ./src/components/pages/CaseDetail/CaseDetailDescription/script.js ***!
+  \*************************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "CaseDetailDescription": function() { return /* binding */ CaseDetailDescription; }
+/* harmony export */ });
+var CaseDetailDescription = function CaseDetailDescription() {};
 
 /***/ }),
 
@@ -415,14 +443,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "CatalogCase": function() { return /* binding */ CatalogCase; }
 /* harmony export */ });
 var CatalogCase = function CatalogCase() {
-  var catalogCaseSlider = new Swiper('.catalogCaseSlider', {
-    navigation: {
-      nextEl: '.catalog-case__slider .swiper-controls .swiper-button-next',
-      prevEl: '.catalog-case__slider .swiper-controls .swiper-button-prev'
-    },
-    slidesPerView: 3,
-    spaceBetween: 35
-  });
+  var arrListSlider = ['catalog', 'caseDetail'];
+  for (var i = 0; i <= arrListSlider.length; i++) {
+    var catalogCaseSlider = new Swiper('.catalogCaseSlider', {
+      pagination: {
+        el: ".catalog-case__slider.".concat(arrListSlider[i], " .swiper-controls .swiper-pagination")
+      },
+      navigation: {
+        nextEl: ".catalog-case__slider.".concat(arrListSlider[i], " .swiper-controls .swiper-button-next"),
+        prevEl: ".catalog-case__slider.".concat(arrListSlider[i], " .swiper-controls .swiper-button-prev")
+      },
+      mousewheel: true,
+      keyboard: true,
+      slidesPerView: 3,
+      spaceBetween: 35
+    });
+  }
 };
 
 /***/ }),
@@ -592,6 +628,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ContactMain": function() { return /* binding */ ContactMain; }
 /* harmony export */ });
 var ContactMain = function ContactMain() {};
+
+/***/ }),
+
+/***/ "./src/components/pages/EquipmentDetail/script.js":
+/*!********************************************************!*\
+  !*** ./src/components/pages/EquipmentDetail/script.js ***!
+  \********************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "EquipmentDetail": function() { return /* binding */ EquipmentDetail; }
+/* harmony export */ });
+var EquipmentDetail = function EquipmentDetail() {};
 
 /***/ }),
 
@@ -896,50 +946,53 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "AboutLink": function() { return /* reexport safe */ _pages_About_AboutLink_script_js__WEBPACK_IMPORTED_MODULE_10__.AboutLink; },
 /* harmony export */   "AboutMission": function() { return /* reexport safe */ _pages_About_AboutMission_script_js__WEBPACK_IMPORTED_MODULE_11__.AboutMission; },
 /* harmony export */   "AboutSng": function() { return /* reexport safe */ _pages_About_AboutSng_script_js__WEBPACK_IMPORTED_MODULE_12__.AboutSng; },
-/* harmony export */   "ArticlesMain": function() { return /* reexport safe */ _pages_Articles_ArticlesMain_script_js__WEBPACK_IMPORTED_MODULE_14__.ArticlesMain; },
-/* harmony export */   "CasesBase": function() { return /* reexport safe */ _pages_Cases_CasesBase_script_js__WEBPACK_IMPORTED_MODULE_15__.CasesBase; },
-/* harmony export */   "CasesDescription": function() { return /* reexport safe */ _pages_Cases_CasesDescription_script_js__WEBPACK_IMPORTED_MODULE_16__.CasesDescription; },
-/* harmony export */   "CatalogAddition": function() { return /* reexport safe */ _pages_Catalog_CatalogAddition_script_js__WEBPACK_IMPORTED_MODULE_17__.CatalogAddition; },
-/* harmony export */   "CatalogBanner": function() { return /* reexport safe */ _pages_Catalog_CatalogBanner_script_js__WEBPACK_IMPORTED_MODULE_18__.CatalogBanner; },
-/* harmony export */   "CatalogCase": function() { return /* reexport safe */ _pages_Catalog_CatalogCase_script_js__WEBPACK_IMPORTED_MODULE_19__.CatalogCase; },
-/* harmony export */   "CatalogCollection": function() { return /* reexport safe */ _pages_Catalog_CatalogCollection_script_js__WEBPACK_IMPORTED_MODULE_20__.CatalogCollection; },
-/* harmony export */   "CatalogDescription": function() { return /* reexport safe */ _pages_Catalog_CatalogDescription_script_js__WEBPACK_IMPORTED_MODULE_21__.CatalogDescription; },
-/* harmony export */   "CatalogList": function() { return /* reexport safe */ _pages_Catalog_CatalogList_script_js__WEBPACK_IMPORTED_MODULE_22__.CatalogList; },
-/* harmony export */   "CatalogMain": function() { return /* reexport safe */ _pages_Catalog_CatalogMain_script_js__WEBPACK_IMPORTED_MODULE_23__.CatalogMain; },
-/* harmony export */   "CatalogRequest": function() { return /* reexport safe */ _pages_Catalog_CatalogRequest_script_js__WEBPACK_IMPORTED_MODULE_24__.CatalogRequest; },
-/* harmony export */   "CatalogStages": function() { return /* reexport safe */ _pages_Catalog_CatalogStages_script_js__WEBPACK_IMPORTED_MODULE_25__.CatalogStages; },
-/* harmony export */   "CatalogTable": function() { return /* reexport safe */ _pages_Catalog_CatalogTable_script_js__WEBPACK_IMPORTED_MODULE_26__.CatalogTable; },
-/* harmony export */   "CatalogText": function() { return /* reexport safe */ _pages_Catalog_CatalogText_script_js__WEBPACK_IMPORTED_MODULE_27__.CatalogText; },
-/* harmony export */   "ConnectContent": function() { return /* reexport safe */ _pages_Connect_ConnectContent_script_js__WEBPACK_IMPORTED_MODULE_28__.ConnectContent; },
-/* harmony export */   "ContactGeo": function() { return /* reexport safe */ _pages_Contact_ContactGeo_script_js__WEBPACK_IMPORTED_MODULE_29__.ContactGeo; },
-/* harmony export */   "ContactMain": function() { return /* reexport safe */ _pages_Contact_ContactMain_script_js__WEBPACK_IMPORTED_MODULE_30__.ContactMain; },
+/* harmony export */   "ArticleDetail": function() { return /* reexport safe */ _pages_ArticleDetail_script_js__WEBPACK_IMPORTED_MODULE_14__.ArticleDetail; },
+/* harmony export */   "ArticlesMain": function() { return /* reexport safe */ _pages_Articles_ArticlesMain_script_js__WEBPACK_IMPORTED_MODULE_15__.ArticlesMain; },
+/* harmony export */   "CaseDetailDescription": function() { return /* reexport safe */ _pages_CaseDetail_CaseDetailDescription_script_js__WEBPACK_IMPORTED_MODULE_16__.CaseDetailDescription; },
+/* harmony export */   "CasesBase": function() { return /* reexport safe */ _pages_Cases_CasesBase_script_js__WEBPACK_IMPORTED_MODULE_17__.CasesBase; },
+/* harmony export */   "CasesDescription": function() { return /* reexport safe */ _pages_Cases_CasesDescription_script_js__WEBPACK_IMPORTED_MODULE_18__.CasesDescription; },
+/* harmony export */   "CatalogAddition": function() { return /* reexport safe */ _pages_Catalog_CatalogAddition_script_js__WEBPACK_IMPORTED_MODULE_19__.CatalogAddition; },
+/* harmony export */   "CatalogBanner": function() { return /* reexport safe */ _pages_Catalog_CatalogBanner_script_js__WEBPACK_IMPORTED_MODULE_20__.CatalogBanner; },
+/* harmony export */   "CatalogCase": function() { return /* reexport safe */ _pages_Catalog_CatalogCase_script_js__WEBPACK_IMPORTED_MODULE_21__.CatalogCase; },
+/* harmony export */   "CatalogCollection": function() { return /* reexport safe */ _pages_Catalog_CatalogCollection_script_js__WEBPACK_IMPORTED_MODULE_22__.CatalogCollection; },
+/* harmony export */   "CatalogDescription": function() { return /* reexport safe */ _pages_Catalog_CatalogDescription_script_js__WEBPACK_IMPORTED_MODULE_23__.CatalogDescription; },
+/* harmony export */   "CatalogList": function() { return /* reexport safe */ _pages_Catalog_CatalogList_script_js__WEBPACK_IMPORTED_MODULE_24__.CatalogList; },
+/* harmony export */   "CatalogMain": function() { return /* reexport safe */ _pages_Catalog_CatalogMain_script_js__WEBPACK_IMPORTED_MODULE_25__.CatalogMain; },
+/* harmony export */   "CatalogRequest": function() { return /* reexport safe */ _pages_Catalog_CatalogRequest_script_js__WEBPACK_IMPORTED_MODULE_26__.CatalogRequest; },
+/* harmony export */   "CatalogStages": function() { return /* reexport safe */ _pages_Catalog_CatalogStages_script_js__WEBPACK_IMPORTED_MODULE_27__.CatalogStages; },
+/* harmony export */   "CatalogTable": function() { return /* reexport safe */ _pages_Catalog_CatalogTable_script_js__WEBPACK_IMPORTED_MODULE_28__.CatalogTable; },
+/* harmony export */   "CatalogText": function() { return /* reexport safe */ _pages_Catalog_CatalogText_script_js__WEBPACK_IMPORTED_MODULE_29__.CatalogText; },
+/* harmony export */   "ConnectContent": function() { return /* reexport safe */ _pages_Connect_ConnectContent_script_js__WEBPACK_IMPORTED_MODULE_30__.ConnectContent; },
+/* harmony export */   "ContactGeo": function() { return /* reexport safe */ _pages_Contact_ContactGeo_script_js__WEBPACK_IMPORTED_MODULE_31__.ContactGeo; },
+/* harmony export */   "ContactMain": function() { return /* reexport safe */ _pages_Contact_ContactMain_script_js__WEBPACK_IMPORTED_MODULE_32__.ContactMain; },
+/* harmony export */   "EquipmentDetail": function() { return /* reexport safe */ _pages_EquipmentDetail_script_js__WEBPACK_IMPORTED_MODULE_33__.EquipmentDetail; },
 /* harmony export */   "Feedback": function() { return /* reexport safe */ _Feedback_script_js__WEBPACK_IMPORTED_MODULE_0__.Feedback; },
 /* harmony export */   "Footer": function() { return /* reexport safe */ _Footer_script_js__WEBPACK_IMPORTED_MODULE_1__.Footer; },
 /* harmony export */   "FormBase": function() { return /* reexport safe */ _FormBase_script_js__WEBPACK_IMPORTED_MODULE_2__.FormBase; },
 /* harmony export */   "FormFile": function() { return /* reexport safe */ _FormFile_script_js__WEBPACK_IMPORTED_MODULE_3__.FormFile; },
 /* harmony export */   "Header": function() { return /* reexport safe */ _Header_script_js__WEBPACK_IMPORTED_MODULE_4__.Header; },
 /* harmony export */   "Helper": function() { return /* reexport safe */ _Helper_script_js__WEBPACK_IMPORTED_MODULE_5__.Helper; },
-/* harmony export */   "HelperArticles": function() { return /* reexport safe */ _pages_Helper_HelperArticles_script_js__WEBPACK_IMPORTED_MODULE_31__.HelperArticles; },
-/* harmony export */   "HelperDocument": function() { return /* reexport safe */ _pages_Helper_HelperDocument_script_js__WEBPACK_IMPORTED_MODULE_32__.HelperDocument; },
-/* harmony export */   "HelperQuestion": function() { return /* reexport safe */ _pages_Helper_HelperQuestion_script_js__WEBPACK_IMPORTED_MODULE_33__.HelperQuestion; },
-/* harmony export */   "IndexCase": function() { return /* reexport safe */ _pages_Index_IndexCase_script_js__WEBPACK_IMPORTED_MODULE_35__.IndexCase; },
-/* harmony export */   "IndexEquipment": function() { return /* reexport safe */ _pages_Index_IndexEquipment_script_js__WEBPACK_IMPORTED_MODULE_37__.IndexEquipment; },
-/* harmony export */   "IndexMain": function() { return /* reexport safe */ _pages_Index_IndexMain_script_js__WEBPACK_IMPORTED_MODULE_39__.IndexMain; },
-/* harmony export */   "IndexNews": function() { return /* reexport safe */ _pages_Index_IndexNews_script_js__WEBPACK_IMPORTED_MODULE_40__.IndexNews; },
+/* harmony export */   "HelperArticles": function() { return /* reexport safe */ _pages_Helper_HelperArticles_script_js__WEBPACK_IMPORTED_MODULE_34__.HelperArticles; },
+/* harmony export */   "HelperDocument": function() { return /* reexport safe */ _pages_Helper_HelperDocument_script_js__WEBPACK_IMPORTED_MODULE_35__.HelperDocument; },
+/* harmony export */   "HelperQuestion": function() { return /* reexport safe */ _pages_Helper_HelperQuestion_script_js__WEBPACK_IMPORTED_MODULE_36__.HelperQuestion; },
+/* harmony export */   "IndexCase": function() { return /* reexport safe */ _pages_Index_IndexCase_script_js__WEBPACK_IMPORTED_MODULE_38__.IndexCase; },
+/* harmony export */   "IndexEquipment": function() { return /* reexport safe */ _pages_Index_IndexEquipment_script_js__WEBPACK_IMPORTED_MODULE_40__.IndexEquipment; },
+/* harmony export */   "IndexMain": function() { return /* reexport safe */ _pages_Index_IndexMain_script_js__WEBPACK_IMPORTED_MODULE_42__.IndexMain; },
+/* harmony export */   "IndexNews": function() { return /* reexport safe */ _pages_Index_IndexNews_script_js__WEBPACK_IMPORTED_MODULE_43__.IndexNews; },
 /* harmony export */   "MainBanner": function() { return /* reexport safe */ _MainBanner_script_js__WEBPACK_IMPORTED_MODULE_6__.MainBanner; },
 /* harmony export */   "ModalCollection": function() { return /* reexport safe */ _modals_ModalCollection_script_js__WEBPACK_IMPORTED_MODULE_7__.ModalCollection; },
 /* harmony export */   "ModalFeedback": function() { return /* reexport safe */ _modals_ModalFeedback_script_js__WEBPACK_IMPORTED_MODULE_8__.ModalFeedback; },
-/* harmony export */   "NewsDetail": function() { return /* reexport safe */ _pages_NewsDetail_script_js__WEBPACK_IMPORTED_MODULE_43__.NewsDetail; },
-/* harmony export */   "NewsList": function() { return /* reexport safe */ _pages_News_NewsList_script_js__WEBPACK_IMPORTED_MODULE_42__.NewsList; },
-/* harmony export */   "ProductionDescription": function() { return /* reexport safe */ _pages_Production_ProductionDescription_script_js__WEBPACK_IMPORTED_MODULE_44__.ProductionDescription; },
-/* harmony export */   "ProductionStages": function() { return /* reexport safe */ _pages_Production_ProductionStages_script_js__WEBPACK_IMPORTED_MODULE_45__.ProductionStages; },
-/* harmony export */   "ProductionText": function() { return /* reexport safe */ _pages_Production_ProductionText_script_js__WEBPACK_IMPORTED_MODULE_46__.ProductionText; },
-/* harmony export */   "Space": function() { return /* reexport safe */ _Space_script_js__WEBPACK_IMPORTED_MODULE_47__.Space; },
-/* harmony export */   "Team": function() { return /* reexport safe */ _Team_script_js__WEBPACK_IMPORTED_MODULE_48__.Team; },
-/* harmony export */   "indexAbout": function() { return /* reexport safe */ _pages_Index_IndexAbout_script_js__WEBPACK_IMPORTED_MODULE_34__.indexAbout; },
-/* harmony export */   "indexCatalogLink": function() { return /* reexport safe */ _pages_Index_IndexCatalogLink_script_js__WEBPACK_IMPORTED_MODULE_36__.indexCatalogLink; },
-/* harmony export */   "indexLink": function() { return /* reexport safe */ _pages_Index_IndexLink_script_js__WEBPACK_IMPORTED_MODULE_38__.indexLink; },
-/* harmony export */   "indexSteps": function() { return /* reexport safe */ _pages_Index_IndexSteps_script_js__WEBPACK_IMPORTED_MODULE_41__.indexSteps; }
+/* harmony export */   "NewsDetail": function() { return /* reexport safe */ _pages_NewsDetail_script_js__WEBPACK_IMPORTED_MODULE_46__.NewsDetail; },
+/* harmony export */   "NewsList": function() { return /* reexport safe */ _pages_News_NewsList_script_js__WEBPACK_IMPORTED_MODULE_45__.NewsList; },
+/* harmony export */   "ProductionDescription": function() { return /* reexport safe */ _pages_Production_ProductionDescription_script_js__WEBPACK_IMPORTED_MODULE_47__.ProductionDescription; },
+/* harmony export */   "ProductionStages": function() { return /* reexport safe */ _pages_Production_ProductionStages_script_js__WEBPACK_IMPORTED_MODULE_48__.ProductionStages; },
+/* harmony export */   "ProductionText": function() { return /* reexport safe */ _pages_Production_ProductionText_script_js__WEBPACK_IMPORTED_MODULE_49__.ProductionText; },
+/* harmony export */   "Space": function() { return /* reexport safe */ _Space_script_js__WEBPACK_IMPORTED_MODULE_50__.Space; },
+/* harmony export */   "Team": function() { return /* reexport safe */ _Team_script_js__WEBPACK_IMPORTED_MODULE_51__.Team; },
+/* harmony export */   "indexAbout": function() { return /* reexport safe */ _pages_Index_IndexAbout_script_js__WEBPACK_IMPORTED_MODULE_37__.indexAbout; },
+/* harmony export */   "indexCatalogLink": function() { return /* reexport safe */ _pages_Index_IndexCatalogLink_script_js__WEBPACK_IMPORTED_MODULE_39__.indexCatalogLink; },
+/* harmony export */   "indexLink": function() { return /* reexport safe */ _pages_Index_IndexLink_script_js__WEBPACK_IMPORTED_MODULE_41__.indexLink; },
+/* harmony export */   "indexSteps": function() { return /* reexport safe */ _pages_Index_IndexSteps_script_js__WEBPACK_IMPORTED_MODULE_44__.indexSteps; }
 /* harmony export */ });
 /* harmony import */ var _Feedback_script_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Feedback/script.js */ "./src/components/Feedback/script.js");
 /* harmony import */ var _Footer_script_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Footer/script.js */ "./src/components/Footer/script.js");
@@ -955,41 +1008,47 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_About_AboutMission_script_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/About/AboutMission/script.js */ "./src/components/pages/About/AboutMission/script.js");
 /* harmony import */ var _pages_About_AboutSng_script_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/About/AboutSng/script.js */ "./src/components/pages/About/AboutSng/script.js");
 /* harmony import */ var _pages_About_About_haract_script_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/About/AboutСharact/script.js */ "./src/components/pages/About/AboutСharact/script.js");
-/* harmony import */ var _pages_Articles_ArticlesMain_script_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pages/Articles/ArticlesMain/script.js */ "./src/components/pages/Articles/ArticlesMain/script.js");
-/* harmony import */ var _pages_Cases_CasesBase_script_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pages/Cases/CasesBase/script.js */ "./src/components/pages/Cases/CasesBase/script.js");
-/* harmony import */ var _pages_Cases_CasesDescription_script_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pages/Cases/CasesDescription/script.js */ "./src/components/pages/Cases/CasesDescription/script.js");
-/* harmony import */ var _pages_Catalog_CatalogAddition_script_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./pages/Catalog/CatalogAddition/script.js */ "./src/components/pages/Catalog/CatalogAddition/script.js");
-/* harmony import */ var _pages_Catalog_CatalogBanner_script_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./pages/Catalog/CatalogBanner/script.js */ "./src/components/pages/Catalog/CatalogBanner/script.js");
-/* harmony import */ var _pages_Catalog_CatalogCase_script_js__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./pages/Catalog/CatalogCase/script.js */ "./src/components/pages/Catalog/CatalogCase/script.js");
-/* harmony import */ var _pages_Catalog_CatalogCollection_script_js__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./pages/Catalog/CatalogCollection/script.js */ "./src/components/pages/Catalog/CatalogCollection/script.js");
-/* harmony import */ var _pages_Catalog_CatalogDescription_script_js__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./pages/Catalog/CatalogDescription/script.js */ "./src/components/pages/Catalog/CatalogDescription/script.js");
-/* harmony import */ var _pages_Catalog_CatalogList_script_js__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./pages/Catalog/CatalogList/script.js */ "./src/components/pages/Catalog/CatalogList/script.js");
-/* harmony import */ var _pages_Catalog_CatalogMain_script_js__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./pages/Catalog/CatalogMain/script.js */ "./src/components/pages/Catalog/CatalogMain/script.js");
-/* harmony import */ var _pages_Catalog_CatalogRequest_script_js__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./pages/Catalog/CatalogRequest/script.js */ "./src/components/pages/Catalog/CatalogRequest/script.js");
-/* harmony import */ var _pages_Catalog_CatalogStages_script_js__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./pages/Catalog/CatalogStages/script.js */ "./src/components/pages/Catalog/CatalogStages/script.js");
-/* harmony import */ var _pages_Catalog_CatalogTable_script_js__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./pages/Catalog/CatalogTable/script.js */ "./src/components/pages/Catalog/CatalogTable/script.js");
-/* harmony import */ var _pages_Catalog_CatalogText_script_js__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./pages/Catalog/CatalogText/script.js */ "./src/components/pages/Catalog/CatalogText/script.js");
-/* harmony import */ var _pages_Connect_ConnectContent_script_js__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./pages/Connect/ConnectContent/script.js */ "./src/components/pages/Connect/ConnectContent/script.js");
-/* harmony import */ var _pages_Contact_ContactGeo_script_js__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./pages/Contact/ContactGeo/script.js */ "./src/components/pages/Contact/ContactGeo/script.js");
-/* harmony import */ var _pages_Contact_ContactMain_script_js__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./pages/Contact/ContactMain/script.js */ "./src/components/pages/Contact/ContactMain/script.js");
-/* harmony import */ var _pages_Helper_HelperArticles_script_js__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./pages/Helper/HelperArticles/script.js */ "./src/components/pages/Helper/HelperArticles/script.js");
-/* harmony import */ var _pages_Helper_HelperDocument_script_js__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./pages/Helper/HelperDocument/script.js */ "./src/components/pages/Helper/HelperDocument/script.js");
-/* harmony import */ var _pages_Helper_HelperQuestion_script_js__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./pages/Helper/HelperQuestion/script.js */ "./src/components/pages/Helper/HelperQuestion/script.js");
-/* harmony import */ var _pages_Index_IndexAbout_script_js__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./pages/Index/IndexAbout/script.js */ "./src/components/pages/Index/IndexAbout/script.js");
-/* harmony import */ var _pages_Index_IndexCase_script_js__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./pages/Index/IndexCase/script.js */ "./src/components/pages/Index/IndexCase/script.js");
-/* harmony import */ var _pages_Index_IndexCatalogLink_script_js__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./pages/Index/IndexCatalogLink/script.js */ "./src/components/pages/Index/IndexCatalogLink/script.js");
-/* harmony import */ var _pages_Index_IndexEquipment_script_js__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./pages/Index/IndexEquipment/script.js */ "./src/components/pages/Index/IndexEquipment/script.js");
-/* harmony import */ var _pages_Index_IndexLink_script_js__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./pages/Index/IndexLink/script.js */ "./src/components/pages/Index/IndexLink/script.js");
-/* harmony import */ var _pages_Index_IndexMain_script_js__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./pages/Index/IndexMain/script.js */ "./src/components/pages/Index/IndexMain/script.js");
-/* harmony import */ var _pages_Index_IndexNews_script_js__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./pages/Index/IndexNews/script.js */ "./src/components/pages/Index/IndexNews/script.js");
-/* harmony import */ var _pages_Index_IndexSteps_script_js__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./pages/Index/IndexSteps/script.js */ "./src/components/pages/Index/IndexSteps/script.js");
-/* harmony import */ var _pages_News_NewsList_script_js__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./pages/News/NewsList/script.js */ "./src/components/pages/News/NewsList/script.js");
-/* harmony import */ var _pages_NewsDetail_script_js__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./pages/NewsDetail/script.js */ "./src/components/pages/NewsDetail/script.js");
-/* harmony import */ var _pages_Production_ProductionDescription_script_js__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./pages/Production/ProductionDescription/script.js */ "./src/components/pages/Production/ProductionDescription/script.js");
-/* harmony import */ var _pages_Production_ProductionStages_script_js__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./pages/Production/ProductionStages/script.js */ "./src/components/pages/Production/ProductionStages/script.js");
-/* harmony import */ var _pages_Production_ProductionText_script_js__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./pages/Production/ProductionText/script.js */ "./src/components/pages/Production/ProductionText/script.js");
-/* harmony import */ var _Space_script_js__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./Space/script.js */ "./src/components/Space/script.js");
-/* harmony import */ var _Team_script_js__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./Team/script.js */ "./src/components/Team/script.js");
+/* harmony import */ var _pages_ArticleDetail_script_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pages/ArticleDetail/script.js */ "./src/components/pages/ArticleDetail/script.js");
+/* harmony import */ var _pages_Articles_ArticlesMain_script_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pages/Articles/ArticlesMain/script.js */ "./src/components/pages/Articles/ArticlesMain/script.js");
+/* harmony import */ var _pages_CaseDetail_CaseDetailDescription_script_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pages/CaseDetail/CaseDetailDescription/script.js */ "./src/components/pages/CaseDetail/CaseDetailDescription/script.js");
+/* harmony import */ var _pages_Cases_CasesBase_script_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./pages/Cases/CasesBase/script.js */ "./src/components/pages/Cases/CasesBase/script.js");
+/* harmony import */ var _pages_Cases_CasesDescription_script_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./pages/Cases/CasesDescription/script.js */ "./src/components/pages/Cases/CasesDescription/script.js");
+/* harmony import */ var _pages_Catalog_CatalogAddition_script_js__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./pages/Catalog/CatalogAddition/script.js */ "./src/components/pages/Catalog/CatalogAddition/script.js");
+/* harmony import */ var _pages_Catalog_CatalogBanner_script_js__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./pages/Catalog/CatalogBanner/script.js */ "./src/components/pages/Catalog/CatalogBanner/script.js");
+/* harmony import */ var _pages_Catalog_CatalogCase_script_js__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./pages/Catalog/CatalogCase/script.js */ "./src/components/pages/Catalog/CatalogCase/script.js");
+/* harmony import */ var _pages_Catalog_CatalogCollection_script_js__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./pages/Catalog/CatalogCollection/script.js */ "./src/components/pages/Catalog/CatalogCollection/script.js");
+/* harmony import */ var _pages_Catalog_CatalogDescription_script_js__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./pages/Catalog/CatalogDescription/script.js */ "./src/components/pages/Catalog/CatalogDescription/script.js");
+/* harmony import */ var _pages_Catalog_CatalogList_script_js__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./pages/Catalog/CatalogList/script.js */ "./src/components/pages/Catalog/CatalogList/script.js");
+/* harmony import */ var _pages_Catalog_CatalogMain_script_js__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./pages/Catalog/CatalogMain/script.js */ "./src/components/pages/Catalog/CatalogMain/script.js");
+/* harmony import */ var _pages_Catalog_CatalogRequest_script_js__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./pages/Catalog/CatalogRequest/script.js */ "./src/components/pages/Catalog/CatalogRequest/script.js");
+/* harmony import */ var _pages_Catalog_CatalogStages_script_js__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./pages/Catalog/CatalogStages/script.js */ "./src/components/pages/Catalog/CatalogStages/script.js");
+/* harmony import */ var _pages_Catalog_CatalogTable_script_js__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./pages/Catalog/CatalogTable/script.js */ "./src/components/pages/Catalog/CatalogTable/script.js");
+/* harmony import */ var _pages_Catalog_CatalogText_script_js__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./pages/Catalog/CatalogText/script.js */ "./src/components/pages/Catalog/CatalogText/script.js");
+/* harmony import */ var _pages_Connect_ConnectContent_script_js__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./pages/Connect/ConnectContent/script.js */ "./src/components/pages/Connect/ConnectContent/script.js");
+/* harmony import */ var _pages_Contact_ContactGeo_script_js__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./pages/Contact/ContactGeo/script.js */ "./src/components/pages/Contact/ContactGeo/script.js");
+/* harmony import */ var _pages_Contact_ContactMain_script_js__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./pages/Contact/ContactMain/script.js */ "./src/components/pages/Contact/ContactMain/script.js");
+/* harmony import */ var _pages_EquipmentDetail_script_js__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./pages/EquipmentDetail/script.js */ "./src/components/pages/EquipmentDetail/script.js");
+/* harmony import */ var _pages_Helper_HelperArticles_script_js__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./pages/Helper/HelperArticles/script.js */ "./src/components/pages/Helper/HelperArticles/script.js");
+/* harmony import */ var _pages_Helper_HelperDocument_script_js__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./pages/Helper/HelperDocument/script.js */ "./src/components/pages/Helper/HelperDocument/script.js");
+/* harmony import */ var _pages_Helper_HelperQuestion_script_js__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./pages/Helper/HelperQuestion/script.js */ "./src/components/pages/Helper/HelperQuestion/script.js");
+/* harmony import */ var _pages_Index_IndexAbout_script_js__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./pages/Index/IndexAbout/script.js */ "./src/components/pages/Index/IndexAbout/script.js");
+/* harmony import */ var _pages_Index_IndexCase_script_js__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./pages/Index/IndexCase/script.js */ "./src/components/pages/Index/IndexCase/script.js");
+/* harmony import */ var _pages_Index_IndexCatalogLink_script_js__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./pages/Index/IndexCatalogLink/script.js */ "./src/components/pages/Index/IndexCatalogLink/script.js");
+/* harmony import */ var _pages_Index_IndexEquipment_script_js__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./pages/Index/IndexEquipment/script.js */ "./src/components/pages/Index/IndexEquipment/script.js");
+/* harmony import */ var _pages_Index_IndexLink_script_js__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./pages/Index/IndexLink/script.js */ "./src/components/pages/Index/IndexLink/script.js");
+/* harmony import */ var _pages_Index_IndexMain_script_js__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./pages/Index/IndexMain/script.js */ "./src/components/pages/Index/IndexMain/script.js");
+/* harmony import */ var _pages_Index_IndexNews_script_js__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./pages/Index/IndexNews/script.js */ "./src/components/pages/Index/IndexNews/script.js");
+/* harmony import */ var _pages_Index_IndexSteps_script_js__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./pages/Index/IndexSteps/script.js */ "./src/components/pages/Index/IndexSteps/script.js");
+/* harmony import */ var _pages_News_NewsList_script_js__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./pages/News/NewsList/script.js */ "./src/components/pages/News/NewsList/script.js");
+/* harmony import */ var _pages_NewsDetail_script_js__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./pages/NewsDetail/script.js */ "./src/components/pages/NewsDetail/script.js");
+/* harmony import */ var _pages_Production_ProductionDescription_script_js__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./pages/Production/ProductionDescription/script.js */ "./src/components/pages/Production/ProductionDescription/script.js");
+/* harmony import */ var _pages_Production_ProductionStages_script_js__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./pages/Production/ProductionStages/script.js */ "./src/components/pages/Production/ProductionStages/script.js");
+/* harmony import */ var _pages_Production_ProductionText_script_js__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./pages/Production/ProductionText/script.js */ "./src/components/pages/Production/ProductionText/script.js");
+/* harmony import */ var _Space_script_js__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./Space/script.js */ "./src/components/Space/script.js");
+/* harmony import */ var _Team_script_js__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./Team/script.js */ "./src/components/Team/script.js");
+
+
+
 
 
 

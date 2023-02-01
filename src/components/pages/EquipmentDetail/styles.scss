@@ -1,0 +1,29 @@
+.article-equipment {
+	padding: 45px 0 60px 0;
+	width: 100%;
+	background-color: $color-white;
+	& .containers {
+		width: 100%;
+		@include flexStyle(flex-start, flex-start, column, 15px);
+	}
+	&__subtitle {
+		@include fontStyle(14px, 300, 130%, $color-black);
+	}
+	&__title {
+		@include fontStyle(40px, 700, 58px, $color-blue-black);
+	}
+	&__text {
+		margin-top: 19px;
+		@include fontStyle(28px, 400, 49px, $color-black);
+	}
+	&__list {
+		margin-top: 65px;
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+		gap: 28px 44px;
+	}
+	&__item {
+		width: 100%;
+	}
+}

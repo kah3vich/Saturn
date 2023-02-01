@@ -4983,6 +4983,103 @@ opacity-h {
 	font-style : normal;
 }
 
+.case-detail-description {
+	width : 100%;
+	padding : 75px 0;
+	background-color : #ffffff;
+}
+
+.case-detail-description .containers {
+	width : 100%;
+}
+
+.case-detail-description__list {
+	width : 100%;
+	display : -ms-grid;
+	display :     grid;
+	grid-template-columns : repeat(auto-fill, minmax(600px, 1fr));
+	gap : 75px 40px;
+}
+
+.case-detail-description__item {
+	width : 100%;
+}
+
+.caseDetailDescriptionCard {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	gap : 35px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.caseDetailDescriptionCard__icon {
+	width : 126px;
+	height : 126px;
+	background : #140848;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	-webkit-box-orient : horizontal;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : row;
+	    flex-direction : row;
+	gap : 0px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+	position : relative;
+	border-radius : 50%;
+}
+
+.caseDetailDescriptionCard__icon::after {
+	content : "";
+	position : absolute;
+	top : 50%;
+	left : 50%;
+	-webkit-transform : translate(-50%, -50%);
+	    -ms-transform : translate(-50%, -50%);
+	        transform : translate(-50%, -50%);
+	width : 154px;
+	height : 154px;
+	border-radius : 50%;
+	border : 1px solid #f2ce14;
+}
+
+.caseDetailDescriptionCard__title {
+	margin-top : 35px;
+	font-weight : 700;
+	font-size : 30px;
+	line-height : 34px;
+	color : #140848;
+	font-style : normal;
+}
+
+.caseDetailDescriptionCard__text {
+	font-weight : 400;
+	font-size : 25px;
+	line-height : 36px;
+	color : #141413;
+	font-style : normal;
+}
+
 .catalog-banner {
 	width : 100%;
 	height : 383px;
@@ -8471,6 +8568,204 @@ opacity-h {
 	-ms-grid-columns : (1fr)[2];
 	grid-template-columns : repeat(2, 1fr);
 	gap : 27px 47px;
+}
+
+.article-detail {
+	width : 100%;
+	padding : 75px 0;
+}
+
+.article-detail .containers {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	gap : 30px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.article-detail__title {
+	font-weight : 700;
+	font-size : 40px;
+	line-height : 58px;
+	color : #140848;
+	font-style : normal;
+}
+
+.article-detail__text {
+	letter-spacing : -0.5px;
+	font-weight : 400;
+	font-size : 20px;
+	line-height : 31px;
+	color : #141413;
+	font-style : normal;
+}
+
+.article-detail__text span {
+	font-weight : 700;
+}
+
+.article-detail__others {
+	width : 100%;
+	display : -ms-grid;
+	display :     grid;
+	-ms-grid-columns : (calc(50% - 40px))[2];
+	grid-template-columns : repeat(2, calc(50% - 40px));
+	gap : 80px;
+	margin : 50px 0;
+}
+
+.article-detail__other {
+	width : 100%;
+}
+
+.article-detail__list {
+	width : 100%;
+	display : -ms-grid;
+	display :     grid;
+	grid-template-columns : repeat(auto-fill, minmax(260px, 1fr));
+	gap : 45px;
+	margin-top : 70px;
+}
+
+.article-detail__item {
+	width : 100%;
+}
+
+.articleDetailCard {
+	width : 100%;
+	background-color : #ffffff;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	gap : 18px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.articleDetailCard__banner {
+	width : 100%;
+	height : 280px;
+	border-radius : 20px;
+	overflow : hidden;
+}
+
+.articleDetailCard__banner img {
+	width : 100%;
+	height : 100%;
+	-o-object-fit : cover;
+	   object-fit : cover;
+	display : block;
+}
+
+.articleDetailCard__title {
+	letter-spacing : -0.5px;
+	font-weight : 700;
+	font-size : 20px;
+	line-height : 31px;
+	color : #141413;
+	font-style : normal;
+	margin-top : 18px;
+}
+
+.articleDetailCard__button {
+	background : #f2ce14;
+	border-radius : 5px;
+	padding : 6px 83px;
+	cursor : pointer;
+}
+
+.articleDetailCard__button p {
+	font-weight : 700;
+	font-size : 13px;
+	line-height : 19px;
+	color : #141413;
+	font-style : normal;
+}
+
+.article-equipment {
+	padding : 45px 0 60px 0;
+	width : 100%;
+	background-color : #ffffff;
+}
+
+.article-equipment .containers {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	gap : 15px;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+}
+
+.article-equipment__subtitle {
+	font-weight : 300;
+	font-size : 14px;
+	line-height : 130%;
+	color : #141413;
+	font-style : normal;
+}
+
+.article-equipment__title {
+	font-weight : 700;
+	font-size : 40px;
+	line-height : 58px;
+	color : #140848;
+	font-style : normal;
+}
+
+.article-equipment__text {
+	margin-top : 19px;
+	font-weight : 400;
+	font-size : 28px;
+	line-height : 49px;
+	color : #141413;
+	font-style : normal;
+}
+
+.article-equipment__list {
+	margin-top : 65px;
+	width : 100%;
+	display : -ms-grid;
+	display :     grid;
+	grid-template-columns : repeat(auto-fill, minmax(260px, 1fr));
+	gap : 28px 44px;
+}
+
+.article-equipment__item {
+	width : 100%;
 }
 
 .contact-main {

@@ -1,0 +1,16 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Дополнительное оборудование";
+
+block content
+	include ../components/Header/index.pug
+
+	include ../components/pages/EquipmentDetail/index.pug
+
+	include ../components/FormBase/index.pug
+
+	include ../components/Footer/index.pug
+
+block scripts
+	script(src="js/main.js")

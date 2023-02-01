@@ -1,0 +1,24 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Детальная страница кейсов";
+
+block content
+	include ../components/Header/index.pug
+
+	+mainBanner('Как разместить все и даже больше ?', '', 'ХОЧУ ТАК ЖЕ', './img/pages/caseDetail/banner.png')
+
+	include ../components/pages/CaseDetail/CaseDetailDescription/index.pug
+
+	+catalogCaseSlider('Реализованные проекты')(class="caseDetail")
+
+	br 
+	br
+	br
+	br
+	br
+
+	include ../components/Footer/index.pug
+
+block scripts
+	script(src="js/main.js")

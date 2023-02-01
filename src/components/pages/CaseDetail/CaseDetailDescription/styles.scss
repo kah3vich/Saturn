@@ -1,0 +1,50 @@
+.case-detail-description {
+	width: 100%;
+	padding: 75px 0;
+	background-color: $color-white;
+	& .containers {
+		width: 100%;
+	}
+	&__list {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+		gap: 75px 40px;
+	}
+	&__item {
+		width: 100%;
+	}
+}
+
+// Mixin
+
+.caseDetailDescriptionCard {
+	width: 100%;
+	@include flexStyle(flex-start, flex-start, column, 35px);
+	&__icon {
+		width: 126px;
+		height: 126px;
+		background: $color-blue-black;
+		@include flexStyle(center, center);
+		position: relative;
+		border-radius: 50%;
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 154px;
+			height: 154px;
+			border-radius: 50%;
+			border: 1px solid $color-yellow;
+		}
+	}
+	&__title {
+		margin-top: 35px;
+		@include fontStyle(30px, 700, 34px, $color-blue-black);
+	}
+	&__text {
+		@include fontStyle(25px, 400, 36px, $color-black);
+	}
+}
