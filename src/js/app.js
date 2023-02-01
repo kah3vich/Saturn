@@ -6,6 +6,7 @@ import {
 	CatalogCase,
 	CatalogMain,
 	Feedback,
+	GoodsMain,
 	Header,
 	HelperQuestion,
 	ModalCollection,
@@ -25,3 +26,4 @@ CatalogAddition()
 ModalFeedback()
 ModalCollection()
 AboutDescription()
+GoodsMain()

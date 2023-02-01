@@ -1,0 +1,22 @@
+.goods-video {
+	width: 100%;
+	padding: 60px 0;
+	background-color: $color-white;
+	& .containers {
+		width: 100%;
+		@include flexStyle(flex-start, flex-start, column, 33px);
+	}
+	&__title {
+		@include fontStyle(40px, 700, 58px, $color-blue);
+	}
+	&__text {
+		@include fontStyle(28px, 400, 49px, $color-black);
+	}
+	&__video {
+		width: 100%;
+		& .videoPlaceholder__video {
+			width: 100%;
+			height: 620px;
+		}
+	}
+}

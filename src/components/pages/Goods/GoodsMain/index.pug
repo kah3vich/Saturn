@@ -1,0 +1,39 @@
+section.goods-main
+    .containers
+        p.goods-main__subtitle Главная / 
+            span Кейсы
+        .goods-main__block
+            .goods-main__slider 
+                .swiper.goodsMainSliderSwiper
+                    .swiper-wrapper
+                        each _, i in Array(4) 
+                            .swiper-slide 
+                                .goods-main__slider-item 
+                                    img(src="./img/pages/goods/slider.png" alt="")
+                .swiper-controls
+                    .swiper-button-next
+                        img(src="./svg/pages/goods/arrow-next.svg" alt="")
+                    .swiper-button-prev
+                        img(src="./svg/pages/goods/arrow-prev.svg" alt="")
+                    .swiper-pagination
+
+            .goods-main__content 
+                h5.goods-main__content-title Архивные стеллажи с электроприводом мобильные - управление с компьютера
+                p.goods-main__content-subtitle Рассчитаем проект расстоновки стеллажей для вашего помещения всего за 
+                    span 24 часа.
+                ul.goods-main__content-status
+                    li.goods-main__content-stat 
+                        p Наличие: 
+                        span под заказ
+                    li.goods-main__content-stat 
+                        p Цена от 
+                        span 60 000 руб. 
+                    
+                .goods-main__content-buttons 
+                    a(href="").goods-main__content-white 
+                        p ЗАКАЗАТЬ
+                        img(src="./svg/pages/goods/arrow-link.svg" alt="")
+                    a(href="").goods-main__content-yellow
+                        p ПОЛУЧИТЬ КП
+                        img(src="./svg/pages/goods/arrow-link.svg" alt="")
+                p.goods-main__content-add Не публичная оферта. Цена на автоматические архивные стеллажи приведена справочно. Окончательная стоимость зависит от оснащения, количества, доставки (с монтажем) до города РФ.

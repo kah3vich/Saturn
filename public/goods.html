@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Карточка Товара</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicon/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicon/favicon-32x32.png" type="image/png">
+    <link rel="icon" sizes="48x48" href="img/favicon/favicon-48x48.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicon/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicon/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicon/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230202021248">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20230202021248" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230202021248">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230202021248"></script>
+  </head>
+  <body>
+    <header class="header"> 
+      <div class="containers">
+        <div class="header__container">
+          <div class="header__block"><a class="header__logo" href="/"> <img src="./svg/logo.svg" alt=""></a>
+            <p class="header__subtitle">Завод по производству <br>металлических стеллажей </p>
+          </div>
+          <div class="header__block">
+            <div class="header__city">
+              <div class="headerCitySelect">
+                <div class="headerCitySelect-placeholder">Moscow</div>
+                <div class="headerCitySelect-block" style="display: none"> 
+                  <div class="headerCitySelect-wrapper"> <a class="headerCitySelect-element headerCitySelect-element-active" href="https://google.com">Moscow</a><a class="headerCitySelect-element" href="https://google.com">Moscow 1 </a><a class="headerCitySelect-element" href="https://google.com">Moscow 2 </a><a class="headerCitySelect-element" href="https://google.com">Moscow 3 </a><a class="headerCitySelect-element" href="https://google.com">Moscow 4 </a><a class="headerCitySelect-element" href="https://google.com">Moscow 5 </a></div>
+                </div>
+              </div>
+            </div><a class="header__email" href="mailto:stel@saturngk.ru"> <img src="./svg/header/email.svg" alt="">
+              <p>stel@saturngk.ru</p></a><a class="header__phone" href="tel:88003504677"><img src="./svg/header/phone.svg" alt="">
+              <p>8 800-350-46-77</p></a>
+            <button class="header__button">заказать звонок</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="goods-main">
+      <div class="containers">
+        <p class="goods-main__subtitle">Главная / <span>Кейсы</span></p>
+        <div class="goods-main__block">
+          <div class="goods-main__slider"> 
+            <div class="swiper goodsMainSliderSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"> 
+                  <div class="goods-main__slider-item"> <img src="./img/pages/goods/slider.png" alt=""></div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="goods-main__slider-item"> <img src="./img/pages/goods/slider.png" alt=""></div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="goods-main__slider-item"> <img src="./img/pages/goods/slider.png" alt=""></div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="goods-main__slider-item"> <img src="./img/pages/goods/slider.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-controls">
+              <div class="swiper-button-next"><img src="./svg/pages/goods/arrow-next.svg" alt=""></div>
+              <div class="swiper-button-prev"><img src="./svg/pages/goods/arrow-prev.svg" alt=""></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="goods-main__content"> 
+            <h5 class="goods-main__content-title">Архивные стеллажи с электроприводом мобильные - управление с компьютера</h5>
+            <p class="goods-main__content-subtitle">Рассчитаем проект расстоновки стеллажей для вашего помещения всего за <span>24 часа.</span></p>
+            <ul class="goods-main__content-status">
+              <li class="goods-main__content-stat"> 
+                <p>Наличие: </p><span>под заказ</span>
+              </li>
+              <li class="goods-main__content-stat"> 
+                <p>Цена от </p><span>60 000 руб. </span>
+              </li>
+            </ul>
+            <div class="goods-main__content-buttons"> <a class="goods-main__content-white" href=""> 
+                <p>ЗАКАЗАТЬ</p><img src="./svg/pages/goods/arrow-link.svg" alt=""></a><a class="goods-main__content-yellow" href="">
+                <p>ПОЛУЧИТЬ КП</p><img src="./svg/pages/goods/arrow-link.svg" alt=""></a></div>
+            <p class="goods-main__content-add">Не публичная оферта. Цена на автоматические архивные стеллажи приведена справочно. Окончательная стоимость зависит от оснащения, количества, доставки (с монтажем) до города РФ.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="production-stages">
+      <div class="containers"> 
+        <h5 class="production-stages__title">ЭТАПЫ ПРОИЗВОДСТВА</h5>
+        <ul class="production-stages__list"> 
+          <li class="production-stages__item"> 
+            <div class="productionStages">
+              <div class="productionStages__banner"> <img src="./img/pages/production/card.png" alt=""/></div>
+              <div class="productionStages__content"> 
+                <h5 class="productionStages__content-title">ЭТАП 1</h5>
+                <p class="productionStages__content-text">Комплексное оснащение архивной отрасли. Архив конструкторской документации, регистратуры, поликлиники Комплексное оснащение архивной отрасли. Архив конструкторской документации, регистратуры, поликлиникиКомплексное оснащение архивной отрасли. Архив конструкторской документации, регистратуры, поликлиники</p>
+              </div>
+            </div>
+          </li>
+          <li class="production-stages__item"> 
+            <div class="productionStages">
+              <div class="productionStages__banner"> <img src="./img/pages/production/card.png" alt=""/></div>
+              <div class="productionStages__content"> 
+                <h5 class="productionStages__content-title">ЭТАП 1</h5>
+                <p class="productionStages__content-text">Комплексное оснащение архивной отрасли. Архив конструкторской документации, регистратуры, поликлиники Комплексное оснащение архивной отрасли. Архив конструкторской документации, регистратуры, поликлиникиКомплексное оснащение архивной отрасли. Архив конструкторской документации, регистратуры, поликлиники</p>
+              </div>
+            </div>
+          </li>
+          <li class="production-stages__item"> 
+            <div class="productionStages">
+              <div class="productionStages__banner"> <img src="./img/pages/production/card.png" alt=""/></div>
+              <div class="productionStages__content"> 
+                <h5 class="productionStages__content-title">ЭТАП 1</h5>
+                <p class="productionStages__content-text">Комплексное оснащение архивной отрасли. Архив конструкторской документации, регистратуры, поликлиники Комплексное оснащение архивной отрасли. Архив конструкторской документации, регистратуры, поликлиникиКомплексное оснащение архивной отрасли. Архив конструкторской документации, регистратуры, поликлиники</p>
+              </div>
+            </div>
+          </li>
+          <li class="production-stages__item"> 
+            <div class="productionStages">
+              <div class="productionStages__banner"> <img src="./img/pages/production/card.png" alt=""/></div>
+              <div class="productionStages__content"> 
+                <h5 class="productionStages__content-title">ЭТАП 1</h5>
+                <p class="productionStages__content-text">Комплексное оснащение архивной отрасли. Архив конструкторской документации, регистратуры, поликлиники Комплексное оснащение архивной отрасли. Архив конструкторской документации, регистратуры, поликлиникиКомплексное оснащение архивной отрасли. Архив конструкторской документации, регистратуры, поликлиники</p>
+              </div>
+            </div>
+          </li>
+          <li class="production-stages__item"> 
+            <div class="productionStages">
+              <div class="productionStages__banner"> <img src="./img/pages/production/card.png" alt=""/></div>
+              <div class="productionStages__content"> 
+                <h5 class="productionStages__content-title">ЭТАП 1</h5>
+                <p class="productionStages__content-text">Комплексное оснащение архивной отрасли. Архив конструкторской документации, регистратуры, поликлиники Комплексное оснащение архивной отрасли. Архив конструкторской документации, регистратуры, поликлиникиКомплексное оснащение архивной отрасли. Архив конструкторской документации, регистратуры, поликлиники</p>
+              </div>
+            </div>
+          </li>
+          <li class="production-stages__item"> 
+            <div class="productionStages">
+              <div class="productionStages__banner"> <img src="./img/pages/production/card.png" alt=""/></div>
+              <div class="productionStages__content"> 
+                <h5 class="productionStages__content-title">ЭТАП 1</h5>
+                <p class="productionStages__content-text">Комплексное оснащение архивной отрасли. Архив конструкторской документации, регистратуры, поликлиники Комплексное оснащение архивной отрасли. Архив конструкторской документации, регистратуры, поликлиникиКомплексное оснащение архивной отрасли. Архив конструкторской документации, регистратуры, поликлиники</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="catalog-case">
+      <div class="containers">
+        <div class="catalog-case__containers">
+          <div class="catalog-case__content"> 
+            <div class="catalog-case__content-title">Реализованные проекты</div>
+          </div>
+        </div>
+        <div class="catalog-case__slider goods">
+          <div class="swiper catalogCaseSlider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"> 
+                <div class="catalogCaseCard"> 
+                  <div class="catalogCaseCard__img"> <img src="./img/index/indexCase/photo.png" alt=""/></div>
+                  <div class="catalogCaseCard__title">Проектный институт</div><a class="catalogCaseCard__link" href="/">
+                    <p>Подробнее</p></a>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="catalogCaseCard"> 
+                  <div class="catalogCaseCard__img"> <img src="./img/index/indexCase/photo.png" alt=""/></div>
+                  <div class="catalogCaseCard__title">Проектный институт</div><a class="catalogCaseCard__link" href="/">
+                    <p>Подробнее</p></a>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="catalogCaseCard"> 
+                  <div class="catalogCaseCard__img"> <img src="./img/index/indexCase/photo.png" alt=""/></div>
+                  <div class="catalogCaseCard__title">Проектный институт</div><a class="catalogCaseCard__link" href="/">
+                    <p>Подробнее</p></a>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="catalogCaseCard"> 
+                  <div class="catalogCaseCard__img"> <img src="./img/index/indexCase/photo.png" alt=""/></div>
+                  <div class="catalogCaseCard__title">Проектный институт</div><a class="catalogCaseCard__link" href="/">
+                    <p>Подробнее</p></a>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="catalogCaseCard"> 
+                  <div class="catalogCaseCard__img"> <img src="./img/index/indexCase/photo.png" alt=""/></div>
+                  <div class="catalogCaseCard__title">Проектный институт</div><a class="catalogCaseCard__link" href="/">
+                    <p>Подробнее</p></a>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="catalogCaseCard"> 
+                  <div class="catalogCaseCard__img"> <img src="./img/index/indexCase/photo.png" alt=""/></div>
+                  <div class="catalogCaseCard__title">Проектный институт</div><a class="catalogCaseCard__link" href="/">
+                    <p>Подробнее</p></a>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="catalogCaseCard"> 
+                  <div class="catalogCaseCard__img"> <img src="./img/index/indexCase/photo.png" alt=""/></div>
+                  <div class="catalogCaseCard__title">Проектный институт</div><a class="catalogCaseCard__link" href="/">
+                    <p>Подробнее</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-controls">
+            <div class="swiper-button-next"><img src="./svg/index/indexCase/arrow-next.svg" alt=""/></div>
+            <div class="swiper-button-prev"><img src="./svg/index/indexCase/arrow-prev.svg" alt=""/></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="goods-video"> 
+      <div class="containers"> 
+        <h5 class="goods-video__title">Видео</h5>
+        <p class="goods-video__text">Производим разделители полок и папок. Выдвижные полки и ящики. Двери распашные и жалюзи (ролеты).</p>
+        <div class="goods-video__video"> 
+          <div class="videoPlaceholder__video"> <img src="./img/pages/goods/video.png" alt=""/>
+            <div class="videoPlaceholder__player">
+              <p>Воспроизвести <br/>видео</p><img src="./svg/index/indexMain/play.svg" alt=""/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="catalog-addition">
+      <div class="containers">
+        <h5 class="catalog-addition__title">Дополнительное оборудование</h5>
+        <p class="catalog-addition__text">Производим разделители полок и папок. Выдвижные полки и ящики. Двери распашные и жалюзи (ролеты). Штанги для плечиков, задние стенки, замки, идентификационные таблички на боковые панели, соединители рядов.</p>
+        <div class="catalog-addition__slider goods">
+          <div class="swiper catalogAdditionSlider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"> 
+                <div class="additionCard">
+                  <div class="additionCard__banner"> <img src="./img/pages/catalog/catalogAddition/card.png" alt=""/></div>
+                  <div class="additionCard__content">
+                    <h5 class="additionCard__content-title">Дополнительное оборудование</h5>
+                    <p class="additionCard__content-subtitle">Идеальный вариант для помещения с ровными полами</p><a class="additionCard__content-button" href=""> 
+                      <p>Подробнее</p></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="additionCard">
+                  <div class="additionCard__banner"> <img src="./img/pages/catalog/catalogAddition/card.png" alt=""/></div>
+                  <div class="additionCard__content">
+                    <h5 class="additionCard__content-title">Дополнительное оборудование</h5>
+                    <p class="additionCard__content-subtitle">Идеальный вариант для помещения с ровными полами</p><a class="additionCard__content-button" href=""> 
+                      <p>Подробнее</p></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="additionCard">
+                  <div class="additionCard__banner"> <img src="./img/pages/catalog/catalogAddition/card.png" alt=""/></div>
+                  <div class="additionCard__content">
+                    <h5 class="additionCard__content-title">Дополнительное оборудование</h5>
+                    <p class="additionCard__content-subtitle">Идеальный вариант для помещения с ровными полами</p><a class="additionCard__content-button" href=""> 
+                      <p>Подробнее</p></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="additionCard">
+                  <div class="additionCard__banner"> <img src="./img/pages/catalog/catalogAddition/card.png" alt=""/></div>
+                  <div class="additionCard__content">
+                    <h5 class="additionCard__content-title">Дополнительное оборудование</h5>
+                    <p class="additionCard__content-subtitle">Идеальный вариант для помещения с ровными полами</p><a class="additionCard__content-button" href=""> 
+                      <p>Подробнее</p></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="additionCard">
+                  <div class="additionCard__banner"> <img src="./img/pages/catalog/catalogAddition/card.png" alt=""/></div>
+                  <div class="additionCard__content">
+                    <h5 class="additionCard__content-title">Дополнительное оборудование</h5>
+                    <p class="additionCard__content-subtitle">Идеальный вариант для помещения с ровными полами</p><a class="additionCard__content-button" href=""> 
+                      <p>Подробнее</p></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="additionCard">
+                  <div class="additionCard__banner"> <img src="./img/pages/catalog/catalogAddition/card.png" alt=""/></div>
+                  <div class="additionCard__content">
+                    <h5 class="additionCard__content-title">Дополнительное оборудование</h5>
+                    <p class="additionCard__content-subtitle">Идеальный вариант для помещения с ровными полами</p><a class="additionCard__content-button" href=""> 
+                      <p>Подробнее</p></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="additionCard">
+                  <div class="additionCard__banner"> <img src="./img/pages/catalog/catalogAddition/card.png" alt=""/></div>
+                  <div class="additionCard__content">
+                    <h5 class="additionCard__content-title">Дополнительное оборудование</h5>
+                    <p class="additionCard__content-subtitle">Идеальный вариант для помещения с ровными полами</p><a class="additionCard__content-button" href=""> 
+                      <p>Подробнее</p></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="additionCard">
+                  <div class="additionCard__banner"> <img src="./img/pages/catalog/catalogAddition/card.png" alt=""/></div>
+                  <div class="additionCard__content">
+                    <h5 class="additionCard__content-title">Дополнительное оборудование</h5>
+                    <p class="additionCard__content-subtitle">Идеальный вариант для помещения с ровными полами</p><a class="additionCard__content-button" href=""> 
+                      <p>Подробнее</p></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-controls">
+            <div class="swiper-button-next"><img src="./svg/pages/catalog/catalogAddition/arrow-next.svg" alt=""/></div>
+            <div class="swiper-button-prev"><img src="./svg/pages/catalog/catalogAddition/arrow-prev.svg" alt=""/></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="catalog-addition__button"> 
+          <button class="buttonGray">Смотреть все</button>
+        </div>
+      </div>
+    </section>
+    <section class="goods-description">
+      <div class="containers">
+        <h5 class="goods-description__title">КАК КУПИТЬ ?</h5>
+        <p class="goods-description__text">За консультациями по выбору модели стеллажа, стоимости оборудования, срокам изготовления обращайтесь в наш офис. После получения необходимой информации менеджеры разработают для Вас проект размещения оборудования, сопроводит его подробным техническим описанием. Для предварительного расчета цены стеллажей достаточно, если Вы сообщите габариты помещения и укажите формат хранимой документации или товара, а так же его вес. Доставка и монтаж стеллажей нашими силами так же могут быть включены в стоимость поставки. Часть стандартных комплектующих деталей всегда находится на нашем складе. Поэтому, при покупке стеллажей в нашей компании, Вы можете рассчитывать на быструю поставку.</p>
+      </div>
+    </section>
+    <section class="helper">
+      <div class="containers">
+        <h5 class="helper__title">Помощь</h5>
+        <ul class="helper__list">
+          <li class="helper__item"><a class="helperCard" href="/">
+              <div class="helperCard__icon"><img src="./svg/components/help/check.svg" alt=""/></div>
+              <p class="helperCard__title">Как правильно выбрать ?</p></a>
+          </li>
+          <li class="helper__item"><a class="helperCard" href="/">
+              <div class="helperCard__icon"><img src="./svg/components/help/check.svg" alt=""/></div>
+              <p class="helperCard__title">Как правильно выбрать ?</p></a>
+          </li>
+          <li class="helper__item"><a class="helperCard" href="/">
+              <div class="helperCard__icon"><img src="./svg/components/help/check.svg" alt=""/></div>
+              <p class="helperCard__title">Как правильно выбрать ?</p></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="formBase">
+      <div class="containers"> 
+        <p class="formBase__title">Подберем решение</p>
+        <div class="formBase__container">
+          <div class="formBase__banner"> <img src="./img/formBase/banner.png" alt=""></div>
+          <div class="formBase__form"> 
+            <div class="formBase__form-banner"><span>БОНУС: </span>
+              <p>«Проект бесплатно в течение 24 часов»</p>
+            </div>
+            <script data-b24-form="inline/36/exrs6e" data-skip-moving="true">
+             (function(w,d,u){
+                        var s = d.createElement('script');
+                        s.async=true;s.src=u+'?'+(Date.now()/180000|0);
+                        var h = d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+                    })
+                    (window, document, 'https://cdn-ru.bitrix24.ru/b19623448/crm/form/loader_36.js');
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer"> 
+      <div class="containers">
+        <div class="footer__container"> 
+          <div class="footer__block">
+            <div class="footer__logo"><img src="./svg/footer/logo.svg" alt=""></div>
+            <div class="footer__phone"><a href="tel:88003504677">8 800-350-46-77</a>
+              <p>Звонок бесплатный</p>
+            </div>
+          </div>
+          <div class="footer__block">
+            <div class="footer__social">
+              <div class="footer__social-title">Мы в социальных сетях:</div>
+              <ul class="footer__social-list">
+                <li class="footer__social-item"> <a href="/"> <img src="./img/footer/vk.png" alt=""></a></li>
+                <li class="footer__social-item"> <a href="/"> <img src="./img/footer/viber.png" alt=""></a></li>
+                <li class="footer__social-item"> <a href="/"> <img src="./img/footer/telegram.png" alt=""></a></li>
+                <li class="footer__social-item"> <a href="/"> <img src="./img/footer/youtube.png" alt=""></a></li>
+              </ul>
+            </div>
+            <ul class="footer__list">
+              <li class="footer__list-item"> <a href="/">О компании</a></li>
+              <li class="footer__list-item"> <a href="/">Контакты</a></li>
+              <li class="footer__list-item"> <a href="/">Условия работы</a></li>
+              <li class="footer__list-item"> <a href="/">Оплата и доставка</a></li>
+              <li class="footer__list-item"> <a href="/">Гарантия</a></li>
+              <li class="footer__list-item"> <a href="/">Бесплатный проект</a></li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__list-item"> <a href="/">Архив</a></li>
+              <li class="footer__list-item"> <a href="/">Библиотека</a></li>
+              <li class="footer__list-item"> <a href="/">Музей</a></li>
+              <li class="footer__list-item"> <a href="/">Офис</a></li>
+              <li class="footer__list-item"> <a href="/">Склад</a></li>
+              <li class="footer__list-item"> <a href="/">Фото обьекта</a></li>
+              <li class="footer__list-item"> <a href="/">Примеры работ</a></li>
+            </ul>
+            <div class="footer__contact">
+              <button class="buttonYellow">ЗАКАЗАТЬ РАСЧЕТ<img class="buttonYellow__img" src="./svg/mixin/arrow-link.svg" alt=""/></button>
+              <ul class="footer__contact-list">
+                <li class="footer__contact-item"><img src="./svg/footer/phone.svg" alt="">
+                  <div class="footer__contact-links"><a href="/">Пермь:</a><a href="tel:+73422331545">+7 (342) 233-15-45 (многоканальный)</a></div>
+                </li>
+                <li class="footer__contact-item"><img src="./svg/footer/phone.svg" alt="">
+                  <div class="footer__contact-links"><a href="/">Москва:</a><a href="tel:+74996810157">+7 (499) 681-01-57</a></div>
+                </li>
+                <li class="footer__contact-item"><img src="./svg/footer/phone.svg" alt="">
+                  <div class="footer__contact-links"><a href="/">Екатеринбург:</a><a href="tel:+73432271545">+7 (343) 227-15-45</a></div>
+                </li>
+                <li class="footer__contact-item"><img src="./svg/footer/phone.svg" alt="">
+                  <div class="footer__contact-links"><a href="/">Тюмень:</a><a href="tel:+73422331545">+7 (342) 233-15-45</a></div>
+                </li>
+                <li class="footer__contact-item"><img src="./svg/footer/phone.svg" alt="">
+                  <div class="footer__contact-links"><a href="/">Нижний Новгород:</a><a href="tel:88003504677">8 800 350-46-77</a></div>
+                </li>
+                <li class="footer__contact-item"><img src="./svg/footer/phone.svg" alt="">
+                  <div class="footer__contact-links"><a href="/">Санкт-Петербург:</a><a href="tel:88003504677">8 800 350-46-77</a></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__block">
+            <p class="footer__subtitle">© ООО «Фирма «Сатурн» — все права защищены, 2022</p><a class="footer__text" href="/">Политика обработки персональных данных</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js?_v=20230202021248"></script>
+  </body>
+</html>

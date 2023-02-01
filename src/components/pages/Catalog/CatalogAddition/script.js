@@ -1,5 +1,5 @@
 export const CatalogAddition = () => {
-	const arrListSlider = ['addition', 'goods']
+	const arrListSlider = ['addition', 'goods', 'catalog']
 
 	for (let i = 0; i <= arrListSlider.length; i++) {
 		const catalogAdditionSlider = new Swiper('.catalogAdditionSlider', {

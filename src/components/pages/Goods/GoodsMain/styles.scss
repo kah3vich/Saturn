@@ -1,0 +1,146 @@
+.goods-main {
+	width: 100%;
+	padding: 45px 0;
+	background-color: $color-white;
+	& .containers {
+		width: 100%;
+		@include flexStyle(flex-start, flex-start, column, 43px);
+	}
+	&__subtitle {
+		@include fontStyle(14px, 300, 130%, $color-black);
+		& span {
+			color: $color-gray;
+		}
+	}
+	&__block {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(2, calc(50% - 50px));
+		gap: 100px;
+	}
+	&__content {
+		width: 100%;
+		@include flexStyle(flex-start, flex-start, column, 20px);
+		&-title {
+			letter-spacing: -0.5px;
+			@include fontStyle(42px, 700, 54px, $color-blue);
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 4;
+			-webkit-box-orient: vertical;
+		}
+		&-subtitle {
+			margin-top: 5px;
+			letter-spacing: -0.5px;
+			@include fontStyle(22px, 400, 28px, $color-black);
+			& span {
+				font-weight: 700;
+			}
+		}
+		&-status {
+			margin-top: 13px;
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 28px;
+		}
+		&-stat {
+			width: max-content;
+			@include flexStyle(center, center, row, 4px);
+			& p {
+				letter-spacing: -0.5px;
+				@include fontStyle(16px, 400, 18px, $color-black);
+			}
+			& span {
+				letter-spacing: -0.5px;
+				@include fontStyle(16px, 700, 18px, $color-black);
+			}
+		}
+		&-add {
+			letter-spacing: -0.5px;
+			@include fontStyle(10px, 400, 11px, $color-black);
+		}
+		&-buttons {
+			width: 100%;
+			margin-top: 13px;
+			display: flex;
+			gap: 10px;
+			flex-wrap: wrap;
+		}
+		&-white {
+			border: 1px solid $color-yellow;
+			border-radius: 10px;
+			background-color: $color-white;
+			padding: 16px 16px 16px 19px;
+			cursor: pointer;
+			@include flexStyle(center, center, row, 24px);
+			& p {
+				@include fontStyle(17px, 700, 16px, $color-black);
+			}
+		}
+		&-yellow {
+			border: 1px solid $color-yellow;
+			border-radius: 10px;
+			background-color: $color-yellow;
+			padding: 16px 16px 16px 19px;
+			cursor: pointer;
+			@include flexStyle(center, center, row, 24px);
+			& p {
+				@include fontStyle(17px, 700, 16px, $color-black);
+			}
+		}
+	}
+	&__slider {
+		width: 100%;
+		position: relative;
+		margin-bottom: 130px;
+		&-item {
+			width: 100%;
+			height: 320px;
+			border-radius: 20px;
+			overflow: hidden;
+			& img {
+				@include imgFullSize();
+			}
+		}
+		& .swiper-pagination {
+			bottom: -145px !important;
+			@include flexStyle(center, center, row, 25px);
+		}
+		& .swiper-pagination-bullet {
+			width: 120px;
+			height: 120px;
+			background-color: $transparent;
+			border-radius: 20px;
+			overflow: hidden;
+			& img {
+				@include imgFullSize();
+			}
+		}
+		& .swiper-button-next {
+			width: 43px;
+			height: 322px;
+			background: $color-yellow;
+			border-radius: 0 20px 20px 0;
+			right: 0px;
+			left: auto;
+			top: 21px;
+			&::after {
+				content: none;
+			}
+		}
+		& .swiper-button-prev {
+			width: 43px;
+			height: 322px;
+			background: $color-yellow;
+			border-radius: 20px 0 0 20px;
+			left: 0px;
+			right: auto;
+			top: 21px;
+			&::after {
+				content: none;
+			}
+		}
+	}
+}
