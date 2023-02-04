@@ -1,0 +1,25 @@
+.decision-description {
+	width: 100%;
+	padding: 65px 0;
+	background-color: $color-white;
+	& .containers {
+		width: 100%;
+		@include flexStyle(flex-start, flex-start, column, 22px);
+	}
+	&__title {
+		@include fontStyle(40px, 700, 58px, $color-blue);
+	}
+	&__text {
+		@include fontStyle(28px, 400, 50px, $color-black);
+	}
+	&__banner {
+		width: 100%;
+		height: 840px;
+		margin-top: 40px;
+		border-radius: 20px;
+		overflow: hidden;
+		& img {
+			@include imgFullSize();
+		}
+	}
+}

@@ -1,0 +1,25 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Детальная страница статьи";
+
+block content
+	include ../components/Header/index.pug
+
+	+mainBanner('Разделители папок', 'Российская компания по продаже производству металлических стеллажей', 'ПОЛУЧИТЬ КП', './img/pages/add/banner.png')
+
+	include ../components/pages/Add/AddDescription/index.pug
+
+	include ../components/pages/Add/AddCatalog/index.pug
+
+	include ../components/pages/Index/IndexLink/index.pug
+
+	br 
+	br
+	br
+	br
+
+	include ../components/Footer/index.pug
+
+block scripts
+	script(src="js/main.js")

@@ -1,0 +1,7 @@
+section.add-catalog
+    .containers 
+        h5.add-catalog__title Каталог
+        ul.add-catalog__list 
+            each _, i in Array(3)
+                li.add-catalog__item 
+                    +catalogCard()

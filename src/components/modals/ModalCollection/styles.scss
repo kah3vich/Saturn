@@ -56,12 +56,13 @@
 				left: auto !important;
 				@include flexStyle(center, center);
 				&::after {
+					font-family: Arial;
 					content: 'След. проект';
 					@include fontStyle(14px, 400, 58px, $color-black);
 					position: absolute;
 					width: max-content;
 					top: 0px;
-					left: -13px;
+					left: -23px;
 				}
 			}
 			& .swiper-button-prev {
@@ -73,12 +74,13 @@
 				right: auto !important;
 				@include flexStyle(center, center);
 				&::after {
+					font-family: Arial;
 					content: 'Пред. проект';
 					@include fontStyle(14px, 400, 58px, $color-black);
 					position: absolute;
 					width: max-content;
 					top: 0px;
-					right: -13px;
+					right: -23px;
 				}
 			}
 		}

@@ -2,6 +2,7 @@ import { IndexCase } from '../components/pages/Index/IndexCase/script.js'
 import { IndexMain } from '../components/pages/Index/IndexMain/script.js'
 import {
 	AboutDescription,
+	AddDescription,
 	CatalogAddition,
 	CatalogCase,
 	CatalogMain,
@@ -27,3 +28,4 @@ ModalFeedback()
 ModalCollection()
 AboutDescription()
 GoodsMain()
+AddDescription()

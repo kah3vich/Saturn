@@ -1,0 +1,39 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Каталог";
+
+block content
+	include ../components/Header/index.pug
+
+	include ../components/pages/Catalog/CatalogMain/index.pug
+
+	include ../components/pages/Catalog/CatalogDescription/index.pug
+
+	include ../components/pages/Catalog/CatalogList/index.pug
+
+	+catalogAddition('Дополнительное оборудование', 'Производим разделители полок и папок. Выдвижные полки и ящики. Двери распашные и жалюзи (ролеты). Штанги для плечиков, задние стенки, замки, идентификационные таблички на боковые панели, соединители рядов.')(class="addition")
+
+	include ../components/pages/Catalog/CatalogBanner/index.pug
+
+	include ../components/pages/Catalog/CatalogTable/index.pug
+
+	include ../components/pages/Catalog/CatalogText/index.pug
+
+	+catalogCaseSlider('Реализованные проекты')(class="catalog")
+
+	include ../components/pages/Catalog/CatalogRequest/index.pug
+
+	include ../components/pages/Catalog/CatalogStages/index.pug
+
+	include ../components/pages/Decision/DecisionDescription/index.pug
+
+	include ../components/Helper/index.pug
+
+	include ../components/Footer/index.pug
+
+block modals 
+	include ../components/modals/ModalCollection/index.pug
+
+block scripts
+	script(src="js/main.js")

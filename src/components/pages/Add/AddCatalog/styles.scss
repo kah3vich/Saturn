@@ -1,0 +1,21 @@
+.add-catalog {
+	width: 100%;
+	background-color: $color-white;
+	padding: 75px 0;
+	& .containers {
+		width: 100%;
+		@include flexStyle(flex-start, flex-start, column, 56px);
+	}
+	&__title {
+		@include fontStyle(40px, 700, 58px, $color-blue);
+	}
+	&__list {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+		gap: 20px;
+	}
+	&__item {
+		width: 100%;
+	}
+}
