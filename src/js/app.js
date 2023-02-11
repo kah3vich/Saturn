@@ -11,6 +11,7 @@ import {
 	Header,
 	HelperQuestion,
 	ModalCollection,
+	Slider,
 	ModalFeedback,
 	Team
 } from '../components/script.js'
@@ -20,6 +21,7 @@ IndexCase()
 CatalogCase()
 Feedback()
 Team()
+Slider()
 IndexMain()
 CatalogMain()
 HelperQuestion()

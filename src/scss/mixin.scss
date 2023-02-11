@@ -12,6 +12,13 @@
 	font-style: $fontStyle;
 }
 
+@mixin gridStyle($gridTemplateColumns: auto, $gridTemplateRows: auto, $gap: 0px) {
+	display: grid;
+	grid-template-columns: $gridTemplateColumns;
+	grid-template-rows: $gridTemplateRows;
+	gap: $gap;
+}
+
 @mixin flexStyle(
 	$alignItems: flex-start,
 	$justifyContent: flex-start,
@@ -34,6 +41,6 @@
 	display: block;
 }
 
-@mixin transitionStyle() {
-	transition: all 0.5s ease;
+@mixin transitionStyle($time: 0.5s, $type: ease) {
+	transition: all $time $type;
 }

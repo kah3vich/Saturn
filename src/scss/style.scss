@@ -18,6 +18,9 @@ body {
 	font-family: Arial, sans-serif;
 	font-style: normal;
 	background-color: $color-white;
+	&::-webkit-scrollbar {
+		width: 0;
+	}
 }
 
 a {

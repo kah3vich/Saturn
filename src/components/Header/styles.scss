@@ -3,6 +3,8 @@
 	min-height: 70px;
 	background: $color-white;
 	@include flexStyle(center, center);
+	position: relative;
+	z-index: 200;
 	& .containers {
 		width: 100%;
 	}
@@ -148,6 +150,205 @@
 			border-radius: 15px;
 			background-color: $color-white;
 			border: 1px solid $color-black;
+		}
+	}
+}
+
+//| Nav
+
+.navbar {
+	position: relative;
+	z-index: 160;
+	width: 100%;
+	background-color: $color-light-yellow-green;
+	& .containers {
+		width: 100%;
+		@include flexStyle(center, space-between, row, 28px);
+	}
+	&__background {
+		opacity: 0;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		cursor: not-allowed;
+		visibility: hidden;
+		height: 100vh;
+		background: $color-blue-black;
+		z-index: 100;
+		@include transitionStyle();
+		&-active {
+			opacity: 0.9;
+			cursor: auto;
+			visibility: visible;
+		}
+	}
+	&__search {
+		margin: 16px 0;
+		width: 305px;
+		background: $color-white;
+		border-radius: 19px;
+		padding: 7px 18px 7px 34px;
+		@include flexStyle(center, center, row, 10px);
+		&-input {
+			width: 100%;
+			background-color: transparent;
+			font-style: normal;
+			letter-spacing: -0.5px;
+			@include fontStyle(17px, 400, 19px, $color-black);
+			&::placeholder {
+				@include fontStyle(17px, 400, 19px, $color-black);
+				opacity: 0.5;
+			}
+		}
+		&-button {
+			width: 24px;
+			height: 24px;
+			background-color: transparent;
+			cursor: pointer;
+		}
+	}
+	&__link {
+		cursor: pointer;
+		& p {
+			letter-spacing: -0.5px;
+			@include fontStyle(18px, 400, 19px, $color-blue-black);
+		}
+	}
+	&__arrow {
+		padding: 25px 0;
+		position: relative;
+		cursor: pointer;
+		@include flexStyle(center, center, row, 12px);
+		& p {
+			letter-spacing: -0.5px;
+			@include fontStyle(18px, 400, 19px, $color-blue-black);
+		}
+		& img {
+			width: 19px;
+			height: 19px;
+		}
+		&-block {
+			position: fixed;
+			left: 0;
+			top: 0;
+			padding: 140px 0 0 0;
+			cursor: not-allowed;
+			visibility: hidden;
+			opacity: 0;
+			@include transitionStyle();
+			background-color: $color-white;
+			width: 100%;
+			height: 100vh;
+			z-index: 120;
+			@include flexStyle(flex-start, flex-start);
+			&__active {
+				cursor: auto;
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+		&-catalog {
+			width: 340px;
+			@include flexStyle(flex-start, flex-start, column);
+			overflow-y: scroll;
+			overflow-x: hidden;
+			height: 100%;
+			&::-webkit-scrollbar {
+				width: 0;
+			}
+		}
+		&-content {
+			width: calc(100% - 340px);
+			@include flexStyle(flex-start, flex-start, row, 25px, wrap);
+			overflow-y: scroll;
+			overflow-x: hidden;
+			height: 100%;
+		}
+		&-con {
+			width: 100%;
+			@include flexStyle(flex-start, flex-start, row, 25px, wrap);
+			display: none;
+			padding: 25px 25px 25px 65px;
+			&__active {
+				display: flex;
+			}
+		}
+		&-nav {
+			width: 100%;
+			padding: 29px 25px 29px 80px;
+			background-color: $color-blue-black;
+			@include transitionStyle();
+			cursor: pointer;
+			& a {
+				letter-spacing: -0.5px;
+				@include fontStyle(16px, 400, 19px, $color-white);
+			}
+			&__active {
+				background: #40395a;
+			}
+		}
+		&-containers {
+			width: max-content;
+			@include flexStyle(flex-start, flex-start, column, 25px);
+		}
+		&-title {
+			@include fontStyle(22px, 700, 25px, $color-blue-black);
+		}
+		&-links {
+			width: 100%;
+			@include flexStyle(flex-start, flex-start, column, 12px);
+		}
+		&-button {
+			cursor: pointer;
+			letter-spacing: -0.5px;
+			@include fontStyle(17px, 400, 49px, $color-blue-black);
+			@include transitionStyle();
+			&::hover {
+				& a {
+					text-decoration: underline;
+				}
+			}
+			& a {
+				letter-spacing: -0.5px;
+				@include fontStyle(17px, 400, 49px, $color-blue-black);
+				@include transitionStyle();
+			}
+		}
+		&-list {
+			width: 235px;
+			@include flexStyle(flex-start, flex-start, column);
+			position: absolute;
+			z-index: 120;
+			top: 69px;
+			left: -30px;
+			cursor: not-allowed;
+			visibility: hidden;
+			opacity: 0;
+			@include transitionStyle();
+			&__active {
+				opacity: 1;
+				cursor: auto;
+				visibility: visible;
+			}
+		}
+		&-item {
+			cursor: pointer;
+			padding: 28px;
+			letter-spacing: -0.5px;
+			& a {
+				@include fontStyle(16px, 400, 19px, $color-blue-black);
+				@include transitionStyle();
+			}
+			background-color: $color-white;
+			@include transitionStyle();
+			width: 100%;
+			&:hover {
+				background: #40395a;
+				& a {
+					color: $color-white;
+				}
+			}
 		}
 	}
 }

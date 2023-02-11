@@ -17,3 +17,83 @@ header.header
                     img(src="./svg/header/phone.svg" alt="")
                     p 8 800-350-46-77
                 button.header__button заказать звонок
+
+section.navbar 
+    .containers 
+        .navbar__arrow#navbarArrowCatalog
+            p Продукция
+            img(src="./../svg/header/arrow-down.svg" alt="")
+        .navbar__arrow#navbarArrowProject
+            p Реализованные проекты
+            img(src="./../svg/header/arrow-down.svg" alt="")
+            ul.navbar__arrow-list
+                li.navbar__arrow-item 
+                    a(href="#") Архив
+                li.navbar__arrow-item 
+                    a(href="#") Библиотека
+                li.navbar__arrow-item 
+                    a(href="#") Музей
+                li.navbar__arrow-item 
+                    a(href="#") Склад
+                
+        a(href="#").navbar__link 
+            p Закупкам
+        .navbar__arrow#navbarArrowCompony
+            p О компании
+            img(src="./../svg/header/arrow-down.svg" alt="")
+            ul.navbar__arrow-list
+                li.navbar__arrow-item 
+                    a(href="#") Производство
+                li.navbar__arrow-item 
+                    a(href="#") Рекомендации от клиентов
+                li.navbar__arrow-item 
+                    a(href="#") Новости
+                li.navbar__arrow-item 
+                    a(href="#") Карьера в Сатурн
+                li.navbar__arrow-item 
+                    a(href="#") Реквизиты
+                
+        .navbar__arrow#navbarArrowHelper
+            p Помощь
+            img(src="./../svg/header/arrow-down.svg" alt="")
+            ul.navbar__arrow-list
+                li.navbar__arrow-item 
+                    a(href="#") Статьи
+                li.navbar__arrow-item 
+                    a(href="#") Ответы на вопросы
+                li.navbar__arrow-item 
+                    a(href="#") Документы
+            
+        a(href="#").navbar__link 
+            p Контакты
+        .navbar__search
+            input(type="text" placeholder="Поиск").navbar__search-input 
+            .navbar__search-button 
+                img(src="./../svg/header/search.svg" alt="")
+
+.navbar__background
+
+.navbar__arrow-block
+    ul.navbar__arrow-catalog
+        each _, i in Array(19)
+            li.navbar__arrow-nav(data-con=i)
+                a(href="#") Архив
+    ul.navbar__arrow-content
+        each _, i in Array(19)
+            li.navbar__arrow-con(data-content=i)
+                .navbar__arrow-containers
+                    .navbar__arrow-title= i
+                    ul.navbar__arrow-links 
+                        li.navbar__arrow-button
+                            a(href="#") Мобильные стеллажи 
+                        li.navbar__arrow-button
+                            a(href="#") Мобильные стеллажи 
+                        
+                .navbar__arrow-containers
+                    .navbar__arrow-title= i
+                    ul.navbar__arrow-links 
+                        li.navbar__arrow-button
+                            a(href="#") Мобильные стеллажи 
+                        li.navbar__arrow-button
+                            a(href="#") Мобильные стеллажи 
+                        

@@ -1,0 +1,14 @@
+section.slider 
+    .slider__container
+        .swiper.mainSliderSwiper
+            .swiper-wrapper
+                each _, i in Array(5)
+                    .swiper-slide 
+                        .slider__item 
+                            img(src="./img/components/slider/card.png" alt="")
+        .swiper-controls
+            .swiper-button-next
+                img(src="./svg/slider/arrow-next.svg" alt="")
+            .swiper-button-prev
+                img(src="./svg/slider/arrow-prev.svg" alt="")
+            .swiper-pagination
