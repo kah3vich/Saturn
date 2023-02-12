@@ -14,3 +14,12 @@
 		@include fontStyle(20px, 400, 31px, $color-black);
 	}
 }
+
+//| Media
+
+@media (max-width: 1000px) {
+	.production-text__title {
+		font-size: 30px;
+		line-height: 34px;
+	}
+}

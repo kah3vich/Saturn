@@ -97,3 +97,26 @@
 		}
 	}
 }
+
+//| Media
+
+@media (max-width: 1250px) {
+	.footer__list {
+		display: none;
+	}
+}
+
+@media (max-width: 900px) {
+	.footer {
+		max-height: max-content;
+	}
+	.footer__block {
+		@include flexStyle(flex-start, flex-start, column, 25px);
+		padding-right: 0 !important;
+	}
+}
+@media (max-width: 600px) {
+	.footer__phone {
+		@include flexStyle(flex-start, flex-start, column, 15px);
+	}
+}

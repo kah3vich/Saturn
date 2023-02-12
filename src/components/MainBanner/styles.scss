@@ -70,3 +70,58 @@
 		height: 100vh;
 	}
 }
+
+//| Media
+
+@media (max-width: 1300px) {
+	.mainBanner__container {
+		padding: 0 50px;
+	}
+}
+
+@media (max-width: 1050px) {
+	.mainBanner__content-title {
+		font-size: 32px;
+		line-height: 35px;
+	}
+	.mainBanner {
+		width: 100%;
+		height: 100%;
+		@include flexStyle(flex-start, flex-start, column-reverse);
+		background-color: $color-blue-black;
+	}
+	.mainBanner__background {
+		position: static;
+		transform: none;
+		height: 60vh;
+		width: 100%;
+	}
+	.mainBanner__background-banner {
+		width: 100%;
+		height: 100%;
+		& img {
+			@include imgFullSize();
+		}
+	}
+	.mainBanner__banner,
+	.mainBanner__background-content {
+		display: none;
+	}
+	.mainBanner__content {
+		width: 100%;
+		height: 90vh;
+	}
+}
+
+@media (max-width: 1000px) {
+	.mainBanner__container {
+		padding: 0 20px;
+	}
+}
+
+@media (max-width: 900px) {
+	.mainBanner__content-title {
+		font-size: 28px;
+		line-height: 40px;
+	}
+}

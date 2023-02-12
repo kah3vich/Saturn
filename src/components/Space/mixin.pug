@@ -1,6 +1,8 @@
-mixin spaceItem(content, src, text)
+mixin spaceItem(content, src, media, text)
     .spaceItem 
         .spaceItem__content= content
         .spaceItem__img 
             img(src=src alt="")
+        .spaceItem__media
+            img(src=media alt="")
         .spaceItem__text= text

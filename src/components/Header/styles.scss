@@ -12,6 +12,12 @@
 		@include flexStyle(center, space-between, row, 30px);
 		width: 100%;
 	}
+	&__menu {
+		display: none;
+		width: 45px;
+		cursor: pointer;
+		height: 45px;
+	}
 	&__block {
 		width: max-content;
 		@include flexStyle(center);
@@ -350,5 +356,52 @@
 				}
 			}
 		}
+	}
+}
+
+//| Media
+
+@media (max-width: 1370px) {
+	.navbar .containers {
+		gap: 10px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.navbar {
+		display: none;
+	}
+	.header {
+		background-color: $color-light-yellow-green;
+	}
+	.header__city {
+		display: none;
+	}
+	.header__menu {
+		display: block;
+	}
+}
+
+@media (max-width: 1050px) {
+	.header__block {
+		gap: 15px !important;
+	}
+}
+
+@media (max-width: 950px) {
+	.header__subtitle,
+	.header__button {
+		display: none;
+	}
+}
+
+@media (max-width: 650px) {
+	.header__phone p,
+	.header__email {
+		display: none;
+	}
+	.header__phone img {
+		width: 45px;
+		height: 45px;
 	}
 }

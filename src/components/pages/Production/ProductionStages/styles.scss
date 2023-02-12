@@ -48,3 +48,25 @@
 		}
 	}
 }
+
+//| Media
+
+@media (max-width: 1150px) {
+	.productionStages {
+		flex-direction: column !important;
+		align-items: flex-start;
+		justify-content: flex-start;
+		width: 100%;
+	}
+	.productionStages__banner,
+	.productionStages__content {
+		width: 100%;
+	}
+}
+
+@media (max-width: 1000px) {
+	.production-stages__title {
+		font-size: 25px;
+		line-height: 34px;
+	}
+}

@@ -304,3 +304,28 @@
 		}
 	}
 }
+
+//| Media
+
+@media (max-width: 900px) {
+	.formFile__form .b24-form-content form > div:first-child {
+		display: flex;
+		flex-direction: column;
+		gap: 28px;
+		width: 100%;
+	}
+	.formFile__form .b24-form-content form > div:first-child div:nth-child(5) {
+		padding: 5px 0 20px 0;
+	}
+	.formFile {
+		padding: 55px 0;
+	}
+	.formFile__form .b24-form-btn-block button {
+		padding: 20px 52px 20px 26px;
+		width: 100%;
+		text-align: left;
+	}
+	.formFile__form .b24-form-content .b24-form-btn-container {
+		width: 100%;
+	}
+}
