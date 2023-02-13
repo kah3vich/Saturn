@@ -73,3 +73,60 @@
 		}
 	}
 }
+
+//| Media
+
+@media (max-width: 1250px) {
+	.contact-geo .containers {
+		@include flexStyle(
+			flex-start !important,
+			flex-start !important,
+			column !important,
+			50px !important
+		);
+	}
+	.contact-geo__block,
+	.contact-geo__list {
+		width: 100% !important;
+	}
+	.contact-geo__banner {
+		margin-top: 0 !important;
+		margin-left: 0 !important;
+		width: 100%;
+		& img {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 1100px) {
+	.contact-main__wrapper {
+		@include flexStyle(
+			flex-start !important,
+			flex-start !important,
+			column !important,
+			60px !important
+		);
+	}
+	.contact-main__content {
+		width: 100%;
+	}
+}
+
+@media (max-width: 650px) {
+	.contact-main__banner {
+		width: 100%;
+		height: 320px;
+		& img {
+			@include imgFullSize();
+		}
+	}
+	.contact-main__title {
+		font-size: 25px;
+		line-height: 29px;
+	}
+	.contact-main__text {
+		font-size: 20px;
+		line-height: 32px;
+	}
+}

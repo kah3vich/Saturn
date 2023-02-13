@@ -13,3 +13,11 @@
 		@include fontStyle(28px, 400, 49px, $color-black);
 	}
 }
+
+//| Media
+
+@media (max-width: 600px) {
+	.case-detail-description__list {
+		grid-template-columns: auto !important;
+	}
+}

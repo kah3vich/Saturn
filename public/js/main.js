@@ -163,7 +163,12 @@ var Slider = function Slider() {
       nextEl: '.slider__container .swiper-controls .swiper-button-next',
       prevEl: '.slider__container .swiper-controls .swiper-button-prev'
     },
+    fadeEffect: {
+      crossFade: true
+    },
     pagination: {
+      dynamicBullets: true,
+      clickable: true,
       el: '.slider__container .swiper-controls .swiper-pagination'
     }
   });
@@ -499,16 +504,38 @@ var CatalogAddition = function CatalogAddition() {
   for (var i = 0; i <= arrListSlider.length; i++) {
     var catalogAdditionSlider = new Swiper('.catalogAdditionSlider', {
       pagination: {
+        clickable: true,
+        dynamicBullets: true,
         el: ".catalog-addition__slider.".concat(arrListSlider[i], " .swiper-controls .swiper-pagination")
       },
       navigation: {
         nextEl: ".catalog-addition__slider.".concat(arrListSlider[i], " .swiper-controls .swiper-button-next"),
         prevEl: ".catalog-addition__slider.".concat(arrListSlider[i], " .swiper-controls .swiper-button-prev")
       },
+      fadeEffect: {
+        crossFade: true
+      },
       mousewheel: true,
       keyboard: true,
       slidesPerView: 4,
-      spaceBetween: 44
+      spaceBetween: 44,
+      observer: true,
+      observeParents: true,
+      breakpoints: {
+        310: {
+          spaceBetween: 0,
+          slidesPerView: 1
+        },
+        700: {
+          slidesPerView: 2
+        },
+        1050: {
+          slidesPerView: 3
+        },
+        1350: {
+          slidesPerView: 4
+        }
+      }
     });
   }
 };
@@ -553,7 +580,19 @@ var CatalogCase = function CatalogCase() {
       mousewheel: true,
       keyboard: true,
       slidesPerView: 3,
-      spaceBetween: 35
+      spaceBetween: 35,
+      breakpoints: {
+        310: {
+          spaceBetween: 0,
+          slidesPerView: 1
+        },
+        1050: {
+          slidesPerView: 2
+        },
+        1350: {
+          slidesPerView: 3
+        }
+      }
     });
   }
 };

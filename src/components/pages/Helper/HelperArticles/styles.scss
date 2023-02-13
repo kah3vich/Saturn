@@ -12,8 +12,11 @@
 	&__list {
 		width: 100%;
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
 		gap: 27px 45px;
+	}
+	&__item {
+		width: 100%;
 	}
 	&__button {
 		margin-top: 5px;
@@ -31,7 +34,7 @@
 // Mixin
 
 .helperArticleCard {
-	width: max-content;
+	width: 100%;
 	@include flexStyle(center, flex-start, row);
 	border-radius: 20px;
 	overflow: hidden;
@@ -39,7 +42,7 @@
 	height: 174px;
 	background-color: $color-white;
 	&__photo {
-		width: 174px;
+		width: 250px;
 		height: 174px;
 		border-radius: 20px;
 		overflow: hidden;
@@ -48,7 +51,7 @@
 		}
 	}
 	&__content {
-		width: 440px;
+		width: 100%;
 		padding: 36px 36px 16px 36px;
 		@include flexStyle(flex-start, space-between, column, 30px);
 		height: 100%;
@@ -65,5 +68,35 @@
 			text-decoration-line: underline;
 			@include fontStyle(17px, 700, 25px, $color-gray-black);
 		}
+	}
+}
+
+//| Media
+
+@media (max-width: 700px) {
+	.helper-articles__list {
+		grid-template-columns: auto;
+	}
+	.helperAccordion__header {
+		padding: 10px;
+	}
+	.helperArticleCard {
+		height: max-content;
+	}
+	.helperArticleCard__photo {
+		width: 91px;
+		height: 91px;
+	}
+	.helperArticleCard__content-text {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.helperArticleCard__content {
+		width: calc(100% - 91px);
+		display: block;
+		padding: 18px;
+	}
+	.helperArticleCard__content-link {
+		display: none;
 	}
 }

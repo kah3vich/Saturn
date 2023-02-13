@@ -105,3 +105,20 @@
 		transition: all 0.5s ease;
 	}
 }
+
+//| Media
+
+@media (max-width: 700px) {
+	.helper-question__title {
+		font-size: 25px;
+		line-height: 29px;
+	}
+	.helperAccordion__title {
+		font-size: 19px;
+		line-height: 32px;
+	}
+	.helperAccordion__content {
+		font-size: 18px;
+		line-height: 31px;
+	}
+}

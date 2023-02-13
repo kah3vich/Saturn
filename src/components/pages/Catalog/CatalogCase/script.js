@@ -13,7 +13,19 @@ export const CatalogCase = () => {
 			mousewheel: true,
 			keyboard: true,
 			slidesPerView: 3,
-			spaceBetween: 35
+			spaceBetween: 35,
+			breakpoints: {
+				310: {
+					spaceBetween: 0,
+					slidesPerView: 1
+				},
+				1050: {
+					slidesPerView: 2
+				},
+				1350: {
+					slidesPerView: 3
+				}
+			}
 		})
 	}
 }

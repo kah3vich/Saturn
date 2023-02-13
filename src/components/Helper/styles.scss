@@ -41,3 +41,14 @@
 		@include fontStyle(18px, 400, 26px, $color-black);
 	}
 }
+
+//| Media
+
+@media (max-width: 550px) {
+	.helperCard {
+		width: 100%;
+	}
+	.helper__list {
+		grid-template-columns: auto !important;
+	}
+}

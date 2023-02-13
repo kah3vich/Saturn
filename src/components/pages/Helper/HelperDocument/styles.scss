@@ -25,7 +25,7 @@
 	&__list {
 		width: 100%;
 		display: grid;
-		grid-template-columns: repeat(2, calc(50% - 26px));
+		grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
 		gap: 35px 52px;
 	}
 	&__item {
@@ -66,5 +66,44 @@
 		letter-spacing: -0.5px;
 		text-decoration-line: underline;
 		@include fontStyle(18px, 400, 21px, $color-black);
+	}
+}
+
+//| Media
+
+@media (max-width: 900px) {
+	.helper-document__header {
+		@include flexStyle(flex-start, flex-start, column, 25px);
+	}
+	.helper-document__filter {
+		width: 100%;
+		& .indexCaseSelect {
+			position: relative;
+			width: 70%;
+		}
+	}
+	.helper-document__list {
+		grid-template-columns: auto;
+	}
+	.helperDocumentCard__photo {
+		height: 100%;
+		width: 76px;
+		& img {
+			width: 22px;
+		}
+	}
+	.helperDocumentCard {
+		grid-template-columns: 76px 1fr 60px;
+		gap: 12px;
+		min-height: 80px;
+		height: max-content;
+	}
+	.helperDocumentCard__link {
+		font-size: 13px;
+		line-height: 15px;
+	}
+	.helperDocumentCard__title {
+		font-size: 16px;
+		line-height: 18px;
 	}
 }
