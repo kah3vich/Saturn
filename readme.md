@@ -80,7 +80,7 @@ npm run gulp
 
 ### 2. <a href="https://kah3vich.github.io/Saturn/public/catalog.html">Catalog</a>
 
-### 3. <a href="https://kah3vich.github.io/Saturn/public/cases.html">Cases</a>
+### 3+. <a href="https://kah3vich.github.io/Saturn/public/cases.html">Cases</a>
 
 ### 4. <a href="https://kah3vich.github.io/Saturn/public/about.html">About</a>
 
@@ -88,17 +88,17 @@ npm run gulp
 
 ### 6+. <a href="https://kah3vich.github.io/Saturn/public/helper.html">Helper</a>
 
-### 7. <a href="https://kah3vich.github.io/Saturn/public/articles.html">Articles</a>
+### 7+. <a href="https://kah3vich.github.io/Saturn/public/articles.html">Articles</a>
 
-### 8. <a href="https://kah3vich.github.io/Saturn/public/article.html">Article Detail</a>
+### 8+. <a href="https://kah3vich.github.io/Saturn/public/article.html">Article Detail</a>
 
-### 9. <a href="https://kah3vich.github.io/Saturn/public/news.html">News</a>
+### 9+. <a href="https://kah3vich.github.io/Saturn/public/news.html">News</a>
 
-### 10. <a href="https://kah3vich.github.io/Saturn/public/new.html">New Detail</a>
+### 10+. <a href="https://kah3vich.github.io/Saturn/public/new.html">New Detail</a>
 
-### 11. <a href="https://kah3vich.github.io/Saturn/public/equipment.html">Equipment</a>
+### 11+. <a href="https://kah3vich.github.io/Saturn/public/equipment.html">Equipment</a>
 
-### 12. <a href="https://kah3vich.github.io/Saturn/public/add.html">Equipment Detail</a>
+### 12+. <a href="https://kah3vich.github.io/Saturn/public/add.html">Equipment Detail</a>
 
 ### 13. <a href="https://kah3vich.github.io/Saturn/public/decision.html">Decision</a>
 

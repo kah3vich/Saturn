@@ -5,7 +5,9 @@ section.casesBase
             |/
             a(href="/") Кейсы
         h1.casesBase__title Кейсы
-        .casesBase__content 
+        .casesBase__content
+            .casesBase__content-select 
+                +indexCaseSelect()
             ul.casesBase__links
                 li.casesBase__link.casesBase__link-active
                     a(href="/") 

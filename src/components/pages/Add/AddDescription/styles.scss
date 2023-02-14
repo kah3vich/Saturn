@@ -26,6 +26,7 @@
 		}
 		&-item {
 			border-radius: 20px;
+			height: 300px;
 			overflow: hidden;
 			& img {
 				@include imgFullSize();
@@ -62,5 +63,28 @@
 				content: none;
 			}
 		}
+	}
+}
+
+//| Media
+
+@media (max-width: 1000px) {
+	.add-description .containers {
+		@include flexStyle(flex-start, flex-start, column, 30px);
+	}
+	.add-description__content {
+		width: 100%;
+	}
+	.add-description__slider {
+		margin-top: 10px;
+		padding-bottom: 55px;
+		width: 100%;
+	}
+	.add-description__slider .swiper-pagination {
+		bottom: -60px !important;
+	}
+	.add-description__slider-button {
+		width: 80px !important;
+		height: 80px !important;
 	}
 }

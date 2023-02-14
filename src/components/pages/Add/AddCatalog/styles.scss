@@ -19,3 +19,14 @@
 		width: 100%;
 	}
 }
+
+//| Media
+
+@media (max-width: 550px) {
+	.add-catalog__list {
+		grid-template-columns: auto;
+	}
+	.add-catalog__item .catalogCard {
+		width: 100%;
+	}
+}

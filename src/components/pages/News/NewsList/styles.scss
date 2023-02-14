@@ -23,7 +23,7 @@
 // Mixin
 
 .newsCard {
-	width: max-content;
+	width: 100%;
 	@include flexStyle(center, flex-start);
 	border-radius: 20px;
 	position: relative;
@@ -53,7 +53,7 @@
 	&__content {
 		position: relative;
 		z-index: 2;
-		width: 438px;
+		width: calc(100% - 174px);
 		height: 173px;
 		background: $color-light-yellow-green;
 		padding: 36px 36px 18px 36px;
@@ -78,5 +78,29 @@
 			@include fontStyle(17px, 700, 25px, $color-black);
 			text-decoration-line: underline;
 		}
+	}
+}
+
+//| Media
+
+@media (max-width: 600px) {
+	.newsCard__img {
+		width: 91px;
+		height: 91px;
+	}
+	.newsCard__content-block {
+		display: none;
+	}
+	.newsCard__content {
+		width: calc(100% - 91px);
+		height: 100%;
+		padding: 12px 18px;
+	}
+	.news-list__list {
+		grid-template-columns: auto;
+	}
+	.news-list__title {
+		font-size: 25px;
+		line-height: 35px;
 	}
 }

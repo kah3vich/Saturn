@@ -25,5 +25,24 @@
 	}
 	&__item {
 		width: 100%;
+		& .additionCard {
+			width: 100%;
+		}
+	}
+}
+
+//| Media
+
+@media (max-width: 550px) {
+	article-equipment__list {
+		grid-template-columns: auto;
+	}
+	.article-equipment__title {
+		font-size: 25px;
+		line-height: 35px;
+	}
+	.article-equipment__text {
+		font-size: 22px;
+		line-height: 37px;
 	}
 }

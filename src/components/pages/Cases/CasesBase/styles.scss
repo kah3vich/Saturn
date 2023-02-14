@@ -23,6 +23,9 @@
 		display: grid;
 		grid-template-columns: 1fr 3fr;
 		gap: 26px;
+		&-select {
+			display: none;
+		}
 	}
 	&__links {
 		width: 100%;
@@ -104,5 +107,37 @@
 			@include fontStyle(13px, 700, 19px, $color-black);
 			text-align: center;
 		}
+	}
+}
+
+//| Media
+
+@media (max-width: 1100px) {
+	.casesBase__content {
+		@include flexStyle(flex-start, flex-start, column, 35px);
+		&-select {
+			position: relative;
+			display: block;
+			width: 100%;
+			& .indexCaseSelect {
+				position: relative;
+				transform: none;
+				left: 0;
+				top: 0;
+			}
+		}
+	}
+	.casesBase__links {
+		display: none;
+	}
+	.casesBase__title {
+		font-size: 25px;
+		line-height: 29px;
+	}
+}
+
+@media (max-width: 550px) {
+	.casesBase__content-select .indexCaseSelect {
+		width: 80%;
 	}
 }

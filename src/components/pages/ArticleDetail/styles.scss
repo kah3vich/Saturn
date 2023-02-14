@@ -18,7 +18,7 @@
 	&__others {
 		width: 100%;
 		display: grid;
-		grid-template-columns: repeat(2, calc(50% - 40px));
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 		gap: 80px;
 		margin: 50px 0;
 	}
@@ -34,6 +34,9 @@
 	}
 	&__item {
 		width: 100%;
+		& .additionCard {
+			width: 100%;
+		}
 	}
 }
 
@@ -65,5 +68,14 @@
 		& p {
 			@include fontStyle(13px, 700, 19px, $color-black);
 		}
+	}
+}
+
+//| Media
+
+@media (max-width: 650px) {
+	.article-detail__title {
+		font-size: 25px;
+		line-height: 35px;
 	}
 }
