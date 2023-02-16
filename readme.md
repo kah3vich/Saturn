@@ -82,7 +82,7 @@ npm run gulp
 
 ### 3+. <a href="https://kah3vich.github.io/Saturn/public/cases.html">Cases</a>
 
-### 4. <a href="https://kah3vich.github.io/Saturn/public/about.html">About</a>
+### 4+. <a href="https://kah3vich.github.io/Saturn/public/about.html">About</a>
 
 ### 5+. <a href="https://kah3vich.github.io/Saturn/public/contact.html">Contact</a>
 

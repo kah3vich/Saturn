@@ -45,3 +45,28 @@
 		@include fontStyle(20px, 400, 31px, $color-black);
 	}
 }
+
+//| Media
+
+@media (max-width: 1250px) {
+	.aboutSng__banner {
+		margin: 0;
+	}
+}
+
+@media (max-width: 800px) {
+	.aboutSng__title {
+		font-size: 30px;
+		line-height: 34px;
+	}
+	.aboutSng__text {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.aboutSng {
+		padding: 60px 0;
+	}
+	.aboutSng__item {
+		width: 100%;
+	}
+}

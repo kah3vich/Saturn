@@ -107,3 +107,36 @@
 		}
 	}
 }
+
+//| Media
+
+@media (max-width: 1400px) {
+	.about-description__block {
+		flex-direction: column;
+		&:last-child {
+			flex-direction: column-reverse;
+		}
+	}
+	.about-description__content,
+	.about-description__slider,
+	.about-description__video {
+		width: 100%;
+	}
+	.about-description__add {
+		width: 100%;
+	}
+}
+
+@media (max-width: 700px) {
+	.about-description__video .videoPlaceholder__video {
+		width: 100%;
+	}
+	.about-description__title {
+		font-size: 25px;
+		line-height: 29px;
+	}
+	.about-description__add {
+		font-size: 20px;
+		line-height: 32px;
+	}
+}

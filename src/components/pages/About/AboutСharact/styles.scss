@@ -15,17 +15,20 @@
 	&__list {
 		width: 100%;
 		margin-top: 20px;
-		@include flexStyle(flex-start, flex-start, rpw, 19px);
+		@include flexStyle(flex-start, flex-start, row, 19px);
 	}
 	&__item {
-		width: auto;
+		width: 20%;
+		@include transitionStyle();
+		&:hover {
+			width: 30%;
+		}
 	}
 }
 
 // Mixin
 
 .aboutCharactCard {
-	max-width: 272px;
 	width: 100%;
 	overflow: hidden;
 	border-radius: 20px;
@@ -33,7 +36,6 @@
 	@include flexStyle(center, center, column);
 	@include transitionStyle();
 	&:hover {
-		max-width: 28%;
 		& .aboutCharactCard__banner {
 			&::after {
 				opacity: 0.9;
@@ -96,5 +98,42 @@
 			text-align: center;
 			text-transform: uppercase;
 		}
+	}
+}
+
+//| Media
+
+@media (max-width: 1300px) {
+	.aboutCharact__list {
+		flex-direction: column;
+	}
+	.aboutCharact__item {
+		width: 100% !important;
+		& .aboutCharactCard__banner {
+			&::after {
+				opacity: 0.9;
+			}
+			& p {
+				opacity: 1;
+				width: 85%;
+			}
+		}
+		& .aboutCharactCard__title {
+			background: $color-yellow;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.aboutCharact__title {
+		font-size: 30px;
+		line-height: 34px;
+	}
+	.aboutCharact__text {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.aboutCharact__item .aboutCharactCard__title {
+		padding: 16px;
 	}
 }
