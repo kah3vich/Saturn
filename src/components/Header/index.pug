@@ -19,15 +19,17 @@ header.header
                 button.header__button заказать звонок
                 button.header__menu
                     img(src="./svg/header/menu.svg" alt="")
+                button.header__close.display-n
+                    img(src="./svg/header/close.svg" alt="")
 
 section.navbar 
     .containers 
         .navbar__arrow#navbarArrowCatalog
             p Продукция
-            img(src="./../svg/header/arrow-down.svg" alt="")
+            img(src="./svg/header/arrow-down.svg" alt="")
         .navbar__arrow#navbarArrowProject
             p Реализованные проекты
-            img(src="./../svg/header/arrow-down.svg" alt="")
+            img(src="./svg/header/arrow-down.svg" alt="")
             ul.navbar__arrow-list
                 li.navbar__arrow-item 
                     a(href="#") Архив
@@ -42,7 +44,7 @@ section.navbar
             p Закупкам
         .navbar__arrow#navbarArrowCompony
             p О компании
-            img(src="./../svg/header/arrow-down.svg" alt="")
+            img(src="./svg/header/arrow-down.svg" alt="")
             ul.navbar__arrow-list
                 li.navbar__arrow-item 
                     a(href="#") Производство
@@ -57,7 +59,7 @@ section.navbar
                 
         .navbar__arrow#navbarArrowHelper
             p Помощь
-            img(src="./../svg/header/arrow-down.svg" alt="")
+            img(src="./svg/header/arrow-down.svg" alt="")
             ul.navbar__arrow-list
                 li.navbar__arrow-item 
                     a(href="#") Статьи
@@ -71,7 +73,7 @@ section.navbar
         .navbar__search
             input(type="text" placeholder="Поиск").navbar__search-input 
             .navbar__search-button 
-                img(src="./../svg/header/search.svg" alt="")
+                img(src="./svg/header/search.svg" alt="")
 
 .navbar__background
 
@@ -98,4 +100,23 @@ section.navbar
                             a(href="#") Мобильные стеллажи 
                         li.navbar__arrow-button
                             a(href="#") Мобильные стеллажи 
-                        
+
+.menu__mobile.display-n
+    .menu__mobile-accordion 
+        .menu__mobile-accordion__header
+            .menu__mobile-accordion__title Продукция
+            button.menu__mobile-accordion__close
+                img(src="./svg/header/array.svg" alt="")
+        .menu__mobile-accordion__content
+                .menu__mobile-accord
+                    .menu__mobile-accord__header
+                        .menu__mobile-accord__title Металлические стеллажи
+                        button.menu__mobile-accord__close
+                            img(src="./svg/header/plus.svg" alt="")
+                            img(src="./svg/header/minus.svg" alt="")
+                    .menu__mobile-accord__content
+                        a(href="#").menu__mobile-item Все доп оборудование
+
+    a(href="#").menu__mobile-link Закупкам
+    a(href="#").menu__mobile-link Контакты
+    button.menu__mobile-button ЗАКАЗАТЬ ЗВОНОК

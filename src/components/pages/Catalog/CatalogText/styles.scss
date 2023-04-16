@@ -28,3 +28,14 @@
 		}
 	}
 }
+
+//| Media
+
+@media (max-width: 900px) {
+	.catalog-text__banners {
+		grid-template-columns: 1fr;
+	}
+	.catalog-text__banner {
+		height: 350px;
+	}
+}

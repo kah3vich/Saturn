@@ -158,3 +158,14 @@
 		}
 	}
 }
+
+//| Media
+
+@media (max-width: 900px) {
+	.catalog-list__list {
+		grid-template-columns: 1fr;
+		& .catalogCard {
+			width: 100%;
+		}
+	}
+}

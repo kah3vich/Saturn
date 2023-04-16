@@ -10,16 +10,17 @@ block content
 
 	include ../components/pages/Add/AddDescription/index.pug
 
-	include ../components/pages/Add/AddCatalog/index.pug
+	include ../components/Slider/index.pug
 
-	include ../components/pages/Index/IndexLink/index.pug
+	+catalogAddition('Дополнительное оборудование', 'Производим разделители полок и папок. Выдвижные полки и ящики. Двери распашные и жалюзи (ролеты). Штанги для плечиков, задние стенки, замки, идентификационные таблички на боковые панели, соединители рядов.')(class="addition")
 
-	br 
-	br
-	br
-	br
+	include ../components/pages/Catalog/CatalogBanner/index.pug
+
+	include ../components/LineYellow/index.pug
 
 	include ../components/Footer/index.pug
 
 block scripts
+	include ../components/modals/ModalVideo/index.pug
+	include ../components/ButtonTop/index.pug
 	script(src="js/main.js")

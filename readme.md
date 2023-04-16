@@ -100,7 +100,7 @@ npm run gulp
 
 ### 12+. <a href="https://kah3vich.github.io/Saturn/public/add.html">Equipment Detail</a>
 
-### 13. <a href="https://kah3vich.github.io/Saturn/public/decision.html">Decision</a>
+### 13+. <a href="https://kah3vich.github.io/Saturn/public/decision.html">Decision</a>
 
 ### 14+. <a href="https://kah3vich.github.io/Saturn/public/goods.html">Goods</a>
 

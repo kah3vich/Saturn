@@ -32,3 +32,25 @@
 		text-transform: uppercase;
 	}
 }
+
+//| Media
+
+@media (max-width: 800px) {
+	.catalog-banner__block {
+		flex-direction: column;
+	}
+	.catalog-banner {
+		height: 100%;
+	}
+	.catalog-banner__background {
+		width: 100%;
+	}
+	.catalog-banner__photo {
+		width: 100%;
+	}
+	.catalog-banner .containers {
+		top: 55px;
+		left: 18px;
+		transform: none;
+	}
+}

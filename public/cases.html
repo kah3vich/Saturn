@@ -24,10 +24,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="img/favicon/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicon/apple-touch-icon-1024x1024.png">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230216220618">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20230216220618" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230216220618">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230216220618"></script>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header class="header"> 
@@ -49,6 +49,7 @@
               <p>8 800-350-46-77</p></a>
             <button class="header__button">заказать звонок</button>
             <button class="header__menu"><img src="./svg/header/menu.svg" alt=""></button>
+            <button class="header__close display-n"><img src="./svg/header/close.svg" alt=""></button>
           </div>
         </div>
       </div>
@@ -56,10 +57,10 @@
     <section class="navbar"> 
       <div class="containers"> 
         <div class="navbar__arrow" id="navbarArrowCatalog">
-          <p>Продукция</p><img src="./../svg/header/arrow-down.svg" alt="">
+          <p>Продукция</p><img src="./svg/header/arrow-down.svg" alt="">
         </div>
         <div class="navbar__arrow" id="navbarArrowProject">
-          <p>Реализованные проекты</p><img src="./../svg/header/arrow-down.svg" alt="">
+          <p>Реализованные проекты</p><img src="./svg/header/arrow-down.svg" alt="">
           <ul class="navbar__arrow-list">
             <li class="navbar__arrow-item"> <a href="#">Архив</a></li>
             <li class="navbar__arrow-item"> <a href="#">Библиотека</a></li>
@@ -69,7 +70,7 @@
         </div><a class="navbar__link" href="#"> 
           <p>Закупкам</p></a>
         <div class="navbar__arrow" id="navbarArrowCompony">
-          <p>О компании</p><img src="./../svg/header/arrow-down.svg" alt="">
+          <p>О компании</p><img src="./svg/header/arrow-down.svg" alt="">
           <ul class="navbar__arrow-list">
             <li class="navbar__arrow-item"> <a href="#">Производство</a></li>
             <li class="navbar__arrow-item"> <a href="#">Рекомендации от клиентов</a></li>
@@ -79,7 +80,7 @@
           </ul>
         </div>
         <div class="navbar__arrow" id="navbarArrowHelper">
-          <p>Помощь</p><img src="./../svg/header/arrow-down.svg" alt="">
+          <p>Помощь</p><img src="./svg/header/arrow-down.svg" alt="">
           <ul class="navbar__arrow-list">
             <li class="navbar__arrow-item"> <a href="#">Статьи</a></li>
             <li class="navbar__arrow-item"> <a href="#">Ответы на вопросы</a></li>
@@ -89,7 +90,7 @@
           <p>Контакты</p></a>
         <div class="navbar__search">
           <input class="navbar__search-input" type="text" placeholder="Поиск">
-          <div class="navbar__search-button"> <img src="./../svg/header/search.svg" alt=""></div>
+          <div class="navbar__search-button"> <img src="./svg/header/search.svg" alt=""></div>
         </div>
       </div>
     </section>
@@ -423,6 +424,24 @@
         </li>
       </ul>
     </div>
+    <div class="menu__mobile display-n">
+      <div class="menu__mobile-accordion"> 
+        <div class="menu__mobile-accordion__header">
+          <div class="menu__mobile-accordion__title">Продукция</div>
+          <button class="menu__mobile-accordion__close"><img src="./svg/header/array.svg" alt=""></button>
+        </div>
+        <div class="menu__mobile-accordion__content">
+          <div class="menu__mobile-accord">
+            <div class="menu__mobile-accord__header">
+              <div class="menu__mobile-accord__title">Металлические стеллажи</div>
+              <button class="menu__mobile-accord__close"><img src="./svg/header/plus.svg" alt=""><img src="./svg/header/minus.svg" alt=""></button>
+            </div>
+            <div class="menu__mobile-accord__content"><a class="menu__mobile-item" href="#">Все доп оборудование</a></div>
+          </div>
+        </div>
+      </div><a class="menu__mobile-link" href="#">Закупкам</a><a class="menu__mobile-link" href="#">Контакты</a>
+      <button class="menu__mobile-button">ЗАКАЗАТЬ ЗВОНОК</button>
+    </div>
     <section class="casesBase">
       <div class="containers"> 
         <p class="casesBase__subtitle"><a href="/">Главная</a>/<a href="/">Кейсы</a></p>
@@ -683,11 +702,11 @@
             </div>
             <script data-b24-form="inline/36/exrs6e" data-skip-moving="true">
               (function(w,d,u){
-                        var s = d.createElement('script');
-                        s.async=true;s.src=u+'?'+(Date.now()/180000|0);
-                        var h = d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-                    })
-                    (window, document, 'https://cdn-ru.bitrix24.ru/b19623448/crm/form/loader_36.js');
+                  var s = d.createElement('script');
+                  s.async=true;s.src=u+'?'+(Date.now()/180000|0);
+                  var h = d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+              })
+              (window, document, 'https://cdn-ru.bitrix24.ru/b19623448/crm/form/loader_36.js');
             </script>
           </div>
         </div>
@@ -759,6 +778,14 @@
         </div>
       </div>
     </footer>
-    <script src="js/main.js?_v=20230216220618"></script>
+    <section class="modalVideo display-n">
+      <div class="modalVideo__background"> 
+        <div class="modalVideo__close"><img src="./svg/modals/modalVideo/close.svg" alt=""></div>
+        <div class="modalVideo__wrapper">
+           <iframe width="100%" height="100%" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+      </div>
+    </section>
+    <button class="buttonTop"><img src="./svg/components/buttonTop/array.svg" alt="array"></button>
+    <script src="js/main.js"></script>
   </body>
 </html>

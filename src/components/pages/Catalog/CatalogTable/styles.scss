@@ -59,3 +59,12 @@
 		}
 	}
 }
+
+//| Media
+
+@media (max-width: 800px) {
+	.catalog-table__blocks {
+		grid-template-columns: 1fr;
+		gap: 30px;
+	}
+}

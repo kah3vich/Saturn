@@ -134,3 +134,40 @@
 		}
 	}
 }
+
+//| Media
+
+@media (max-width: 1250px) {
+	.catalog-stages__list {
+		grid-template-columns: 1fr;
+	}
+	.catalog-stages__list li:nth-child(1) .catalogStagesCard .catalogStagesCard__base {
+		border-radius: 20px 20px 0 0;
+	}
+	.catalog-stages__list li:nth-child(2) .catalogStagesCard .catalogStagesCard__base {
+		border-radius: 0 0 0 0;
+	}
+	.catalog-stages__list li:nth-child(3) .catalogStagesCard .catalogStagesCard__base {
+		border-radius: 0 0 0 0;
+	}
+	.catalog-stages__list li:nth-child(4) .catalogStagesCard .catalogStagesCard__base {
+		border-radius: 0 0 20px 20px;
+	}
+
+	.catalogStagesCard__hover {
+		width: 100%;
+	}
+
+	.catalog-stages__list li:nth-child(1) .catalogStagesCard .catalogStagesCard__hover {
+		border-radius: 20px 20px 0 0;
+	}
+	.catalog-stages__list li:nth-child(2) .catalogStagesCard .catalogStagesCard__hover {
+		border-radius: 0 0 0 0;
+	}
+	.catalog-stages__list li:nth-child(3) .catalogStagesCard .catalogStagesCard__hover {
+		border-radius: 0 0 0 0;
+	}
+	.catalog-stages__list li:nth-child(4) .catalogStagesCard .catalogStagesCard__hover {
+		border-radius: 0 0 20px 20px;
+	}
+}

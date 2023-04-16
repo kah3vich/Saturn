@@ -71,3 +71,24 @@
 		}
 	}
 }
+
+//| Media
+
+@media (max-width: 1200px) {
+	.catalog-request__content {
+		padding: 85px 0 155px 0;
+	}
+	.catalog-request__buttons {
+		bottom: 55px;
+	}
+}
+
+@media (max-width: 700px) {
+	.catalog-request__buttons {
+		flex-direction: column;
+		width: 100%;
+	}
+	.catalog-request__content {
+		padding: 85px 0 235px 0;
+	}
+}

@@ -61,3 +61,28 @@
 		letter-spacing: -0.5px;
 	}
 }
+
+//| Media
+
+@media (max-width: 1400px) {
+	.catalog-description__block-list {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 1200px) {
+	.catalog-description__block {
+		flex-direction: column;
+	}
+	.catalog-description__block-video,
+	.catalog-description__block-content,
+	.catalog-description__block-video .videoPlaceholder__video {
+		width: 100% !important;
+	}
+}
+
+@media (max-width: 600px) {
+	.catalog-description__block-video .videoPlaceholder__video {
+		height: 350px;
+	}
+}

@@ -11,7 +11,9 @@ import {
 	Header,
 	HelperQuestion,
 	ModalCollection,
+	ModalVideo,
 	Slider,
+	ButtonTop,
 	ModalFeedback,
 	Team
 } from '../components/script.js'
@@ -31,3 +33,5 @@ ModalCollection()
 AboutDescription()
 GoodsMain()
 AddDescription()
+ButtonTop()
+ModalVideo()

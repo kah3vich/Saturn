@@ -47,4 +47,35 @@ export const Header = () => {
 			'navbar__arrow-con__active'
 		)
 	})
+
+	// Menu
+
+	$('.header__menu').on('click', () => {
+		$('.menu__mobile').removeClass('display-n')
+		$('.header__close').removeClass('display-n')
+		$('.header__menu').addClass('display-n')
+		$('body').css('overflow', 'hidden')
+	})
+	$('.header__close').on('click', () => {
+		$('body').css('overflow', 'visible')
+		$('.menu__mobile').addClass('display-n')
+		$('.header__menu').removeClass('display-n')
+		$('.header__close').addClass('display-n')
+	})
+
+	$('.menu__mobile-accordion__header').on('click', () => {
+		if ($('.menu__mobile-accordion').hasClass('menu__mobile-accordion__active')) {
+			$('.menu__mobile-accordion').removeClass('menu__mobile-accordion__active')
+		} else {
+			$('.menu__mobile-accordion').addClass('menu__mobile-accordion__active')
+		}
+	})
+
+	$('.menu__mobile-accord__header').on('click', () => {
+		if ($('.menu__mobile-accord').hasClass('menu__mobile-accord__active')) {
+			$('.menu__mobile-accord').removeClass('menu__mobile-accord__active')
+		} else {
+			$('.menu__mobile-accord').addClass('menu__mobile-accord__active')
+		}
+	})
 }

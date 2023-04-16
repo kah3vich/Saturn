@@ -1,0 +1,27 @@
+.buttonTop {
+	position: fixed;
+	bottom: 30px;
+	right: 90px;
+	width: 40px;
+	height: 40px;
+	border-radius: 2px;
+	z-index: 500;
+	background-color: $color-yellow;
+	display: none;
+	& img {
+		width: 20px;
+		height: 15px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+//| Media
+
+@media (max-width: 900px) {
+	.buttonTop {
+		right: 26px;
+	}
+}

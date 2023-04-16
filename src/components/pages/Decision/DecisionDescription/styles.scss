@@ -23,3 +23,11 @@
 		}
 	}
 }
+
+//| Media
+
+@media (max-width: 700px) {
+	.decision-description__banner {
+		height: 350px;
+	}
+}
