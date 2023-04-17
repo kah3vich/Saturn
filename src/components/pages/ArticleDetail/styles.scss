@@ -51,9 +51,17 @@
 		height: 280px;
 		border-radius: 20px;
 		overflow: hidden;
+		position: relative;
 		& img {
 			@include imgFullSize();
 		}
+	}
+	&__show {
+		position: absolute;
+		z-index: 2;
+		bottom: 15px;
+		right: 15px;
+		cursor: pointer;
 	}
 	&__title {
 		letter-spacing: -0.5px;

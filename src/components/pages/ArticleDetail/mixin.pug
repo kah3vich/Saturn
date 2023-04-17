@@ -2,6 +2,8 @@ mixin articleDetailCard(src, title)
     .articleDetailCard
         .articleDetailCard__banner 
             img(src=src alt="")
+            .articleDetailCard__show(aria-photo=src)
+                img(src='./svg/slider/share.svg' alt="")
         h5.articleDetailCard__title= title
         a(href="#").articleDetailCard__button
             p Подробнее

@@ -2,6 +2,14 @@
 	width: 100%;
 	padding: 90px 0 120px 0;
 	background-color: $color-white;
+	&__show {
+		position: absolute;
+		bottom: 23px;
+		right: 23px;
+		cursor: pointer;
+		z-index: 2;
+		background: transparent;
+	}
 	&__container {
 		width: 100%;
 		max-width: 1440px;
@@ -57,6 +65,7 @@
 		height: 480px;
 		border-radius: 20px;
 		overflow: hidden;
+		position: relative;
 		& img {
 			@include imgFullSize();
 		}
