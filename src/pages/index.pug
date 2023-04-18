@@ -6,10 +6,12 @@ block variables
 block content
 	include ../components/Header/index.pug
 
-	include ../components/pages/Index/IndexMain/index.pug
+	+indexMain(false, 'ОСТАВИТЬ ЗАЯВКУ')
+
+	+indexMainStatic()
 
 	include ../components/pages/Index/indexCatalogLink/index.pug
-
+	//- 
 	include ../components/pages/Index/indexCase/index.pug
 
 	include ../components/pages/Index/indexSteps/index.pug
@@ -32,8 +34,8 @@ block content
 
 block modals 
 	include ../components/modals/ModalFeedback/index.pug
-
-block scripts
 	include ../components/modals/ModalVideo/index.pug
 	include ../components/ButtonTop/index.pug
+
+block scripts
 	script(src="js/main.js")

@@ -67,7 +67,7 @@
 		}
 		&-block {
 			display: grid;
-			grid-template-columns: 0.5fr 8fr 1fr;
+			grid-template-columns: 0.5fr 8fr 30px;
 			gap: 15px;
 			align-items: center;
 			padding: 19px 0 25px 0;
@@ -85,5 +85,35 @@
 		&-button {
 			margin: 0 0 0 auto;
 		}
+	}
+}
+
+//| Media
+
+@media (max-width: 1200px) {
+	.indexCatalogLink__banner {
+		display: none;
+	}
+	.indexCatalogLink__content {
+		width: 100%;
+	}
+	.indexCatalogLink__content-list {
+		width: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+	.indexCatalogLink__content-button {
+		width: 100%;
+		& button {
+			width: 100%;
+		}
+	}
+	.indexCatalogLink__content-subtitle {
+		font-size: 13px;
+		line-height: 15px;
+	}
+	.indexCatalogLink__content-block {
+		padding: 23px 0;
 	}
 }

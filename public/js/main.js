@@ -415,7 +415,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ModalVideo": function() { return /* binding */ ModalVideo; }
 /* harmony export */ });
 var ModalVideo = function ModalVideo() {
-  $('.goods-video__video, .catalog-description__block-video').on('click', function () {
+  $('.goods-video__video, .catalog-description__block-video, .about-description__video, .indexAbout__content-video').on('click', function () {
     var dataVideo = $(this).attr('aria-video');
     $('.modalVideo__wrapper iframe').attr('src', dataVideo);
     $('.modalVideo').removeClass('display-n');
@@ -1092,9 +1092,13 @@ var IndexCase = function IndexCase() {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "indexCatalogLink": function() { return /* binding */ indexCatalogLink; }
+/* harmony export */   "IndexCatalogLink": function() { return /* binding */ IndexCatalogLink; }
 /* harmony export */ });
-var indexCatalogLink = function indexCatalogLink() {};
+var IndexCatalogLink = function IndexCatalogLink() {
+  $('.indexCatalogLink__content-item').hover(function () {
+    $('.indexCatalogLink__banner-container img').attr('src', $(this).attr('aria-photo'));
+  });
+};
 
 /***/ }),
 
@@ -1326,6 +1330,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "HelperDocument": function() { return /* reexport safe */ _pages_Helper_HelperDocument_script_js__WEBPACK_IMPORTED_MODULE_47__.HelperDocument; },
 /* harmony export */   "HelperQuestion": function() { return /* reexport safe */ _pages_Helper_HelperQuestion_script_js__WEBPACK_IMPORTED_MODULE_48__.HelperQuestion; },
 /* harmony export */   "IndexCase": function() { return /* reexport safe */ _pages_Index_IndexCase_script_js__WEBPACK_IMPORTED_MODULE_50__.IndexCase; },
+/* harmony export */   "IndexCatalogLink": function() { return /* reexport safe */ _pages_Index_IndexCatalogLink_script_js__WEBPACK_IMPORTED_MODULE_51__.IndexCatalogLink; },
 /* harmony export */   "IndexEquipment": function() { return /* reexport safe */ _pages_Index_IndexEquipment_script_js__WEBPACK_IMPORTED_MODULE_52__.IndexEquipment; },
 /* harmony export */   "IndexMain": function() { return /* reexport safe */ _pages_Index_IndexMain_script_js__WEBPACK_IMPORTED_MODULE_54__.IndexMain; },
 /* harmony export */   "IndexNews": function() { return /* reexport safe */ _pages_Index_IndexNews_script_js__WEBPACK_IMPORTED_MODULE_55__.IndexNews; },
@@ -1343,7 +1348,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "Space": function() { return /* reexport safe */ _Space_script_js__WEBPACK_IMPORTED_MODULE_9__.Space; },
 /* harmony export */   "Team": function() { return /* reexport safe */ _Team_script_js__WEBPACK_IMPORTED_MODULE_10__.Team; },
 /* harmony export */   "indexAbout": function() { return /* reexport safe */ _pages_Index_IndexAbout_script_js__WEBPACK_IMPORTED_MODULE_49__.indexAbout; },
-/* harmony export */   "indexCatalogLink": function() { return /* reexport safe */ _pages_Index_IndexCatalogLink_script_js__WEBPACK_IMPORTED_MODULE_51__.indexCatalogLink; },
 /* harmony export */   "indexLink": function() { return /* reexport safe */ _pages_Index_IndexLink_script_js__WEBPACK_IMPORTED_MODULE_53__.indexLink; },
 /* harmony export */   "indexSteps": function() { return /* reexport safe */ _pages_Index_IndexSteps_script_js__WEBPACK_IMPORTED_MODULE_56__.indexSteps; }
 /* harmony export */ });
@@ -1561,6 +1565,7 @@ __webpack_require__.r(__webpack_exports__);
 (0,_components_script_js__WEBPACK_IMPORTED_MODULE_2__.ButtonTop)();
 (0,_components_script_js__WEBPACK_IMPORTED_MODULE_2__.ModalVideo)();
 (0,_components_script_js__WEBPACK_IMPORTED_MODULE_2__.ModalPhoto)();
+(0,_components_script_js__WEBPACK_IMPORTED_MODULE_2__.IndexCatalogLink)();
 }();
 /******/ })()
 ;

@@ -11,6 +11,7 @@ import {
 	GoodsMain,
 	Header,
 	HelperQuestion,
+	IndexCatalogLink,
 	ModalCollection,
 	ModalFeedback,
 	ModalPhoto,
@@ -37,3 +38,4 @@ AddDescription();
 ButtonTop();
 ModalVideo();
 ModalPhoto();
+IndexCatalogLink();
