@@ -12,6 +12,7 @@ import {
 	Header,
 	HelperQuestion,
 	IndexCatalogLink,
+	IndexSteps,
 	ModalCollection,
 	ModalFeedback,
 	ModalPhoto,
@@ -28,6 +29,7 @@ Team();
 Slider();
 IndexMain();
 CatalogMain();
+IndexSteps();
 HelperQuestion();
 CatalogAddition();
 ModalFeedback();

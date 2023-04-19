@@ -14,6 +14,8 @@
 	}
 	&__item {
 		max-width: 250px;
+		background: #201547;
+		border-radius: 20px;
 		width: 100%;
 		@include flexStyle(center, flex-start, column, 50px);
 	}
@@ -52,5 +54,109 @@
 			position: relative;
 			z-index: 5;
 		}
+	}
+	&__slider {
+		width: 100%;
+		display: none;
+		padding: 10px 0;
+		position: relative;
+		& .swiper-slide {
+			padding: 30px 0;
+			@include flexStyle(center, center);
+		}
+	}
+	&__control {
+		position: relative;
+		margin: 0 auto;
+		width: calc(100% - 60px);
+		height: 64px;
+		@include flexStyle(center, center, row-reverse, 66px);
+		& .swiper-button-next {
+			width: 64px;
+			height: 64px;
+			border-radius: 50%;
+			background: $color-yellow;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translate(0, -50%);
+			margin-top: 0;
+			&::after {
+				content: none;
+			}
+		}
+		& .swiper-pagination {
+			position: absolute;
+			top: 50% !important;
+			bottom: auto !important;
+			left: 50% !important;
+			height: 22px;
+			margin: 0 auto;
+			transform: translate(-50%, -50%) !important;
+		}
+		& .swiper-pagination-bullet {
+			width: 22px;
+			height: 22px;
+			border-radius: 50%;
+			background: $color-gray-light;
+			&-active {
+				background-color: $color-yellow;
+			}
+		}
+		& .swiper-button-prev {
+			width: 64px;
+			height: 64px;
+			border-radius: 50%;
+			background: $color-yellow;
+			position: absolute;
+			top: 50%;
+			margin-top: 0;
+			left: 0;
+			transform: translate(0, -50%);
+			&::after {
+				content: none;
+			}
+		}
+	}
+}
+
+//| Media
+
+@media (max-width: 800px) {
+	.indexSteps__list {
+		display: none;
+	}
+	.indexSteps__slider {
+		display: block;
+	}
+	.indexSteps__title {
+		color: #201547;
+		font-size: 25px;
+		line-height: 33px;
+	}
+	.indexSteps {
+		padding: 50px 0;
+		background-color: transparent;
+	}
+	.indexSteps__item {
+		padding: 35px;
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
+@media (max-width: 450px) {
+	.indexSteps__icon p {
+		position: absolute;
+		top: 50%;
+		left: -75px;
+		transform: translate(0, -50%);
+		-webkit-text-stroke: 2px #f2ce14;
+		font-weight: 400;
+		font-size: 200px;
+		line-height: 260px;
+		color: #201547;
+		font-style: normal;
+		z-index: 1;
 	}
 }

@@ -85,3 +85,45 @@
 		}
 	}
 }
+
+//| Media
+
+@media (max-width: 1280px) {
+	.indexEquipment__list::after {
+		content: none;
+	}
+}
+
+@media (max-width: 800px) {
+	.indexEquipment__list li:nth-child(even) {
+		margin-top: 0;
+	}
+	.indexEquipment__list {
+		gap: 20px;
+		grid-template-columns: 1fr;
+	}
+	.indexEquipment {
+		padding: 50px 0;
+	}
+	.indexEquipment__subtitle {
+		font-size: 12px;
+	}
+	.indexEquipment__title {
+		font-size: 30px;
+	}
+	.cardEquipment__img {
+		height: 185px;
+	}
+	.cardEquipment__content {
+		padding: 24px 22px;
+		gap: 24px;
+	}
+	.cardEquipment__content-title {
+		font-size: 18px;
+		line-height: 27px;
+		text-decoration-line: underline;
+	}
+	.cardEquipment__content-text {
+		font-size: 16px;
+	}
+}

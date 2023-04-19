@@ -4,6 +4,7 @@
 	padding: 110px 0 60px 0;
 	& .containers {
 		width: 100%;
+		position: relative;
 		@include flexStyle(flex-start, flex-start, column, 73px);
 	}
 	&__navbar {
@@ -22,20 +23,54 @@
 		@include fontStyle(40px, 700, 58px, $color-white);
 	}
 	&__controls {
-		position: relative;
+		position: absolute;
+		width: 400px;
+		height: 64px;
+		top: 0;
+		right: 30px;
 		@include flexStyle(center, center, row-reverse, 66px);
 		& .swiper-button-next {
-			width: 250px;
-			height: 20px;
-			position: static;
+			width: 64px;
+			height: 64px;
+			border-radius: 50%;
+			background: $color-yellow;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translate(0, -50%);
+			margin-top: 0;
 			&::after {
 				content: none;
 			}
 		}
+		& .swiper-pagination {
+			position: absolute;
+			top: 50% !important;
+			bottom: auto !important;
+			left: 50% !important;
+			height: 22px;
+			margin: 0 auto;
+			transform: translate(-50%, -50%) !important;
+		}
+		& .swiper-pagination-bullet {
+			width: 22px;
+			height: 22px;
+			border-radius: 50%;
+			background: $color-gray-light;
+			&-active {
+				background-color: $color-yellow;
+			}
+		}
 		& .swiper-button-prev {
-			width: 250px;
-			height: 20px;
-			position: static;
+			width: 64px;
+			height: 64px;
+			border-radius: 50%;
+			background: $color-yellow;
+			position: absolute;
+			top: 50%;
+			margin-top: 0;
+			left: 0;
+			transform: translate(0, -50%);
 			&::after {
 				content: none;
 			}
@@ -161,5 +196,43 @@
 				border-radius: 50%;
 			}
 		}
+	}
+}
+
+//| Media
+
+@media (max-width: 900px) {
+	.teamCard__content {
+		display: none;
+	}
+	.teamCard__hover {
+		opacity: 1;
+	}
+	.team__slider .swiper-slide:nth-child(even) {
+		margin: 0;
+	}
+	.team {
+		padding: 110px 0 120px 0;
+	}
+	.team__controls {
+		bottom: -90px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		right: auto;
+		top: auto;
+	}
+	.team__slider .swiper-slide {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.team__controls .swiper-button-prev {
+		left: 30px;
+	}
+	.team__controls .swiper-button-next {
+		right: 30px;
+	}
+	.team__controls {
+		width: 100%;
 	}
 }

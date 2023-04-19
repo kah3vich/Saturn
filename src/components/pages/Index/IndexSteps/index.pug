@@ -1,6 +1,24 @@
 section.indexSteps
     .containers
         .indexSteps__title 7 шагов к оптимизации вашего помещения
+        .indexSteps__slider 
+            .swiper.indexStepsSwiper
+                .swiper-wrapper
+                    each _, i in Array(12)
+                        .swiper-slide 
+                            .indexSteps__item 
+                                .indexSteps__icon
+                                    .indexSteps__icon-circle
+                                    p= i+1 
+                                    .indexSteps__icon-block
+                                        img(src="./svg/index/indexSteps/item-" + (i + 1) + ".svg" alt="")
+                                .indexSteps__text Отправить запрос с планом помещения в ГК Сатурн
+            .indexSteps__control
+                .swiper-pagination
+                .swiper-button-next
+                    img(src="./svg/components/feedback/arrow-next.svg" alt="alt")
+                .swiper-button-prev
+                    img(src="./svg/components/feedback/arrow-prev.svg" alt="alt")
         ul.indexSteps__list
             each _, i in Array(7)
                 li.indexSteps__item 

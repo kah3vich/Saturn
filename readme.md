@@ -76,7 +76,7 @@ npm run gulp
     <br/>
 </div>
 
-### 1. <a href="https://kah3vich.github.io/Saturn/public/index.html">Index</a>
+### 1+. <a href="https://kah3vich.github.io/Saturn/public/index.html">Index</a>
 
 ### 2. <a href="https://kah3vich.github.io/Saturn/public/catalog.html">Catalog</a>
 
