@@ -48,6 +48,25 @@
 				content: none;
 			}
 		}
+		& .swiper-pagination {
+			display: none;
+			position: absolute;
+			top: 50% !important;
+			bottom: auto !important;
+			left: 50% !important;
+			height: 22px;
+			margin: 0 auto;
+			transform: translate(-50%, -50%) !important;
+		}
+		& .swiper-pagination-bullet {
+			width: 22px;
+			height: 22px;
+			border-radius: 50%;
+			background: $color-gray-light;
+			&-active {
+				background-color: $color-yellow;
+			}
+		}
 		& .swiper-button-prev {
 			bottom: 0;
 			left: -80px;
@@ -238,6 +257,10 @@
 @media (max-width: 900px) {
 	.indexCase {
 		padding: 50px 0 100px 0;
+	}
+	.indexCase__slider .swiper-pagination {
+		display: block;
+		top: 108% !important;
 	}
 	.indexCase__content-subtitle {
 		font-size: 20px;

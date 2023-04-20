@@ -110,10 +110,19 @@
 		}
 	}
 	.indexCatalogLink__content-subtitle {
-		font-size: 13px;
-		line-height: 15px;
+		font-size: 13px !important;
+		line-height: 15px !important;
+		font-weight: 400 !important;
+	}
+	.indexCatalogLink__content-number {
+		font-weight: 350 !important;
+		font-size: 12px !important;
+		line-height: 27px !important;
 	}
 	.indexCatalogLink__content-block {
 		padding: 23px 0;
+	}
+	.indexCatalogLink {
+		padding: 50px 0;
 	}
 }

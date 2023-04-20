@@ -16,7 +16,7 @@ header.header
                 a(href="tel:88003504677").header__phone
                     img(src="./svg/header/phone.svg" alt="")
                     p 8 800-350-46-77
-                button.header__button заказать звонок
+                button.header__button.b24-web-form-popup-btn-40 заказать звонок
                 button.header__menu
                     img(src="./svg/header/menu.svg" alt="")
                 button.header__close.display-n
@@ -79,27 +79,62 @@ section.navbar
 
 .navbar__arrow-block
     ul.navbar__arrow-catalog
-        each _, i in Array(19)
-            li.navbar__arrow-nav(data-con=i)
-                a(href="#") Архив
+        li.navbar__arrow-nav(data-con='1')
+            a(href="#") Металлические стеллажи
+        li.navbar__arrow-nav(data-con='2')
+            a(href="#") Стеллажи для архива
+        li.navbar__arrow-nav(data-con='3')
+            a(href="#") Стеллажи для библиотек
+        li.navbar__arrow-nav(data-con='4')
+            a(href="#") Стеллажи для музеев и фондов
+        li.navbar__arrow-nav(data-con='5')
+            a(href="#") Стеллажи для медучреждений
+        li.navbar__arrow-nav(data-con='6')
+            a(href="#") Стеллажи для промышленности
+        li.navbar__arrow-nav(data-con='7')
+            a(href="#") Дополнительное оборудование
+        li.navbar__arrow-nav(data-con='8')
+            a(href="#") Стеллажи на заказ
     ul.navbar__arrow-content
-        each _, i in Array(19)
-            li.navbar__arrow-con(data-content=i)
+            li.navbar__arrow-con(data-content='1')
                 .navbar__arrow-containers
-                    .navbar__arrow-title= i
+                    .navbar__arrow-title По типу
                     ul.navbar__arrow-links 
                         li.navbar__arrow-button
                             a(href="#") Мобильные стеллажи 
                         li.navbar__arrow-button
-                            a(href="#") Мобильные стеллажи 
-                        
+                            a(href="#") Стеллажи с электроприводом
+                        li.navbar__arrow-button
+                            a(href="#") Раздвижные стеллажи
+                        li.navbar__arrow-button
+                            a(href="#") Стационарные стеллажи
+                        li.navbar__arrow-button
+                            a(href="#") Полочные среднегрузовые cтеллажи 
+                        li.navbar__arrow-button
+                            a(href="#") Передвижные cреднегрузовые
+                        li.navbar__arrow-button
+                            a(href="#") Стеллажи с ячейками для склада
+                        li.navbar__arrow-button
+                            a(href="#") Стеллажи с выкатными платформами
                 .navbar__arrow-containers
-                    .navbar__arrow-title= i
+                    .navbar__arrow-title По виду
                     ul.navbar__arrow-links 
                         li.navbar__arrow-button
-                            a(href="#") Мобильные стеллажи 
+                            a(href="#") Стеллажи с дверями 
                         li.navbar__arrow-button
-                            a(href="#") Мобильные стеллажи 
+                            a(href="#") Стеллажи с выдвижными ящиками 
+                        li.navbar__arrow-button
+                            a(href="#") Ячеистые стеллажи 
+                        li.navbar__arrow-button
+                            a(href="#") Секционные стеллажи 
+                        li.navbar__arrow-button
+                            a(href="#") Стеллажи для одежды 
+                        li.navbar__arrow-button
+                            a(href="#") Стеллажи для документов  
+                        li.navbar__arrow-button
+                            a(href="#") Стеллажи для чертежей  
+                        li.navbar__arrow-button
+                            a(href="#") Стеллажи для коробов
 
 .menu__mobile.display-n
     .menu__mobile-accordion 

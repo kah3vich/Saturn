@@ -101,6 +101,7 @@
 	.indexEquipment__list {
 		gap: 20px;
 		grid-template-columns: 1fr;
+		margin: 0;
 	}
 	.indexEquipment {
 		padding: 50px 0;
@@ -110,6 +111,7 @@
 	}
 	.indexEquipment__title {
 		font-size: 30px;
+		line-height: 34px;
 	}
 	.cardEquipment__img {
 		height: 185px;
@@ -125,5 +127,8 @@
 	}
 	.cardEquipment__content-text {
 		font-size: 16px;
+	}
+	.indexEquipment .containers {
+		gap: 20px;
 	}
 }

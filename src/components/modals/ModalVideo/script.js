@@ -1,6 +1,6 @@
 export const ModalVideo = () => {
 	$(
-		'.goods-video__video, .catalog-description__block-video, .about-description__video, .indexAbout__content-video',
+		'.goods-video__video, .catalog-description__block-video, .about-description__video, .indexAbout__content-video, .indexMain__right-video',
 	).on('click', function () {
 		const dataVideo = $(this).attr('aria-video');
 		$('.modalVideo__wrapper iframe').attr('src', dataVideo);

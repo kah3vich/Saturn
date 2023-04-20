@@ -30,7 +30,7 @@ mixin indexMainStatic()
                 li.indexMain-static__item 
                     +statusType('Поставок', '>6000', 'Оборудования')
 
-mixin indexMain(add, button)
+mixin indexMain(add, button, banner = true)
     section.indexMain
         .indexMain__slider
             .swiper.indexMainSwiper
@@ -79,7 +79,13 @@ mixin indexMain(add, button)
 
                                     
                                 .indexMain__right
-                                    .indexMain__right-bg 
-                                        img(src="./img/index/indexMain/bg.png" alt="")
-                                    .indexMain__right-play
-                                        img(src="./svg/index/indexMain/play-button.svg" alt="")
+                                    if banner 
+                                        .indexMain__right-video(aria-video="https://www.youtube.com/embed/fXTezCok-6s")
+                                            .indexMain__right-bg 
+                                                img(src="./img/index/indexMain/bg.png" alt="")
+                                            .indexMain__right-play
+                                                img(src="./svg/index/indexMain/play-button.svg" alt="")
+                                    if !banner
+                                        .indexMain__right-photo 
+                                            .indexMain__right-bg 
+                                                img(src="./img/index/indexMain/bg.png" alt="")

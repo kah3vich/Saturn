@@ -6,3 +6,15 @@ section.catalog-collection
             each _, i in Array(19)
                 li.catalog-collection__item
                     +catalogCollectionCard('Органы власти', i+1)
+        .catalog-collection__slider
+            .swiper.catalogCollectionSlider
+                .swiper-wrapper
+                    each _, i in Array(7)
+                        .swiper-slide 
+                            +catalogCollectionCard('Органы власти', i+1)
+        .catalog-collection__control
+            .swiper-pagination
+            .swiper-button-next
+                img(src="./svg/components/feedback/arrow-next.svg" alt="alt")
+            .swiper-button-prev
+                img(src="./svg/components/feedback/arrow-prev.svg" alt="alt")

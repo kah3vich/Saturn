@@ -14,6 +14,11 @@ export const IndexCase = () => {
 			nextEl: '.indexCase__slider .swiper-controls .swiper-button-next',
 			prevEl: '.indexCase__slider .swiper-controls .swiper-button-prev',
 		},
+		pagination: {
+			dynamicBullets: true,
+			clickable: true,
+			el: '.indexCase__slider .swiper-controls .swiper-pagination',
+		},
 		slidesPerView: 3,
 		spaceBetween: 35,
 		breakpoints: {

@@ -335,6 +335,9 @@
 		right: -90%;
 		transform: translate(0%, -50%);
 	}
+	.spaceItem {
+		gap: 10px;
+	}
 	.space__item {
 		&:nth-child(1) {
 			right: -10%;

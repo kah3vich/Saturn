@@ -84,8 +84,19 @@ opacity-h {
 	opacity: 0 !important;
 }
 
-//! ---
+//! import
 
 @import 'mixin';
 
 @import '../components/styles';
+
+//! other
+
+.b24-window-popup-wrapper .b24-window-scrollable {
+	position: relative !important;
+}
+
+.b24-window-mounts {
+	position: relative !important;
+	z-index: 100000000000000000000000000;
+}

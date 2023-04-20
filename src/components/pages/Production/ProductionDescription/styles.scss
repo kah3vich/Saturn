@@ -136,3 +136,16 @@
 		width: 250%;
 	}
 }
+
+@media (max-width: 700px) {
+	.production-description__banner {
+		height: 250px;
+	}
+	.production-description__item p {
+		width: 200px;
+		right: -220%;
+	}
+	.production-description__section {
+		width: 100%;
+	}
+}

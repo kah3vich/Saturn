@@ -6,6 +6,7 @@ import {
 	ButtonTop,
 	CatalogAddition,
 	CatalogCase,
+	CatalogCollection,
 	CatalogMain,
 	Feedback,
 	GoodsMain,
@@ -25,6 +26,7 @@ Header();
 IndexCase();
 CatalogCase();
 Feedback();
+CatalogCollection();
 Team();
 Slider();
 IndexMain();
@@ -41,3 +43,9 @@ ButtonTop();
 ModalVideo();
 ModalPhoto();
 IndexCatalogLink();
+
+$(document).ready(function () {
+	$('.b24-web-form-popup-btn-40').click(function () {
+		$('.b24-web-form-popup-btn-5dsrxs').click();
+	});
+});

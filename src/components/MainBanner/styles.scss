@@ -1,7 +1,7 @@
 .mainBanner {
 	width: 100%;
 	background-color: gray;
-	height: 100vh;
+	height: calc(100vh - 140px);
 	position: relative;
 	&__background {
 		position: absolute;
@@ -14,11 +14,11 @@
 		&-content {
 			background-color: $color-blue;
 			width: 50%;
-			height: 100vh;
+			height: calc(100vh - 140px);
 		}
 		&-banner {
 			width: 50%;
-			height: 100vh;
+			height: calc(100vh - 140px);
 			& img {
 				@include imgFullSize();
 			}
@@ -35,7 +35,7 @@
 	}
 	&__content {
 		width: 50%;
-		height: 100vh;
+		height: calc(100vh - 140px);
 		padding: 43px 0 20px 0;
 		position: relative;
 		@include flexStyle(flex-start, center, column, 12vh);
@@ -67,7 +67,7 @@
 	}
 	&__banner {
 		width: 50%;
-		height: 100vh;
+		height: calc(100vh - 140px);
 	}
 }
 
@@ -123,5 +123,17 @@
 	.mainBanner__content-title {
 		font-size: 28px;
 		line-height: 40px;
+	}
+}
+
+@media (max-width: 600px) {
+	.mainBanner__content {
+		height: calc(100vh - 70px);
+		justify-content: space-between;
+		padding: 80px 0 50px 0;
+	}
+	.mainBanner__content-subtitle {
+		font-size: 18px;
+		line-height: 29px;
 	}
 }

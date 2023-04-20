@@ -63,7 +63,7 @@ include ButtonTop/mixin.pug
 //- Mixin
 
 mixin buttonYellow(text)
-    button.buttonYellow= text
+    button.buttonYellow(class!= attributes.class)= text
         img(src="./svg/mixin/arrow-link.svg" alt="").buttonYellow__img
 
 mixin buttonGray(text)

@@ -88,3 +88,15 @@
 		height: 80px !important;
 	}
 }
+
+@media (max-width: 600px) {
+	.add-description__content-title {
+		font-size: 25px;
+		line-height: 33px;
+	}
+	.add-description__slider-item,
+	.add-description__slider .swiper-button-next,
+	.add-description__slider .swiper-button-prev {
+		height: 200px;
+	}
+}
