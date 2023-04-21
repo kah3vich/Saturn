@@ -44,6 +44,9 @@
 				@include fontStyle(17px, 400, 21px, $color-gray-black);
 			}
 		}
+		.b24-form-sign {
+			display: none;
+		}
 		.b24-form-header {
 			padding: 0;
 			border-bottom: none;
