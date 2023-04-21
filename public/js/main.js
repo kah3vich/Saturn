@@ -162,9 +162,11 @@ var Header = function Header() {
   $('#navbarArrowCatalog, .navbar__arrow-block').hover(function () {
     $('.navbar__arrow-block').addClass('navbar__arrow-block__active');
     $('body').css('overflow', 'hidden');
+    $('.navbar__background').addClass('navbar__background-active');
   }, function () {
     $('.navbar__arrow-block').removeClass('navbar__arrow-block__active');
     $('body').css('overflow', 'visible');
+    $('.navbar__background').removeClass('navbar__background-active');
   });
   $('.navbar__arrow-nav').hover(function () {
     $('.navbar__arrow-nav').removeClass('navbar__arrow-nav__active');

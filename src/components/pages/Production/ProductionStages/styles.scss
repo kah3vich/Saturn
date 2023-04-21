@@ -32,7 +32,13 @@
 		height: 100%;
 		overflow: hidden;
 		border-radius: 20px;
+		&:hover {
+			& img {
+				transform: scale(1.3);
+			}
+		}
 		& img {
+			transition: all 0.5s ease;
 			@include imgFullSize();
 		}
 	}
@@ -61,6 +67,9 @@
 	.productionStages__banner,
 	.productionStages__content {
 		width: 100%;
+	}
+	.productionStages__banner:hover img {
+		transform: scale(1);
 	}
 }
 
