@@ -1,5 +1,5 @@
 export const ModalPhoto = () => {
-	$('.slider__show, .articleDetailCard__show').on('click', function () {
+	$('.slider__show, .articleDetailCard__show, .productionStages__banner').on('click', function () {
 		const dataPhoto = $(this).attr('aria-photo');
 		$('.modalPhoto__wrapper img').attr('src', dataPhoto);
 

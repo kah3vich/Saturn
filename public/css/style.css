@@ -1802,6 +1802,10 @@ opacity-h {
 	font-style : normal;
 }
 
+.formBase__form .b24-form-sign {
+	display : none;
+}
+
 .formBase__form .b24-form-header {
 	padding : 0;
 	border-bottom : none;
@@ -12483,6 +12487,10 @@ opacity-h {
 .b24-window-mounts {
 	position : relative !important;
 	z-index : 100000000000000000000000000;
+}
+
+.b24-form-sign {
+	display : none !important;
 }
 
 @media (max-width: 1430px) {

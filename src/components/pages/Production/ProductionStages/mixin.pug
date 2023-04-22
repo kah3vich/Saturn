@@ -1,6 +1,6 @@
 mixin productionStages(title, text, src)
     .productionStages
-        .productionStages__banner 
+        .productionStages__banner(aria-photo=src)
             img(src=src alt="")
         .productionStages__content 
             h5.productionStages__content-title= title 
