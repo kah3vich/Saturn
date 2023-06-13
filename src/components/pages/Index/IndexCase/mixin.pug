@@ -12,7 +12,7 @@ mixin indexCaseSelect
 
 mixin indexCaseCard(src, title, text, href)
     .indexCaseCard 
-        .indexCaseCard__img 
+        a(href=href).indexCaseCard__img 
             img(src=src alt="")
         .indexCaseCard__title= title
         .indexCaseCard__text= text

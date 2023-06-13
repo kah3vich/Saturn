@@ -187,7 +187,7 @@
 		cursor: not-allowed;
 		visibility: hidden;
 		height: 100vh;
-		background: $color-blue-black;
+		background: $color-black;
 		z-index: 100;
 		@include transitionStyle();
 		&-active {
@@ -252,7 +252,6 @@
 			cursor: not-allowed;
 			visibility: hidden;
 			opacity: 0;
-			@include transitionStyle();
 			background-color: $color-white;
 			height: 100vh;
 			z-index: 120;
@@ -293,15 +292,15 @@
 		&-nav {
 			width: 100%;
 			padding: 29px 25px 29px 25px;
-			background-color: $color-blue-black;
+			background-color: $color-white;
 			@include transitionStyle();
 			cursor: pointer;
 			& a {
 				letter-spacing: -0.5px;
-				@include fontStyle(16px, 400, 19px, $color-white);
+				@include fontStyle(16px, 400, 19px, $color-blue-black);
 			}
 			&__active {
-				background: #40395a;
+				background: #efefef;
 			}
 		}
 		&-containers {
@@ -341,7 +340,6 @@
 			cursor: not-allowed;
 			visibility: hidden;
 			opacity: 0;
-			@include transitionStyle();
 			&__active {
 				opacity: 1;
 				cursor: auto;

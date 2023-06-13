@@ -4,9 +4,9 @@ section.slider
             .swiper-wrapper
                 each _, i in Array(5)
                     .swiper-slide 
-                        .slider__item 
+                        .slider__item(aria-photo="./img/components/slider/card.png")
                             img(src="./img/components/slider/card.png" alt="")
-                            button.slider__show(aria-photo="./img/components/slider/card.png")
+                            button.slider__show
                                 img(src="./svg/slider/share.svg" alt="")
         .swiper-controls
             .swiper-button-next
