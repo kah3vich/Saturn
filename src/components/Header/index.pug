@@ -39,9 +39,24 @@ section.navbar
                     a(href="#") Музей
                 li.navbar__arrow-item 
                     a(href="#") Склад
-                
-        a(href="#").navbar__link 
+
+        .navbar__arrow#navbarArrowBuy
             p Закупкам
+            img(src="./svg/header/arrow-down.svg" alt="")
+            ul.navbar__arrow-list
+                li.navbar__arrow-item 
+                    a(href="#") Гос.сектору
+                li.navbar__arrow-item 
+                    a(href="#") Промышленности и бизнесу
+                li.navbar__arrow-item 
+                    a(href="#") Гарантии
+                li.navbar__arrow-item 
+                    a(href="#") Оплата и доставка
+                li.navbar__arrow-item 
+                    a(href="#") Изготовление по заказу
+                li.navbar__arrow-item 
+                    a(href="#") Бесплатный проект
+                
         .navbar__arrow#navbarArrowCompony
             p О компании
             img(src="./svg/header/arrow-down.svg" alt="")
@@ -70,7 +85,7 @@ section.navbar
             
         a(href="#").navbar__link 
             p Контакты
-        .navbar__search
+        a(href="/search.html").navbar__search
             input(type="text" placeholder="Поиск").navbar__search-input 
             .navbar__search-button 
                 img(src="./svg/header/search.svg" alt="")
@@ -98,7 +113,7 @@ section.navbar
     ul.navbar__arrow-content
             li.navbar__arrow-con(data-content='1')
                 .navbar__arrow-containers
-                    .navbar__arrow-title По типу
+                    .navbar__arrow-title По виду
                     ul.navbar__arrow-links 
                         li.navbar__arrow-button
                             a(href="#") Мобильные стеллажи 
@@ -117,7 +132,7 @@ section.navbar
                         li.navbar__arrow-button
                             a(href="#") Стеллажи с выкатными платформами
                 .navbar__arrow-containers
-                    .navbar__arrow-title По виду
+                    .navbar__arrow-title По типу
                     ul.navbar__arrow-links 
                         li.navbar__arrow-button
                             a(href="#") Стеллажи с дверями 
@@ -135,6 +150,36 @@ section.navbar
                             a(href="#") Стеллажи для чертежей  
                         li.navbar__arrow-button
                             a(href="#") Стеллажи для коробов
+            li.navbar__arrow-con(data-content='2')
+                .navbar__arrow-containers
+                    .navbar__arrow-title Продукция
+                    ul.navbar__arrow-links 
+                        li.navbar__arrow-button
+                            a(href="#") Стеллажи для архивов
+                        li.navbar__arrow-button
+                            a(href="#") Передвижные стеллажи
+                        li.navbar__arrow-button
+                            a(href="#") Стационарные стеллажи
+                        li.navbar__arrow-button
+                            a(href="#") Высокие стеллажи
+                        li.navbar__arrow-button
+                            a(href="#") Архивная тележка
+                .navbar__arrow-containers
+                    .navbar__arrow-title Что храним
+                    ul.navbar__arrow-links 
+                        li.navbar__arrow-button
+                            a(href="#") Документы
+                        li.navbar__arrow-button
+                            a(href="#") Чертежи
+                        li.navbar__arrow-button
+                            a(href="#") Короба
+                .navbar__arrow-containers
+                    .navbar__arrow-title Что оборудуем
+                    ul.navbar__arrow-links 
+                        li.navbar__arrow-button
+                            a(href="#") Мобильные архив
+                        li.navbar__arrow-button
+                            a(href="#") Высокий архив
 
 .menu__mobile.display-n
     .menu__mobile-accordion 

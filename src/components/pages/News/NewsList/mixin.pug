@@ -1,6 +1,6 @@
 mixin newsCard(src, text, date)
     .newsCard
-        .newsCard__img 
+        a(href="/").newsCard__img 
             img(src=src, alt="")
         .newsCard__content 
             p.newsCard__content-text= text

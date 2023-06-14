@@ -17,6 +17,9 @@
 			@include fontStyle(20px, 400, 31px, $color-black);
 		}
 	}
+	&__revert {
+		flex-direction: row-reverse !important;
+	}
 	&__banner {
 		width: 584px;
 		height: 423px;

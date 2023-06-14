@@ -147,7 +147,7 @@ var Header = function Header() {
 
   // Navbar
 
-  var arrActiveNavbar = ['navbarArrowProject', 'navbarArrowCompony', 'navbarArrowHelper'];
+  var arrActiveNavbar = ['navbarArrowProject', 'navbarArrowCompony', 'navbarArrowBuy', 'navbarArrowHelper'];
   arrActiveNavbar.forEach(function (el) {
     $("#".concat(el)).hover(function () {
       $("#".concat(el, " .navbar__arrow-list")).addClass('navbar__arrow-list__active');

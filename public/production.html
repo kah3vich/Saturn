@@ -24,10 +24,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="img/favicon/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicon/apple-touch-icon-1024x1024.png">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230613225913">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20230613225913" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230613225913">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230613225913"></script>
+    <link rel="stylesheet" href="css/style.min.css?_v=20230614223603">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20230614223603" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230614223603">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230614223603"></script>
   </head>
   <body>
     <header class="header"> 
@@ -67,8 +67,18 @@
             <li class="navbar__arrow-item"> <a href="#">Музей</a></li>
             <li class="navbar__arrow-item"> <a href="#">Склад</a></li>
           </ul>
-        </div><a class="navbar__link" href="#"> 
-          <p>Закупкам</p></a>
+        </div>
+        <div class="navbar__arrow" id="navbarArrowBuy">
+          <p>Закупкам</p><img src="./svg/header/arrow-down.svg" alt="">
+          <ul class="navbar__arrow-list">
+            <li class="navbar__arrow-item"> <a href="#">Гос.сектору</a></li>
+            <li class="navbar__arrow-item"> <a href="#">Промышленности и бизнесу</a></li>
+            <li class="navbar__arrow-item"> <a href="#">Гарантии</a></li>
+            <li class="navbar__arrow-item"> <a href="#">Оплата и доставка</a></li>
+            <li class="navbar__arrow-item"> <a href="#">Изготовление по заказу</a></li>
+            <li class="navbar__arrow-item"> <a href="#">Бесплатный проект</a></li>
+          </ul>
+        </div>
         <div class="navbar__arrow" id="navbarArrowCompony">
           <p>О компании</p><img src="./svg/header/arrow-down.svg" alt="">
           <ul class="navbar__arrow-list">
@@ -87,11 +97,9 @@
             <li class="navbar__arrow-item"> <a href="#">Документы</a></li>
           </ul>
         </div><a class="navbar__link" href="#"> 
-          <p>Контакты</p></a>
-        <div class="navbar__search">
+          <p>Контакты</p></a><a class="navbar__search" href="/search.html">
           <input class="navbar__search-input" type="text" placeholder="Поиск">
-          <div class="navbar__search-button"> <img src="./svg/header/search.svg" alt=""></div>
-        </div>
+          <div class="navbar__search-button"> <img src="./svg/header/search.svg" alt=""></div></a>
       </div>
     </section>
     <div class="navbar__background"></div>
@@ -109,7 +117,7 @@
       <ul class="navbar__arrow-content">
         <li class="navbar__arrow-con" data-content="1">
           <div class="navbar__arrow-containers">
-            <div class="navbar__arrow-title">По типу</div>
+            <div class="navbar__arrow-title">По виду</div>
             <ul class="navbar__arrow-links"> 
               <li class="navbar__arrow-button"><a href="#">Мобильные стеллажи </a></li>
               <li class="navbar__arrow-button"><a href="#">Стеллажи с электроприводом</a></li>
@@ -122,7 +130,7 @@
             </ul>
           </div>
           <div class="navbar__arrow-containers">
-            <div class="navbar__arrow-title">По виду</div>
+            <div class="navbar__arrow-title">По типу</div>
             <ul class="navbar__arrow-links"> 
               <li class="navbar__arrow-button"><a href="#">Стеллажи с дверями </a></li>
               <li class="navbar__arrow-button"><a href="#">Стеллажи с выдвижными ящиками </a></li>
@@ -132,6 +140,33 @@
               <li class="navbar__arrow-button"><a href="#">Стеллажи для документов  </a></li>
               <li class="navbar__arrow-button"><a href="#">Стеллажи для чертежей  </a></li>
               <li class="navbar__arrow-button"><a href="#">Стеллажи для коробов</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="navbar__arrow-con" data-content="2">
+          <div class="navbar__arrow-containers">
+            <div class="navbar__arrow-title">Продукция</div>
+            <ul class="navbar__arrow-links"> 
+              <li class="navbar__arrow-button"><a href="#">Стеллажи для архивов</a></li>
+              <li class="navbar__arrow-button"><a href="#">Передвижные стеллажи</a></li>
+              <li class="navbar__arrow-button"><a href="#">Стационарные стеллажи</a></li>
+              <li class="navbar__arrow-button"><a href="#">Высокие стеллажи</a></li>
+              <li class="navbar__arrow-button"><a href="#">Архивная тележка</a></li>
+            </ul>
+          </div>
+          <div class="navbar__arrow-containers">
+            <div class="navbar__arrow-title">Что храним</div>
+            <ul class="navbar__arrow-links"> 
+              <li class="navbar__arrow-button"><a href="#">Документы</a></li>
+              <li class="navbar__arrow-button"><a href="#">Чертежи</a></li>
+              <li class="navbar__arrow-button"><a href="#">Короба</a></li>
+            </ul>
+          </div>
+          <div class="navbar__arrow-containers">
+            <div class="navbar__arrow-title">Что оборудуем</div>
+            <ul class="navbar__arrow-links"> 
+              <li class="navbar__arrow-button"><a href="#">Мобильные архив</a></li>
+              <li class="navbar__arrow-button"><a href="#">Высокий архив</a></li>
             </ul>
           </div>
         </li>
@@ -285,6 +320,27 @@
         <p class="production-text__text">За консультациями по выбору модели стеллажа, стоимости оборудования, срокам изготовления обращайтесь в наш офис. После получения необходимой информации менеджеры разработают для Вас проект размещения оборудования, сопроводит его подробным техническим описанием. Для предварительного расчета цены стеллажей достаточно, если Вы сообщите габариты помещения и укажите формат хранимой документации или товара, а так же его вес. Доставка и монтаж стеллажей нашими силами так же могут быть включены в стоимость поставки. Часть стандартных комплектующих деталей всегда находится на нашем складе. Поэтому, при покупке стеллажей в нашей компании, Вы можете рассчитывать на быструю поставку.</p>
       </div>
     </section>
+    <section class="formBase">
+      <div class="containers"> 
+        <p class="formBase__title">Подберем решение</p>
+        <div class="formBase__container">
+          <div class="formBase__banner"> <img src="./img/formBase/banner.png" alt=""></div>
+          <div class="formBase__form"> 
+            <div class="formBase__form-banner"><span>БОНУС: </span>
+              <p>«Проект бесплатно в течение 24 часов»</p>
+            </div>
+            <script data-b24-form="inline/36/exrs6e" data-skip-moving="true">
+              (function(w,d,u){
+                        var s = d.createElement('script');
+                        s.async=true;s.src=u+'?'+(Date.now()/180000|0);
+                        var h = d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+                    })
+                    (window, document, 'https://cdn-ru.bitrix24.ru/b19623448/crm/form/loader_36.js');
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="footer"> 
       <div class="containers">
         <div class="footer__container"> 
@@ -365,7 +421,7 @@
       </div>
     </section>
     <button class="buttonTop"><img src="./svg/components/buttonTop/array.svg" alt="array"></button>
-    <script src="js/main.js?_v=20230613225913"></script>
+    <script src="js/main.js?_v=20230614223603"></script>
   </body>
   <script data-b24-form="click/40/5dsrxs" data-skip-moving="true">
     (function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://cdn-ru.bitrix24.ru/b19623448/crm/form/loader_40.js');

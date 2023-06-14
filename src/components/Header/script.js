@@ -11,7 +11,12 @@ export const Header = () => {
 
 	// Navbar
 
-	const arrActiveNavbar = ['navbarArrowProject', 'navbarArrowCompony', 'navbarArrowHelper'];
+	const arrActiveNavbar = [
+		'navbarArrowProject',
+		'navbarArrowCompony',
+		'navbarArrowBuy',
+		'navbarArrowHelper',
+	];
 
 	arrActiveNavbar.forEach(el => {
 		$(`#${el}`).hover(

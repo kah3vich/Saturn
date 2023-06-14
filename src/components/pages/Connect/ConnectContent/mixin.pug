@@ -1,0 +1,28 @@
+mixin connectContent(revert)
+    section.connectContent
+        if revert 
+            .containers.connectContent__revert
+                .connectContent__content
+                    h1.connectContent__content-title ТЕКСТ О ГОС ЗАКУПКАХ
+                    .connectContent__content-text 
+                        p Помощь с выбором продукции; 
+                        p помощь в составлении технических заданий; 
+                        p подготовка проектов договоров; 
+                        p расчет заказов и подготовка коммерческих предложений; 
+                        p составление планов расстановки стеллажей; 
+                        p участие в электронных торгах и запросах котировок.
+                .connectContent__banner 
+                    img(src="./img/connect/description.png" alt="")
+        else 
+            .containers 
+                .connectContent__content
+                    h1.connectContent__content-title ТЕКСТ О ГОС ЗАКУПКАХ
+                    .connectContent__content-text 
+                        p Помощь с выбором продукции; 
+                        p помощь в составлении технических заданий; 
+                        p подготовка проектов договоров; 
+                        p расчет заказов и подготовка коммерческих предложений; 
+                        p составление планов расстановки стеллажей; 
+                        p участие в электронных торгах и запросах котировок.
+                .connectContent__banner 
+                    img(src="./img/connect/description.png" alt="")

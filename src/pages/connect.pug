@@ -8,11 +8,11 @@ block content
 
 	+mainBanner('Оказываем помощь в составлении и проверке технических заданий.', '', 'ЗАКАЗАТЬ У ПРОИЗВОДИТЕЛЯ', './img/connect/banner.png')
 
-	include ../components/pages/Connect/ConnectContent/index.pug
+	+connectContent()
+
+	+connectContent(true)
 
 	include ../components/FormFile/index.pug
-
-	include ../components/Space/index.pug
 
 	br
 	br

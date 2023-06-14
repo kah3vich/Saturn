@@ -677,7 +677,7 @@ opacity-h {
 
 .navbar__arrow-catalog {
 	width : 340px;
-	background-color : #140848;
+	background-color : transparent;
 	display : -webkit-box;
 	display : -ms-flexbox;
 	display : flex;
@@ -3932,6 +3932,13 @@ opacity-h {
 	line-height : 31px;
 	color : #141413;
 	font-style : normal;
+}
+
+.connectContent__revert {
+	-webkit-box-orient : horizontal !important;
+	-webkit-box-direction : reverse !important;
+	-ms-flex-direction : row-reverse !important;
+	    flex-direction : row-reverse !important;
 }
 
 .connectContent__banner {
@@ -9076,7 +9083,7 @@ opacity-h {
 
 .production-text {
 	width : 100%;
-	padding : 130px 0;
+	padding : 90px 0;
 	background-color : #ffffff;
 }
 
