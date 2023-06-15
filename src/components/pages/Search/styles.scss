@@ -1,0 +1,119 @@
+.search {
+	width: 100%;
+	padding: 30px 0 90px 0;
+	background-color: $color-white;
+	& .containers {
+		@include flexStyle(flex-start, flex-start, column, 30px);
+	}
+	&__control {
+		width: 100%;
+		@include flexStyle(flex-start, flex-start, row, 30px);
+	}
+	&__input {
+		width: calc(100% - 175px);
+		height: 43px;
+		border: 2px solid #e0e0e0;
+		background-color: $color-white;
+		border-radius: 100px;
+		padding: 12px 32px;
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 19px;
+		letter-spacing: -0.5px;
+		color: #000000;
+		&::placeholder {
+			font-weight: 400;
+			font-size: 17px;
+			line-height: 19px;
+			letter-spacing: -0.5px;
+			color: #000000;
+			opacity: 0.5;
+		}
+	}
+	&__button {
+		width: 145px;
+		height: 43px;
+		padding: 12px 49px;
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 19px;
+		letter-spacing: -0.5px;
+		color: #000000;
+		background: #f2ce14;
+		border-radius: 100px;
+	}
+	&__add {
+		@include flexStyle(flex-start, flex-start);
+	}
+	&__count {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 23px;
+		letter-spacing: -0.5px;
+		color: #828282;
+	}
+	&__list {
+		@include flexStyle(flex-start, flex-start, column, 30px);
+		width: 100%;
+	}
+}
+
+// Mixin
+
+.card-search {
+	width: 100%;
+	@include flexStyle(flex-start, flex-start, column, 25px);
+	&__title {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 23px;
+		letter-spacing: -0.5px;
+		text-decoration-line: underline;
+		color: #181818;
+	}
+	&__content {
+		display: grid;
+		grid-template-columns: 241px 1fr;
+		gap: 30px;
+	}
+	&__photo {
+		width: 241px;
+		height: 152px;
+		border-radius: 5px;
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__text {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 23px;
+		letter-spacing: -0.5px;
+		color: #181818;
+	}
+}
+
+// Media
+
+@media screen and (max-width: 600px) {
+	.search__control {
+		flex-direction: column;
+		width: 100%;
+		gap: 15px;
+	}
+	.search__input,
+	.search__button {
+		width: 100%;
+	}
+	.card-search__content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+	.card-search__photo {
+		width: 100%;
+	}
+}

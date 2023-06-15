@@ -1,0 +1,10 @@
+section.search
+    .containers
+        .search__control 
+            input.search__input(placeholder="Поиск по сайту")
+            button.search__button Найти 
+        .search__add 
+            p.search__count Результаты 1-7
+        .search__list 
+            each _, i in Array(7)
+                +cardSearch()

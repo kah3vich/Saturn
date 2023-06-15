@@ -1,0 +1,17 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Поиск";
+
+block content
+	include ../components/Header/index.pug
+
+	include ../components/pages/Search/index.pug
+
+	include ../components/Footer/index.pug
+
+block modals 
+	include ../components/ButtonTop/index.pug
+
+block scripts
+	script(src="js/main.js")
