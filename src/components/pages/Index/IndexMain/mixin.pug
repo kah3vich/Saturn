@@ -30,7 +30,7 @@ mixin indexMainStatic()
                 li.indexMain-static__item 
                     +statusType('Поставок', '>6000', 'Оборудования')
 
-mixin indexMain(add, button, banner = true)
+mixin indexMain(add, button, banner = true, addButton)
     section.indexMain
         .indexMain__slider
             .swiper.indexMainSwiper
@@ -62,7 +62,10 @@ mixin indexMain(add, button, banner = true)
                                                 br 
                                                 | для вашего помещения всего за 
                                                 span 24 часа.
-                                            +buttonYellow(button)
+                                            .indexMain__buttons
+                                                +buttonYellow(button)
+                                                if addButton
+                                                    +buttonYellow(addButton)
 
                                         .swiper-controller
                                             .swiper-button-next

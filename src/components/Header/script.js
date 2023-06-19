@@ -23,7 +23,7 @@ export const Header = () => {
 			() => {
 				$(`#${el} .navbar__arrow-list`).addClass('navbar__arrow-list__active');
 				$('.navbar__background').addClass('navbar__background-active');
-				$('body').css('overflow', 'hidden');
+				// $('body').css('overflow', 'hidden');
 			},
 			() => {
 				$(`#${el} .navbar__arrow-list`).removeClass('navbar__arrow-list__active');
@@ -36,12 +36,12 @@ export const Header = () => {
 	$('#navbarArrowCatalog, .navbar__arrow-block').hover(
 		() => {
 			$('.navbar__arrow-block').addClass('navbar__arrow-block__active');
-			$('body').css('overflow', 'hidden');
+			// $('body').css('overflow', 'hidden');
 			$('.navbar__background').addClass('navbar__background-active');
 		},
 		() => {
 			$('.navbar__arrow-block').removeClass('navbar__arrow-block__active');
-			$('body').css('overflow', 'visible');
+			// $('body').css('overflow', 'visible');
 			$('.navbar__background').removeClass('navbar__background-active');
 		},
 	);

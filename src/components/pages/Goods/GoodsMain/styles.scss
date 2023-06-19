@@ -6,6 +6,15 @@
 		width: 100%;
 		@include flexStyle(flex-start, flex-start, column, 43px);
 	}
+	&__title {
+		letter-spacing: -0.5px;
+		@include fontStyle(42px, 700, 54px, $color-blue);
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 4;
+		-webkit-box-orient: vertical;
+	}
 	&__subtitle {
 		@include fontStyle(14px, 300, 130%, $color-black);
 		& span {
@@ -14,6 +23,10 @@
 	}
 	&__block {
 		width: 100%;
+		@include flexStyle(flex-start, flex-start, column, 20px);
+	}
+	&__container {
+		width: 100%;
 		display: grid;
 		grid-template-columns: repeat(2, calc(50% - 50px));
 		gap: 100px;
@@ -21,16 +34,15 @@
 	&__content {
 		width: 100%;
 		@include flexStyle(flex-start, flex-start, column, 20px);
-		&-title {
-			letter-spacing: -0.5px;
-			@include fontStyle(42px, 700, 54px, $color-blue);
-			overflow: hidden;
-			text-overflow: ellipsis;
-			display: -webkit-box;
-			-webkit-line-clamp: 4;
-			-webkit-box-orient: vertical;
-		}
 		&-subtitle {
+			margin-top: 5px;
+			letter-spacing: -0.5px;
+			@include fontStyle(22px, 400, 28px, $color-black);
+			& span {
+				font-weight: 700;
+			}
+		}
+		&-description {
 			margin-top: 5px;
 			letter-spacing: -0.5px;
 			@include fontStyle(22px, 400, 28px, $color-black);
@@ -151,9 +163,16 @@
 	.goods-main {
 		height: 100%;
 	}
+	.goods-main__container {
+		display: flex !important;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 45px;
+	}
 	.goods-main__block {
 		display: flex !important;
-		flex-direction: column-reverse;
+		flex-direction: column;
 		align-items: flex-start;
 		justify-content: flex-start;
 		gap: 45px;
@@ -161,14 +180,16 @@
 }
 
 @media (max-width: 700px) {
-	.goods-main__content-title {
+	.goods-main__title {
 		font-size: 25px;
 		line-height: 35px;
 	}
-	.goods-main__subtitle {
+	.goods-main__content-description,
+	.goods-main__content-subtitle {
 		font-size: 14px;
 		line-height: 130%;
 	}
+	.goods-main__content-description,
 	.goods-main__content-subtitle,
 	.goods-main__content-stat p,
 	.goods-main__content-stat span {

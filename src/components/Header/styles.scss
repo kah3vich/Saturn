@@ -176,7 +176,7 @@
 	background-color: $color-light-yellow-green;
 	& .containers {
 		width: 100%;
-		@include flexStyle(center, space-between, row, 28px);
+		@include flexStyle(center, space-between, row, 8px);
 	}
 	&__background {
 		opacity: 0;
@@ -229,10 +229,16 @@
 		}
 	}
 	&__arrow {
-		padding: 25px 0;
+		padding: 25px 10px;
 		position: relative;
 		cursor: pointer;
 		@include flexStyle(center, center, row, 12px);
+		transition: all 0.5s ease;
+
+		&:hover {
+			background-color: rgb(214 215 211);
+		}
+
 		& p {
 			letter-spacing: -0.5px;
 			@include fontStyle(18px, 400, 19px, $color-blue-black);
@@ -242,7 +248,7 @@
 			height: 19px;
 		}
 		&-block {
-			position: fixed;
+			position: absolute;
 			width: 100%;
 			max-width: calc(1440px - 180px);
 			left: 50%;
@@ -260,6 +266,7 @@
 				cursor: auto;
 				visibility: visible;
 				opacity: 1;
+				height: 700px;
 			}
 		}
 		&-catalog {
@@ -282,11 +289,12 @@
 		}
 		&-con {
 			width: 100%;
-			@include flexStyle(flex-start, space-between, row, 25px, wrap);
+			grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+			gap: 35px 25px;
 			display: none;
 			padding: 25px 45px 25px 45px;
 			&__active {
-				display: flex;
+				display: grid;
 			}
 		}
 		&-nav {
@@ -336,7 +344,7 @@
 			position: absolute;
 			z-index: 120;
 			top: 69px;
-			left: -30px;
+			left: 0;
 			cursor: not-allowed;
 			visibility: hidden;
 			opacity: 0;

@@ -34,6 +34,9 @@
 			height: calc(100vh - 140px);
 		}
 	}
+	&__buttons {
+		@include flexStyle(flex-start, flex-start, row, 20px);
+	}
 	&__left {
 		width: 50%;
 		height: calc(100vh - 140px);
@@ -362,6 +365,13 @@
 @media (max-width: 1430px) {
 	.indexMain-static__item:nth-child(5) {
 		display: none;
+	}
+}
+
+@media (max-width: 1220px) {
+	.indexMain__buttons {
+		flex-direction: column;
+		gap: 15px;
 	}
 }
 
