@@ -11,6 +11,7 @@ import {
 	Feedback,
 	GoodsMain,
 	Header,
+	HelperDocument,
 	HelperQuestion,
 	IndexCatalogLink,
 	IndexSteps,
@@ -43,6 +44,7 @@ ButtonTop();
 ModalVideo();
 ModalPhoto();
 IndexCatalogLink();
+HelperDocument();
 
 $(document).ready(function () {
 	$('.b24-web-form-popup-btn-40').click(function () {

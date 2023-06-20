@@ -391,6 +391,12 @@
 	justify-content: flex-start;
 	gap: 22px;
 	overflow-y: scroll;
+	&-list {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		padding: 0 34px;
+	}
 	&-button {
 		cursor: pointer;
 		position: fixed;
@@ -447,7 +453,7 @@
 			flex-direction: column;
 			justify-content: flex-start;
 			align-items: flex-start;
-			gap: 22px;
+			gap: 15px;
 		}
 		&__active {
 			& .menu__mobile-accordion__close {
@@ -499,7 +505,7 @@
 			flex-direction: column;
 			justify-content: flex-start;
 			align-items: flex-start;
-			gap: 22px;
+			gap: 15px;
 		}
 		&__active {
 			& .menu__mobile-accord__close {

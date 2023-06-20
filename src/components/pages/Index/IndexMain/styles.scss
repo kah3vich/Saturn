@@ -51,6 +51,7 @@
 			@include flexStyle(flex-start, flex-start, column, 45px);
 		}
 		&-add {
+			max-width: 80%;
 			position: absolute;
 			top: 45px;
 			left: 90px;
@@ -491,15 +492,15 @@
 	.indexMain__left-block {
 		gap: 20px;
 	}
+	.indexMain__left-add {
+		left: 17px;
+		top: 20px;
+	}
 }
 
 @media (max-width: 450px) {
 	.indexMain-static__item:nth-child(3) {
 		display: none;
-	}
-	.indexMain__left-add {
-		left: 17px;
-		top: 20px;
 	}
 }
 

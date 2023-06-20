@@ -182,21 +182,57 @@ section.navbar
                             a(href="#") Высокий архив
 
 .menu__mobile.display-n
-    .menu__mobile-accordion 
-        .menu__mobile-accordion__header
+    .menu__mobile-accordion(value-index="1")
+        .menu__mobile-accordion__header(data-index="1")
             .menu__mobile-accordion__title Продукция
             button.menu__mobile-accordion__close
                 img(src="./svg/header/array.svg" alt="")
         .menu__mobile-accordion__content
-                .menu__mobile-accord
-                    .menu__mobile-accord__header
+                .menu__mobile-accord(value-catalog="1")
+                    .menu__mobile-accord__header(data-catalog="1")
                         .menu__mobile-accord__title Металлические стеллажи
                         button.menu__mobile-accord__close
                             img(src="./svg/header/plus.svg" alt="")
                             img(src="./svg/header/minus.svg" alt="")
                     .menu__mobile-accord__content
-                        a(href="#").menu__mobile-item Все доп оборудование
-
+                        a(href="#").menu__mobile-item Мобильные стеллажи 
+                        a(href="#").menu__mobile-item Стеллажи с электроприводом
+                        a(href="#").menu__mobile-item Раздвижные стеллажи
+                        a(href="#").menu__mobile-item Стационарные стеллажи
+                        a(href="#").menu__mobile-item Полочные среднегрузовые cтеллажи 
+                        a(href="#").menu__mobile-item Передвижные cреднегрузовые
+                        a(href="#").menu__mobile-item Стеллажи с ячейками для склада
+                        a(href="#").menu__mobile-item Стеллажи с выкатными платформами
+                .menu__mobile-accord(value-catalog="1")
+                    .menu__mobile-accord__header(data-catalog="2")
+                        .menu__mobile-accord__title Стеллажи для архива
+                        button.menu__mobile-accord__close
+                            img(src="./svg/header/plus.svg" alt="")
+                            img(src="./svg/header/minus.svg" alt="")
+                    .menu__mobile-accord__content
+                        a(href="#").menu__mobile-item Стеллажи с дверями 
+                        a(href="#").menu__mobile-item Стеллажи с выдвижными ящиками
+                        a(href="#").menu__mobile-item Ячеистые стеллажи 
+                        a(href="#").menu__mobile-item Секционные стеллажи 
+                        a(href="#").menu__mobile-item Стеллажи для одежды 
+                        a(href="#").menu__mobile-item Стеллажи для документов 
+                        a(href="#").menu__mobile-item Стеллажи для чертежей 
+                        a(href="#").menu__mobile-item Стеллажи для коробов
+    .menu__mobile-accordion
+        .menu__mobile-accordion__header(data-index="2")
+            .menu__mobile-accordion__title Закупкам
+            button.menu__mobile-accordion__close
+                img(src="./svg/header/array.svg" alt="")
+        .menu__mobile-accordion__content
+                .menu__mobile-accord 
+                    .menu__mobile-list
+                        a(href="#").menu__mobile-accord__title Гос.сектору
+                        a(href="#").menu__mobile-accord__title Промышленности и бизнесу
+                        a(href="#").menu__mobile-accord__title Гарантии
+                        a(href="#").menu__mobile-accord__title Оплата и доставка
+                        a(href="#").menu__mobile-accord__title Изготовление по заказу
+                        a(href="#").menu__mobile-accord__title Бесплатный проект
+                        
     a(href="#").menu__mobile-link Закупкам
     a(href="#").menu__mobile-link Контакты
     button.menu__mobile-button ЗАКАЗАТЬ ЗВОНОК

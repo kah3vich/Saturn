@@ -7,6 +7,7 @@
 		@include flexStyle(flex-start, flex-start, column, 20px);
 	}
 	&__subtitle {
+		max-width: 80%;
 		@include fontStyle(14px, 300, 130%, $color-black);
 		& span {
 			color: $color-gray;

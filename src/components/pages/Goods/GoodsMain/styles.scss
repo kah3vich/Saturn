@@ -16,6 +16,7 @@
 		-webkit-box-orient: vertical;
 	}
 	&__subtitle {
+		max-width: 80%;
 		@include fontStyle(14px, 300, 130%, $color-black);
 		& span {
 			color: $color-gray;

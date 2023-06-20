@@ -937,6 +937,18 @@ opacity-h {
 	overflow-y : scroll;
 }
 
+.menu__mobile-list {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	gap : 10px;
+	padding : 0 34px;
+}
+
 .menu__mobile-button {
 	cursor : pointer;
 	position : fixed;
@@ -1019,7 +1031,7 @@ opacity-h {
 	-webkit-box-align : start;
 	-ms-flex-align : start;
 	align-items : flex-start;
-	gap : 22px;
+	gap : 15px;
 }
 
 .menu__mobile-accordion__active .menu__mobile-accordion__close {
@@ -1104,7 +1116,7 @@ opacity-h {
 	-webkit-box-align : start;
 	-ms-flex-align : start;
 	align-items : flex-start;
-	gap : 22px;
+	gap : 15px;
 }
 
 .menu__mobile-accord__active .menu__mobile-accord__close img:nth-child(1) {
@@ -3348,22 +3360,15 @@ opacity-h {
 	height : 97px;
 	background : #f1f2ed;
 	border-radius : 48.5px;
-	display : -webkit-box;
-	display : -ms-flexbox;
-	display : flex;
+	display : -ms-grid;
+	display :     grid;
+	-ms-grid-columns : 97px 1fr;
+	grid-template-columns : 97px 1fr;
+	gap : 20px;
 	-webkit-box-align : center;
 	-ms-flex-align : center;
 	align-items : center;
-	-webkit-box-pack : start;
-	-ms-flex-pack : start;
-	justify-content : flex-start;
-	-webkit-box-orient : horizontal;
-	-webkit-box-direction : normal;
-	-ms-flex-direction : row;
-	    flex-direction : row;
-	gap : 33px;
-	-ms-flex-wrap : nowrap;
-	    flex-wrap : nowrap;
+	padding : 0 15px 0 0;
 }
 
 .helperCard__icon {
@@ -4316,6 +4321,7 @@ opacity-h {
 }
 
 .indexMain__left-add {
+	max-width : 80%;
 	position : absolute;
 	top : 45px;
 	left : 90px;
@@ -6380,9 +6386,11 @@ opacity-h {
 	line-height : 130%;
 	color : #141413;
 	font-style : normal;
+	max-width : 80%;
 }
 
-.casesBase__subtitle a:nth-child(1) {
+.casesBase__subtitle a {
+	width : 100%;
 	font-weight : 300;
 	font-size : 14px;
 	line-height : 130%;
@@ -6390,7 +6398,8 @@ opacity-h {
 	font-style : normal;
 }
 
-.casesBase__subtitle a:nth-child(2) {
+.casesBase__subtitle span {
+	width : 100%;
 	font-weight : 300;
 	font-size : 14px;
 	line-height : 130%;
@@ -8347,6 +8356,7 @@ opacity-h {
 	position : absolute;
 	top : 43px;
 	left : 0;
+	max-width : 80%;
 	font-weight : 300;
 	font-size : 14px;
 	line-height : 130%;
@@ -9386,6 +9396,7 @@ opacity-h {
 }
 
 .news-list__subtitle {
+	max-width : 80%;
 	font-weight : 300;
 	font-size : 14px;
 	line-height : 130%;
@@ -9566,6 +9577,7 @@ opacity-h {
 }
 
 .news-detail__subtitle {
+	max-width : 80%;
 	font-weight : 300;
 	font-size : 14px;
 	line-height : 130%;
@@ -9669,6 +9681,7 @@ opacity-h {
 }
 
 .goods-main__subtitle {
+	max-width : 80%;
 	font-weight : 300;
 	font-size : 14px;
 	line-height : 130%;
@@ -10796,6 +10809,7 @@ opacity-h {
 }
 
 .articles__subtitle {
+	max-width : 80%;
 	font-weight : 300;
 	font-size : 14px;
 	line-height : 130%;
@@ -11002,6 +11016,7 @@ opacity-h {
 }
 
 .article-equipment__subtitle {
+	max-width : 80%;
 	font-weight : 300;
 	font-size : 14px;
 	line-height : 130%;
@@ -15195,6 +15210,11 @@ opacity-h {
 		gap : 20px;
 	}
 
+	.indexMain__left-add {
+		left : 17px;
+		top : 20px;
+	}
+
 	.indexAbout {
 		padding : 50px 0;
 	}
@@ -15256,11 +15276,6 @@ opacity-h {
 
 	.indexMain-static__item:nth-child(3) {
 		display : none;
-	}
-
-	.indexMain__left-add {
-		left : 17px;
-		top : 20px;
 	}
 
 	.indexSteps__icon p {

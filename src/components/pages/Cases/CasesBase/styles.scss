@@ -8,10 +8,13 @@
 	}
 	&__subtitle {
 		@include fontStyle(14px, 300, 130%, $color-black);
-		& a:nth-child(1) {
+		max-width: 80%;
+		& a {
+			width: 100%;
 			@include fontStyle(14px, 300, 130%, $color-black);
 		}
-		& a:nth-child(2) {
+		& span {
+			width: 100%;
 			@include fontStyle(14px, 300, 130%, $color-gray);
 		}
 	}

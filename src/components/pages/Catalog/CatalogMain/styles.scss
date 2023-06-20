@@ -41,6 +41,7 @@
 			position: absolute;
 			top: 43px;
 			left: 0;
+			max-width: 80%;
 			@include fontStyle(14px, 300, 130%, $color-white);
 			& span {
 				color: $color-gray;

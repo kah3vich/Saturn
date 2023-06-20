@@ -1,1 +1,1 @@
-export const CasesBase = () => {}
+export const CasesBase = () => {};

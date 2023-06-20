@@ -24,10 +24,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="img/favicon/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicon/apple-touch-icon-1024x1024.png">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230619222125">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20230619222125" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230619222125">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230619222125"></script>
+    <link rel="stylesheet" href="css/style.min.css?_v=20230620212350">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20230620212350" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230620212350">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230620212350"></script>
   </head>
   <body>
     <header class="header"> 
@@ -173,18 +173,36 @@
       </ul>
     </div>
     <div class="menu__mobile display-n">
-      <div class="menu__mobile-accordion"> 
-        <div class="menu__mobile-accordion__header">
+      <div class="menu__mobile-accordion" value-index="1">
+        <div class="menu__mobile-accordion__header" data-index="1">
           <div class="menu__mobile-accordion__title">Продукция</div>
           <button class="menu__mobile-accordion__close"><img src="./svg/header/array.svg" alt=""></button>
         </div>
         <div class="menu__mobile-accordion__content">
-          <div class="menu__mobile-accord">
-            <div class="menu__mobile-accord__header">
+          <div class="menu__mobile-accord" value-catalog="1">
+            <div class="menu__mobile-accord__header" data-catalog="1">
               <div class="menu__mobile-accord__title">Металлические стеллажи</div>
               <button class="menu__mobile-accord__close"><img src="./svg/header/plus.svg" alt=""><img src="./svg/header/minus.svg" alt=""></button>
             </div>
-            <div class="menu__mobile-accord__content"><a class="menu__mobile-item" href="#">Все доп оборудование</a></div>
+            <div class="menu__mobile-accord__content"><a class="menu__mobile-item" href="#">Мобильные стеллажи </a><a class="menu__mobile-item" href="#">Стеллажи с электроприводом</a><a class="menu__mobile-item" href="#">Раздвижные стеллажи</a><a class="menu__mobile-item" href="#">Стационарные стеллажи</a><a class="menu__mobile-item" href="#">Полочные среднегрузовые cтеллажи </a><a class="menu__mobile-item" href="#">Передвижные cреднегрузовые</a><a class="menu__mobile-item" href="#">Стеллажи с ячейками для склада</a><a class="menu__mobile-item" href="#">Стеллажи с выкатными платформами</a></div>
+          </div>
+          <div class="menu__mobile-accord" value-catalog="1">
+            <div class="menu__mobile-accord__header" data-catalog="2">
+              <div class="menu__mobile-accord__title">Стеллажи для архива</div>
+              <button class="menu__mobile-accord__close"><img src="./svg/header/plus.svg" alt=""><img src="./svg/header/minus.svg" alt=""></button>
+            </div>
+            <div class="menu__mobile-accord__content"><a class="menu__mobile-item" href="#">Стеллажи с дверями </a><a class="menu__mobile-item" href="#">Стеллажи с выдвижными ящиками</a><a class="menu__mobile-item" href="#">Ячеистые стеллажи </a><a class="menu__mobile-item" href="#">Секционные стеллажи </a><a class="menu__mobile-item" href="#">Стеллажи для одежды </a><a class="menu__mobile-item" href="#">Стеллажи для документов </a><a class="menu__mobile-item" href="#">Стеллажи для чертежей </a><a class="menu__mobile-item" href="#">Стеллажи для коробов</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="menu__mobile-accordion">
+        <div class="menu__mobile-accordion__header" data-index="2">
+          <div class="menu__mobile-accordion__title">Закупкам</div>
+          <button class="menu__mobile-accordion__close"><img src="./svg/header/array.svg" alt=""></button>
+        </div>
+        <div class="menu__mobile-accordion__content">
+          <div class="menu__mobile-accord"> 
+            <div class="menu__mobile-list"><a class="menu__mobile-accord__title" href="#">Гос.сектору</a><a class="menu__mobile-accord__title" href="#">Промышленности и бизнесу</a><a class="menu__mobile-accord__title" href="#">Гарантии</a><a class="menu__mobile-accord__title" href="#">Оплата и доставка</a><a class="menu__mobile-accord__title" href="#">Изготовление по заказу</a><a class="menu__mobile-accord__title" href="#">Бесплатный проект</a></div>
           </div>
         </div>
       </div><a class="menu__mobile-link" href="#">Закупкам</a><a class="menu__mobile-link" href="#">Контакты</a>
@@ -421,7 +439,7 @@
       </div>
     </section>
     <button class="buttonTop"><img src="./svg/components/buttonTop/array.svg" alt="array"></button>
-    <script src="js/main.js?_v=20230619222125"></script>
+    <script src="js/main.js?_v=20230620212350"></script>
   </body>
   <script data-b24-form="click/40/5dsrxs" data-skip-moving="true">
     (function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://cdn-ru.bitrix24.ru/b19623448/crm/form/loader_40.js');
