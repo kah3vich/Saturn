@@ -1004,7 +1004,7 @@ opacity-h {
 }
 
 .menu__mobile-accordion__title {
-	font-weight : 400;
+	font-weight : 700;
 	font-size : 15px;
 	line-height : 17px;
 	color : #201547;
@@ -1087,7 +1087,7 @@ opacity-h {
 }
 
 .menu__mobile-accord__title {
-	font-weight : 400;
+	font-weight : 700;
 	font-size : 15px;
 	line-height : 17px;
 	color : #201547;
@@ -1097,7 +1097,7 @@ opacity-h {
 	position : relative;
 	margin-top : 0px;
 	padding : 0 34px;
-	background : #a5a5a5;
+	background : #e2e2e2;
 	height : 0;
 	-webkit-transition : all 0.5s ease-in-out;
 	     -o-transition : all 0.5s ease-in-out;
@@ -1119,6 +1119,14 @@ opacity-h {
 	gap : 15px;
 }
 
+.menu__mobile-accord__content .menu__mobile-item:first-child {
+	margin-top : 10px;
+}
+
+.menu__mobile-accord__content .menu__mobile-item:last-child {
+	margin-bottom : 10px;
+}
+
 .menu__mobile-accord__active .menu__mobile-accord__close img:nth-child(1) {
 	display : none;
 }
@@ -1136,7 +1144,7 @@ opacity-h {
 .menu__mobile-item {
 	font-weight : 400;
 	font-size : 15px;
-	line-height : 44px;
+	line-height : 20px;
 	letter-spacing : -0.5px;
 	text-decoration-line : underline;
 	color : #201547;
