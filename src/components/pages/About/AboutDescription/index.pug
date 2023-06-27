@@ -15,44 +15,47 @@ section.about-description
                     span 100 городов в 5 странах.
             .about-description__video(aria-video="https://www.youtube.com/embed/fXTezCok-6s")
                 +videoPlaceholder('./img/pages/about/video.png')
-        .about-description__block 
-            .about-description__slider
-                .swiper.aboutDescriptionSwiper
-                    .swiper-wrapper
-                        each _, i in Array(6)
-                            .swiper-slide  
-                                .about-description__slider-item 
-                                    img(src="./img/pages/about/slide.png" alt="")
-                .swiper-controls
-                    .swiper-button-next
-                        img(src="./svg/pages/about/arrow-next.svg" alt="")
-                    .swiper-button-prev
-                        img(src="./svg/pages/about/arrow-prev.svg" alt="")
-                    .swiper-pagination
-            .about-description__content 
-                p.about-description__text 
-                    | Станочный парк свыше 
-                    span 80 единиц
-                    br 
-                    | постоянно расширяется и модернизируется.
-                    br 
-                    br
-                    span Ведётся разработка 
-                    | и внедрение в модельную линейку
-                    | новых образцов реализуемой продукции.
-                    br 
-                    br
-                    span Полный цикл производства 
-                    | позволяет контролировать
-                    | работу на каждом ее этапе.
-                    br 
-                    br
-                    | Более 
-                    span 100 человек 
-                    | объединяют свои усилия и талант
-                    | для решения самых сложных задач.
-                    br 
-                    br
-                    | А склад готовой продукции в 
-                    span 2 000 м2 
-                    | позволяет производить отгрузку в течение 5 рабочих дней
+        +buttonYellow('СКАЧАТЬ ПРЕЗЕНТАЦИЮ')
+        .about-description__wrapper 
+            .about-description__block
+                .about-description__slider
+                    .swiper.aboutDescriptionSwiper
+                        .swiper-wrapper
+                            each _, i in Array(6)
+                                .swiper-slide  
+                                    .about-description__slider-item 
+                                        img(src="./img/pages/about/slide.png" alt="")
+                    .swiper-controls
+                        .swiper-button-next
+                            img(src="./svg/pages/about/arrow-next.svg" alt="")
+                        .swiper-button-prev
+                            img(src="./svg/pages/about/arrow-prev.svg" alt="")
+                        .swiper-pagination
+                .about-description__content 
+                    p.about-description__text 
+                        | Станочный парк свыше 
+                        span 80 единиц
+                        br 
+                        | постоянно расширяется и модернизируется.
+                        br 
+                        br
+                        span Ведётся разработка 
+                        | и внедрение в модельную линейку
+                        | новых образцов реализуемой продукции.
+                        br 
+                        br
+                        span Полный цикл производства 
+                        | позволяет контролировать
+                        | работу на каждом ее этапе.
+                        br 
+                        br
+                        | Более 
+                        span 100 человек 
+                        | объединяют свои усилия и талант
+                        | для решения самых сложных задач.
+                        br 
+                        br
+                        | А склад готовой продукции в 
+                        span 2 000 м2 
+                        | позволяет производить отгрузку в течение 5 рабочих дней
+            +buttonYellow('БЕСПЛАТНЫЙ ПРОЕКТ')

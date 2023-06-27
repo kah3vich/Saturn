@@ -13,6 +13,10 @@
 		letter-spacing: -0.5px;
 		@include fontStyle(20px, 400, 31px, $color-black);
 	}
+	&__buttons {
+		display: flex;
+		gap: 20px;
+	}
 }
 
 //| Media
@@ -25,5 +29,8 @@
 	.goods-description__text {
 		font-size: 22px;
 		line-height: 37px;
+	}
+	.goods-description__buttons {
+		flex-direction: column;
 	}
 }

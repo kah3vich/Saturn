@@ -1,0 +1,50 @@
+mixin designsOne()
+    .designs
+        .containers
+            .designs__title Преимущества конструкции
+            .designs-one__content
+                .designs-one__list 
+                    each _, i in Array(3)
+                        +designsCard()
+                .designs-one__icon 
+                    img(src="./svg/designs/one.svg" alt="")
+                .designs-one__list 
+                    each _, i in Array(3)
+                        +designsCard()
+
+mixin designsTwo()
+    .designs
+        .containers
+            .designs__title Преимущества конструкции
+            .designs-two__content
+                .designs-two__list 
+                    each _, i in Array(4)
+                        +designsCard()
+                .designs-two__icon 
+                    img(src="./svg/designs/two.svg" alt="")
+                .designs-two__list 
+                    each _, i in Array(4)
+                        +designsCard()
+
+mixin designsCard()
+    .designs-card 
+        .designs-card__number 1
+        .designs-card__title Сталь от лидера рынка
+        .designs-card__text Высококачественный металопрокат от лидера рынка
+
+mixin designsThree()
+    .designs
+        .containers
+            .designs__title Преимущества конструкции
+            .designs-three__content
+                .designs-three__icon 
+                    img(src="./img/components/designs/three.png" alt="")
+                .designs-three__list 
+                    each _, i in Array(12)
+                        +designsElement()
+
+mixin designsElement()
+    .designs-element 
+        .designs-element__number 1
+        .designs-element__title Сталь от лидера рынка
+        .designs-element__text Высококачественный металопрокат от лидера рынка

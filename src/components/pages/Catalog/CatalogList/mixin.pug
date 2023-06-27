@@ -1,8 +1,21 @@
-mixin catalogCard()
+mixin catalogCard(type = 1)
+    if type == 1
+        +catalogCardOne()
+    if type == 2
+        +catalogCardTwo()
+    if type == 3
+        +catalogCardThree()
+    if type == 4
+        +catalogCardFour()
+    else
+        +catalogCardFive()
+
+
+mixin catalogCardOne()
     .catalogCard
         .catalogCard__banner 
             img(src="./img/pages/catalog/catalogList/card.png" alt="")
-        .catalogCard__content 
+        .catalogCard__content
             h5.catalogCard__content-title Передвижные стеллажи серия
             .catalogCard__content-type 
                 .catalogCard__content-icon 
@@ -15,50 +28,136 @@ mixin catalogCard()
                     span до 80кг 
                 li.catalogCard__content-description Высота стеллажа, 
                     span от 1800 - 3500мм
-            .catalogCard__content-price ЦЕНА: 
-                span от 16 660 ₽
-        .catalogCard__hover
-            h5.catalogCard__hover-title Передвижные стеллажи серия
-            .catalogCard__hover-type 
-                .catalogCard__hover-icon 
-                    p Л
-                .catalogCard__hover-subtitle
-                    p без фальшпола
-            p.catalogCard__hover-text Базовый вариант стеллажей для хранилищ библиотек. Небольшой вес минимизирует нагрузку на перекрытия.
-            ul.catalogCard__hover-descriptions
-                li.catalogCard__hover-description Нагрузка на полку, 
-                    span до 80кг 
-                li.catalogCard__hover-description Высота стеллажа, 
-                    span от 1800 - 3500мм
-            table.catalogCard__hover-statics 
+            table.catalogCard__content-statics 
                 tr
-                    td.catalogCard__hover-static
+                    td.catalogCard__content-static
                         p Высота секции, мм. 
                         span до 2700
                 tr
-                    td.catalogCard__hover-static
+                    td.catalogCard__content-static
                         p Длина, мм. 
                         span до 8000
                 tr
-                    td.catalogCard__hover-static
+                    td.catalogCard__content-static
                         p Длина полки, мм. 
                         span до 1250
                 tr
-                    td.catalogCard__hover-static
+                    td.catalogCard__content-static
                         p Глубина, мм. 
                         span от 200 до 450
                 tr
-                    td.catalogCard__hover-static
+                    td.catalogCard__content-static
                         p Нагрузка на полку, кг. 
                         span до 80
                 tr
-                    td.catalogCard__hover-static
+                    td.catalogCard__content-static
                         p На секцию, кг. 
                         span до 960
-            .catalogCard__hover-price ЦЕНА: 
+            .catalogCard__content-price ЦЕНА: 
                 span от 16 660 ₽
-            .catalogCard__hover-buttons 
-                a(href="").catalogCard__hover-button
+            .catalogCard__content-buttons
+                a(href="").catalogCard__content-button
                     p Купить
-                a(href="").catalogCard__hover-button
+                a(href="").catalogCard__content-button
                     p Подробнее
+
+mixin catalogCardTwo()
+    .catalogCard
+        .catalogCard__banner 
+            img(src="./img/pages/catalog/catalogList/card.png" alt="")
+        .catalogCard__content
+            h5.catalogCard__content-title Передвижные стеллажи серия
+            .catalogCard__content-type 
+                .catalogCard__content-icon 
+                    p Л
+                .catalogCard__content-subtitle
+                    p без фальшпола
+            p.catalogCard__content-text Базовый вариант стеллажей для хранилищ библиотек. Небольшой вес минимизирует нагрузку на перекрытия.
+            .catalogCard__content-price ЦЕНА: 
+                span от 16 660 ₽
+            .catalogCard__content-buttons
+                a(href="").catalogCard__content-button
+                    p Купить
+                a(href="").catalogCard__content-button
+                    p Подробнее
+
+mixin catalogCardThree()
+    .catalogCard
+        .catalogCard__banner.catalogCard__banner-scale
+            img(src="./img/pages/catalog/catalogList/card.png" alt="")
+        .catalogCard__content
+            h5.catalogCard__content-title Передвижные стеллажи серия
+            .catalogCard__content-type 
+                .catalogCard__content-icon 
+                    p Л
+                .catalogCard__content-subtitle
+                    p без фальшпола
+            p.catalogCard__content-text Базовый вариант стеллажей для хранилищ библиотек. Небольшой вес минимизирует нагрузку на перекрытия.
+            .catalogCard__content-price ЦЕНА: 
+                span от 16 660 ₽
+            .catalogCard__content-buttons
+                a(href="").catalogCard__content-button
+                    p Купить
+
+mixin catalogCardFour()
+    .catalogCard
+        .catalogCard__banner.catalogCard__banner-height
+            img(src="./img/pages/catalog/catalogList/card.png" alt="")
+        .catalogCard__content
+            h5.catalogCard__content-title Передвижные стеллажи серия
+            .catalogCard__content-type 
+                .catalogCard__content-icon 
+                    p Л
+                .catalogCard__content-subtitle
+                    p без фальшпола
+            p.catalogCard__content-text Базовый вариант стеллажей для хранилищ библиотек. Небольшой вес минимизирует нагрузку на перекрытия.
+            ul.catalogCard__content-descriptions
+                li.catalogCard__content-description Нагрузка на полку, 
+                    span до 80кг 
+                li.catalogCard__content-description Высота стеллажа, 
+                    span от 1800 - 3500мм
+            table.catalogCard__content-statics 
+                tr
+                    td.catalogCard__content-static
+                        p Высота секции, мм. 
+                        span до 2700
+                tr
+                    td.catalogCard__content-static
+                        p Длина, мм. 
+                        span до 8000
+                tr
+                    td.catalogCard__content-static
+                        p Длина полки, мм. 
+                        span до 1250
+                tr
+                    td.catalogCard__content-static
+                        p Глубина, мм. 
+                        span от 200 до 450
+                tr
+                    td.catalogCard__content-static
+                        p Нагрузка на полку, кг. 
+                        span до 80
+                tr
+                    td.catalogCard__content-static
+                        p На секцию, кг. 
+                        span до 960
+            .catalogCard__content-price ЦЕНА: 
+                span от 16 660 ₽
+            .catalogCard__content-buttons
+                a(href="").catalogCard__content-button
+                    p Купить
+                a(href="").catalogCard__content-button
+                    p Подробнее
+
+mixin catalogCardFive()
+    .catalogCard
+        .catalogCard__banner
+            img(src="./img/pages/catalog/catalogList/card.png" alt="")
+        .catalogCard__content
+            h5.catalogCard__content-title Передвижные стеллажи серия
+            .catalogCard__content-type 
+                .catalogCard__content-icon 
+                    p Л
+                .catalogCard__content-subtitle
+                    p без фальшпола
+            p.catalogCard__content-text Базовый вариант стеллажей для хранилищ библиотек. Небольшой вес минимизирует нагрузку на перекрытия.

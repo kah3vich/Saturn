@@ -2,8 +2,20 @@ section.catalog-list
     .containers
         h3.catalog-list__title Каталог
         ul.catalog-list__list
-            each _, i in Array(8)
+            each _, i in Array(3)
                 li.catalog-list__item
-                    +catalogCard()
+                    +catalogCard(1)
+            each _, i in Array(3)
+                li.catalog-list__item
+                    +catalogCard(2)
+            each _, i in Array(3)
+                li.catalog-list__item
+                    +catalogCard(3)
+            each _, i in Array(3)
+                li.catalog-list__item
+                    +catalogCard(4)
+            each _, i in Array(3)
+                li.catalog-list__item
+                    +catalogCard(5)
         .catalog-list__button 
             +buttonGray('Скачать каталог', '#')
