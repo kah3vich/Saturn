@@ -7,7 +7,7 @@ mixin catalogCard(type = 1)
         +catalogCardThree()
     if type == 4
         +catalogCardFour()
-    else
+    if type == 5
         +catalogCardFive()
 
 
@@ -82,7 +82,7 @@ mixin catalogCardTwo()
                     p Подробнее
 
 mixin catalogCardThree()
-    .catalogCard
+    .catalogCard 
         .catalogCard__banner.catalogCard__banner-scale
             img(src="./img/pages/catalog/catalogList/card.png" alt="")
         .catalogCard__content
