@@ -55,9 +55,16 @@
 			position: absolute;
 			top: 45px;
 			left: 90px;
+			@include flexStyle(flex-start, flex-start, row, 6px, wrap);
 			@include fontStyle(14px, 300, 130%, $color-white);
+			& a {
+				@include fontStyle(14px, 300, 130%, $color-white);
+			}
 			& span {
 				color: $color-gray;
+				& a {
+					color: $color-gray;
+				}
 			}
 		}
 		&-title {

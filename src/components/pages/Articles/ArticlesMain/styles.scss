@@ -8,9 +8,16 @@
 	}
 	&__subtitle {
 		max-width: 80%;
+		@include flexStyle(flex-start, flex-start, row, 6px, wrap);
 		@include fontStyle(14px, 300, 130%, $color-black);
+		& a {
+			@include fontStyle(14px, 300, 130%, $color-black);
+		}
 		& span {
 			color: $color-gray;
+			& a {
+				color: $color-gray;
+			}
 		}
 	}
 	&__title {

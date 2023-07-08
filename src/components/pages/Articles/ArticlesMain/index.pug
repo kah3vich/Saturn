@@ -1,7 +1,13 @@
 section.articles
     .containers 
-        p.articles__subtitle Главная / 
-            span Помощь / Статьи
+        .articles__subtitle 
+            a(href="#") Главная 
+            | / 
+            span 
+                a(href="#") Помощь 
+            | / 
+            span 
+                a(href="#") Статьи
         h1.articles__title Статьи
         ul.articles__list
             each _, i in Array(4)

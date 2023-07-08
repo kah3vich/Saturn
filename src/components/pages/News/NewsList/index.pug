@@ -1,7 +1,10 @@
 section.news-list 
     .containers 
-        p.news-list__subtitle Главная / 
-            span Кейсы
+        .news-list__subtitle 
+            a(href="#") Главная 
+            | / 
+            span 
+                a(href="#") Кейсы
         h1.news-list__title Новости
         ul.news-list__list 
             each _, i in Array(8)   

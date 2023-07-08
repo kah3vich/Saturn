@@ -42,9 +42,16 @@
 			top: 43px;
 			left: 0;
 			max-width: 80%;
-			@include fontStyle(14px, 300, 130%, $color-white);
+			@include flexStyle(flex-start, flex-start, row, 6px, wrap);
+			@include fontStyle(14px, 300, 130%, $color-black);
+			& a {
+				@include fontStyle(14px, 300, 130%, $color-black);
+			}
 			& span {
 				color: $color-gray;
+				& a {
+					color: $color-gray;
+				}
 			}
 		}
 		&-title {
