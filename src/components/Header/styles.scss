@@ -220,6 +220,9 @@
 			height: 24px;
 			background-color: transparent;
 			cursor: pointer;
+			opacity: 0;
+			position: relative;
+			z-index: 2;
 		}
 		& img {
 			position: absolute;
@@ -274,7 +277,7 @@
 				cursor: auto;
 				visibility: visible;
 				opacity: 1;
-				height: 700px;
+				height: 760px;
 			}
 		}
 		&-catalog {
@@ -284,9 +287,6 @@
 			overflow-y: scroll;
 			overflow-x: hidden;
 			height: 100%;
-			&::-webkit-scrollbar {
-				width: 0;
-			}
 		}
 		&-content {
 			width: calc(100% - 340px);
@@ -552,6 +552,10 @@
 @media (max-width: 1370px) {
 	.navbar .containers {
 		gap: 10px;
+	}
+	.navbar__arrow > p,
+	.navbar__link > p {
+		font-size: 15px;
 	}
 }
 

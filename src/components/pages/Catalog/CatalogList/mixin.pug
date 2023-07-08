@@ -83,7 +83,7 @@ mixin catalogCardTwo()
 
 mixin catalogCardThree()
     .catalogCard 
-        a(href="#").catalogCard__banner.catalogCard__banner-scale
+        .catalogCard__banner.catalogCard__banner-open(aria-photo="./img/pages/catalog/catalogList/card.png")
             img(src="./img/pages/catalog/catalogList/card.png" alt="")
         .catalogCard__content
             a(href="#").catalogCard__content-title Передвижные стеллажи серия
@@ -151,7 +151,7 @@ mixin catalogCardFour()
 
 mixin catalogCardFive()
     .catalogCard
-        a(href="#").catalogCard__banner
+        .catalogCard__banner.catalogCard__banner-open(aria-photo="./img/pages/catalog/catalogList/card.png")
             img(src="./img/pages/catalog/catalogList/card.png" alt="")
         .catalogCard__content
             a(href="#").catalogCard__content-title Передвижные стеллажи серия

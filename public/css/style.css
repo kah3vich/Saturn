@@ -585,6 +585,9 @@ opacity-h {
 	height : 24px;
 	background-color : transparent;
 	cursor : pointer;
+	opacity : 0;
+	position : relative;
+	z-index : 2;
 }
 
 .navbar__search img {
@@ -691,7 +694,7 @@ opacity-h {
 	cursor : auto;
 	visibility : visible;
 	opacity : 1;
-	height : 700px;
+	height : 760px;
 }
 
 .navbar__arrow-catalog {
@@ -716,10 +719,6 @@ opacity-h {
 	overflow-y : scroll;
 	overflow-x : hidden;
 	height : 100%;
-}
-
-.navbar__arrow-catalog::-webkit-scrollbar {
-	width : 0;
 }
 
 .navbar__arrow-content {
@@ -3925,6 +3924,30 @@ opacity-h {
 	color : #000000;
 	background : #f2ce14;
 	border-radius : 100px;
+	position : relative;
+}
+
+.search__button input {
+	opacity : 0;
+	position : absolute;
+	top : 50%;
+	left : 50%;
+	-webkit-transform : translate(-50%, -50%);
+	    -ms-transform : translate(-50%, -50%);
+	        transform : translate(-50%, -50%);
+	z-index : 2;
+	width : 100%;
+	height : 100%;
+}
+
+.search__button p {
+	position : absolute;
+	top : 50%;
+	left : 50%;
+	-webkit-transform : translate(-50%, -50%);
+	    -ms-transform : translate(-50%, -50%);
+	        transform : translate(-50%, -50%);
+	z-index : 1;
 }
 
 .search__add {
@@ -13022,6 +13045,12 @@ opacity-h {
 	.navbar .containers {
 		gap : 10px;
 	}
+
+	.navbar__arrow > p
+	,
+	.navbar__link > p {
+		font-size : 15px;
+	}
 }
 
 @media (max-width: 1350px) {
@@ -13749,10 +13778,10 @@ opacity-h {
 
 @media (max-width: 1100px) {
 	.connectContent .containers {
-		-webkit-box-orient : vertical;
-		-webkit-box-direction : normal;
-		-ms-flex-direction : column;
-		    flex-direction : column;
+		-webkit-box-orient : vertical !important;
+		-webkit-box-direction : normal !important;
+		-ms-flex-direction : column !important;
+		    flex-direction : column !important;
 	}
 
 	.connectContent__content {
@@ -14525,6 +14554,10 @@ opacity-h {
 
 	.designs .containers {
 		gap : 25px;
+	}
+
+	.connectContent {
+		padding : 30px 0;
 	}
 
 	.statusType-subtitle
@@ -15657,6 +15690,10 @@ opacity-h {
 }
 
 @media (max-width: 400px) {
+	.footer__contact-item {
+		gap : 10px;
+	}
+
 	.space__plane {
 		top : 50%;
 		left : auto;

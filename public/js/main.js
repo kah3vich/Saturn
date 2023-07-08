@@ -416,7 +416,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ModalPhoto": function() { return /* binding */ ModalPhoto; }
 /* harmony export */ });
 var ModalPhoto = function ModalPhoto() {
-  $('.slider__item, .articleDetailCard__banner, .productionStages__banner').on('click', function () {
+  $('.slider__item, .articleDetailCard__banner, .productionStages__banner, .catalogCard__banner-open').on('click', function () {
     var dataPhoto = $(this).attr('aria-photo');
     $('.modalPhoto__wrapper img').attr('src', dataPhoto);
     $('.modalPhoto').removeClass('display-n');

@@ -120,3 +120,9 @@
 		@include flexStyle(flex-start, flex-start, column, 15px);
 	}
 }
+
+@media (max-width: 400px) {
+	.footer__contact-item {
+		gap: 10px;
+	}
+}

@@ -1,8 +1,10 @@
 section.search
     .containers
-        .search__control 
+        form.search__control 
             input.search__input(placeholder="Поиск по сайту")
-            button.search__button Найти 
+            .search__button
+                input(type="submit") 
+                p Найти
         .search__add 
             p.search__count Результаты 1-7
         .search__list 
