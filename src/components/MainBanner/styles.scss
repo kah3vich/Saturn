@@ -55,7 +55,7 @@
 			top: 43px;
 			left: 0;
 			width: max-content !important;
-			@include flexStyle(center, center, row, 2px);
+			@include flexStyle(center, center, row, 6px);
 			@include fontStyle(14px, 300, 19px, $color-white);
 			& a:nth-child(1) {
 				@include fontStyle(14px, 300, 19px, $color-white);

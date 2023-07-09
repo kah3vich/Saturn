@@ -1,0 +1,20 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Контакты";
+
+block content
+	include ../components/Header/index.pug
+
+	+mainBanner('ОТГРУЗКА И ДОСТАВКА В ЛЮБУЮ ТОЧКУ РОССИИ И СНГ. СБОРКА.', '', '', './img/pages/contact/banner.png')
+
+	include ../components/FormAdd/index.pug
+
+	include ../components/Footer/index.pug
+
+block modals 
+	include ../components/modals/ModalVideo/index.pug
+	include ../components/ButtonTop/index.pug
+
+block scripts
+	script(src="js/main.js")

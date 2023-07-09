@@ -1,1 +1,1 @@
-export const FormBase = () => {}
+export const FormBase = () => {};
