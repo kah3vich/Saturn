@@ -1,7 +1,13 @@
 .article-detail {
 	width: 100%;
 	padding: 75px 0;
+
+	&__add {
+		top: -40px;
+		position: relative;
+	}
 	& .containers {
+		position: relative;
 		width: 100%;
 		@include flexStyle(flex-start, flex-start, column, 30px);
 	}

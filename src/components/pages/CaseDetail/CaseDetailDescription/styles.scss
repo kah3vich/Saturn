@@ -8,7 +8,7 @@
 	&__list {
 		width: 100%;
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 		gap: 75px 40px;
 	}
 	&__item {
@@ -46,5 +46,11 @@
 	}
 	&__text {
 		@include fontStyle(25px, 400, 36px, $color-black);
+	}
+}
+
+@media (max-width: 1280px) {
+	.caseDetailDescriptionCard {
+		gap: 10px;
 	}
 }

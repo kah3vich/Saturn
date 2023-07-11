@@ -306,3 +306,12 @@
 		background-color: transparent;
 	}
 }
+
+@media (max-width: 400px) {
+	.indexCase__slider .swiper-button-next {
+		right: -17px !important;
+		width: 80px;
+		height: 80px;
+		bottom: -80px;
+	}
+}

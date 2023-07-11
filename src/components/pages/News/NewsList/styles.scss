@@ -99,9 +99,6 @@
 		width: 91px;
 		height: 91px;
 	}
-	.newsCard__content-block {
-		display: none;
-	}
 	.newsCard__content {
 		width: calc(100% - 91px);
 		height: 100%;
@@ -113,5 +110,9 @@
 	.news-list__title {
 		font-size: 25px;
 		line-height: 35px;
+	}
+	.newsCard__content-text {
+		text-overflow: clip;
+		display: block;
 	}
 }

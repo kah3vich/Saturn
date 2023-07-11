@@ -12,7 +12,7 @@
 	&__list {
 		width: 100%;
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 		gap: 25px 20px;
 	}
 	&__item {
@@ -29,7 +29,7 @@
 	background: $color-light-yellow-green;
 	border-radius: 20px;
 	@include flexStyle(flex-start, flex-start, column);
-	width: 406px;
+	max-width: 406px;
 	position: relative;
 	cursor: pointer;
 	&:hover {
@@ -48,6 +48,8 @@
 
 		& img {
 			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 
 		&-height {
@@ -171,5 +173,14 @@
 		& img {
 			height: 250px;
 		}
+	}
+}
+
+@media (max-width: 400px) {
+	.catalogCard__content {
+		padding: 15px;
+	}
+	.catalogCard__banner {
+		height: 200px;
 	}
 }
