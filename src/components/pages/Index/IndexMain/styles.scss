@@ -74,7 +74,7 @@
 			display: -webkit-box;
 			-webkit-line-clamp: 4;
 			-webkit-box-orient: vertical;
-			width: 450px;
+			width: 480px;
 			& span {
 				color: $color-yellow;
 			}
@@ -310,8 +310,9 @@
 	&__list {
 		margin: 0 auto;
 		width: 100%;
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
 		gap: 75px;
 	}
 }

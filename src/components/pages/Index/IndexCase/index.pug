@@ -16,9 +16,19 @@ section.indexCase
         .indexCase__slider
             .swiper.indexCaseSlider
                 .swiper-wrapper
-                    each _, i in Array(7)
                         .swiper-slide 
-                            +indexCaseCard('./img/index/indexCase/photo.png', 'БИБЛИОТЕКА', 'Установка стационарных стеллажей.', '/')
+                            +indexCaseCard('./img/index/indexCase/dec-1.png', 'Стеллаж в холодильник', 'Мобильный стеллаж успешно работает в холодильной камере при t - 35 градусов', '/')
+                        .swiper-slide 
+                            +indexCaseCard('./img/index/indexCase/dec-2.png', 'Как разместить в 2 раза больше?', 'В действующем помещении разместили в 2 раза больше карточек', '/')
+                        .swiper-slide 
+                            +indexCaseCard('./img/index/indexCase/dec-3.png', 'Порядок на производстве', 'Укомплектовали производственный цех стеллажами с высокой нагрузкой', '/')
+                        .swiper-slide 
+                            +indexCaseCard('./img/index/indexCase/dec-1.png', 'Стеллаж в холодильник', 'Мобильный стеллаж успешно работает в холодильной камере при t - 35 градусов', '/')
+                        .swiper-slide 
+                            +indexCaseCard('./img/index/indexCase/dec-2.png', 'Как разместить в 2 раза больше?', 'В действующем помещении разместили в 2 раза больше карточек', '/')
+                        .swiper-slide 
+                            +indexCaseCard('./img/index/indexCase/dec-3.png', 'Порядок на производстве', 'Укомплектовали производственный цех стеллажами с высокой нагрузкой', '/')
+                        
             .swiper-controls
                 .swiper-pagination
                 .swiper-button-next

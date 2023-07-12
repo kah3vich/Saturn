@@ -21,12 +21,12 @@ mixin indexMainStatic()
             ul.indexMain-static__list
                 li.indexMain-static__item 
                     +statusType('Основан в', '1 990', 'году')
-                li.indexMain-static__item 
-                    +statusType('Оборудовано', '3 500', 'объектов разной сложности')
+                //- li.indexMain-static__item 
+                //-     +statusType('Оборудовано', '3 500', 'объектов разной сложности')
                 li.indexMain-static__item 
                     +statusTypeDouble('География поставок', '100', '5', 'городов', 'стран')
-                li.indexMain-static__item 
-                    +statusType('Побед', '500+', 'В тендерах')
+                //- li.indexMain-static__item 
+                //-     +statusType('Побед', '500+', 'В тендерах')
                 li.indexMain-static__item 
                     +statusType('Поставок', '>6000', 'Оборудования')
 
@@ -35,12 +35,74 @@ mixin indexMain(add, button, banner = true, addButton)
         .indexMain__slider
             .swiper.indexMainSwiper
                 .swiper-wrapper
-                    each _, i in Array(6)
                         .swiper-slide 
                             .indexMain__containers
                                 .indexMain__containers-left 
                                 .indexMain__containers-right 
-                                    img(src="./img/index/indexMain/bg.png" alt="")
+                                    img(src="./img/index/indexMain/dec-1.png" alt="")
+
+                            .containers 
+                                .indexMain__left 
+                                    .indexMain__left-container
+                                        .indexMain__left-block
+                                            if add 
+                                                .indexMain__left-add 
+                                                    a(href="#") Главная 
+                                                    | / 
+                                                    span 
+                                                        a(href="#") Продукция 
+                                                    | / 
+                                                    span 
+                                                        a(href="#") Металлические стеллажи 
+                                                    | / 
+                                                    span 
+                                                        a(href="#") По виду
+                                            p.indexMain__left-title 
+                                                span 
+                                                    | Работаете с тяжелыми 
+                                                    br 
+                                                    | грузами? 
+                                                | Произведем для 
+                                                | Вас стеллажи
+                                            p.indexMain__left-subtitle С нагрузкой на полку до 1400 кг с полкой
+                                                br
+                                                | полного выдвижения и возможностью 
+                                                br 
+                                                | механического и электрического управления
+                                            .indexMain__buttons
+                                                +buttonYellow('ПОДОБРАТЬ СТЕЛЛАЖ')
+                                                if addButton
+                                                    +buttonYellow(addButton)
+
+                                        .swiper-controller
+                                            .swiper-button-next
+                                                svg(width="55" height="24" viewBox="0 0 55 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                    path(d="M38.9583 12H6.87498" stroke="#F2CD00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                                    path(d="M49.6509 11.7613L35.4131 7.32355C34.898 7.16302 34.375 7.54785 34.375 8.08731V15.9127C34.375 16.4522 34.898 16.837 35.4131 16.6765L49.6509 12.2387C49.8851 12.1657 49.8851 11.8343 49.6509 11.7613Z" fill="#F2CD00")
+
+                                            .swiper-button-prev
+                                                svg(width="55" height="24" viewBox="0 0 55 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                    path(d="M16.0417 12H48.125" stroke="#F2CD00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                                    path(d="M5.34909 11.7613L19.5869 7.32355C20.102 7.16302 20.625 7.54785 20.625 8.08731V15.9127C20.625 16.4522 20.102 16.837 19.5869 16.6765L5.34909 12.2387C5.11494 12.1657 5.11494 11.8343 5.34909 11.7613Z" fill="#F2CD00")
+
+                                            .swiper-pagination
+
+                                .indexMain__right
+                                    //- if banner 
+                                    //-     .indexMain__right-video(aria-video="https://www.youtube.com/embed/fXTezCok-6s")
+                                    //-         .indexMain__right-bg 
+                                    //-             img(src="./img/index/indexMain/bg.png" alt="")
+                                    //-         .indexMain__right-play
+                                    //-             img(src="./svg/index/indexMain/play-button.svg" alt="")
+                                    //- if !banner
+                                    .indexMain__right-photo 
+                                        .indexMain__right-bg 
+                                            img(src="./img/index/indexMain/dec-1.png" alt="")
+                        .swiper-slide 
+                            .indexMain__containers
+                                .indexMain__containers-left 
+                                .indexMain__containers-right 
+                                    img(src="./img/index/indexMain/dec-2.png" alt="")
 
                             .containers 
                                 .indexMain__left 
@@ -59,20 +121,18 @@ mixin indexMain(add, button, banner = true, addButton)
                                                     span 
                                                         a(href="#") По виду
                                             p.indexMain__left-title Увеличьте 
-                                                span= i+1
-                                                    | в 2 раза 
+                                                span Уникальная
                                                     br 
-                                                    | вместимость
-                                                    br  
-                                                    | архива/склада 
-                                                br
-                                                | на той же площади
-                                            p.indexMain__left-subtitle Рассчитаем проект расстановки стеллажей 
+                                                    | разработка!
+                                            p.indexMain__left-subtitle Стеллажи с компьютерным управлением. 
                                                 br 
-                                                | для вашего помещения всего за 
-                                                span 24 часа.
+                                                | Программа САМА без ошибочно находит 
+                                                br 
+                                                | быстрый и удобный путь к поиску или возврату 
+                                                br 
+                                                | документов.
                                             .indexMain__buttons
-                                                +buttonYellow(button)
+                                                +buttonYellow('ПОДОБРАТЬ СТЕЛЛАЖ')
                                                 if addButton
                                                     +buttonYellow(addButton)
 
@@ -89,15 +149,15 @@ mixin indexMain(add, button, banner = true, addButton)
 
                                             .swiper-pagination
 
-                                    
                                 .indexMain__right
-                                    if banner 
-                                        .indexMain__right-video(aria-video="https://www.youtube.com/embed/fXTezCok-6s")
-                                            .indexMain__right-bg 
-                                                img(src="./img/index/indexMain/bg.png" alt="")
-                                            .indexMain__right-play
-                                                img(src="./svg/index/indexMain/play-button.svg" alt="")
-                                    if !banner
-                                        .indexMain__right-photo 
-                                            .indexMain__right-bg 
-                                                img(src="./img/index/indexMain/bg.png" alt="")
+                                    //- if banner 
+                                    //-     .indexMain__right-video(aria-video="https://www.youtube.com/embed/fXTezCok-6s")
+                                    //-         .indexMain__right-bg 
+                                    //-             img(src="./img/index/indexMain/bg.png" alt="")
+                                    //-         .indexMain__right-play
+                                    //-             img(src="./svg/index/indexMain/play-button.svg" alt="")
+                                    //- if !banner
+                                    .indexMain__right-photo 
+                                        .indexMain__right-bg 
+                                            img(src="./img/index/indexMain/dec-2.png" alt="")
+                        

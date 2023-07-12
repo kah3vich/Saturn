@@ -1183,6 +1183,8 @@ __webpack_require__.r(__webpack_exports__);
 var IndexCatalogLink = function IndexCatalogLink() {
   $('.indexCatalogLink__content-item').hover(function () {
     $('.indexCatalogLink__banner-container img').attr('src', $(this).attr('aria-photo'));
+    var title = $(this).children().find('.indexCatalogLink__content-subtitle').text();
+    $('.indexCatalogLink__banner-text p').text(title);
   });
 };
 

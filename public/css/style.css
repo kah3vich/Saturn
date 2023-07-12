@@ -5075,7 +5075,7 @@ opacity-h {
 	display : -webkit-box;
 	-webkit-line-clamp : 4;
 	-webkit-box-orient : vertical;
-	width : 450px;
+	width : 480px;
 }
 
 .indexMain__left-title span {
@@ -5477,9 +5477,14 @@ opacity-h {
 .indexMain-static__list {
 	margin : 0 auto;
 	width : 100%;
-	display : -ms-grid;
-	display :     grid;
-	grid-template-columns : repeat(auto-fill, minmax(190px, 1fr));
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-ms-flex-pack : distribute;
+	justify-content : space-around;
 	gap : 75px;
 }
 
@@ -6371,6 +6376,7 @@ opacity-h {
 	color : #a5a5a5;
 	font-style : normal;
 	letter-spacing : -0.5px;
+	text-align : center;
 }
 
 .indexCaseCard__link {
