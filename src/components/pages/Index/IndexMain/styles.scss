@@ -520,6 +520,17 @@
 	}
 }
 
+@media (max-width: 400px) {
+	.indexMain__left-subtitle {
+		font-size: 12px;
+	}
+	.indexMain__left-title {
+		font-size: 23px;
+		width: 100%;
+		line-height: 1.5;
+	}
+}
+
 @media (min-height: 790px) {
 	.indexMain .swiper-pagination-fraction {
 		top: 18vh;

@@ -15929,8 +15929,21 @@ opacity-h {
 		padding : 18px;
 	}
 
-	.helperArticleCard__content-link {
-		display : none;
+	.helperArticleCard__content {
+		display : -webkit-box;
+		display : -ms-flexbox;
+		display : flex;
+		-webkit-box-orient : vertical;
+		-webkit-box-direction : normal;
+		-ms-flex-direction : column;
+		    flex-direction : column;
+		-webkit-box-align : start;
+		-ms-flex-align : start;
+		align-items : flex-start;
+		-webkit-box-pack : end;
+		-ms-flex-pack : end;
+		justify-content : flex-end;
+		gap : 10px;
 	}
 
 	.helper-question__title {
@@ -15962,7 +15975,7 @@ opacity-h {
 	}
 
 	.header__container {
-		gap : 20px;
+		gap : 15px;
 	}
 
 	.space__plane {
@@ -16573,6 +16586,16 @@ opacity-h {
 		right : 15%;
 	}
 
+	.indexMain__left-subtitle {
+		font-size : 12px;
+	}
+
+	.indexMain__left-title {
+		font-size : 23px;
+		width : 100%;
+		line-height : 1.5;
+	}
+
 	.indexCase__slider .swiper-button-next {
 		right : -17px !important;
 		width : 80px;
@@ -16589,7 +16612,7 @@ opacity-h {
 	}
 
 	.production-description__item p {
-		width : 200px;
+		width : 150px;
 		right : -180%;
 	}
 
