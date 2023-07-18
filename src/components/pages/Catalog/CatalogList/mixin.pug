@@ -1,20 +1,20 @@
-mixin catalogCard(type = 1)
+mixin catalogCard(type = 1, src)
     if type == 1
-        +catalogCardOne()
+        +catalogCardOne(src)
     if type == 2
-        +catalogCardTwo()
+        +catalogCardTwo(src)
     if type == 3
-        +catalogCardThree()
+        +catalogCardThree(src)
     if type == 4
-        +catalogCardFour()
+        +catalogCardFour(src)
     if type == 5
-        +catalogCardFive()
+        +catalogCardFive(src)
 
 
-mixin catalogCardOne()
+mixin catalogCardOne(src)
     .catalogCard
         a(href="#").catalogCard__banner 
-            img(src="./img/pages/catalog/catalogList/card.png" alt="")
+            img(src=src alt="")
         .catalogCard__content
             a(href="#").catalogCard__content-title Передвижные стеллажи серия
             .catalogCard__content-type 
@@ -61,10 +61,10 @@ mixin catalogCardOne()
                 a(href="").catalogCard__content-button
                     p Подробнее
 
-mixin catalogCardTwo()
+mixin catalogCardTwo(src)
     .catalogCard
         a(href="#").catalogCard__banner 
-            img(src="./img/pages/catalog/catalogList/card.png" alt="")
+            img(src=src alt="")
         .catalogCard__content
             a(href="#").catalogCard__content-title Передвижные стеллажи серия
             .catalogCard__content-type 
@@ -81,10 +81,10 @@ mixin catalogCardTwo()
                 a(href="").catalogCard__content-button
                     p Подробнее
 
-mixin catalogCardThree()
+mixin catalogCardThree(src)
     .catalogCard 
-        .catalogCard__banner.catalogCard__banner-open(aria-photo="./img/pages/catalog/catalogList/card.png")
-            img(src="./img/pages/catalog/catalogList/card.png" alt="")
+        .catalogCard__banner.catalogCard__banner-open(aria-photo=src)
+            img(src=src alt="")
         .catalogCard__content
             a(href="#").catalogCard__content-title Передвижные стеллажи серия
             .catalogCard__content-type 
@@ -99,10 +99,10 @@ mixin catalogCardThree()
                 button.catalogCard__content-button
                     p Купить
 
-mixin catalogCardFour()
+mixin catalogCardFour(src)
     .catalogCard
         a(href="#").catalogCard__banner.catalogCard__banner-height
-            img(src="./img/pages/catalog/catalogList/card.png" alt="")
+            img(src=src alt="")
         .catalogCard__content
             a(href="#").catalogCard__content-title Передвижные стеллажи серия
             .catalogCard__content-type 
@@ -149,10 +149,10 @@ mixin catalogCardFour()
                 a(href="").catalogCard__content-button
                     p Подробнее
 
-mixin catalogCardFive()
+mixin catalogCardFive(src)
     .catalogCard
-        .catalogCard__banner.catalogCard__banner-open(aria-photo="./img/pages/catalog/catalogList/card.png")
-            img(src="./img/pages/catalog/catalogList/card.png" alt="")
+        .catalogCard__banner.catalogCard__banner-open(aria-photo=src)
+            img(src=src alt="")
         .catalogCard__content
             a(href="#").catalogCard__content-title Передвижные стеллажи серия
             .catalogCard__content-type 

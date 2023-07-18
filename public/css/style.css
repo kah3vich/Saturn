@@ -610,8 +610,20 @@ opacity-h {
 	font-style : normal;
 }
 
+.navbar__arrows {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+}
+
 .navbar__arrow {
-	padding : 25px 10px;
+	padding : 25px 15px;
 	position : relative;
 	cursor : pointer;
 	display : -webkit-box;
@@ -3432,7 +3444,7 @@ opacity-h {
 .slider__item {
 	cursor : pointer;
 	width : 100%;
-	height : 480px;
+	height : 580px;
 	border-radius : 20px;
 	overflow : hidden;
 	position : relative;
@@ -11797,7 +11809,7 @@ opacity-h {
 .articleDetailCard__banner {
 	cursor : pointer;
 	width : 100%;
-	height : 280px;
+	height : 380px;
 	border-radius : 20px;
 	overflow : hidden;
 	position : relative;
@@ -13749,10 +13761,6 @@ opacity-h {
 }
 
 @media (max-width: 1370px) {
-	.navbar .containers {
-		gap : 10px;
-	}
-
 	.navbar__arrow > p
 	,
 	.navbar__link > p {
@@ -13854,30 +13862,6 @@ opacity-h {
 		left : -17px;
 	}
 
-	.aboutCharact__list {
-		-webkit-box-orient : vertical;
-		-webkit-box-direction : normal;
-		-ms-flex-direction : column;
-		    flex-direction : column;
-	}
-
-	.aboutCharact__item {
-		width : 100% !important;
-	}
-
-	.aboutCharact__item .aboutCharactCard__banner::after {
-		opacity : 0.9;
-	}
-
-	.aboutCharact__item .aboutCharactCard__banner p {
-		opacity : 1;
-		width : 85%;
-	}
-
-	.aboutCharact__item .aboutCharactCard__title {
-		background : #f2ce14;
-	}
-
 	.modalCollection__wrapper {
 		width : 100%;
 		height : 100vh;
@@ -13927,6 +13911,14 @@ opacity-h {
 
 	.caseDetailDescriptionCard {
 		gap : 10px;
+	}
+}
+
+@media (max-width: 1270px) {
+	.navbar__arrow > p
+	,
+	.navbar__link > p {
+		font-size : 13px;
 	}
 }
 
@@ -14029,6 +14021,30 @@ opacity-h {
 
 	.aboutSng__banner {
 		margin : 0;
+	}
+
+	.aboutCharact__list {
+		-webkit-box-orient : vertical;
+		-webkit-box-direction : normal;
+		-ms-flex-direction : column;
+		    flex-direction : column;
+	}
+
+	.aboutCharact__item {
+		width : 100% !important;
+	}
+
+	.aboutCharact__item .aboutCharactCard__banner::after {
+		opacity : 0.9;
+	}
+
+	.aboutCharact__item .aboutCharactCard__banner p {
+		opacity : 1;
+		width : 85%;
+	}
+
+	.aboutCharact__item .aboutCharactCard__title {
+		background : #f2ce14;
 	}
 
 	.contact-geo .containers {
