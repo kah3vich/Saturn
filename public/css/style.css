@@ -5081,12 +5081,6 @@ opacity-h {
 	line-height : 54px;
 	color : #ffffff;
 	font-style : normal;
-	overflow : hidden;
-	-o-text-overflow : ellipsis;
-	   text-overflow : ellipsis;
-	display : -webkit-box;
-	-webkit-line-clamp : 4;
-	-webkit-box-orient : vertical;
 	width : 480px;
 }
 
@@ -5095,12 +5089,6 @@ opacity-h {
 }
 
 .indexMain__left-subtitle {
-	overflow : hidden;
-	-o-text-overflow : ellipsis;
-	   text-overflow : ellipsis;
-	display : -webkit-box;
-	-webkit-line-clamp : 3;
-	-webkit-box-orient : vertical;
 	width : 450px;
 	font-weight : 400;
 	font-size : 22px;
@@ -15201,11 +15189,11 @@ opacity-h {
 	}
 
 	.catalogCard__banner-height {
-		height : 250px;
+		height : 400px !important;
 	}
 
 	.catalogCard__banner-height img {
-		height : 250px;
+		height : 400px !important;
 	}
 
 	.catalog-addition__button {

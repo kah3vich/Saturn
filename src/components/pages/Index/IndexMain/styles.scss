@@ -69,22 +69,12 @@
 		}
 		&-title {
 			@include fontStyle(42px, 700, 54px, $color-white);
-			overflow: hidden;
-			text-overflow: ellipsis;
-			display: -webkit-box;
-			-webkit-line-clamp: 4;
-			-webkit-box-orient: vertical;
 			width: 480px;
 			& span {
 				color: $color-yellow;
 			}
 		}
 		&-subtitle {
-			overflow: hidden;
-			text-overflow: ellipsis;
-			display: -webkit-box;
-			-webkit-line-clamp: 3;
-			-webkit-box-orient: vertical;
 			width: 450px;
 			@include fontStyle(22px, 400, 36px, $color-white);
 			& span {
