@@ -1243,12 +1243,12 @@ var IndexMain = function IndexMain() {
   var indexMainSwiper = new Swiper('.indexMainSwiper', {
     effect: 'fade',
     pagination: {
-      el: '.swiper-counter',
+      el: '.indexMain .swiper-counter',
       type: 'fraction'
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
+      nextEl: '.indexMain .swiper-button-next',
+      prevEl: '.indexMain .swiper-button-prev'
     },
     on: {
       slideChange: function slideChange() {

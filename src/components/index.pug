@@ -89,8 +89,9 @@ mixin videoPlaceholder(src)
 
 mixin additionCard(src, title, subtitle)
     .additionCard
-        a(href="").additionCard__banner 
-            img(src=src alt="")
+        a(href="")
+            .additionCard__banner 
+                img(src=src alt="")
         .additionCard__content
             h5.additionCard__content-title= title
             p.additionCard__content-subtitle= subtitle 

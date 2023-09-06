@@ -119,9 +119,13 @@
 
 .additionCard {
 	width: 282px;
+	height: 100%;
 	background: $color-light-yellow-green;
 	border-radius: 10px;
 	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	@include transitionStyle();
 	cursor: pointer;
 	&:hover {
@@ -145,10 +149,14 @@
 		padding: 22px 22px 16px 22px;
 		@include flexStyle(center, flex-start, column, 22px);
 		&-title {
+			height: 46px;
+			overflow: hidden;
 			text-align: center;
 			@include fontStyle(18px, 700, 23px, $color-black);
 		}
 		&-subtitle {
+			height: 50px;
+			overflow: hidden;
 			@include fontStyle(15px, 500, 25px, $color-black);
 			text-align: center;
 			letter-spacing: -0.5px;

@@ -310,11 +310,12 @@
 		}
 		&-nav {
 			width: 100%;
-			padding: 29px 25px 29px 25px;
 			background-color: $color-white;
 			/* @include transitionStyle(); */
 			cursor: pointer;
 			& a {
+				padding: 29px 25px 29px 25px;
+				display: block;
 				letter-spacing: -0.5px;
 				@include fontStyle(16px, 400, 19px, $color-blue-black);
 			}
@@ -369,9 +370,10 @@
 		}
 		&-item {
 			cursor: pointer;
-			padding: 28px;
 			letter-spacing: -0.5px;
 			& a {
+				padding: 28px;
+				display: block;
 				@include fontStyle(16px, 400, 19px, $color-blue-black);
 				/* @include transitionStyle(); */
 			}
