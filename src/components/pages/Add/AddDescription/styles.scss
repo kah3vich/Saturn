@@ -16,6 +16,9 @@
 			@include fontStyle(20px, 400, 31px, $color-black);
 		}
 	}
+	&__tab {
+		display: none;
+	}
 	&__slider {
 		width: 50%;
 		margin-top: 75px;

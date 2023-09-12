@@ -570,7 +570,8 @@ var AddDescription = function AddDescription() {
       el: '.add-description__slider .swiper-controls .swiper-pagination',
       clickable: true,
       renderBullet: function renderBullet(index, className) {
-        return "<div class=\"add-description__slider-button ".concat(className, "\"> <img src=\"./img/pages/catalog/catalogMain/card-1.png\" alt=\"\"></div>");
+        var tabs = $('.add-description__tab');
+        return "<div class=\"add-description__slider-button ".concat(className, "\"> <img src=\"").concat(tabs[index].getAttribute('src'), "\" alt=\"\"></div>");
       }
     },
     mousewheel: true,
@@ -1021,7 +1022,8 @@ var GoodsMain = function GoodsMain() {
       el: '.goods-main__slider .swiper-controls .swiper-pagination',
       clickable: true,
       renderBullet: function renderBullet(index, className) {
-        return "<div class=\"goods-main__slider-button ".concat(className, "\"> <img src=\"./img/pages/catalog/catalogMain/card-1.png\" alt=\"\"></div>");
+        var tabs = $('.goods-main__slider-tab');
+        return "<div class=\"goods-main__slider-button ".concat(className, "\"> <img src=\"").concat(tabs[index].getAttribute('src'), "\" alt=\"\"></div>");
       }
     },
     effect: 'fade',

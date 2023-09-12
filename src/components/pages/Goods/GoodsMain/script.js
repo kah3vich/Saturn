@@ -4,13 +4,17 @@ export const GoodsMain = () => {
 			el: '.goods-main__slider .swiper-controls .swiper-pagination',
 			clickable: true,
 			renderBullet: function (index, className) {
-				return `<div class="goods-main__slider-button ${className}"> <img src="./img/pages/catalog/catalogMain/card-1.png" alt=""></div>`
-			}
+				const tabs = $('.goods-main__slider-tab');
+
+				return `<div class="goods-main__slider-button ${className}"> <img src="${tabs[
+					index
+				].getAttribute('src')}" alt=""></div>`;
+			},
 		},
 		effect: 'fade',
 		navigation: {
 			nextEl: '.goods-main__slider .swiper-controls .swiper-button-next',
-			prevEl: '.goods-main__slider .swiper-controls .swiper-button-prev'
-		}
-	})
-}
+			prevEl: '.goods-main__slider .swiper-controls .swiper-button-prev',
+		},
+	});
+};
