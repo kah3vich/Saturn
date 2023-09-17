@@ -389,13 +389,17 @@ var ModalFeedback = function ModalFeedback() {
       nextEl: '.modalFeedback__wrapper  .swiper-controls .swiper-button-next',
       prevEl: '.modalFeedback__wrapper  .swiper-controls .swiper-button-prev'
     },
-    effect: 'fade'
+    effect: 'fade',
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true
   });
   $('.feedback__slider .swiper-slide').on('click', function () {
-    var activeElement = $(this).attr('aria-label').split(' / ')[0];
+    var activeElement = $(this).attr('aria-label').split(' / ')[0] - 1;
     $('.modalFeedback').removeClass('display-n');
     $('body').css('overflow', 'hidden');
-    modalFeedbackSliderSwiper.activeIndex = +activeElement + 1;
+    console.log('✅ activeElement    ', activeElement);
+    modalFeedbackSliderSwiper.activeIndex = activeElement;
   });
   $('.modalFeedback__close').on('click', function () {
     $('body').css('overflow', 'visible');
