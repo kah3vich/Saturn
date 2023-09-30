@@ -187,10 +187,10 @@
 		cursor: not-allowed;
 		visibility: hidden;
 		height: 100vh;
-		background: $color-black;
+		background: #201547;
 		z-index: 100;
 		&-active {
-			opacity: 0.9;
+			opacity: 0.8;
 			cursor: auto;
 			visibility: visible;
 		}
@@ -468,7 +468,6 @@
 			flex-direction: column;
 			justify-content: flex-start;
 			align-items: flex-start;
-			gap: 15px;
 		}
 		&__active {
 			& .menu__mobile-accordion__close {
@@ -488,6 +487,7 @@
 			grid-template-columns: 1fr 24px;
 			gap: 20px;
 			width: 100%;
+			background-color: #f1f1f1;
 		}
 		&__close {
 			cursor: pointer;

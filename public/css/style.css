@@ -485,12 +485,12 @@ opacity-h {
 	cursor : not-allowed;
 	visibility : hidden;
 	height : 100vh;
-	background : #141413;
+	background : #201547;
 	z-index : 100;
 }
 
 .navbar__background-active {
-	opacity : 0.9;
+	opacity : 0.8;
 	cursor : auto;
 	visibility : visible;
 }
@@ -1040,7 +1040,6 @@ opacity-h {
 	-webkit-box-align : start;
 	-ms-flex-align : start;
 	align-items : flex-start;
-	gap : 15px;
 }
 
 .menu__mobile-accordion__active .menu__mobile-accordion__close {
@@ -1070,6 +1069,7 @@ opacity-h {
 	grid-template-columns : 1fr 24px;
 	gap : 20px;
 	width : 100%;
+	background-color : #f1f1f1;
 }
 
 .menu__mobile-accord__close {
