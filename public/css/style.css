@@ -319,7 +319,6 @@ opacity-h {
 	content : "";
 	background : url("./../svg/header/arrow-down-blue-dark.svg") no-repeat;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 	position : absolute;
 	top : 50%;
@@ -357,8 +356,7 @@ opacity-h {
 	color : #140848;
 	font-style : normal;
 	overflow : hidden;
-	-o-text-overflow : ellipsis;
-	   text-overflow : ellipsis;
+	text-overflow : ellipsis;
 	-webkit-line-clamp : 1;
 	-webkit-box-orient : vertical;
 	white-space : nowrap;
@@ -433,7 +431,6 @@ opacity-h {
 
 .headerCitySelect-item-active::after {
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 	-webkit-transform : translate(0, -50%) rotate(180deg);
 	    -ms-transform : translate(0, -50%) rotate(180deg);
@@ -1008,7 +1005,6 @@ opacity-h {
 	cursor : pointer;
 	background : transparent;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 }
 
@@ -1024,7 +1020,6 @@ opacity-h {
 	padding : 0;
 	height : 0;
 	-webkit-transition : all 0.5s ease-in-out;
-	     -o-transition : all 0.5s ease-in-out;
 	        transition : all 0.5s ease-in-out;
 	overflow : hidden;
 	display : -webkit-box;
@@ -1076,7 +1071,6 @@ opacity-h {
 	cursor : pointer;
 	background : transparent;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 	width : 24px;
 	height : 24px;
@@ -1109,7 +1103,6 @@ opacity-h {
 	background : #e2e2e2;
 	height : 0;
 	-webkit-transition : all 0.5s ease-in-out;
-	     -o-transition : all 0.5s ease-in-out;
 	        transition : all 0.5s ease-in-out;
 	overflow : hidden;
 	display : -webkit-box;
@@ -2181,7 +2174,6 @@ opacity-h {
 	background : #f2ce14;
 	border-radius : 50%;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 	opacity : 0;
 }
@@ -2588,7 +2580,6 @@ opacity-h {
 	background : #f2ce14;
 	border-radius : 50%;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 	opacity : 0;
 }
@@ -3074,7 +3065,6 @@ opacity-h {
 	background : #f2ce14;
 	border-radius : 50%;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 	opacity : 0;
 }
@@ -3643,7 +3633,6 @@ opacity-h {
 	        transform : translate(-50%, 0);
 	width : 100%;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 	display : -webkit-box;
 	display : -ms-flexbox;
@@ -3708,7 +3697,6 @@ opacity-h {
 	border-radius : 20px;
 	padding : 22px 22px 30px 22px;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 	display : -webkit-box;
 	display : -ms-flexbox;
@@ -5295,14 +5283,12 @@ opacity-h {
 	    -ms-transform : translate(0, -50%);
 	        transform : translate(0, -50%);
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 	opacity : 1;
 }
 
 .indexMain .swiper-button-next svg path {
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 }
 
@@ -5336,14 +5322,12 @@ opacity-h {
 	    -ms-transform : translate(0, -50%);
 	        transform : translate(0, -50%);
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 	opacity : 1;
 }
 
 .indexMain .swiper-button-prev svg path {
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 }
 
@@ -5406,7 +5390,6 @@ opacity-h {
 	border : 1px solid #f2ce14;
 	background-color : transparent;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 	border-radius : 50%;
 	cursor : pointer;
@@ -5776,7 +5759,6 @@ opacity-h {
 	width : 100%;
 	border-bottom : 1px solid #a5a5a5;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 }
 
@@ -5792,7 +5774,6 @@ opacity-h {
 	color : #141413;
 	font-style : normal;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 }
 
@@ -5804,7 +5785,6 @@ opacity-h {
 	color : #141413;
 	font-style : normal;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 }
 
@@ -5828,7 +5808,6 @@ opacity-h {
 	color : #141413;
 	font-style : normal;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 }
 
@@ -5840,7 +5819,6 @@ opacity-h {
 	color : #141413;
 	font-style : normal;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 }
 
@@ -6434,7 +6412,6 @@ opacity-h {
 	content : "";
 	background : url("./../svg/index/indexCase/arrow-down.svg") no-repeat;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 	position : absolute;
 	top : 50%;
@@ -6458,8 +6435,7 @@ opacity-h {
 	color : #141413;
 	font-style : normal;
 	overflow : hidden;
-	-o-text-overflow : ellipsis;
-	   text-overflow : ellipsis;
+	text-overflow : ellipsis;
 	-webkit-line-clamp : 1;
 	-webkit-box-orient : vertical;
 	white-space : nowrap;
@@ -6540,7 +6516,6 @@ opacity-h {
 
 .indexCaseSelect-item-active::after {
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 	-webkit-transform : translate(0, -50%) rotate(180deg);
 	    -ms-transform : translate(0, -50%) rotate(180deg);
@@ -6875,7 +6850,6 @@ opacity-h {
 	border-radius : 20px;
 	overflow : hidden;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 	display : -webkit-box;
 	display : -ms-flexbox;
@@ -6899,14 +6873,12 @@ opacity-h {
 	-webkit-box-shadow : 0px 4px 14px rgba(0, 0, 0, 0.25);
 	        box-shadow : 0px 4px 14px rgba(0, 0, 0, 0.25);
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 }
 
 .cardEquipment:hover .cardEquipment__content-title {
 	text-decoration-line : underline;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 }
 
@@ -6929,7 +6901,6 @@ opacity-h {
 	   object-fit : cover;
 	display : block;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 }
 
@@ -6961,7 +6932,6 @@ opacity-h {
 	color : #201547;
 	font-style : normal;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 	text-transform : uppercase;
 }
@@ -7051,7 +7021,6 @@ opacity-h {
 	align-items : center;
 	cursor : pointer;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 }
 
@@ -7213,7 +7182,6 @@ opacity-h {
 	-ms-flex-wrap : nowrap;
 	    flex-wrap : nowrap;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 	width : 100%;
 }
@@ -7225,7 +7193,6 @@ opacity-h {
 	color : #140848;
 	font-style : normal;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 }
 
@@ -7268,7 +7235,6 @@ opacity-h {
 	-ms-flex-wrap : nowrap;
 	    flex-wrap : nowrap;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 }
 
@@ -7323,7 +7289,6 @@ opacity-h {
 	color : #141413;
 	font-style : normal;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 }
 
@@ -7967,7 +7932,6 @@ opacity-h {
 	border : 1px solid #140848;
 	background-color : #ffffff;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 }
 
@@ -7978,7 +7942,6 @@ opacity-h {
 	color : #141413;
 	font-style : normal;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 }
 
@@ -8066,7 +8029,6 @@ opacity-h {
 
 .catalogCard:hover .catalogCard__banner-scale img {
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 	-webkit-transform : scale(1.2);
 	    -ms-transform : scale(1.2);
@@ -8209,8 +8171,7 @@ opacity-h {
 .catalogCard__content-description {
 	letter-spacing : -0.5px;
 	overflow : hidden;
-	-o-text-overflow : ellipsis;
-	   text-overflow : ellipsis;
+	text-overflow : ellipsis;
 	display : -webkit-box;
 	-webkit-line-clamp : 3;
 	-webkit-box-orient : vertical;
@@ -8416,7 +8377,6 @@ opacity-h {
 	background : #a5a5a5;
 	border-radius : 50%;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 }
 
@@ -8635,7 +8595,6 @@ opacity-h {
 
 .catalogStagesCard__hover {
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 	position : absolute;
 	border-radius : 20px 20px 0 0;
@@ -9999,7 +9958,6 @@ opacity-h {
 
 .productionStages__banner img {
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 	width : 100%;
 	height : 100%;
@@ -10255,8 +10213,7 @@ opacity-h {
 	color : #141413;
 	font-style : normal;
 	overflow : hidden;
-	-o-text-overflow : ellipsis;
-	   text-overflow : ellipsis;
+	text-overflow : ellipsis;
 	display : -webkit-box;
 	-webkit-line-clamp : 3;
 	-webkit-box-orient : vertical;
@@ -10451,8 +10408,7 @@ opacity-h {
 	color : #201547;
 	font-style : normal;
 	overflow : hidden;
-	-o-text-overflow : ellipsis;
-	   text-overflow : ellipsis;
+	text-overflow : ellipsis;
 	display : -webkit-box;
 	-webkit-line-clamp : 4;
 	-webkit-box-orient : vertical;
@@ -11473,7 +11429,6 @@ opacity-h {
 .aboutCharact__item {
 	width : 25%;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 }
 
@@ -11503,7 +11458,6 @@ opacity-h {
 	-ms-flex-wrap : nowrap;
 	    flex-wrap : nowrap;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 }
 
@@ -11550,20 +11504,17 @@ opacity-h {
 	text-align : center;
 	letter-spacing : -0.5px;
 	overflow : hidden;
-	-o-text-overflow : ellipsis;
-	   text-overflow : ellipsis;
+	text-overflow : ellipsis;
 	display : -webkit-box;
 	-webkit-line-clamp : 9;
 	-webkit-box-orient : vertical;
 	opacity : 0;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 }
 
 .aboutCharactCard__banner::after {
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 	position : absolute;
 	width : 100%;
@@ -11583,7 +11534,6 @@ opacity-h {
 	height :         max-content;
 	background : #f1f2ed;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 	padding : 42px 20px;
 	display : -webkit-box;
@@ -12406,8 +12356,7 @@ opacity-h {
 
 .helperArticleCard__content-text {
 	overflow : hidden;
-	-o-text-overflow : ellipsis;
-	   text-overflow : ellipsis;
+	text-overflow : ellipsis;
 	display : -webkit-box;
 	-webkit-line-clamp : 3;
 	-webkit-box-orient : vertical;
@@ -12583,7 +12532,6 @@ opacity-h {
 	        transform : rotate(0deg);
 	-webkit-transition : -webkit-transform 0.5s ease;
 	        transition : -webkit-transform 0.5s ease;
-	     -o-transition :         transform 0.5s ease;
 	        transition :         transform 0.5s ease;
 	        transition :         transform 0.5s ease, -webkit-transform 0.5s ease;
 }
@@ -12595,7 +12543,6 @@ opacity-h {
 	padding : 0 15px;
 	letter-spacing : -0.5px;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 	font-weight : 400;
 	font-size : 20px;
@@ -12612,7 +12559,6 @@ opacity-h {
 
 .helperAccordion__active .helperAccordion__content {
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 	height : auto;
 	padding : 15px;
@@ -12746,8 +12692,7 @@ opacity-h {
 	color : #141413;
 	font-style : normal;
 	overflow : hidden;
-	-o-text-overflow : ellipsis;
-	   text-overflow : ellipsis;
+	text-overflow : ellipsis;
 	display : -webkit-box;
 	-webkit-line-clamp : 2;
 	-webkit-box-orient : vertical;
@@ -13617,7 +13562,6 @@ opacity-h {
 	-ms-flex-pack : justify;
 	justify-content : space-between;
 	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 	cursor : pointer;
 }
@@ -13733,6 +13677,14 @@ opacity-h {
 
 .b24-form-sign {
 	display : none !important;
+}
+
+.menu__mobile-accordion__content {
+	background-color : #F1F1F1;
+}
+
+.menu__mobile-list {
+	padding : 20px 34px;
 }
 
 @media (max-width: 1430px) {
@@ -16302,8 +16254,7 @@ opacity-h {
 	}
 
 	.newsCard__content-text {
-		-o-text-overflow : clip;
-		   text-overflow : clip;
+		text-overflow : clip;
 		display : block;
 	}
 
@@ -16510,8 +16461,7 @@ opacity-h {
 	}
 
 	.helperArticleCard__content-text {
-		-o-text-overflow : clip;
-		   text-overflow : clip;
+		text-overflow : clip;
 		display : block;
 	}
 
@@ -16525,8 +16475,7 @@ opacity-h {
 	.helperDocumentCard__title {
 		padding : 15px 0;
 		height : 100%;
-		-o-text-overflow : clip;
-		   text-overflow : clip;
+		text-overflow : clip;
 		display : block;
 		-webkit-line-clamp : 2;
 		-webkit-box-orient : vertical;
